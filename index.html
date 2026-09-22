@@ -3305,32 +3305,107 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* SEARCH */
 
-    const searchForm =
-        document.querySelector(".searchform");
+const searchForm =
+    document.querySelector(".searchform");
 
-    if (searchForm) {
+if (searchForm) {
 
-        searchForm.addEventListener("submit", function (event) {
+    searchForm.addEventListener("submit", function (event) {
 
-            event.preventDefault();
+        event.preventDefault();
 
-            const searchInput =
-                searchForm.querySelector(
-                    "input[type='text']"
-                );
+        const searchInput =
+            searchForm.querySelector(
+                "input[type='text']"
+            );
 
-            if (
-                searchInput &&
-                searchInput.value.trim() !== ""
-            ) {
+        if (
+            searchInput &&
+            searchInput.value.trim() !== ""
+        ) {
 
-                alert(
-                    "Search is coming soon. Please use the menu to browse MSM Training."
-                );
+            const search =
+                searchInput.value.trim().toLowerCase();
+
+
+            /* WEBSITE PAGES */
+
+            const pages = {
+
+                "home": "index.html",
+
+                "about": "about.html",
+                "about us": "about.html",
+
+                "services": "services.html",
+                "service": "services.html",
+
+                "courses": "course.html",
+                "course": "course.html",
+
+                "digital products": "digital-products.html",
+                "digital product": "digital-products.html",
+
+                "media": "media.html",
+
+                "contact": "contact.html",
+                "contact us": "contact.html",
+
+                "leribe": "leribe-seminar.html",
+                "leribe seminar": "leribe-seminar.html",
+
+                "mafeteng": "mafeteng.html",
+                "mafeteng seminar": "mafeteng.html",
+
+                "mokhotlong": "mokhotlong.html",
+                "mokhotlong seminar": "mokhotlong.html",
+
+                "sales": "sales-marketing-workshop.html",
+                "sales marketing": "sales-marketing-workshop.html",
+                "sales marketing workshop": "sales-marketing-workshop.html"
+
+            };
+
+
+            /* EXACT MATCH */
+
+            if (pages[search]) {
+
+                window.location.href =
+                    pages[search];
+
+                return;
+            }
+
+
+            /* PARTIAL MATCH */
+
+            for (const page in pages) {
+
+                if (page.includes(search)) {
+
+                    window.location.href =
+                        pages[page];
+
+                    return;
+                }
 
             }
 
-        });
+
+            /* NOTHING FOUND */
+
+            alert(
+                "Sorry, we could not find \"" +
+                searchInput.value +
+                "\" on the MSM Training website."
+            );
+
+        }
+
+    });
+
+}
 
     }
 
