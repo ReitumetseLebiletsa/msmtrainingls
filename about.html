@@ -22,25 +22,330 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- MSM BRAND COLOURS -->
+    <style>
+
+        :root {
+            --msm-dark-green: #0B3D2E;
+            --msm-light-green: #7CB342;
+            --msm-soft-green: #A8D08D;
+            --msm-white: #ffffff;
+        }
+
+        /* GENERAL */
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--msm-dark-green);
+        }
+
+        /* TOP BAR */
+
+        .wrap {
+            background: var(--msm-dark-green) !important;
+        }
+
+        .wrap a,
+        .wrap p,
+        .wrap span {
+            color: #ffffff !important;
+        }
+
+        /* NAVIGATION */
+
+        #ftco-navbar {
+            background: var(--msm-dark-green) !important;
+        }
+
+        .navbar-brand {
+            background: transparent !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-item.active .nav-link {
+            color: var(--msm-light-green) !important;
+        }
+
+        .navbar-toggler {
+            color: #ffffff !important;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* HERO */
+
+        .hero-wrap-2 .overlay {
+            background: var(--msm-dark-green) !important;
+            opacity: 0.75;
+        }
+
+        .breadcrumbs a {
+            color: var(--msm-light-green) !important;
+        }
+
+        .breadcrumbs span,
+        .hero-wrap-2 .bread {
+            color: #ffffff !important;
+        }
+
+        /* INTRO */
+
+        .intro {
+            background: #ffffff !important;
+        }
+
+        .intro-box .icon {
+            background: var(--msm-dark-green) !important;
+            color: #ffffff !important;
+        }
+
+        .intro-box .icon span {
+            color: #ffffff !important;
+        }
+
+        .intro-box h4 {
+            color: var(--msm-dark-green) !important;
+        }
+
+        .intro-box span {
+            color: #555555;
+        }
+
+        /* BUTTONS */
+
+        .btn-primary,
+        .form-consultation .submit {
+            background: var(--msm-light-green) !important;
+            border-color: var(--msm-light-green) !important;
+            color: #ffffff !important;
+        }
+
+        .btn-primary:hover,
+        .form-consultation .submit:hover {
+            background: var(--msm-dark-green) !important;
+            border-color: var(--msm-dark-green) !important;
+            color: #ffffff !important;
+        }
+
+        /* SECTION BACKGROUNDS */
+
+        .bg-light {
+            background: #f7faf7 !important;
+        }
+
+        /* SECTION HEADINGS */
+
+        .heading-section h2 {
+            color: var(--msm-dark-green) !important;
+        }
+
+        .heading-section .subheading {
+            color: var(--msm-light-green) !important;
+        }
+
+        /* VALUES / SERVICES */
+
+        .services-2 .icon {
+            background: var(--msm-dark-green) !important;
+            color: #ffffff !important;
+            border-radius: 50%;
+        }
+
+        .services-2 .icon span {
+            color: #ffffff !important;
+        }
+
+        .services-2 h3,
+        .services-2 h4 {
+            color: var(--msm-dark-green) !important;
+        }
+
+        .services-2 p {
+            color: #555555;
+        }
+
+        /* ABOUT CONTENT */
+
+        .ftco-section h3 {
+            color: var(--msm-dark-green);
+        }
+
+        .ftco-section h4 {
+            color: var(--msm-dark-green);
+        }
+
+        .ftco-section h4:hover {
+            color: var(--msm-light-green);
+        }
+
+        /* COUNTERS */
+
+        .ftco-counter {
+            background: var(--msm-dark-green) !important;
+        }
+
+        .ftco-counter .number {
+            color: var(--msm-light-green) !important;
+        }
+
+        .ftco-counter span {
+            color: #ffffff !important;
+        }
+
+        /* TESTIMONIALS */
+
+        .testimony-section {
+            background: var(--msm-dark-green) !important;
+        }
+
+        .testimony-section .heading-section h2 {
+            color: #ffffff !important;
+        }
+
+        .testimony-section .subheading {
+            color: var(--msm-light-green) !important;
+        }
+
+        .testimony-wrap {
+            border-top: 4px solid var(--msm-light-green);
+            background: #ffffff;
+        }
+
+        .testimony-wrap .icon {
+            background: var(--msm-light-green) !important;
+            color: #ffffff !important;
+        }
+
+        .testimony-wrap .icon span {
+            color: #ffffff !important;
+        }
+
+        .testimony-wrap .name {
+            color: var(--msm-dark-green) !important;
+            font-weight: 600;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            background: var(--msm-dark-green) !important;
+            color: #ffffff !important;
+        }
+
+        .footer h2,
+        .footer .footer-heading {
+            color: var(--msm-light-green) !important;
+        }
+
+        .footer p {
+            color: #ffffff !important;
+        }
+
+        .footer a {
+            color: #ffffff !important;
+        }
+
+        .footer a:hover {
+            color: var(--msm-light-green) !important;
+        }
+
+        .ftco-footer-social li a {
+            background: var(--msm-light-green) !important;
+            color: #ffffff !important;
+        }
+
+        .ftco-footer-social li a:hover {
+            background: #ffffff !important;
+            color: var(--msm-dark-green) !important;
+        }
+
+        /* FOOTER FORM */
+
+        .aside-stretch-right {
+            background: #082f24 !important;
+        }
+
+        .form-consultation .form-control {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+        }
+
+        .form-consultation .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.75);
+        }
+
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            padding-top: 20px;
+        }
+
+        /* IMAGES */
+
+        .img-fluid {
+            border-radius: 8px;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 991px) {
+
+            .navbar-nav .nav-link {
+                color: #ffffff !important;
+            }
+
+            .navbar-nav .nav-link:hover,
+            .navbar-nav .nav-item.active .nav-link {
+                color: var(--msm-light-green) !important;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
     <!-- TOP BAR -->
     <div class="wrap">
+
         <div class="container">
+
             <div class="row justify-content-between">
 
                 <div class="col">
+
                     <p class="mb-0 phone">
+
                         <span class="fa fa-phone"></span>
-                        <a href="tel:+26656506092">+266 5650 6092</a>
+
+                        <a href="tel:+26656506092">
+                            +266 5650 6092
+                        </a>
+
                     </p>
+
                 </div>
+
 
                 <div class="col d-flex justify-content-end">
 
                     <div class="social-media">
+
                         <p class="mb-0 d-flex">
 
                             <!-- Facebook -->
@@ -48,56 +353,77 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="d-flex align-items-center justify-content-center">
+
                                 <i class="fa fa-facebook"></i>
+
                             </a>
+
 
                             <!-- TikTok -->
                             <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="d-flex align-items-center justify-content-center">
-                                <span style="font-size: 12px;">TikTok</span>
+
+                                <span style="font-size: 12px;">
+                                    TikTok
+                                </span>
+
                             </a>
+
 
                             <!-- Instagram -->
                             <a href="https://www.instagram.com/mohaumosoeunyane"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="d-flex align-items-center justify-content-center">
+
                                 <i class="fa fa-instagram"></i>
+
                             </a>
+
 
                             <!-- WhatsApp -->
                             <a href="https://wa.me/26656506092"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="d-flex align-items-center justify-content-center">
+
                                 <i class="fa fa-whatsapp"></i>
+
                             </a>
 
                         </p>
+
                     </div>
 
                 </div>
 
             </div>
+
         </div>
+
     </div>
 
 
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light"
         id="ftco-navbar">
 
         <div class="container">
 
             <a class="navbar-brand" href="index.html">
+
                 <img src="images/LOGO.jpeg"
                     alt="MSM Training Company"
                     style="height:50px; width:auto;">
+
             </a>
 
-            <form action="#" class="searchform order-sm-start order-lg-last">
+
+            <form action="#"
+                class="searchform order-sm-start order-lg-last">
 
                 <div class="form-group d-flex">
 
@@ -107,7 +433,9 @@
 
                     <button type="submit"
                         class="form-control search">
+
                         <span class="fa fa-search"></span>
+
                     </button>
 
                 </div>
@@ -123,41 +451,64 @@
                 aria-expanded="false"
                 aria-label="Toggle navigation">
 
-                <span class="fa fa-bars"></span> Menu
+                <span class="fa fa-bars"></span>
+                Menu
 
             </button>
 
 
-            <div class="collapse navbar-collapse" id="ftco-nav">
+            <div class="collapse navbar-collapse"
+                id="ftco-nav">
 
                 <ul class="navbar-nav m-auto">
 
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html"
+                            class="nav-link">
+                            Home
+                        </a>
                     </li>
 
                     <li class="nav-item active">
-                        <a href="about.html" class="nav-link">About Us</a>
+                        <a href="about.html"
+                            class="nav-link">
+                            About Us
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="services.html" class="nav-link">Services</a>
+                        <a href="services.html"
+                            class="nav-link">
+                            Services
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="course.html" class="nav-link">Courses</a>
+                        <a href="course.html"
+                            class="nav-link">
+                            Courses
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="digital-products.html" class="nav-link">Digital Products</a>
+                        <a href="digital-products.html"
+                            class="nav-link">
+                            Digital Products
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="media.html" class="nav-link">Media</a>
+                        <a href="media.html"
+                            class="nav-link">
+                            Media
+                        </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link">Contact Us</a>
+                        <a href="contact.html"
+                            class="nav-link">
+                            Contact Us
+                        </a>
                     </li>
 
                 </ul>
@@ -170,6 +521,7 @@
 
 
     <!-- HERO -->
+
     <section class="hero-wrap hero-wrap-2"
         style="background-image: url('images/ureng.jpg');"
         data-stellar-background-ratio="0.5">
@@ -185,10 +537,12 @@
                     <p class="breadcrumbs mb-2">
 
                         <span class="mr-2">
+
                             <a href="index.html">
                                 Home
                                 <i class="ion-ios-arrow-forward"></i>
                             </a>
+
                         </span>
 
                         <span>
@@ -198,7 +552,10 @@
 
                     </p>
 
-                    <h1 class="mb-0 bread">About Us</h1>
+
+                    <h1 class="mb-0 bread">
+                        About Us
+                    </h1>
 
                 </div>
 
@@ -210,6 +567,7 @@
 
 
     <!-- INTRO -->
+
     <section class="intro py-5">
 
         <div class="container">
@@ -221,8 +579,11 @@
                     <div class="intro-box w-100 d-flex">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="fa fa-phone"></span>
+
                         </div>
+
 
                         <div class="text pl-3">
 
@@ -246,8 +607,11 @@
                     <div class="intro-box w-100 d-flex">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="fa fa-clock-o"></span>
+
                         </div>
+
 
                         <div class="text pl-3">
 
@@ -274,7 +638,9 @@
 
                             <a href="contact.html"
                                 class="btn btn-primary">
+
                                 Make an Appointment
+
                             </a>
 
                         </p>
@@ -291,6 +657,7 @@
 
 
     <!-- VALUES -->
+
     <section class="ftco-section bg-light">
 
         <div class="container">
@@ -300,7 +667,7 @@
                 <div class="col-md-7 heading-section text-center ftco-animate">
 
                     <h2>
-                        Why MSM TRAINING COMPANY &amp;
+                        Why MSM TRAINING COMPANY &
                         COUNSELLING SERVICES?
                     </h2>
 
@@ -321,7 +688,7 @@
 
                         <img src="images/tshoeut.jpeg"
                             alt="Mohau Mosoeunyane"
-                            class="img-fluid rounded">
+                            class="img-fluid">
 
                         <h4 class="fw-bold mt-3">
                             MOHAU MOSOEUNYANE (CEO)
@@ -334,15 +701,23 @@
 
                 <div class="col-md-6 pl-md-5 py-md-5">
 
+
+                    <!-- EMPOWERMENT -->
+
                     <div class="services-2 w-100 d-flex">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-account"></span>
+
                         </div>
+
 
                         <div class="text pl-4">
 
-                            <h4>Empowerment</h4>
+                            <h4>
+                                Empowerment
+                            </h4>
 
                             <p>
                                 We believe everyone has the power to grow.
@@ -356,15 +731,22 @@
                     </div>
 
 
+                    <!-- PROFESSIONALISM -->
+
                     <div class="services-2 w-100 d-flex">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-skills"></span>
+
                         </div>
+
 
                         <div class="text pl-4">
 
-                            <h4>Professionalism</h4>
+                            <h4>
+                                Professionalism
+                            </h4>
 
                             <p>
                                 We take our work seriously because your
@@ -377,15 +759,22 @@
                     </div>
 
 
+                    <!-- COLLABORATION -->
+
                     <div class="services-2 w-100 d-flex">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-performance"></span>
+
                         </div>
+
 
                         <div class="text pl-4">
 
-                            <h4>Collaboration</h4>
+                            <h4>
+                                Collaboration
+                            </h4>
 
                             <p>
                                 We believe we achieve more together.
@@ -409,7 +798,9 @@
 
 
     <!-- COUNTERS -->
-    <section class="ftco-counter" id="section-counter">
+
+    <section class="ftco-counter"
+        id="section-counter">
 
         <div class="container">
 
@@ -420,28 +811,20 @@
                     <div class="block-18 text-center">
 
                         <div class="text">
-                            <strong class="number" data-number="73">0</strong>
+
+                            <strong class="number"
+                                data-number="73">
+                                0
+                            </strong>
+
                         </div>
 
                         <div class="text">
-                            <span>LIFE SKILLS YOUTH CAMP</span>
-                        </div>
 
-                    </div>
+                            <span>
+                                LIFE SKILLS YOUTH CAMP
+                            </span>
 
-                </div>
-
-
-                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-
-                    <div class="block-18 text-center">
-
-                        <div class="text">
-                            <strong class="number" data-number="11000">0</strong>
-                        </div>
-
-                        <div class="text">
-                            <span>ACADEMY SUCCESS PSYCHOLOGY</span>
                         </div>
 
                     </div>
@@ -454,11 +837,20 @@
                     <div class="block-18 text-center">
 
                         <div class="text">
-                            <strong class="number" data-number="61">0</strong>
+
+                            <strong class="number"
+                                data-number="11000">
+                                0
+                            </strong>
+
                         </div>
 
                         <div class="text">
-                            <span>PUBLIC WORKSHOPS</span>
+
+                            <span>
+                                ACADEMY SUCCESS PSYCHOLOGY
+                            </span>
+
                         </div>
 
                     </div>
@@ -471,11 +863,55 @@
                     <div class="block-18 text-center">
 
                         <div class="text">
-                            <strong class="number" data-number="7000">0</strong>
+
+                            <strong class="number"
+                                data-number="61">
+                                0
+                            </strong>
+
                         </div>
 
                         <div class="text">
-                            <span>PUBLIC EVENTS</span>
+
+                            <strong class="number"
+                                data-number="61">
+                                0
+                            </strong>
+
+                        </div>
+
+                        <div class="text">
+
+                            <span>
+                                PUBLIC WORKSHOPS
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+                    <div class="block-18 text-center">
+
+                        <div class="text">
+
+                            <strong class="number"
+                                data-number="7000">
+                                0
+                            </strong>
+
+                        </div>
+
+                        <div class="text">
+
+                            <span>
+                                PUBLIC EVENTS
+                            </span>
+
                         </div>
 
                     </div>
@@ -490,6 +926,7 @@
 
 
     <!-- ABOUT US -->
+
     <section class="ftco-section bg-light">
 
         <div class="container">
@@ -498,7 +935,9 @@
 
                 <div class="col-md-8 heading-section text-center ftco-animate">
 
-                    <h2>ABOUT US</h2>
+                    <h2>
+                        ABOUT US
+                    </h2>
 
                     <span class="subheading">
                         WHO WE ARE
@@ -555,11 +994,14 @@
 
 
             <!-- OUR STORY -->
+
             <div class="row mb-5">
 
                 <div class="col-md-12 ftco-animate">
 
-                    <h3>Our Story</h3>
+                    <h3>
+                        Our Story
+                    </h3>
 
                     <p>
                         MSM Training Company &amp; Counselling Services was
@@ -580,6 +1022,7 @@
 
 
             <!-- MISSION AND VISION -->
+
             <div class="row mb-5">
 
                 <div class="col-md-6 ftco-animate">
@@ -587,12 +1030,17 @@
                     <div class="services-2 w-100 d-flex">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-account"></span>
+
                         </div>
+
 
                         <div class="text pl-4">
 
-                            <h3>Our Mission</h3>
+                            <h3>
+                                Our Mission
+                            </h3>
 
                             <p>
                                 Empower individuals, businesses, NGOs and
@@ -612,12 +1060,17 @@
                     <div class="services-2 w-100 d-flex">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-performance"></span>
+
                         </div>
+
 
                         <div class="text pl-4">
 
-                            <h3>Our Vision</h3>
+                            <h3>
+                                Our Vision
+                            </h3>
 
                             <p>
                                 To become a recognised authority in
@@ -635,11 +1088,14 @@
 
 
             <!-- OUR VALUES -->
+
             <div class="row justify-content-center pb-4">
 
                 <div class="col-md-8 heading-section text-center ftco-animate">
 
-                    <h2>Our Values</h2>
+                    <h2>
+                        Our Values
+                    </h2>
 
                     <span class="subheading">
                         What Guides Us
@@ -652,17 +1108,23 @@
 
             <div class="row">
 
+                <!-- EMPOWERMENT -->
+
                 <div class="col-md-6 col-lg-3 ftco-animate">
 
                     <div class="services-2 w-100">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-account"></span>
+
                         </div>
 
                         <div class="text">
 
-                            <h3>Empowerment</h3>
+                            <h3>
+                                Empowerment
+                            </h3>
 
                             <p>
                                 We believe everyone has the power to grow.
@@ -677,17 +1139,23 @@
                 </div>
 
 
+                <!-- PROFESSIONALISM -->
+
                 <div class="col-md-6 col-lg-3 ftco-animate">
 
                     <div class="services-2 w-100">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-skills"></span>
+
                         </div>
 
                         <div class="text">
 
-                            <h3>Professionalism</h3>
+                            <h3>
+                                Professionalism
+                            </h3>
 
                             <p>
                                 We take our work seriously because your growth
@@ -702,17 +1170,23 @@
                 </div>
 
 
+                <!-- COLLABORATION -->
+
                 <div class="col-md-6 col-lg-3 ftco-animate">
 
                     <div class="services-2 w-100">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-performance"></span>
+
                         </div>
 
                         <div class="text">
 
-                            <h3>Collaboration</h3>
+                            <h3>
+                                Collaboration
+                            </h3>
 
                             <p>
                                 We believe we achieve more together. We work
@@ -727,17 +1201,23 @@
                 </div>
 
 
+                <!-- INTEGRITY -->
+
                 <div class="col-md-6 col-lg-3 ftco-animate">
 
                     <div class="services-2 w-100">
 
                         <div class="icon d-flex align-items-center justify-content-center">
+
                             <span class="flaticon-account"></span>
+
                         </div>
 
                         <div class="text">
 
-                            <h3>Integrity</h3>
+                            <h3>
+                                Integrity
+                            </h3>
 
                             <p>
                                 We value honesty, respect and doing what is
@@ -754,11 +1234,14 @@
 
 
             <!-- WHAT WE OFFER -->
+
             <div class="row justify-content-center pb-4 mt-5">
 
                 <div class="col-md-8 heading-section text-center ftco-animate">
 
-                    <h2>What We Offer</h2>
+                    <h2>
+                        What We Offer
+                    </h2>
 
                     <span class="subheading">
                         How We Can Help
@@ -773,7 +1256,9 @@
 
                 <div class="col-md-6 col-lg-4 mb-4">
 
-                    <h4>Life Coaching</h4>
+                    <h4>
+                        Life Coaching
+                    </h4>
 
                     <p>
                         Helping you gain clarity, confidence and direction
@@ -785,7 +1270,9 @@
 
                 <div class="col-md-6 col-lg-4 mb-4">
 
-                    <h4>Counselling</h4>
+                    <h4>
+                        Counselling
+                    </h4>
 
                     <p>
                         Providing a supportive space for individuals and
@@ -797,7 +1284,9 @@
 
                 <div class="col-md-6 col-lg-4 mb-4">
 
-                    <h4>Personal Development</h4>
+                    <h4>
+                        Personal Development
+                    </h4>
 
                     <p>
                         Practical guidance to help you develop your mindset,
@@ -809,7 +1298,9 @@
 
                 <div class="col-md-6 col-lg-4 mb-4">
 
-                    <h4>Business Training</h4>
+                    <h4>
+                        Business Training
+                    </h4>
 
                     <p>
                         Practical training designed to help entrepreneurs
@@ -821,7 +1312,9 @@
 
                 <div class="col-md-6 col-lg-4 mb-4">
 
-                    <h4>Courses</h4>
+                    <h4>
+                        Courses
+                    </h4>
 
                     <p>
                         Action-focused courses designed to turn knowledge
@@ -833,7 +1326,9 @@
 
                 <div class="col-md-6 col-lg-4 mb-4">
 
-                    <h4>Digital Products</h4>
+                    <h4>
+                        Digital Products
+                    </h4>
 
                     <p>
                         Practical resources, tools and materials designed
@@ -846,11 +1341,14 @@
 
 
             <!-- WHY CHOOSE MSM -->
+
             <div class="row align-items-center mt-5">
 
                 <div class="col-md-7 ftco-animate">
 
-                    <h3>Why Choose MSM?</h3>
+                    <h3>
+                        Why Choose MSM?
+                    </h3>
 
                     <p>
                         At MSM, we believe transformation starts with one
@@ -879,11 +1377,14 @@
 
 
             <!-- CALL TO ACTION -->
+
             <div class="row justify-content-center mt-5">
 
                 <div class="col-md-8 text-center ftco-animate">
 
-                    <h3>Ready to Take the Next Step?</h3>
+                    <h3>
+                        Ready to Take the Next Step?
+                    </h3>
 
                     <p>
                         Whether you need guidance, training, counselling
@@ -893,7 +1394,9 @@
 
                     <a href="contact.html"
                         class="btn btn-primary">
+
                         Contact Us
+
                     </a>
 
                 </div>
@@ -906,15 +1409,18 @@
 
 
     <!-- TESTIMONIALS -->
-    <section class="ftco-section testimony-section bg-secondary">
+
+    <section class="ftco-section testimony-section">
 
         <div class="container">
 
             <div class="row justify-content-center pb-5 mb-3">
 
-                <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
+                <div class="col-md-7 heading-section text-center ftco-animate">
 
-                    <h2>Happy Clients &amp; Feedbacks</h2>
+                    <h2 style="color:#ffffff !important;">
+                        Happy Clients &amp; Feedbacks
+                    </h2>
 
                     <span class="subheading">
                         Testimonies
@@ -932,13 +1438,18 @@
                     <div class="carousel-testimony owl-carousel ftco-owl">
 
 
+                        <!-- TESTIMONY 1 -->
+
                         <div class="item">
 
                             <div class="testimony-wrap py-4">
 
                                 <div class="icon d-flex align-items-center justify-content-center">
+
                                     <span class="fa fa-quote-left"></span>
+
                                 </div>
+
 
                                 <div class="text">
 
@@ -953,10 +1464,15 @@
                                         khoebo ka eona.
                                     </p>
 
+
                                     <div class="d-flex align-items-center">
 
                                         <div class="pl-3">
-                                            <p class="name">ANONYMOUS</p>
+
+                                            <p class="name">
+                                                ANONYMOUS
+                                            </p>
+
                                         </div>
 
                                     </div>
@@ -968,17 +1484,23 @@
                         </div>
 
 
+                        <!-- TESTIMONY 2 -->
+
                         <div class="item">
 
                             <div class="testimony-wrap py-4">
 
                                 <div class="icon d-flex align-items-center justify-content-center">
+
                                     <span class="fa fa-quote-left"></span>
+
                                 </div>
+
 
                                 <div class="text">
 
                                     <p class="mb-4">
+
                                         Hello ntate kannete ke I thabetse haholo
                                         hoba karalo ea Success Psychology
                                         Seminar, ke ithutile hore ke bohlokoa
@@ -988,12 +1510,18 @@
                                         <br><br>
 
                                         Ke lebohile haholo ntate
+
                                     </p>
+
 
                                     <div class="d-flex align-items-center">
 
                                         <div class="pl-3">
-                                            <p class="name">ANONYMOUS</p>
+
+                                            <p class="name">
+                                                ANONYMOUS
+                                            </p>
+
                                         </div>
 
                                     </div>
@@ -1005,17 +1533,23 @@
                         </div>
 
 
+                        <!-- TESTIMONY 3 -->
+
                         <div class="item">
 
                             <div class="testimony-wrap py-4">
 
                                 <div class="icon d-flex align-items-center justify-content-center">
+
                                     <span class="fa fa-quote-left"></span>
+
                                 </div>
+
 
                                 <div class="text">
 
                                     <p class="mb-4">
+
                                         Hello ntate. Ke ithutile hore ka energy
                                         e lekanang le eaka ho na le motho a
                                         etsang chelete e ngata, me sena se
@@ -1029,12 +1563,18 @@
                                         Tshebeliso eaka ea chelete e fetohile
                                         haholo kamora ho attend seminar ntate
                                         me ke thabile haholo.
+
                                     </p>
+
 
                                     <div class="d-flex align-items-center">
 
                                         <div class="pl-3">
-                                            <p class="name">ANONYMOUS</p>
+
+                                            <p class="name">
+                                                ANONYMOUS
+                                            </p>
+
                                         </div>
 
                                     </div>
@@ -1046,17 +1586,23 @@
                         </div>
 
 
+                        <!-- TESTIMONY 4 -->
+
                         <div class="item">
 
                             <div class="testimony-wrap py-4">
 
                                 <div class="icon d-flex align-items-center justify-content-center">
+
                                     <span class="fa fa-quote-left"></span>
+
                                 </div>
+
 
                                 <div class="text">
 
                                     <p class="mb-4">
+
                                         Khotso ntate Mohau..... ke ithutile
                                         taba tse ngata hoo ebile sentse ke
                                         li etsa. Ke ithutile hore they don't
@@ -1068,12 +1614,18 @@
                                         <br><br>
 
                                         Ke leboha haholo ka litaba tsa hau.
+
                                     </p>
+
 
                                     <div class="d-flex align-items-center">
 
                                         <div class="pl-3">
-                                            <p class="name">ANONYMOUS</p>
+
+                                            <p class="name">
+                                                ANONYMOUS
+                                            </p>
+
                                         </div>
 
                                     </div>
@@ -1085,25 +1637,37 @@
                         </div>
 
 
+                        <!-- TESTIMONY 5 -->
+
                         <div class="item">
 
                             <div class="testimony-wrap py-4">
 
                                 <div class="icon d-flex align-items-center justify-content-center">
+
                                     <span class="fa fa-quote-left"></span>
+
                                 </div>
+
 
                                 <div class="text">
 
                                     <p class="mb-4">
+
                                         Ke litsamaile li seminar ihlile o fana
                                         ka content ea boemo bo holimo haholo.
+
                                     </p>
+
 
                                     <div class="d-flex align-items-center">
 
                                         <div class="pl-3">
-                                            <p class="name">ANONYMOUS</p>
+
+                                            <p class="name">
+                                                ANONYMOUS
+                                            </p>
+
                                         </div>
 
                                     </div>
@@ -1127,6 +1691,7 @@
 
 
     <!-- FOOTER -->
+
     <footer class="footer">
 
         <div class="container-fluid px-lg-5">
@@ -1155,27 +1720,41 @@
                             <ul class="ftco-footer-social p-0">
 
                                 <li class="ftco-animate">
+
                                     <a href="https://web.facebook.com/Mohauandthesuccessmasters"
                                         target="_blank"
                                         rel="noopener noreferrer">
+
                                         <span class="fa fa-facebook"></span>
+
                                     </a>
+
                                 </li>
 
+
                                 <li class="ftco-animate">
+
                                     <a href="https://www.instagram.com/mohaumosoeunyane"
                                         target="_blank"
                                         rel="noopener noreferrer">
+
                                         <span class="fa fa-instagram"></span>
+
                                     </a>
+
                                 </li>
 
+
                                 <li class="ftco-animate">
+
                                     <a href="https://wa.me/26656506092"
                                         target="_blank"
                                         rel="noopener noreferrer">
+
                                         <span class="fa fa-whatsapp"></span>
+
                                     </a>
+
                                 </li>
 
                             </ul>
@@ -1191,6 +1770,8 @@
 
                                     <div class="row">
 
+
+                                        <!-- MEDIA -->
 
                                         <div class="col-md-4 mb-md-0 mb-4">
 
@@ -1225,6 +1806,8 @@
 
                                         </div>
 
+
+                                        <!-- SERVICES -->
 
                                         <div class="col-md-4 mb-md-0 mb-4">
 
@@ -1267,6 +1850,8 @@
                                         </div>
 
 
+                                        <!-- QUICK LINKS -->
+
                                         <div class="col-md-4 mb-md-0 mb-4">
 
                                             <h2 class="footer-heading">
@@ -1307,7 +1892,6 @@
 
                                         </div>
 
-
                                     </div>
 
                                 </div>
@@ -1326,6 +1910,7 @@
                             <p class="copyright">
 
                                 Copyright &copy;
+
                                 <script>
                                     document.write(new Date().getFullYear());
                                 </script>
@@ -1343,14 +1928,17 @@
 
 
                 <!-- FREE CONSULTATION -->
+
                 <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
 
                     <h2 class="footer-heading">
                         Free consultation
                     </h2>
 
+
                     <form action="#"
                         class="form-consultation">
+
 
                         <div class="form-group">
 
@@ -1381,8 +1969,7 @@
 
                         <div class="form-group">
 
-                            <textarea
-                                cols="30"
+                            <textarea cols="30"
                                 rows="3"
                                 class="form-control"
                                 placeholder="Message"></textarea>
@@ -1413,8 +2000,6 @@
 
 
     <!-- JAVASCRIPT -->
-    <!-- IMPORTANT: GitHub Pages is case-sensitive.
-         The folder is Js with a capital J. -->
 
     <script src="Js/jquery.min.js"></script>
     <script src="Js/jquery-migrate-3.0.1.min.js"></script>
@@ -1423,14 +2008,10 @@
     <script src="Js/jquery.easing.1.3.js"></script>
     <script src="Js/jquery.waypoints.min.js"></script>
     <script src="Js/jquery.stellar.min.js"></script>
-
-    <!-- Actual filename in your project -->
     <script src="Js/jquery.animatenumber.min.js"></script>
-
     <script src="Js/owl.carousel.min.js"></script>
     <script src="Js/jquery.magnific-popup.min.js"></script>
     <script src="Js/scrollax.min.js"></script>
-
     <script src="Js/google-map.js"></script>
     <script src="Js/main.js"></script>
 
