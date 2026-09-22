@@ -3,696 +3,365 @@
 
 <head>
 
-    <title>MSM TRAINING COMPANY AND COUNSELLING SERVICES</title>
-
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 
     <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="MSM Training Company & Counselling Services">
+
+    <title>
+        MSM Training Company & Counselling Services
+    </title>
+
 
     <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
 
-    <!-- BOOTSTRAP CSS -->
+
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet"
           href="css/bootstrap.min.css">
+
 
     <!-- FONT AWESOME 4.7 -->
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- EXISTING CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet"
+          href="css/animate.css">
 
 
-    <!-- =====================================================
-         MSM BRAND COLOURS
-    ====================================================== -->
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet"
+          href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet"
+          href="css/owl.theme.default.min.css">
+
+
+    <!-- MAGNIFIC POPUP -->
+    <link rel="stylesheet"
+          href="css/magnific-popup.css">
+
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet"
+          href="css/style.css">
+
 
     <style>
 
+        /* =====================================================
+           MSM BRAND COLOURS
+        ===================================================== */
+
         :root {
+
             --msm-dark-green: #0B3D2E;
+
             --msm-light-green: #7CB342;
+
             --msm-soft-green: #A8D08D;
+
             --msm-darker-green: #06271D;
+
             --msm-light-bg: #F4F8F5;
+
             --msm-white: #FFFFFF;
+
             --msm-dark-text: #111111;
+
             --msm-text: #555555;
+
             --msm-border: #E1EAE4;
+
         }
 
 
         /* =====================================================
            GENERAL
-        ====================================================== */
+        ===================================================== */
 
         body {
-            color: var(--msm-text);
-            background: var(--msm-white);
+
             font-family: 'Poppins', sans-serif;
+
+            color: var(--msm-text);
+
+            background: #FFFFFF;
+
         }
+
 
         a {
+
             color: var(--msm-dark-green);
+
+            transition: all 0.3s ease;
+
         }
 
+
         a:hover {
+
             color: var(--msm-light-green);
+
             text-decoration: none;
+
+        }
+
+
+        /* =====================================================
+           FORCE FONT AWESOME ICONS TO DISPLAY
+        ===================================================== */
+
+        .fa {
+
+            font-family: FontAwesome !important;
+
+            font-style: normal !important;
+
+            font-weight: normal !important;
+
+            display: inline-block !important;
+
+            opacity: 1 !important;
+
+            visibility: visible !important;
+
+        }
+
+
+        .fa:before {
+
+            font-family: FontAwesome !important;
+
+        }
+
+
+        /* =====================================================
+           SOCIAL MEDIA ICONS
+        ===================================================== */
+
+        .social-media a i.fa,
+
+        .ftco-footer-social a i.fa {
+
+            font-family: FontAwesome !important;
+
+            font-style: normal !important;
+
+            font-weight: normal !important;
+
+            display: inline-block !important;
+
+            opacity: 1 !important;
+
+            visibility: visible !important;
+
+        }
+
+
+        /* =====================================================
+           SERVICE ICON CIRCLE
+        ===================================================== */
+
+        .icon-circle {
+
+            width: 75px !important;
+
+            height: 75px !important;
+
+            min-width: 75px !important;
+
+            min-height: 75px !important;
+
+            border-radius: 50% !important;
+
+            background-color: #0B3D2E !important;
+
+            color: #FFFFFF !important;
+
+            display: flex !important;
+
+            align-items: center !important;
+
+            justify-content: center !important;
+
+            margin: 0 auto 20px auto !important;
+
+            position: relative !important;
+
+            z-index: 10 !important;
+
+            opacity: 1 !important;
+
+            visibility: visible !important;
+
+            box-shadow: 0 5px 15px rgba(11, 61, 46, 0.15);
+
+        }
+
+
+        .icon-circle i.fa {
+
+            font-family: FontAwesome !important;
+
+            font-style: normal !important;
+
+            font-weight: normal !important;
+
+            font-size: 30px !important;
+
+            line-height: 1 !important;
+
+            color: #FFFFFF !important;
+
+            display: inline-block !important;
+
+            opacity: 1 !important;
+
+            visibility: visible !important;
+
+            position: relative !important;
+
+            z-index: 20 !important;
+
+        }
+
+
+        .services:hover .icon-circle {
+
+            background-color: #7CB342 !important;
+
+        }
+
+
+        .services:hover .icon-circle i.fa {
+
+            color: #FFFFFF !important;
+
+        }
+
+
+        /* =====================================================
+           OTHER ICONS
+        ===================================================== */
+
+        .intro-box .fa,
+
+        .searchform .fa,
+
+        .navbar-toggler .fa,
+
+        .testimony-wrap .fa,
+
+        .footer .fa,
+
+        .ftco-footer .fa {
+
+            font-family: FontAwesome !important;
+
+            font-style: normal !important;
+
+            font-weight: normal !important;
+
+            display: inline-block !important;
+
+            opacity: 1 !important;
+
+            visibility: visible !important;
+
+        }
+
+
+        /* =====================================================
+           BRAND BUTTONS
+        ===================================================== */
+
+        .btn-primary {
+
+            background: var(--msm-dark-green) !important;
+
+            border-color: var(--msm-dark-green) !important;
+
+        }
+
+
+        .btn-primary:hover {
+
+            background: var(--msm-light-green) !important;
+
+            border-color: var(--msm-light-green) !important;
+
+        }
+
+
+        .bg-primary {
+
+            background: var(--msm-dark-green) !important;
+
+        }
+
+
+        .bg-secondary {
+
+            background: var(--msm-light-green) !important;
+
+        }
+
+
+        /* =====================================================
+           HEADINGS
+        ===================================================== */
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+
+            color: var(--msm-dark-green);
+
         }
 
 
         /* =====================================================
            TOP BAR
-        ====================================================== */
+        ===================================================== */
 
-        .wrap {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .wrap p,
-        .wrap span,
-        .wrap a,
-        .wrap i {
-            color: var(--msm-white) !important;
-        }
-
-        .wrap a:hover,
-        .wrap i:hover {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* TOP SOCIAL ICONS */
-
-        .social-media {
-            display: flex !important;
-            align-items: center !important;
-        }
-
-        .wrap .social-media p {
-            display: flex !important;
-            align-items: center !important;
-            margin: 0 !important;
-        }
-
-        .wrap .social-media a {
-            display: inline-flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            width: auto !important;
-            height: auto !important;
-            min-width: 0 !important;
-            min-height: 0 !important;
-            padding: 0 8px !important;
-            margin: 0 !important;
-            background: transparent !important;
-            border: 0 !important;
-            border-radius: 0 !important;
-            box-shadow: none !important;
-            color: #FFFFFF !important;
-        }
-
-        .wrap .social-media a::before,
-        .wrap .social-media a::after {
-            display: none !important;
-            content: none !important;
-        }
-
-        .wrap .social-media a i {
-            display: inline-block !important;
-            width: auto !important;
-            height: auto !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            background: transparent !important;
-            border: 0 !important;
-            font-size: 18px !important;
-            line-height: 1 !important;
-            color: #FFFFFF !important;
-        }
-
-        .wrap .social-media a:hover,
-        .wrap .social-media a:hover i {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* =====================================================
-           NAVIGATION
-        ====================================================== */
-
-        .ftco-navbar-light,
-        .ftco-navbar-light.bg-dark {
-            background: var(--msm-white) !important;
-        }
-
-        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-            color: var(--msm-dark-green) !important;
-            font-weight: 500;
-        }
-
-        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-            color: var(--msm-light-green) !important;
-        }
-
-        .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-            color: var(--msm-light-green) !important;
-            font-weight: 600;
-        }
-
-        .navbar-brand img {
-            max-width: 100%;
-            object-fit: contain;
-        }
-
-
-        /* MOBILE MENU */
-
-        .navbar-toggler {
-            background: var(--msm-dark-green) !important;
-            border-color: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .navbar-toggler i {
-            color: var(--msm-white) !important;
-        }
-
-
-        /* SEARCH */
-
-        .searchform .search {
-            background: var(--msm-dark-green) !important;
-            border-color: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .searchform .search:hover {
-            background: var(--msm-light-green) !important;
-            border-color: var(--msm-light-green) !important;
-        }
-
-
-        /* =====================================================
-           HERO
-        ====================================================== */
-
-        .hero-wrap .overlay {
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(6, 39, 29, 0.95),
-                    rgba(11, 61, 46, 0.80),
-                    rgba(11, 61, 46, 0.45)
-                ) !important;
-        }
-
-        .hero-wrap h1,
-        .hero-wrap h2,
-        .hero-wrap p {
-            color: var(--msm-white) !important;
-        }
-
-        .hero-wrap h2 {
-            color: var(--msm-soft-green) !important;
-            font-weight: 700;
-        }
-
-        .hero-wrap h1 {
-            font-weight: 700;
-        }
-
-
-        /* HERO BUTTON */
-
-        .hero-wrap .btn-white {
-            background: var(--msm-white) !important;
-            color: var(--msm-dark-green) !important;
-            border-color: var(--msm-white) !important;
-            font-weight: 600;
-        }
-
-        .hero-wrap .btn-white:hover {
-            background: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-            border-color: var(--msm-light-green) !important;
-        }
-
-
-        /* =====================================================
-           GENERAL BUTTONS
-        ====================================================== */
-
-        .btn-primary,
-        button.btn-primary,
-        input.btn-primary {
-            background: var(--msm-dark-green) !important;
-            border-color: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .btn-primary:hover,
-        button.btn-primary:hover,
-        input.btn-primary:hover {
-            background: var(--msm-light-green) !important;
-            border-color: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-
-        /* =====================================================
-           LIGHT BACKGROUNDS
-        ====================================================== */
-
-        .bg-light,
-        .ftco-section.bg-light,
-        .intro.bg-light {
-            background: var(--msm-light-bg) !important;
-        }
-
-
-        /* =====================================================
-           INTRO SECTION
-        ====================================================== */
-
-        .intro-box .icon {
-            background: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .intro-box .icon i {
-            color: var(--msm-white) !important;
-        }
-
-        .intro-box h4 {
-            color: var(--msm-dark-green) !important;
-        }
-
-        .intro-box span {
-            color: var(--msm-text);
-        }
-
-
-        /* =====================================================
-           SECTION HEADINGS
-        ====================================================== */
-
-        .heading-section h1,
-        .heading-section h2,
-        .heading-section h3,
-        .heading-section h4,
-        .heading-section h5,
-        .heading-section h6 {
-            color: var(--msm-dark-green) !important;
-        }
-
-        .heading-section .subheading {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* =====================================================
-           SERVICE ICONS
-           FONT AWESOME 4.7
-        ====================================================== */
-
-        .icon-circle {
-            width: 75px !important;
-            height: 75px !important;
-            min-width: 75px !important;
-            min-height: 75px !important;
-
-            border-radius: 50% !important;
-
-            background-color: var(--msm-dark-green) !important;
-
-            color: #FFFFFF !important;
-
-            display: flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-
-            margin: 0 auto 20px auto !important;
-
-            font-size: 30px !important;
-            line-height: 1 !important;
-
-            position: relative !important;
-            z-index: 2 !important;
-
-            opacity: 1 !important;
-            visibility: visible !important;
-
-            box-shadow: 0 5px 15px rgba(11, 61, 46, 0.15);
-        }
-
-        .icon-circle i {
-            display: inline-block !important;
-
-            color: #FFFFFF !important;
-
-            font-size: 30px !important;
-            line-height: 1 !important;
-
-            opacity: 1 !important;
-            visibility: visible !important;
-        }
-
-        .services:hover .icon-circle {
-            background-color: var(--msm-light-green) !important;
-        }
-
-        .services:hover .icon-circle i {
-            color: #FFFFFF !important;
-        }
-
-        .services .heading {
-            color: var(--msm-dark-green) !important;
-            font-weight: 600;
-        }
-
-        .services p {
-            color: var(--msm-text);
-        }
-
-
-        /* =====================================================
-           WHY MSM / OTHER SERVICES
-        ====================================================== */
-
-        .services-2 .icon {
-            background: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .services-2 .icon span,
-        .services-2 .icon i {
-            color: var(--msm-white) !important;
-        }
-
-        .services-2:hover .icon {
-            background: var(--msm-light-green) !important;
-        }
-
-        .services-2 h4 {
-            color: var(--msm-dark-green) !important;
-        }
-
-
-        /* =====================================================
-           IMAGES
-        ====================================================== */
-
-        .img-fluid.rounded {
-            border: 4px solid var(--msm-soft-green);
-        }
-
-
-        /* =====================================================
-           COUNTERS
-        ====================================================== */
-
-        .ftco-counter {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .ftco-counter .number {
-            color: var(--msm-soft-green) !important;
-            font-weight: 700;
-        }
-
-        .ftco-counter span {
-            color: var(--msm-white) !important;
-        }
-
-
-        /* =====================================================
-           TESTIMONIALS
-        ====================================================== */
-
-        .testimony-section.bg-secondary {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .testimony-section .subheading {
-            color: var(--msm-soft-green) !important;
-        }
-
-        .testimony-wrap {
-            background: var(--msm-white) !important;
-            border-top: 4px solid var(--msm-light-green);
-        }
-
-        .testimony-wrap .icon {
-            background: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .testimony-wrap .icon i {
-            color: var(--msm-white) !important;
-        }
-
-        .testimony-wrap .name {
-            color: var(--msm-dark-green) !important;
-        }
-
-
-        /* =====================================================
-           BLOG
-        ====================================================== */
-
-        .blog-entry {
-            border-top: 4px solid var(--msm-light-green);
-        }
-
-        .blog-entry h3 a {
-            color: var(--msm-dark-green) !important;
-        }
-
-        .blog-entry h3 a:hover {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* =====================================================
-           SUBSCRIBE
-        ====================================================== */
-
-        .bg-secondary {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .subscribe-form .submit {
-            background: var(--msm-light-green) !important;
-            border-color: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .subscribe-form .submit:hover {
-            background: var(--msm-white) !important;
-            color: var(--msm-dark-green) !important;
-        }
-
-
-        /* =====================================================
-           EVENT / PRICING CARDS
-        ====================================================== */
+        .top-bar {
 
-        .block-7 {
-            background: var(--msm-white) !important;
-            border-top: 4px solid var(--msm-dark-green);
-            border-radius: 8px;
-            overflow: hidden;
-            height: 100%;
-        }
-
-        .block-7:hover {
-            border-top-color: var(--msm-light-green);
-        }
-
-        .block-7 .excerpt {
-            color: var(--msm-dark-green) !important;
-            font-weight: 600;
-        }
-
-        .pricing-text li {
-            color: var(--msm-text);
-        }
-
-        .pricing-text li i {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* =====================================================
-           EVENT IMAGES
-        ====================================================== */
-
-        .event-image {
-            width: 100%;
-            height: 280px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .event-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-
-        /* =====================================================
-           FOOTER
-        ====================================================== */
-
-        .footer {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .footer .footer-heading {
-            color: var(--msm-soft-green) !important;
-        }
-
-        .footer p,
-        .footer li,
-        .footer a {
-            color: var(--msm-white) !important;
-        }
-
-        .footer a:hover {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* FOOTER SOCIAL ICONS */
-
-        .ftco-footer-social {
-            display: flex !important;
-            align-items: center !important;
-            padding: 0 !important;
-        }
-
-        .ftco-footer-social li {
-            margin-right: 15px !important;
-        }
-
-        .ftco-footer-social li a {
-            width: auto !important;
-            height: auto !important;
-            min-width: 0 !important;
-            min-height: 0 !important;
-
-            padding: 0 !important;
-            margin: 0 !important;
-
-            display: inline-flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-
-            background: transparent !important;
-            border: none !important;
-            border-radius: 0 !important;
-
-            color: #FFFFFF !important;
-        }
-
-        .ftco-footer-social li a i {
-            font-size: 20px !important;
-            line-height: 1 !important;
-
-            background: transparent !important;
-            color: #FFFFFF !important;
-        }
-
-        .ftco-footer-social li a:hover,
-        .ftco-footer-social li a:hover i {
-            color: var(--msm-light-green) !important;
-        }
+            background: var(--msm-dark-green);
 
+            color: #FFFFFF;
 
-        /* =====================================================
-           CONSULTATION FORM
-        ====================================================== */
-
-        .form-consultation .form-control {
-            border: 1px solid var(--msm-border);
-        }
-
-        .form-consultation .form-control:focus {
-            border-color: var(--msm-light-green) !important;
-            box-shadow: 0 0 0 0.15rem rgba(124, 179, 66, 0.20);
         }
 
-        .form-consultation .submit {
-            background: var(--msm-light-green) !important;
-            border-color: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .form-consultation .submit:hover {
-            background: var(--msm-white) !important;
-            color: var(--msm-dark-green) !important;
-        }
 
+        .top-bar a {
 
-        /* =====================================================
-           COPYRIGHT
-        ====================================================== */
+            color: #FFFFFF;
 
-        .copyright {
-            color: var(--msm-soft-green) !important;
         }
-
-
-        /* =====================================================
-           MOBILE
-        ====================================================== */
-
-        @media (max-width: 991px) {
-
-            .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-                color: var(--msm-dark-green) !important;
-            }
-
-            .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-                color: var(--msm-light-green) !important;
-            }
-
-            .social-media a {
-                padding: 0 6px !important;
-            }
-
-            .social-media a i {
-                font-size: 17px !important;
-            }
-
-            #ftco-nav {
-                display: none;
-                background: #FFFFFF;
-            }
 
-            #ftco-nav.show {
-                display: block;
-            }
 
-            #ftco-nav .navbar-nav {
-                padding-top: 15px;
-                padding-bottom: 15px;
-            }
+        .top-bar a:hover {
 
-            .icon-circle {
-                margin-bottom: 15px !important;
-            }
+            color: var(--msm-soft-green);
 
         }
 
@@ -702,1042 +371,213 @@
 
 
 <body>
-
-
-<!-- =====================================================
-     TOP BAR
-====================================================== -->
-
-<div class="wrap">
-
-    <div class="container">
-
-        <div class="row justify-content-between">
-
-            <div class="col">
-
-                <p class="mb-0 phone">
-
-                    <i class="fa fa-phone"></i>
-
-                    <a href="tel:+26656506092">
-                        +266 5650 6092
-                    </a>
-
-                </p>
-
-            </div>
-
-
-            <div class="col d-flex justify-content-end">
-
-                <div class="social-media">
-
-                    <p class="mb-0 d-flex">
-
-                        <!-- FACEBOOK -->
-                        <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="Facebook">
-
-                            <i class="fa fa-facebook"></i>
-
-                        </a>
-
-
-                        <!-- TIKTOK -->
-                        <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="TikTok">
-
-                            <i class="fa fa-music"></i>
-
-                        </a>
-
-
-                        <!-- INSTAGRAM -->
-                        <a href="https://www.instagram.com/mohaumosoeunyane?utm_source=qr&igsi=Ynh4enVvYmVvaHQ4"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="Instagram">
-
-                            <i class="fa fa-instagram"></i>
-
-                        </a>
-
-
-                        <!-- WHATSAPP -->
-                        <a href="https://wa.me/26656506092"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="WhatsApp">
-
-                            <i class="fa fa-whatsapp"></i>
-
-                        </a>
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     NAVIGATION
-====================================================== -->
-
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
-     id="ftco-navbar">
-
-    <div class="container">
-
-
-        <!-- LOGO -->
-
-        <a class="navbar-brand"
-           href="index.html">
-
-            <img src="images/LOGO.jpeg"
-                 alt="MSM Training Company"
-                 style="height:50px; width:auto;">
-
-        </a>
-
-
-        <!-- SEARCH -->
-
-        <form action="#"
-              class="searchform order-sm-start order-lg-last">
-
-            <div class="form-group d-flex">
-
-                <input type="text"
-                       class="form-control pl-3"
-                       placeholder="Search">
-
-                <button type="submit"
-                        class="form-control search"
-                        aria-label="Search">
-
-                    <i class="fa fa-search"></i>
-
-                </button>
-
-            </div>
-
-        </form>
-
-
-        <!-- MOBILE MENU -->
-
-        <button class="navbar-toggler"
-                type="button"
-                aria-controls="ftco-nav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-
-            <i class="fa fa-bars"></i>
-            Menu
-
-        </button>
-
-
-        <!-- MENU -->
-
-        <div class="collapse navbar-collapse"
-             id="ftco-nav">
-
-            <ul class="navbar-nav m-auto">
-
-
-                <li class="nav-item active">
-
-                    <a href="index.html"
-                       class="nav-link">
-
-                        Home
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="about.html"
-                       class="nav-link">
-
-                        About Us
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="services.html"
-                       class="nav-link">
-
-                        Services
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="course.html"
-                       class="nav-link">
-
-                        Courses
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="digital-products.html"
-                       class="nav-link">
-
-                        Digital Products
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="media.html"
-                       class="nav-link">
-
-                        Media
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="contact.html"
-                       class="nav-link">
-
-                        Contact Us
-
-                    </a>
-
-                </li>
-
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</nav>
-
-
-
-<!-- =====================================================
-     HERO
-====================================================== -->
-
-<div class="hero-wrap">
-
-    <div class="home-slider owl-carousel">
-
-
-        <!-- SLIDE 1 -->
-
-        <div class="slider-item"
-             style="background-image:url(images/ureng.jpg);">
-
-            <div class="overlay"></div>
-
-            <div class="container">
-
-                <div class="row no-gutters slider-text align-items-center justify-content-center">
-
-                    <div class="col-md-10 ftco-animate">
-
-                        <div class="text w-100 text-center">
-
-                            <h2>
-                                SUCCESS IS A CHOICE.
-                            </h2>
-
-                            <h1 class="mb-4">
-                                Transform your mindset.
-                                Unlock your potential.
-                            </h1>
-
-                            <p>
-
-                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="btn btn-white">
-
-                                    Connect with us
-
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- SLIDE 2 -->
-
-        <div class="slider-item"
-             style="background-image:url(images/smiles.jpg);">
-
-            <div class="overlay"></div>
-
-            <div class="container">
-
-                <div class="row no-gutters slider-text align-items-center justify-content-center">
-
-                    <div class="col-md-10 ftco-animate">
-
-                        <div class="text w-100 text-center">
-
-                            <h2>
-                                EMPOWER. TRANSFORM. SUCCEED.
-                            </h2>
-
-                            <h1 class="mb-4">
-                                Your transformation starts here.
-                            </h1>
-
-                            <p>
-
-                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="btn btn-white">
-
-                                    Connect with us
-
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- SLIDE 3 -->
-
-        <div class="slider-item"
-             style="background-image:url(images/services.jpg);">
-
-            <div class="overlay"></div>
-
-            <div class="container">
-
-                <div class="row no-gutters slider-text align-items-center justify-content-center">
-
-                    <div class="col-md-10 ftco-animate">
-
-                        <div class="text w-100 text-center">
-
-                            <h2>
-                                WELCOME TO MSM TRAINING COMPANY
-                                &amp; COUNSELLING SERVICES
-                            </h2>
-
-                            <h1 class="mb-4">
-                                BECOME THE MASTER OF YOUR SUCCESS.
-                            </h1>
-
-                            <p>
-
-                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="btn btn-white">
-
-                                    Connect with us
-
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     INTRO
-====================================================== -->
-
-<section class="intro py-5 bg-light">
-
-    <div class="container">
-
-        <div class="row">
-
-
-            <!-- PHONE -->
-
-            <div class="col-md-4">
-
-                <div class="intro-box w-100 d-flex">
-
-                    <div class="icon d-flex align-items-center justify-content-center">
-
-                        <i class="fa fa-phone"></i>
-
-                    </div>
-
-                    <div class="text pl-3">
-
-                        <h4 class="mb-0">
-                            Call us: +266 5650 6092
-                        </h4>
-
-                        <span>
-                            HA NNELESE MASERU LESOTHO
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- HOURS -->
-
-            <div class="col-md-4">
-
-                <div class="intro-box w-100 d-flex">
-
-                    <div class="icon d-flex align-items-center justify-content-center">
-
-                        <i class="fa fa-clock-o"></i>
-
-                    </div>
-
-                    <div class="text pl-3">
-
-                        <h4 class="mb-0">
-                            Opening Hours
-                        </h4>
-
-                        <span>
-                            ALWAYS AVAILABLE
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- APPOINTMENT -->
-
-            <div class="col-md-4">
-
-                <div class="intro-box w-100">
-
+    <!-- =====================================================
+         TOP BAR
+    ====================================================== -->
+
+    <div class="top-bar py-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-8">
                     <p class="mb-0">
 
-                        <a href="https://wa.me/26656506092"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn btn-primary">
+                        <span class="mr-3">
+                            <i class="fa fa-phone"></i>
+                            +266 5650 6092
+                        </span>
 
-                            <i class="fa fa-whatsapp mr-2"></i>
-
-                            Make an Appointment
-
-                        </a>
+                        <span>
+                            <i class="fa fa-envelope"></i>
+                            mohau11459@gmail.com
+                        </span>
 
                     </p>
-
                 </div>
 
-            </div>
 
+                <div class="col-md-4 text-md-right">
 
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SERVICES
-====================================================== -->
-
-<section class="ftco-section">
-
-    <div class="container">
-
-        <div class="row justify-content-center pb-5 mb-3">
-
-            <div class="col-md-7 heading-section text-center">
-
-                <h2>
-                    We can help you in different situations
-                </h2>
-
-                <span class="subheading">
-                    We offer Services
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="row">
-
-
-            <!-- TRAIN -->
-
-            <div class="col-md-3 d-flex services align-self-stretch px-4">
-
-                <div class="d-block text-center w-100">
-
-                    <div class="icon-circle">
-                        <i class="fa fa-bullseye"></i>
-                    </div>
-
-                    <div class="media-body p-2 mt-3">
-
-                        <h3 class="heading">
-                            Train
-                        </h3>
-
-                        <p>
-                            Knowledge that moves people into action.
-
-                            With 61+ workshops and seminars delivered
-                            across Lesotho and South Africa, MSM has
-                            directly trained and inspired 7,000+ people
-                            through practical, impactful learning experiences.
-
-                            Learn. Apply. Grow.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- MOTIVATE -->
-
-            <div class="col-md-3 d-flex services align-self-stretch px-4">
-
-                <div class="d-block text-center w-100">
-
-                    <div class="icon-circle">
-                        <i class="fa fa-lightbulb-o"></i>
-                    </div>
-
-                    <div class="media-body p-2 mt-3">
-
-                        <h3 class="heading">
-                            Motivate
-                        </h3>
-
-                        <p>
-                            We help teams and organizations unlock
-                            potential, build confidence and turn
-                            motivation into meaningful action.
-
-                            Trusted by leading organizations across
-                            Lesotho &amp; South Africa.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PEOPLE & RELATIONSHIPS -->
-
-            <div class="col-md-3 d-flex services align-self-stretch px-4">
-
-                <div class="d-block text-center w-100">
-
-                    <div class="icon-circle">
-                        <i class="fa fa-users"></i>
-                    </div>
-
-                    <div class="media-body p-2 mt-3">
-
-                        <h3 class="heading">
-                            People &amp; Relationships
-                        </h3>
-
-                        <p>
-                            Connect. Grow. Thrive.
-
-                            Empowering young people, strengthening
-                            relationships and creating spaces where
-                            individuals and couples can grow together.
-
-                            11,000+ students reached |
-                            Couples empowered
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- EMPOWER -->
-
-            <div class="col-md-3 d-flex services align-self-stretch px-4">
-
-                <div class="d-block text-center w-100">
-
-                    <div class="icon-circle">
-                        <i class="fa fa-star"></i>
-                    </div>
-
-                    <div class="media-body p-2 mt-3">
-
-                        <h3 class="heading">
-                            Empower
-                        </h3>
-
-                        <p>
-                            Empower people. Strengthen teams.
-                            Transform organizations.
-
-                            Over 3,000 civil servants empowered
-                            through team building, personal development
-                            and financial intelligence training.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     COUNTERS
-====================================================== -->
-
-<section class="ftco-counter">
-
-    <div class="container">
-
-        <div class="row justify-content-center py-5">
-
-
-            <div class="col-md-3 text-center">
-
-                <strong class="number"
-                        data-number="73">
-                    0
-                </strong>
-
-                <span>
-                    Workshops &amp; Seminars
-                </span>
-
-            </div>
-
-
-            <div class="col-md-3 text-center">
-
-                <strong class="number"
-                        data-number="11000">
-                    0
-                </strong>
-
-                <span>
-                    People Reached
-                </span>
-
-            </div>
-
-
-            <div class="col-md-3 text-center">
-
-                <strong class="number"
-                        data-number="61">
-                    0
-                </strong>
-
-                <span>
-                    Organisations
-                </span>
-
-            </div>
-
-
-            <div class="col-md-3 text-center">
-
-                <strong class="number"
-                        data-number="7000">
-                    0
-                </strong>
-
-                <span>
-                    People Trained
-                </span>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     TESTIMONIALS
-====================================================== -->
-
-<section class="testimony-section bg-secondary py-5">
-
-    <div class="container">
-
-        <div class="row justify-content-center pb-5">
-
-            <div class="col-md-7 heading-section heading-section-white text-center">
-
-                <span class="subheading">
-                    Testimonials
-                </span>
-
-                <h2>
-                    What People Say About MSM
-                </h2>
-
-            </div>
-
-        </div>
-
-
-        <div class="row">
-
-
-            <div class="col-md-4">
-
-                <div class="testimony-wrap p-4">
-
-                    <div class="icon mb-3">
-                        <i class="fa fa-quote-left"></i>
-                    </div>
-
-                    <p>
-                        MSM Training helped me see things differently
-                        and take action.
-                    </p>
-
-                    <p class="name">
-                        Participant
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="testimony-wrap p-4">
-
-                    <div class="icon mb-3">
-                        <i class="fa fa-quote-left"></i>
-                    </div>
-
-                    <p>
-                        The sessions were practical, engaging and
-                        easy to apply.
-                    </p>
-
-                    <p class="name">
-                        Workshop Participant
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-4">
-
-                <div class="testimony-wrap p-4">
-
-                    <div class="icon mb-3">
-                        <i class="fa fa-quote-left"></i>
-                    </div>
-
-                    <p>
-                        MSM creates an environment where people
-                        are encouraged to grow.
-                    </p>
-
-                    <p class="name">
-                        Training Participant
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-====================================================== -->
-
-<footer class="footer py-5">
-
-    <div class="container">
-
-        <div class="row">
-
-
-            <!-- ABOUT -->
-
-            <div class="col-md-4">
-
-                <h2 class="footer-heading">
-                    MSM Training Company
-                </h2>
-
-                <p>
-                    MSM Training Company &amp; Counselling Services
-                    is committed to empowering individuals,
-                    teams and organisations through training,
-                    motivation and personal development.
-                </p>
-
-            </div>
-
-
-            <!-- QUICK LINKS -->
-
-            <div class="col-md-4">
-
-                <h2 class="footer-heading">
-                    Quick Links
-                </h2>
-
-                <ul class="list-unstyled">
-
-                    <li>
-                        <a href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">
-                            About Us
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="services.html">
-                            Services
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="course.html">
-                            Courses
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="digital-products.html">
-                            Digital Products
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="media.html">
-                            Media
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">
-                            Contact Us
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- CONTACT -->
-
-            <div class="col-md-4">
-
-                <h2 class="footer-heading">
-                    Contact Us
-                </h2>
-
-                <p>
-
-                    <i class="fa fa-phone mr-2"></i>
-
-                    <a href="tel:+26656506092">
-                        +266 5650 6092
-                    </a>
-
-                </p>
-
-                <p>
-
-                    <i class="fa fa-envelope mr-2"></i>
-
-                    <a href="mailto:mohau11459@gmail.com">
-                        mohau11459@gmail.com
-                    </a>
-
-                </p>
-
-                <p>
-
-                    <i class="fa fa-map-marker mr-2"></i>
-
-                    Ha Nne Tese, Maseru, Lesotho
-
-                </p>
-
-
-                <ul class="ftco-footer-social list-unstyled mt-3">
-
-
-                    <li>
+                    <div class="social-media">
 
                         <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
                            target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="Facebook">
+                           class="mr-2">
 
                             <i class="fa fa-facebook"></i>
 
                         </a>
 
-                    </li>
-
-
-                    <li>
 
                         <a href="https://www.instagram.com/mohaumosoeunyane/"
                            target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="Instagram">
+                           class="mr-2">
 
                             <i class="fa fa-instagram"></i>
 
                         </a>
 
-                    </li>
-
-
-                    <li>
 
                         <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
                            target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="TikTok">
+                           class="mr-2">
 
                             <i class="fa fa-music"></i>
+
+                        </a>
+
+
+                        <a href="https://wa.me/26656506092"
+                           target="_blank">
+
+                            <i class="fa fa-whatsapp"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+        <div class="container">
+
+
+            <!-- LOGO -->
+
+            <a class="navbar-brand"
+               href="index.html">
+
+                <img src="images/LOGO.jpeg"
+                     alt="MSM Training Company & Counselling Services"
+                     style="height:70px; width:auto;">
+
+            </a>
+
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button class="navbar-toggler"
+                    type="button"
+                    aria-label="Toggle navigation">
+
+                <i class="fa fa-bars"></i>
+
+            </button>
+
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <div class="collapse navbar-collapse"
+                 id="ftco-nav">
+
+                <ul class="navbar-nav ml-auto">
+
+
+                    <!-- HOME -->
+
+                    <li class="nav-item active">
+
+                        <a href="index.html"
+                           class="nav-link">
+
+                            Home
 
                         </a>
 
                     </li>
 
 
-                    <li>
+                    <!-- ABOUT -->
 
-                        <a href="https://wa.me/26656506092"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="WhatsApp">
+                    <li class="nav-item">
 
-                            <i class="fa fa-whatsapp"></i>
+                        <a href="about.html"
+                           class="nav-link">
+
+                            About Us
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- SERVICES -->
+
+                    <li class="nav-item">
+
+                        <a href="services.html"
+                           class="nav-link">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- COURSES -->
+
+                    <li class="nav-item">
+
+                        <a href="course.html"
+                           class="nav-link">
+
+                            Courses
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- DIGITAL PRODUCTS -->
+
+                    <li class="nav-item">
+
+                        <a href="digital-products.html"
+                           class="nav-link">
+
+                            Digital Products
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- MEDIA -->
+
+                    <li class="nav-item">
+
+                        <a href="media.html"
+                           class="nav-link">
+
+                            Media
+
+                        </a>
+
+                    </li>
+
+
+                    <!-- CONTACT -->
+
+                    <li class="nav-item">
+
+                        <a href="contact.html"
+                           class="nav-link">
+
+                            Contact Us
 
                         </a>
 
@@ -1746,235 +586,1312 @@
 
                 </ul>
 
+
+                <!-- SEARCH -->
+
+                <form action="#"
+                      class="searchform ml-3">
+
+                    <div class="form-group">
+
+                        <button type="submit"
+                                class="form-control search">
+
+                            <i class="fa fa-search"></i>
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+
+    <section class="hero-wrap">
+
+        <div class="home-slider owl-carousel">
+
+
+            <!-- =================================================
+                 SLIDE 1
+            ================================================== -->
+
+            <div class="slider-item"
+                 style="background-image:url('images/ureng.jpg');">
+
+                <div class="overlay"></div>
+
+                <div class="container">
+
+                    <div class="row no-gutters slider-text align-items-center">
+
+                        <div class="col-md-8 ftco-animate">
+
+                            <div class="text">
+
+                                <h1 class="mb-4">
+
+                                    SUCCESS IS A CHOICE.
+
+                                </h1>
+
+
+                                <p class="mb-4">
+
+                                    Transform your mindset.
+                                    Unlock your potential.
+
+                                </p>
+
+
+                                <p>
+
+                                    <a href="contact.html"
+                                       class="btn btn-primary py-3 px-4">
+
+                                        Connect with us
+
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SLIDE 2
+            ================================================== -->
+
+            <div class="slider-item"
+                 style="background-image:url('images/smiles.jpg');">
+
+                <div class="overlay"></div>
+
+                <div class="container">
+
+                    <div class="row no-gutters slider-text align-items-center">
+
+                        <div class="col-md-8 ftco-animate">
+
+                            <div class="text">
+
+                                <h1 class="mb-4">
+
+                                    EMPOWER.
+                                    TRANSFORM.
+                                    SUCCEED.
+
+                                </h1>
+
+
+                                <p class="mb-4">
+
+                                    Your transformation starts here.
+
+                                </p>
+
+
+                                <p>
+
+                                    <a href="contact.html"
+                                       class="btn btn-primary py-3 px-4">
+
+                                        Connect with us
+
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SLIDE 3
+            ================================================== -->
+
+            <div class="slider-item"
+                 style="background-image:url('images/services.jpg');">
+
+                <div class="overlay"></div>
+
+                <div class="container">
+
+                    <div class="row no-gutters slider-text align-items-center">
+
+                        <div class="col-md-8 ftco-animate">
+
+                            <div class="text">
+
+                                <h1 class="mb-4">
+
+                                    WELCOME TO MSM TRAINING
+                                    COMPANY & COUNSELLING SERVICES
+
+                                </h1>
+
+
+                                <p class="mb-4">
+
+                                    BECOME THE MASTER OF YOUR SUCCESS.
+
+                                </</p>
+
+
+                                <p>
+
+                                    <a href="contact.html"
+                                       class="btn btn-primary py-3 px-4">
+
+                                        Connect with us
+
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
 
         </div>
 
+    </section>
+    <!-- =====================================================
+         INTRODUCTION SECTION
+    ====================================================== -->
 
-        <div class="row mt-5">
+    <section class="ftco-section bg-light">
 
-            <div class="col-md-12 text-center">
+        <div class="container">
 
-                <p class="copyright mb-0">
+            <div class="row justify-content-center mb-5">
 
-                    &copy;
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>
+                <div class="col-md-8 text-center">
 
-                    MSM Training Company &amp; Counselling Services.
-                    All Rights Reserved.
+                    <h2 class="mb-4">
+                        MSM Training Company & Counselling Services
+                    </h2>
 
-                </p>
+                    <p>
+                        Mohau and the Success Masters Motivation & Training
+                        Company is committed to empowering individuals,
+                        couples, teams and organisations to discover their
+                        potential and take meaningful action towards success.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+                <!-- PHONE -->
+
+                <div class="col-md-4 d-flex align-items-stretch">
+
+                    <div class="intro-box text-center p-4 bg-white w-100">
+
+                        <div class="icon mb-3">
+
+                            <i class="fa fa-phone fa-3x"></i>
+
+                        </div>
+
+                        <h3>
+                            Call Us
+                        </h3>
+
+                        <p class="mb-0">
+
+                            <a href="tel:+26656506092">
+
+                                +266 5650 6092
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- OPENING HOURS -->
+
+                <div class="col-md-4 d-flex align-items-stretch">
+
+                    <div class="intro-box text-center p-4 bg-white w-100">
+
+                        <div class="icon mb-3">
+
+                            <i class="fa fa-clock-o fa-3x"></i>
+
+                        </div>
+
+                        <h3>
+                            Opening Hours
+                        </h3>
+
+                        <p class="mb-0">
+
+                            Monday - Saturday
+
+                        </p>
+
+                        <p class="mb-0">
+
+                            08:00 - 17:00
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- WHATSAPP -->
+
+                <div class="col-md-4 d-flex align-items-stretch">
+
+                    <div class="intro-box text-center p-4 bg-white w-100">
+
+                        <div class="icon mb-3">
+
+                            <i class="fa fa-whatsapp fa-3x"></i>
+
+                        </div>
+
+                        <h3>
+                            Book an Appointment
+                        </h3>
+
+                        <p class="mb-0">
+
+                            <a href="https://wa.me/26656506092"
+                               target="_blank">
+
+                                WhatsApp Us
+
+                            </a>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
         </div>
 
-    </div>
+    </section>
+    <!-- =====================================================
+         MAIN SERVICES
+    ====================================================== -->
 
-</footer>
+    <section class="ftco-section">
 
+        <div class="container">
 
+            <div class="row justify-content-center pb-5 mb-3">
 
-<!-- =====================================================
-     JAVASCRIPT
-====================================================== -->
+                <div class="col-md-8 text-center">
 
-<script src="Js/jquery.min.js"></script>
+                    <h2 class="mb-4">
+                        What We Do
+                    </h2>
 
-<script src="Js/jquery-migrate-3.0.1.min.js"></script>
+                    <p>
+                        We empower individuals, teams and organisations
+                        through practical training, motivation and
+                        personal development.
+                    </p>
 
-<script src="Js/popper.min.js"></script>
+                </div>
 
-<script src="Js/bootstrap.min.js"></script>
-
-<script src="Js/jquery.easing.1.3.js"></script>
-
-<script src="Js/jquery.waypoints.min.js"></script>
-
-<script src="Js/jquery.stellar.min.js"></script>
-
-<script src="Js/jquery.animatenumber.min.js"></script>
-
-<script src="Js/owl.carousel.min.js"></script>
-
-<script src="Js/scrollax.min.js"></script>
-
-<script src="Js/main.js"></script>
+            </div>
 
 
+            <div class="row">
 
-<!-- =====================================================
-     MOBILE MENU FALLBACK
-====================================================== -->
 
-<script>
+                <!-- =================================================
+                     TRAIN
+                ================================================== -->
 
-document.addEventListener("DOMContentLoaded", function () {
+                <div class="col-md-6 col-lg-3 ftco-animate">
 
-    const menuButton = document.querySelector(".navbar-toggler");
-    const menu = document.getElementById("ftco-nav");
+                    <div class="services text-center">
 
-    if (menuButton && menu) {
+                        <div class="icon-circle">
 
-        menuButton.addEventListener("click", function () {
+                            <i class="fa fa-bullseye"></i>
 
-            const isOpen = menu.classList.contains("show");
+                        </div>
 
-            if (isOpen) {
 
-                menu.classList.remove("show");
+                        <div class="text">
 
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    "false"
+                            <h3>
+                                Train
+                            </h3>
+
+                            <p>
+
+                                Knowledge that moves people into action.
+
+                                With 61+ workshops and seminars delivered
+                                across Lesotho and South Africa, MSM has
+                                directly trained and inspired 7,000+ people
+                                through practical, impactful learning
+                                experiences.
+
+                                Learn. Apply. Grow.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     MOTIVATE
+                ================================================== -->
+
+                <div class="col-md-6 col-lg-3 ftco-animate">
+
+                    <div class="services text-center">
+
+                        <div class="icon-circle">
+
+                            <i class="fa fa-lightbulb-o"></i>
+
+                        </div>
+
+
+                        <div class="text">
+
+                            <h3>
+                                Motivate
+                            </h3>
+
+                            <p>
+
+                                We help teams and organizations unlock
+                                potential, build confidence and turn
+                                motivation into meaningful action.
+
+                                Trusted by leading organizations across
+                                Lesotho & South Africa.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     PEOPLE & RELATIONSHIPS
+                ================================================== -->
+
+                <div class="col-md-6 col-lg-3 ftco-animate">
+
+                    <div class="services text-center">
+
+                        <div class="icon-circle">
+
+                            <i class="fa fa-users"></i>
+
+                        </div>
+
+
+                        <div class="text">
+
+                            <h3>
+                                People & Relationships
+                            </h3>
+
+                            <p>
+
+                                Connect. Grow. Thrive.
+
+                                Empowering young people, strengthening
+                                relationships and creating spaces where
+                                individuals and couples can grow together.
+
+                                11,000+ students reached |
+                                Couples empowered
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EMPOWER
+                ================================================== -->
+
+                <div class="col-md-6 col-lg-3 ftco-animate">
+
+                    <div class="services text-center">
+
+                        <div class="icon-circle">
+
+                            <i class="fa fa-star"></i>
+
+                        </div>
+
+
+                        <div class="text">
+
+                            <h3>
+                                Empower
+                            </h3>
+
+                            <p>
+
+                                Empower people. Strengthen teams.
+                                Transform organizations.
+
+                                Over 3,000 civil servants empowered
+                                through team building, personal
+                                development and financial intelligence
+                                training.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =====================================================
+         COUNTERS / OUR IMPACT
+    ====================================================== -->
+
+    <section class="ftco-section ftco-counter"
+             id="section-counter">
+
+        <div class="container">
+
+            <div class="row justify-content-center mb-5">
+
+                <div class="col-md-8 text-center">
+
+                    <h2 class="mb-4">
+                        Our Impact
+                    </h2>
+
+                    <p>
+                        Real people. Real organisations.
+                        Real transformation.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+                <!-- 73 WORKSHOPS -->
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+                    <div class="block-18 text-center">
+
+                        <div class="text">
+
+                            <strong class="number"
+                                    data-number="73">
+
+                                0
+
+                            </strong>
+
+                            <span>
+                                Workshops & Seminars
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 11000 PEOPLE -->
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+                    <div class="block-18 text-center">
+
+                        <div class="text">
+
+                            <strong class="number"
+                                    data-number="11000">
+
+                                0
+
+                            </strong>
+
+                            <span>
+                                People Reached
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 61 ORGANISATIONS -->
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+                    <div class="block-18 text-center">
+
+                        <div class="text">
+
+                            <strong class="number"
+                                    data-number="61">
+
+                                0
+
+                            </strong>
+
+                            <span>
+                                Organisations
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 7000 PEOPLE TRAINED -->
+
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+
+                    <div class="block-18 text-center">
+
+                        <div class="text">
+
+                            <strong class="number"
+                                    data-number="7000">
+
+                                0
+
+                            </strong>
+
+                            <span>
+                                People Trained
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- =====================================================
+         TESTIMONIALS
+    ====================================================== -->
+
+    <section class="ftco-section bg-light">
+
+        <div class="container">
+
+            <div class="row justify-content-center pb-5 mb-3">
+
+                <div class="col-md-8 text-center">
+
+                    <h2 class="mb-4">
+                        What People Say
+                    </h2>
+
+                    <p>
+                        A few words from people who have experienced
+                        MSM Training.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+
+                <!-- =================================================
+                     TESTIMONIAL 1
+                ================================================== -->
+
+                <div class="col-md-4 ftco-animate">
+
+                    <div class="testimony-wrap p-4 bg-white">
+
+                        <div class="icon mb-3">
+
+                            <i class="fa fa-quote-left"></i>
+
+                        </div>
+
+                        <div class="text">
+
+                            <p class="mb-4">
+
+                                MSM Training helped me see things
+                                differently and take action.
+
+                            </p>
+
+                            <p class="name mb-0">
+
+                                Participant
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     TESTIMONIAL 2
+                ================================================== -->
+
+                <div class="col-md-4 ftco-animate">
+
+                    <div class="testimony-wrap p-4 bg-white">
+
+                        <div class="icon mb-3">
+
+                            <i class="fa fa-quote-left"></i>
+
+                        </div>
+
+                        <div class="text">
+
+                            <p class="mb-4">
+
+                                The sessions were practical,
+                                engaging and easy to apply.
+
+                            </p>
+
+                            <p class="name mb-0">
+
+                                Workshop Participant
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     TESTIMONIAL 3
+                ================================================== -->
+
+                <div class="col-md-4 ftco-animate">
+
+                    <div class="testimony-wrap p-4 bg-white">
+
+                        <div class="icon mb-3">
+
+                            <i class="fa fa-quote-left"></i>
+
+                        </div>
+
+                        <div class="text">
+
+                            <p class="mb-4">
+
+                                MSM creates an environment where
+                                people are encouraged to grow.
+
+                            </p>
+
+                            <p class="name mb-0">
+
+                                Training Participant
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+  <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="ftco-footer">
+
+        <div class="container">
+
+            <div class="row mb-5">
+
+
+                <!-- =================================================
+                     ABOUT MSM
+                ================================================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="ftco-footer-widget mb-4">
+
+                        <h2 class="ftco-heading-2">
+                            MSM Training Company
+                        </h2>
+
+                        <p>
+
+                            Mohau and the Success Masters Motivation &
+                            Training Company is committed to empowering
+                            individuals, couples, teams and organisations
+                            to discover their potential and become the
+                            masters of their success.
+
+                        </p>
+
+
+                        <ul class="ftco-footer-social list-unstyled mt-4">
+
+                            <li class="ftco-animate">
+
+                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
+                                   target="_blank">
+
+                                    <i class="fa fa-facebook"></i>
+
+                                </a>
+
+                            </li>
+
+
+                            <li class="ftco-animate">
+
+                                <a href="https://www.instagram.com/mohaumosoeunyane/"
+                                   target="_blank">
+
+                                    <i class="fa fa-instagram"></i>
+
+                                </a>
+
+                            </li>
+
+
+                            <li class="ftco-animate">
+
+                                <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
+                                   target="_blank">
+
+                                    <i class="fa fa-music"></i>
+
+                                </a>
+
+                            </li>
+
+
+                            <li class="ftco-animate">
+
+                                <a href="https://wa.me/26656506092"
+                                   target="_blank">
+
+                                    <i class="fa fa-whatsapp"></i>
+
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     QUICK LINKS
+                ================================================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+
+                        <h2 class="ftco-heading-2">
+                            Quick Links
+                        </h2>
+
+                        <ul class="list-unstyled">
+
+                            <li>
+                                <a href="index.html">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="about.html">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="services.html">
+                                    Services
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="course.html">
+                                    Courses
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="digital-products.html">
+                                    Digital Products
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="media.html">
+                                    Media
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">
+                                    Contact Us
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     CONTACT
+                ================================================== -->
+
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="ftco-footer-widget mb-4">
+
+                        <h2 class="ftco-heading-2">
+                            Contact Us
+                        </h2>
+
+                        <ul class="list-unstyled">
+
+
+                            <li>
+
+                                <span class="icon mr-3">
+
+                                    <i class="fa fa-phone"></i>
+
+                                </span>
+
+                                <span class="text">
+
+                                    +266 5650 6092
+
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="icon mr-3">
+
+                                    <i class="fa fa-envelope"></i>
+
+                                </span>
+
+                                <span class="text">
+
+                                    mohau11459@gmail.com
+
+                                </span>
+
+                            </li>
+
+
+                            <li>
+
+                                <span class="icon mr-3">
+
+                                    <i class="fa fa-map-marker"></i>
+
+                                </span>
+
+                                <span class="text">
+
+                                    Ha Nne Tese, Maseru, Lesotho
+
+                                </span>
+
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 COPYRIGHT
+            ================================================== -->
+
+            <div class="row">
+
+                <div class="col-md-12 text-center">
+
+                    <p class="mb-0">
+
+                        Copyright &copy;
+
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+
+                        MSM Training Company & Counselling Services.
+
+                        All rights reserved.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="Js/jquery.min.js"></script>
+
+    <script src="Js/jquery-migrate-3.0.1.min.js"></script>
+
+    <script src="Js/popper.min.js"></script>
+
+    <script src="Js/bootstrap.min.js"></script>
+
+    <script src="Js/jquery.easing.1.3.js"></script>
+
+    <script src="Js/jquery.waypoints.min.js"></script>
+
+    <script src="Js/jquery.stellar.min.js"></script>
+
+    <script src="Js/jquery.animatenumber.min.js"></script>
+
+    <script src="Js/owl.carousel.min.js"></script>
+
+    <script src="Js/scrollax.min.js"></script>
+
+    <script src="Js/main.js"></script>
+
+
+
+    <!-- =====================================================
+         MOBILE MENU FALLBACK
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const menuButton =
+                document.querySelector(".navbar-toggler");
+
+            const menu =
+                document.querySelector("#ftco-nav");
+
+
+            if (menuButton && menu) {
+
+                menuButton.addEventListener("click", function () {
+
+                    menu.classList.toggle("show");
+
+                });
+
+            }
+
+        });
+
+    </script>
+
+
+
+    <!-- =====================================================
+         COUNTER ANIMATION
+    ====================================================== -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const counters =
+                document.querySelectorAll(".number[data-number]");
+
+
+            const startCounter = function (counter) {
+
+                const target = parseInt(
+                    counter.getAttribute("data-number"),
+                    10
                 );
+
+
+                let current = 0;
+
+
+                const duration = 2000;
+
+                const startTime =
+                    performance.now();
+
+
+                function updateCounter(currentTime) {
+
+                    const elapsed =
+                        currentTime - startTime;
+
+
+                    const progress =
+                        Math.min(
+                            elapsed / duration,
+                            1
+                        );
+
+
+                    current =
+                        Math.floor(
+                            progress * target
+                        );
+
+
+                    counter.textContent =
+                        current.toLocaleString();
+
+
+                    if (progress < 1) {
+
+                        requestAnimationFrame(
+                            updateCounter
+                        );
+
+                    } else {
+
+                        counter.textContent =
+                            target.toLocaleString();
+
+                    }
+
+                }
+
+
+                requestAnimationFrame(
+                    updateCounter
+                );
+
+            };
+
+
+
+            if ("IntersectionObserver" in window) {
+
+                const observer =
+                    new IntersectionObserver(
+
+                        function (entries, observer) {
+
+                            entries.forEach(
+                                function (entry) {
+
+                                    if (
+                                        entry.isIntersecting
+                                    ) {
+
+                                        startCounter(
+                                            entry.target
+                                        );
+
+                                        observer.unobserve(
+                                            entry.target
+                                        );
+
+                                    }
+
+                                }
+                            );
+
+                        },
+
+                        {
+                            threshold: 0.3
+                        }
+
+                    );
+
+
+                counters.forEach(
+                    function (counter) {
+
+                        observer.observe(counter);
+
+                    }
+                );
+
 
             } else {
 
-                menu.classList.add("show");
+                counters.forEach(
+                    function (counter) {
 
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    "true"
+                        startCounter(counter);
+
+                    }
                 );
 
             }
 
         });
 
-    }
+    </script>
 
 
-    /* =====================================================
-       COUNTER ANIMATION
-    ====================================================== */
 
-    const counters =
-        document.querySelectorAll(".number[data-number]");
+    <!-- =====================================================
+         FORCE ICON VISIBILITY
+    ====================================================== -->
 
+    <script>
 
-    function startCounter(counter) {
+        document.addEventListener("DOMContentLoaded", function () {
 
-        const target =
-            parseInt(
-                counter.getAttribute("data-number"),
-                10
-            );
-
-        const duration = 2000;
-
-        const startTime =
-            performance.now();
+            const icons =
+                document.querySelectorAll(".fa");
 
 
-        function updateCounter(currentTime) {
+            icons.forEach(function (icon) {
 
-            const elapsed =
-                currentTime - startTime;
+                icon.style.display = "inline-block";
 
-            const progress =
-                Math.min(
-                    elapsed / duration,
-                    1
-                );
+                icon.style.visibility = "visible";
 
+                icon.style.opacity = "1";
 
-            const current =
-                Math.floor(
-                    progress * target
-                );
+            });
 
+        });
 
-            counter.textContent =
-                current.toLocaleString();
-
-
-            if (progress < 1) {
-
-                requestAnimationFrame(
-                    updateCounter
-                );
-
-            } else {
-
-                counter.textContent =
-                    target.toLocaleString();
-
-            }
-
-        }
-
-
-        requestAnimationFrame(
-            updateCounter
-        );
-
-    }
-
-
-    if ("IntersectionObserver" in window) {
-
-        const observer =
-            new IntersectionObserver(
-                function (entries, observer) {
-
-                    entries.forEach(
-                        function (entry) {
-
-                            if (
-                                entry.isIntersecting
-                            ) {
-
-                                startCounter(
-                                    entry.target
-                                );
-
-                                observer.unobserve(
-                                    entry.target
-                                );
-
-                            }
-
-                        }
-                    );
-
-                },
-                {
-                    threshold: 0.3
-                }
-            );
-
-
-        counters.forEach(
-            function (counter) {
-
-                observer.observe(
-                    counter
-                );
-
-            }
-        );
-
-    } else {
-
-        counters.forEach(
-            function (counter) {
-
-                startCounter(
-                    counter
-                );
-
-            }
-        );
-
-    }
-
-});
-
-</script>
+    </script>
 
 
 </body>
