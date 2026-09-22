@@ -21,7 +21,7 @@
     <!-- FONT AWESOME 6 -->
     <link rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/all.min.css">
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        
        
     <!-- EXISTING CSS -->
     <link rel="stylesheet" href="css/animate.css">
@@ -681,7 +681,64 @@
 .icon-circle i {
     color: #ffffff;
 } 
+/* =====================================================
+   HERO VISIBILITY FIX
+===================================================== */
 
+.hero-wrap {
+    width: 100%;
+    position: relative;
+}
+
+.home-slider {
+    width: 100%;
+    position: relative;
+}
+
+.home-slider .slider-item {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+
+.home-slider .slider-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-slider .slider-text {
+    position: relative;
+    z-index: 2;
+}
+
+.home-slider .slider-text .text {
+    position: relative;
+    z-index: 3;
+}
+
+.home-slider .slider-text h1,
+.home-slider .slider-text h2,
+.home-slider .slider-text p {
+    position: relative;
+    z-index: 3;
+}
+
+@media (max-width: 767px) {
+
+    .home-slider .slider-item {
+        min-height: 600px;
+    }
+
+}
     </style>
 
 </head>
@@ -3058,6 +3115,51 @@
 
 
 <!-- =====================================================
+     HERO / OWL CAROUSEL
+====================================================== -->
+
+<script>
+
+$(document).ready(function () {
+
+    if ($('.home-slider').length && $.fn.owlCarousel) {
+
+        $('.home-slider').owlCarousel({
+
+            items: 1,
+
+            loop: true,
+
+            autoplay: true,
+
+            autoplayTimeout: 5000,
+
+            autoplayHoverPause: false,
+
+            smartSpeed: 1000,
+
+            animateOut: 'fadeOut',
+
+            animateIn: 'fadeIn',
+
+            dots: true,
+
+            nav: false,
+
+            mouseDrag: true,
+
+            touchDrag: true
+
+        });
+
+    }
+
+});
+
+</script>
+
+
+<!-- =====================================================
      MOBILE MENU + SEARCH
 ====================================================== -->
 
@@ -3067,8 +3169,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /* MOBILE MENU */
 
-    const menuButton = document.querySelector(".navbar-toggler");
-    const menu = document.getElementById("ftco-nav");
+    const menuButton =
+        document.querySelector(".navbar-toggler");
+
+    const menu =
+        document.getElementById("ftco-nav");
+
 
     if (menuButton && menu) {
 
@@ -3122,7 +3228,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* PREVENT EMPTY SEARCH FORM FROM RELOADING */
+    /* SEARCH */
 
     const searchForm =
         document.querySelector(".searchform");
@@ -3134,10 +3240,14 @@ document.addEventListener("DOMContentLoaded", function () {
             event.preventDefault();
 
             const searchInput =
-                searchForm.querySelector("input[type='text']");
+                searchForm.querySelector(
+                    "input[type='text']"
+                );
 
-            if (searchInput &&
-                searchInput.value.trim() !== "") {
+            if (
+                searchInput &&
+                searchInput.value.trim() !== ""
+            ) {
 
                 alert(
                     "Search is coming soon. Please use the menu to browse MSM Training."
@@ -3152,96 +3262,186 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 </script>
+
+
+<!-- =====================================================
+     COUNTERS
+====================================================== -->
+
 <script>
+
 document.addEventListener("DOMContentLoaded", function () {
 
-    const counters = document.querySelectorAll(".number[data-number]");
+    const counters =
+        document.querySelectorAll(
+            ".number[data-number]"
+        );
+
 
     const startCounter = function (counter) {
 
-        const target = parseInt(
-            counter.getAttribute("data-number"),
-            10
-        );
+        const target =
+            parseInt(
+                counter.getAttribute("data-number"),
+                10
+            );
 
         let current = 0;
 
         const duration = 2000;
-        const startTime = performance.now();
+
+        const startTime =
+            performance.now();
+
 
         function updateCounter(currentTime) {
 
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
+            const elapsed =
+                currentTime - startTime;
 
-            current = Math.floor(progress * target);
+            const progress =
+                Math.min(
+                    elapsed / duration,
+                    1
+                );
 
-            counter.textContent = current.toLocaleString();
+
+            current =
+                Math.floor(
+                    progress * target
+                );
+
+
+            counter.textContent =
+                current.toLocaleString();
+
 
             if (progress < 1) {
-                requestAnimationFrame(updateCounter);
+
+                requestAnimationFrame(
+                    updateCounter
+                );
+
             } else {
-                counter.textContent = target.toLocaleString();
+
+                counter.textContent =
+                    target.toLocaleString();
+
             }
+
         }
 
-        requestAnimationFrame(updateCounter);
+
+        requestAnimationFrame(
+            updateCounter
+        );
+
     };
 
 
     if ("IntersectionObserver" in window) {
 
-        const observer = new IntersectionObserver(
-            function (entries, observer) {
+        const observer =
+            new IntersectionObserver(
 
-                entries.forEach(function (entry) {
+                function (entries, observer) {
 
-                    if (entry.isIntersecting) {
+                    entries.forEach(
+                        function (entry) {
 
-                        startCounter(entry.target);
+                            if (
+                                entry.isIntersecting
+                            ) {
 
-                        observer.unobserve(entry.target);
+                                startCounter(
+                                    entry.target
+                                );
 
-                    }
+                                observer.unobserve(
+                                    entry.target
+                                );
 
-                });
+                            }
 
-            },
-            {
-                threshold: 0.3
+                        }
+                    );
+
+                },
+
+                {
+                    threshold: 0.3
+                }
+
+            );
+
+
+        counters.forEach(
+            function (counter) {
+
+                observer.observe(
+                    counter
+                );
+
             }
         );
 
 
-        counters.forEach(function (counter) {
-
-            observer.observe(counter);
-
-        });
-
     } else {
 
-        counters.forEach(function (counter) {
+        counters.forEach(
+            function (counter) {
 
-            startCounter(counter);
+                startCounter(
+                    counter
+                );
 
-        });
+            }
+        );
 
     }
 
 });
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    setTimeout(function () {
-        var loader = document.getElementById("ftco-loader");
 
-        if (loader) {
-            loader.classList.remove("show");
-            loader.style.display = "none";
-        }
-    }, 1500);
-});
+</script>
+
+
+<!-- =====================================================
+     LOADER
+====================================================== -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+        setTimeout(
+            function () {
+
+                var loader =
+                    document.getElementById(
+                        "ftco-loader"
+                    );
+
+
+                if (loader) {
+
+                    loader.classList.remove(
+                        "show"
+                    );
+
+                    loader.style.display =
+                        "none";
+
+                }
+
+            },
+            1500
+        );
+
+    }
+);
+
 </script>
 
 </body>
