@@ -33,6 +33,10 @@
         }
 
 
+        /* ==========================================
+           SEMINAR HEADER
+        ========================================== */
+
         .seminar-header {
             background: #0B3D2E;
             color: white;
@@ -52,6 +56,10 @@
         }
 
 
+        /* ==========================================
+           MAIN CARD
+        ========================================== */
+
         .seminar-card {
             background: white;
             padding: 35px;
@@ -61,6 +69,10 @@
             position: relative;
         }
 
+
+        /* ==========================================
+           SEMINAR INFORMATION
+        ========================================== */
 
         .seminar-info {
             margin-bottom: 25px;
@@ -73,6 +85,10 @@
         }
 
 
+        /* ==========================================
+           EARLY BIRD
+        ========================================== */
+
         .early-bird {
             background: #7CB342;
             color: white;
@@ -81,6 +97,10 @@
             margin: 25px 0;
         }
 
+
+        /* ==========================================
+           PRICE BOX
+        ========================================== */
 
         .price-box {
             border: 1px solid #ddd;
@@ -96,6 +116,10 @@
         }
 
 
+        /* ==========================================
+           PAYMENT BOX
+        ========================================== */
+
         .payment-box {
             background: #f1f1f1;
             padding: 25px;
@@ -104,11 +128,19 @@
         }
 
 
+        /* ==========================================
+           TITLES
+        ========================================== */
+
         .register-title {
             color: #0B3D2E;
             font-weight: 700;
         }
 
+
+        /* ==========================================
+           REGISTER BUTTON
+        ========================================== */
 
         .btn-register {
             background: #0B3D2E;
@@ -123,6 +155,10 @@
         }
 
 
+        /* ==========================================
+           WHATSAPP BUTTON
+        ========================================== */
+
         .whatsapp-btn {
             background: #25D366;
             color: white;
@@ -135,6 +171,24 @@
         }
 
 
+        /* ==========================================
+           FORM
+        ========================================== */
+
+        .form-control {
+            min-height: 45px;
+        }
+
+
+        label {
+            font-weight: 600;
+        }
+
+
+        /* ==========================================
+           FOOTER
+        ========================================== */
+
         footer {
             background: #0B3D2E;
             color: white;
@@ -144,13 +198,32 @@
         }
 
 
-        .form-control {
-            min-height: 45px;
-        }
+        /* ==========================================
+           MOBILE
+        ========================================== */
+
+        @media (max-width: 576px) {
+
+            .seminar-header {
+                padding: 50px 15px;
+            }
 
 
-        label {
-            font-weight: 600;
+            .seminar-header h1 {
+                font-size: 30px;
+            }
+
+
+            .seminar-header p {
+                font-size: 16px;
+            }
+
+
+            .seminar-card {
+                padding: 25px 18px;
+                margin-top: -25px;
+            }
+
         }
 
     </style>
@@ -173,9 +246,11 @@
             MAFETENG SEMINAR TOUR
         </h1>
 
+
         <p>
             How to Master Your Mind, Money, Business and Self
         </p>
+
 
         <p>
             <strong>
@@ -198,7 +273,9 @@
     <div class="seminar-card">
 
 
-        <!-- INTRODUCTION -->
+        <!-- ==========================================
+             INTRODUCTION
+        =========================================== -->
 
         <div class="text-center mb-4">
 
@@ -206,14 +283,18 @@
                 Register for the Mafeteng Seminar
             </h2>
 
+
             <p class="mb-4">
 
-                🔥 <strong>Early Bird: R299</strong><br>
+                🔥 <strong>Early Bird: R299</strong>
+
+                <br>
 
                 Bring another person FREE —
                 only <strong>5 spots left!</strong>
 
             </p>
+
 
             <p>
 
@@ -226,11 +307,12 @@
 
 
 
-        <!-- =================================================
+        <!-- ==========================================
              EVENT INFORMATION
-        ================================================== -->
+        =========================================== -->
 
         <div class="seminar-info">
+
 
             <p>
 
@@ -261,19 +343,21 @@
 
             </p>
 
+
         </div>
 
 
 
-        <!-- =================================================
+        <!-- ==========================================
              EARLY BIRD
-        ================================================== -->
+        =========================================== -->
 
         <div class="early-bird text-center">
 
             <h3>
                 🔥 EARLY BIRD – R299
             </h3>
+
 
             <p class="mb-0">
 
@@ -297,15 +381,104 @@
 
 
 
-        <!-- =================================================
+        <!-- ==========================================
+             REGISTRATION OPTIONS
+        =========================================== -->
+
+        <h4 class="register-title mt-4 mb-3">
+
+            Registration Options
+
+        </h4>
+
+
+
+        <div class="price-box">
+
+            <h5>
+                🔥 Early Bird
+            </h5>
+
+            <p class="mb-0">
+
+                R299 per person
+
+                <br>
+
+                <strong>
+                    Bring another person FREE!
+                </strong>
+
+                <br>
+
+                <small>
+                    Only 5 spots left.
+                </small>
+
+            </p>
+
+        </div>
+
+
+
+        <div class="price-box">
+
+            <h5>
+                Individual
+            </h5>
+
+            <p class="mb-0">
+                R350 per person
+            </p>
+
+        </div>
+
+
+
+        <div class="price-box">
+
+            <h5>
+                Pair
+            </h5>
+
+            <p class="mb-0">
+                R500 for two people
+            </p>
+
+        </div>
+
+
+
+        <div class="price-box">
+
+            <h5>
+                Group of 5
+            </h5>
+
+            <p class="mb-0">
+                R1,000
+            </p>
+
+        </div>
+
+
+
+        <hr class="my-5">
+
+
+
+        <!-- ==========================================
              REGISTRATION FORM
-        ================================================== -->
+        =========================================== -->
+
+        <h4 class="register-title mb-4">
+
+            Registration Form
+
+        </h4>
+
 
         <form id="mafetengForm">
-
-            <h4 class="register-title mb-4">
-                Registration Form
-            </h4>
 
 
             <!-- FULL NAME -->
@@ -315,6 +488,7 @@
                 <label for="mafeteng-name">
                     Full Name *
                 </label>
+
 
                 <input type="text"
                        id="mafeteng-name"
@@ -334,6 +508,7 @@
                     Phone / WhatsApp Number *
                 </label>
 
+
                 <input type="tel"
                        id="mafeteng-phone"
                        class="form-control"
@@ -352,6 +527,7 @@
                     Email Address
                 </label>
 
+
                 <input type="email"
                        id="mafeteng-email"
                        class="form-control"
@@ -369,6 +545,7 @@
                     Registration Option *
                 </label>
 
+
                 <select id="mafeteng-option"
                         class="form-control"
                         required>
@@ -377,17 +554,21 @@
                         -- Select a registration option --
                     </option>
 
+
                     <option value="Early Bird R299">
                         🔥 Early Bird – R299
                     </option>
+
 
                     <option value="Individual R350">
                         Individual – R350
                     </option>
 
+
                     <option value="Pair R500">
                         Pair – R500
                     </option>
+
 
                     <option value="Group of 5 R1000">
                         Group of 5 – R1,000
@@ -406,6 +587,7 @@
                 <label for="mafeteng-people">
                     Number of People *
                 </label>
+
 
                 <input type="number"
                        id="mafeteng-people"
@@ -433,6 +615,7 @@
 
                 </label>
 
+
                 <input type="text"
                        id="mafeteng-second-person"
                        class="form-control"
@@ -442,13 +625,14 @@
 
 
 
-            <!-- PAYMENT -->
+            <!-- PAYMENT STATUS -->
 
             <div class="form-group">
 
                 <label for="mafeteng-payment">
                     Payment Status *
                 </label>
+
 
                 <select id="mafeteng-payment"
                         class="form-control"
@@ -458,13 +642,16 @@
                         -- Select payment status --
                     </option>
 
+
                     <option value="I have paid">
                         I have paid
                     </option>
 
+
                     <option value="I will pay">
                         I will pay
                     </option>
+
 
                     <option value="I need payment information">
                         I need payment information
@@ -483,6 +670,7 @@
                 <label for="mafeteng-message">
                     Message / Special Request
                 </label>
+
 
                 <textarea id="mafeteng-message"
                           class="form-control"
@@ -508,26 +696,41 @@
 
             </div>
 
+
+            <p class="text-center text-muted mt-3">
+
+                Your registration details will be prepared
+                in WhatsApp for confirmation.
+
+            </p>
+
+
         </form>
 
 
 
-        <!-- =================================================
+        <!-- ==========================================
              PAYMENT DETAILS
-        ================================================== -->
+        =========================================== -->
 
         <div class="payment-box">
+
 
             <h4 class="register-title">
                 Payment Details
             </h4>
+
 
             <hr>
 
 
             <p>
 
-                <strong>M-Pesa / EcoCash:</strong><br>
+                <strong>
+                    M-Pesa / EcoCash:
+                </strong>
+
+                <br>
 
                 34304 / 0000104444
 
@@ -536,7 +739,11 @@
 
             <p>
 
-                <strong>Standard Bank:</strong><br>
+                <strong>
+                    Standard Bank:
+                </strong>
+
+                <br>
 
                 9080009468508
 
@@ -545,7 +752,11 @@
 
             <p>
 
-                <strong>Account Name:</strong><br>
+                <strong>
+                    Account Name:
+                </strong>
+
+                <br>
 
                 Mohau and the Success Masters
 
@@ -554,8 +765,8 @@
 
             <p class="mb-0">
 
-                After making payment, please keep your
-                proof of payment.
+                After making payment,
+                please keep your proof of payment.
 
             </p>
 
@@ -563,11 +774,12 @@
 
 
 
-        <!-- =================================================
+        <!-- ==========================================
              WHATSAPP CONTACT
-        ================================================== -->
+        =========================================== -->
 
         <div class="text-center mt-4">
+
 
             <p>
                 Need help with registration?
@@ -652,45 +864,55 @@
 
 <script>
 
-document.getElementById("mafetengForm").addEventListener("submit", function(event) {
+document.getElementById("mafetengForm").addEventListener(
+    "submit",
+    function(event) {
 
-    event.preventDefault();
-
-
-    const name =
-        document.getElementById("mafeteng-name").value.trim();
+        event.preventDefault();
 
 
-    const phone =
-        document.getElementById("mafeteng-phone").value.trim();
+        /* ==========================================
+           GET FORM VALUES
+        ========================================== */
+
+        const name =
+            document.getElementById("mafeteng-name").value.trim();
 
 
-    const email =
-        document.getElementById("mafeteng-email").value.trim();
+        const phone =
+            document.getElementById("mafeteng-phone").value.trim();
 
 
-    const option =
-        document.getElementById("mafeteng-option").value;
+        const email =
+            document.getElementById("mafeteng-email").value.trim();
 
 
-    const people =
-        document.getElementById("mafeteng-people").value;
+        const option =
+            document.getElementById("mafeteng-option").value;
 
 
-    const secondPerson =
-        document.getElementById("mafeteng-second-person").value.trim();
+        const people =
+            document.getElementById("mafeteng-people").value;
 
 
-    const payment =
-        document.getElementById("mafeteng-payment").value;
+        const secondPerson =
+            document.getElementById("mafeteng-second-person").value.trim();
 
 
-    const message =
-        document.getElementById("mafeteng-message").value.trim();
+        const payment =
+            document.getElementById("mafeteng-payment").value;
+
+
+        const message =
+            document.getElementById("mafeteng-message").value.trim();
 
 
 
-    const whatsappMessage =
+        /* ==========================================
+           CREATE WHATSAPP MESSAGE
+        ========================================== */
+
+        const whatsappMessage =
 `*MAFETENG SEMINAR REGISTRATION*
 
 *Full Name:* ${name}
@@ -720,35 +942,45 @@ ${message || "None"}
 I would like to register for the Mafeteng Seminar Tour.`;
 
 
-    const whatsappURL =
-        "https://wa.me/26656506092?text=" +
-        encodeURIComponent(whatsappMessage);
 
+        /* ==========================================
+           WHATSAPP LINK
+        ========================================== */
 
-    /*
-       Direct navigation to WhatsApp.
-       This avoids popup blockers that can affect window.open()
-       on some mobile browsers.
-    */
-
-    window.location.href = whatsappURL;
-
-});
-
-</script>
+        const whatsappURL =
+            "https://wa.me/26656506092?text=" +
+            encodeURIComponent(whatsappMessage);
 
 
 
-<!-- =================================================
-     EARLY BIRD DISPLAY
-================================================== -->
+        /* ==========================================
+           OPEN WHATSAPP
+        ========================================== */
 
-<script>
+        window.location.href = whatsappURL;
+
+    }
+);
+
+
+
+/* ==========================================
+   EARLY BIRD SPOTS
+========================================== */
 
 const earlyBirdSpots = 5;
 
-document.getElementById("earlyBirdSpots").textContent =
-    "Only " + earlyBirdSpots + " Early Bird spots left!";
+const spotsElement =
+    document.getElementById("earlyBirdSpots");
+
+
+if (spotsElement) {
+
+    spotsElement.textContent =
+        "Only " + earlyBirdSpots +
+        " Early Bird spots left!";
+
+}
 
 </script>
 

@@ -1,586 +1,834 @@
-<!DOCTYPE html><html lang="en"><head><title>MSM | Media & Memories</title>
-
-<meta charset="utf-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- GOOGLE FONT -->
-<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
-      rel="stylesheet">
-
-<!-- FONT AWESOME -->
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<!-- CSS -->
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/magnific-popup.css">
-<link rel="stylesheet" href="css/flaticon.css">
-<link rel="stylesheet" href="css/style.css">
-
-
-<style>
-
-    /* =========================================
-       MSM BRAND COLORS
-    ========================================= */
-
-    :root {
-        --msm-dark-green: #0B3D2E;
-        --msm-darker-green: #06271D;
-        --msm-light-green: #7CB342;
-        --msm-soft-green: #A8D08D;
-        --msm-light-bg: #F4F8F5;
-        --msm-white: #FFFFFF;
-        --msm-dark-text: #111111;
-        --msm-body-text: #555555;
-        --msm-border: #E1EAE4;
-    }
-
-
-    /* =========================================
-       GENERAL
-    ========================================= */
-
-    body {
-        font-family: 'Poppins', sans-serif;
-        color: var(--msm-body-text);
-    }
-
-
-    /* =========================================
-       TOP BAR
-    ========================================= */
-
-    .top,
-    .wrap {
-        background: var(--msm-dark-green) !important;
-    }
-
-    .phone {
-        color: var(--msm-white) !important;
-    }
-
-    .phone a {
-        color: var(--msm-white) !important;
-    }
-
-    .phone a:hover {
-        color: var(--msm-soft-green) !important;
-    }
-
-    .social-media a {
-        color: var(--msm-white) !important;
-        margin-left: 18px;
-        transition: 0.3s ease;
-    }
-
-    .social-media a:hover {
-        color: var(--msm-light-green) !important;
-        transform: translateY(-2px);
-    }
-
-
-
-    /* =========================================
-       MSM BRAND COLORS
-    ========================================= */
-
-    :root {
-        --msm-dark-green: #0B3D2E;
-        --msm-darker-green: #06271D;
-        --msm-light-green: #7CB342;
-        --msm-soft-green: #A8D08D;
-        --msm-light-bg: #F4F8F5;
-        --msm-white: #FFFFFF;
-        --msm-dark-text: #111111;
-        --msm-body-text: #555555;
-        --msm-border: #E1EAE4;
-    }
-
-
-    /* =========================================
-       TOP SOCIAL MEDIA - NO SQUARES
-    ========================================= */
-
-    .social-media {
-        display: flex;
-        align-items: center;
-    }
-
-    .social-media p {
-        margin: 0;
-    }
-
-    .social-media a {
-        display: inline-flex !important;
-        align-items: center;
-        justify-content: center;
-
-        width: auto !important;
-        height: auto !important;
-        min-width: 0 !important;
-        min-height: 0 !important;
+<!DOCTYPE html>
+<html lang="en">
 
-        padding: 0 !important;
-        margin-left: 20px !important;
-
-        background: transparent !important;
-        border: none !important;
-        border-radius: 0 !important;
-        box-shadow: none !important;
-
-        color: #FFFFFF !important;
+<head>
 
-        text-decoration: none;
-        transition: 0.3s ease;
-    }
-
-    .social-media a i {
-        background: transparent !important;
-        color: #FFFFFF !important;
-        font-size: 17px;
-    }
-
-    .social-media a:hover,
-    .social-media a:hover i {
-        background: transparent !important;
-        color: #7CB342 !important;
-    }
-
-    /* =========================================
-       NAVIGATION
-    ========================================= */
-
-    .ftco-navbar-light {
-        background: var(--msm-white) !important;
-    }
-
-    .ftco-navbar-light .navbar-brand {
-        color: var(--msm-dark-green) !important;
-    }
-
-    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-        color: var(--msm-dark-green) !important;
-        font-weight: 500;
-    }
-
-    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-        color: var(--msm-light-green) !important;
-    }
-
-    .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-        color: var(--msm-light-green) !important;
-    }
-
-    .navbar-toggler {
-        background: var(--msm-dark-green) !important;
-        border-color: var(--msm-dark-green) !important;
-    }
-
-
-    /* =========================================
-       SEARCH
-    ========================================= */
-
-    .searchform .form-control {
-        border-color: var(--msm-border);
-    }
-
-    .searchform .search {
-        background: var(--msm-dark-green) !important;
-        color: var(--msm-white) !important;
-        border-color: var(--msm-dark-green) !important;
-    }
-
-    .searchform .search:hover {
-        background: var(--msm-light-green) !important;
-        border-color: var(--msm-light-green) !important;
-    }
-
-
-    /* =========================================
-       HERO
-    ========================================= */
-
-    .hero-wrap .overlay {
-        background: var(--msm-darker-green) !important;
-        opacity: 0.65;
-    }
-
-    .breadcrumbs a {
-        color: var(--msm-soft-green) !important;
-    }
-
-    .breadcrumbs span {
-        color: var(--msm-white);
-    }
-
-    .hero-wrap .bread {
-        color: var(--msm-white) !important;
-    }
-
-
-    /* =========================================
-       MEDIA SECTION
-    ========================================= */
-
-    .media-section {
-        padding: 70px 0;
-        background: var(--msm-white);
-    }
-
-    .media-intro {
-        text-align: center;
-        max-width: 800px;
-        margin: 0 auto 50px;
-    }
-
-    .media-intro h2 {
-        font-size: 36px;
-        font-weight: 700;
-        margin-bottom: 15px;
-        color: var(--msm-dark-green);
-    }
-
-    .media-intro p {
-        color: var(--msm-body-text);
-        line-height: 1.8;
-    }
-
-
-    /* =========================================
-       COLLECTION
-    ========================================= */
-
-    .media-collection {
-        margin-bottom: 70px;
-    }
-
-    .media-heading {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-
-    .media-heading h3 {
-        font-size: 28px;
-        font-weight: 600;
-        margin-bottom: 10px;
-        color: var(--msm-dark-green);
-    }
-
-    .media-heading p {
-        color: #777;
-        margin-bottom: 0;
-    }
-
-
-    /* =========================================
-       GREEN DIVIDER
-    ========================================= */
-
-    .collection-divider {
-        width: 70px;
-        height: 4px;
-        margin: 15px auto 0;
-        background: var(--msm-light-green);
-        border-radius: 3px;
-    }
-
-
-    /* =========================================
-       MEDIA PHOTOS
-    ========================================= */
-
-    .media-photo {
-        margin-bottom: 30px;
-        overflow: hidden;
-        border-radius: 10px;
-        background: var(--msm-white);
-        border: 1px solid var(--msm-border);
-        box-shadow: 0 8px 25px rgba(11, 61, 46, 0.08);
-        transition: 0.3s ease;
-    }
-
-    .media-photo:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 30px rgba(11, 61, 46, 0.15);
-    }
-
-    .media-photo a {
-        display: block;
-    }
-
-    .media-photo img {
-        width: 100%;
-        height: 260px;
-        object-fit: cover;
-        display: block;
-        transition: all 0.4s ease;
-    }
-
-    .media-photo:hover img {
-        transform: scale(1.05);
-    }
-
-
-    /* =========================================
-       MEDIA CAPTION
-    ========================================= */
-
-    .media-caption {
-        padding: 18px 15px;
-        background: var(--msm-white);
-        text-align: center;
-    }
-
-    .media-caption h5 {
-        margin: 0;
-        font-size: 17px;
-        font-weight: 600;
-        color: var(--msm-dark-green);
-    }
-
-    .media-caption p {
-        margin: 5px 0 0;
-        color: #777;
-        font-size: 14px;
-    }
-
-
-    /* =========================================
-       ALTERNATE SECTION BACKGROUND
-    ========================================= */
-
-    .media-collection:nth-child(even) {
-        background: var(--msm-light-bg);
-        padding: 40px 25px;
-        border-radius: 12px;
-    }
-
-
-    /* =========================================
-       FOOTER
-    ========================================= */
-
-    .footer {
-        background: var(--msm-dark-green) !important;
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    .footer-heading {
-        color: var(--msm-white) !important;
-        font-weight: 600;
-    }
-
-    .footer p {
-        color: rgba(255, 255, 255, 0.75);
-    }
-
-    .footer a {
-        color: rgba(255, 255, 255, 0.75);
-        transition: 0.3s ease;
-    }
-
-    .footer a:hover {
-        color: var(--msm-light-green) !important;
-    }
-
-
-    /* =========================================
-       FOOTER SOCIAL ICONS
-       NO CIRCLES
-    ========================================= */
-
-    .ftco-footer-social {
-        display: flex !important;
-        align-items: center !important;
-        padding: 0 !important;
-        margin-top: 20px;
-    }
-
-    .ftco-footer-social li {
-        margin-right: 25px !important;
-        margin-left: 0 !important;
-        list-style: none;
-    }
-
-    .ftco-footer-social li a {
-        width: auto !important;
-        height: auto !important;
-        min-width: 0 !important;
-        min-height: 0 !important;
-        padding: 0 !important;
-        margin: 0 !important;
-        display: inline-flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        background: transparent !important;
-        border: none !important;
-        border-radius: 0 !important;
-        box-shadow: none !important;
-        color: var(--msm-white) !important;
-    }
-
-    .ftco-footer-social li a span {
-        font-size: 20px !important;
-        background: transparent !important;
-        color: var(--msm-white) !important;
-    }
-
-    .ftco-footer-social li a:hover span {
-        color: var(--msm-light-green) !important;
-    }
-
-
-    /* =========================================
-       CONSULTATION AREA
-    ========================================= */
-
-    .aside-stretch-right {
-        background: var(--msm-darker-green) !important;
-    }
-
-    .form-consultation .form-control {
-        background: var(--msm-white);
-        border: 1px solid var(--msm-border);
-        color: var(--msm-dark-text);
-    }
-
-    .form-consultation .form-control:focus {
-        border-color: var(--msm-light-green);
-        box-shadow: 0 0 0 2px rgba(124, 179, 66, 0.15);
-    }
-
-    .form-consultation .submit {
-        background: var(--msm-light-green) !important;
-        border: none !important;
-        color: var(--msm-white) !important;
-        font-weight: 600;
-        transition: 0.3s ease;
-    }
-
-    .form-consultation .submit:hover {
-        background: var(--msm-soft-green) !important;
-        color: var(--msm-darker-green) !important;
-    }
-
-
-    /* =========================================
-       COPYRIGHT
-    ========================================= */
-
-    .copyright {
-        color: rgba(255, 255, 255, 0.65) !important;
-        border-top: 1px solid rgba(255, 255, 255, 0.12);
-        padding-top: 20px;
-    }
-
-
-    /* =========================================
-       LOADER
-    ========================================= */
-
-    #ftco-loader .path {
-        stroke: var(--msm-light-green) !important;
-    }
-
-
-    /* =========================================
-       MOBILE
-    ========================================= */
-
-    @media (max-width: 767px) {
-
-        .media-intro h2 {
-            font-size: 28px;
+    <title>MSM | Media & Memories</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- GOOGLE FONT -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/animate.css">
+
+    <link rel="stylesheet"
+          href="css/owl.carousel.min.css">
+
+    <link rel="stylesheet"
+          href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet"
+          href="css/magnific-popup.css">
+
+    <link rel="stylesheet"
+          href="css/flaticon.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+
+    <style>
+
+        /* =========================================
+           MSM BRAND COLORS
+        ========================================= */
+
+        :root {
+
+            --msm-dark-green: #0B3D2E;
+            --msm-darker-green: #06271D;
+            --msm-light-green: #7CB342;
+            --msm-soft-green: #A8D08D;
+            --msm-light-bg: #F4F8F5;
+            --msm-white: #FFFFFF;
+            --msm-dark-text: #111111;
+            --msm-body-text: #555555;
+            --msm-border: #E1EAE4;
+
         }
 
-        .media-heading h3 {
-            font-size: 23px;
+
+        /* =========================================
+           GENERAL
+        ========================================= */
+
+        body {
+
+            font-family: 'Poppins', sans-serif;
+            color: var(--msm-body-text);
+
         }
 
-        .media-photo img {
-            height: 230px;
+
+        /* =========================================
+           TOP BAR
+        ========================================= */
+
+        .top,
+        .wrap {
+
+            background: var(--msm-dark-green) !important;
+
         }
 
-        .media-collection:nth-child(even) {
-            padding: 25px 15px;
+
+        .phone {
+
+            color: var(--msm-white) !important;
+
         }
+
+
+        .phone a {
+
+            color: var(--msm-white) !important;
+
+        }
+
+
+        .phone a:hover {
+
+            color: var(--msm-soft-green) !important;
+
+        }
+
+
+        .social-media {
+
+            display: flex;
+            align-items: center;
+
+        }
+
+
+        .social-media p {
+
+            margin: 0;
+
+        }
+
 
         .social-media a {
-            margin-left: 12px;
+
+            display: inline-flex !important;
+            align-items: center;
+            justify-content: center;
+
+            width: auto !important;
+            height: auto !important;
+
+            min-width: 0 !important;
+            min-height: 0 !important;
+
+            padding: 0 !important;
+            margin-left: 20px !important;
+
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+
+            color: #FFFFFF !important;
+
+            text-decoration: none;
+
+            transition: 0.3s ease;
+
         }
 
-    }
 
-</style>
+        .social-media a i {
 
-</head><body><!-- =========================================
+            background: transparent !important;
+            color: #FFFFFF !important;
+            font-size: 17px;
+
+        }
+
+
+        .social-media a:hover,
+        .social-media a:hover i {
+
+            background: transparent !important;
+            color: var(--msm-light-green) !important;
+
+        }
+
+
+        /* =========================================
+           NAVIGATION
+        ========================================= */
+
+        .ftco-navbar-light {
+
+            background: var(--msm-white) !important;
+
+        }
+
+
+        .ftco-navbar-light .navbar-brand {
+
+            color: var(--msm-dark-green) !important;
+
+        }
+
+
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+
+            color: var(--msm-dark-green) !important;
+            font-weight: 500;
+
+        }
+
+
+        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+
+            color: var(--msm-light-green) !important;
+
+        }
+
+
+        .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+
+            color: var(--msm-light-green) !important;
+
+        }
+
+
+        .navbar-toggler {
+
+            background: var(--msm-dark-green) !important;
+            border-color: var(--msm-dark-green) !important;
+
+        }
+
+
+        /* =========================================
+           SEARCH
+        ========================================= */
+
+        .searchform .form-control {
+
+            border-color: var(--msm-border);
+
+        }
+
+
+        .searchform .search {
+
+            background: var(--msm-dark-green) !important;
+            color: var(--msm-white) !important;
+            border-color: var(--msm-dark-green) !important;
+
+        }
+
+
+        .searchform .search:hover {
+
+            background: var(--msm-light-green) !important;
+            border-color: var(--msm-light-green) !important;
+
+        }
+
+
+        /* =========================================
+           HERO
+        ========================================= */
+
+        .hero-wrap .overlay {
+
+            background: var(--msm-darker-green) !important;
+            opacity: 0.65;
+
+        }
+
+
+        .breadcrumbs a {
+
+            color: var(--msm-soft-green) !important;
+
+        }
+
+
+        .breadcrumbs span {
+
+            color: var(--msm-white);
+
+        }
+
+
+        .hero-wrap .bread {
+
+            color: var(--msm-white) !important;
+
+        }
+
+
+        /* =========================================
+           MEDIA SECTION
+        ========================================= */
+
+        .media-section {
+
+            padding: 70px 0;
+            background: var(--msm-white);
+
+        }
+
+
+        .media-intro {
+
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+
+        }
+
+
+        .media-intro h2 {
+
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--msm-dark-green);
+
+        }
+
+
+        .media-intro p {
+
+            color: var(--msm-body-text);
+            line-height: 1.8;
+
+        }
+
+
+        /* =========================================
+           COLLECTION
+        ========================================= */
+
+        .media-collection {
+
+            margin-bottom: 70px;
+
+        }
+
+
+        .media-heading {
+
+            text-align: center;
+            margin-bottom: 30px;
+
+        }
+
+
+        .media-heading h3 {
+
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--msm-dark-green);
+
+        }
+
+
+        .media-heading p {
+
+            color: #777;
+            margin-bottom: 0;
+
+        }
+
+
+        /* =========================================
+           GREEN DIVIDER
+        ========================================= */
+
+        .collection-divider {
+
+            width: 70px;
+            height: 4px;
+            margin: 15px auto 0;
+
+            background: var(--msm-light-green);
+
+            border-radius: 3px;
+
+        }
+
+
+        /* =========================================
+           MEDIA PHOTOS
+        ========================================= */
+
+        .media-photo {
+
+            margin-bottom: 30px;
+
+            overflow: hidden;
+
+            border-radius: 10px;
+
+            background: var(--msm-white);
+
+            border: 1px solid var(--msm-border);
+
+            box-shadow:
+                0 8px 25px rgba(11, 61, 46, 0.08);
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .media-photo:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 12px 30px rgba(11, 61, 46, 0.15);
+
+        }
+
+
+        .media-photo a {
+
+            display: block;
+
+        }
+
+
+        .media-photo img {
+
+            width: 100%;
+            height: 260px;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: all 0.4s ease;
+
+        }
+
+
+        .media-photo:hover img {
+
+            transform: scale(1.05);
+
+        }
+
+
+        /* =========================================
+           MEDIA CAPTION
+        ========================================= */
+
+        .media-caption {
+
+            padding: 18px 15px;
+
+            background: var(--msm-white);
+
+            text-align: center;
+
+        }
+
+
+        .media-caption h5 {
+
+            margin: 0;
+
+            font-size: 17px;
+
+            font-weight: 600;
+
+            color: var(--msm-dark-green);
+
+        }
+
+
+        .media-caption p {
+
+            margin: 5px 0 0;
+
+            color: #777;
+
+            font-size: 14px;
+
+        }
+
+
+        /* =========================================
+           ALTERNATE BACKGROUND
+        ========================================= */
+
+        .media-collection:nth-child(even) {
+
+            background: var(--msm-light-bg);
+
+            padding: 40px 25px;
+
+            border-radius: 12px;
+
+        }
+
+
+        /* =========================================
+           FOOTER
+        ========================================= */
+
+        .footer {
+
+            background: var(--msm-dark-green) !important;
+
+            color: rgba(255, 255, 255, 0.8);
+
+        }
+
+
+        .footer-heading {
+
+            color: var(--msm-white) !important;
+
+            font-weight: 600;
+
+        }
+
+
+        .footer p {
+
+            color: rgba(255, 255, 255, 0.75);
+
+        }
+
+
+        .footer a {
+
+            color: rgba(255, 255, 255, 0.75);
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .footer a:hover {
+
+            color: var(--msm-light-green) !important;
+
+        }
+
+
+        /* =========================================
+           FOOTER SOCIAL ICONS
+        ========================================= */
+
+        .ftco-footer-social {
+
+            display: flex !important;
+
+            align-items: center !important;
+
+            padding: 0 !important;
+
+            margin-top: 20px;
+
+        }
+
+
+        .ftco-footer-social li {
+
+            margin-right: 25px !important;
+
+            margin-left: 0 !important;
+
+            list-style: none;
+
+        }
+
+
+        .ftco-footer-social li a {
+
+            width: auto !important;
+
+            height: auto !important;
+
+            min-width: 0 !important;
+
+            min-height: 0 !important;
+
+            padding: 0 !important;
+
+            margin: 0 !important;
+
+            display: inline-flex !important;
+
+            align-items: center !important;
+
+            justify-content: center !important;
+
+            background: transparent !important;
+
+            border: none !important;
+
+            border-radius: 0 !important;
+
+            box-shadow: none !important;
+
+            color: var(--msm-white) !important;
+
+        }
+
+
+        .ftco-footer-social li a span {
+
+            font-size: 20px !important;
+
+            background: transparent !important;
+
+            color: var(--msm-white) !important;
+
+        }
+
+
+        .ftco-footer-social li a:hover span {
+
+            color: var(--msm-light-green) !important;
+
+        }
+
+
+        /* =========================================
+           CONSULTATION
+        ========================================= */
+
+        .aside-stretch-right {
+
+            background: var(--msm-darker-green) !important;
+
+        }
+
+
+        .form-consultation .form-control {
+
+            background: var(--msm-white);
+
+            border: 1px solid var(--msm-border);
+
+            color: var(--msm-dark-text);
+
+        }
+
+
+        .form-consultation .form-control:focus {
+
+            border-color: var(--msm-light-green);
+
+            box-shadow:
+                0 0 0 2px rgba(124, 179, 66, 0.15);
+
+        }
+
+
+        .form-consultation .submit {
+
+            background: var(--msm-light-green) !important;
+
+            border: none !important;
+
+            color: var(--msm-white) !important;
+
+            font-weight: 600;
+
+            transition: 0.3s ease;
+
+        }
+
+
+        .form-consultation .submit:hover {
+
+            background: var(--msm-soft-green) !important;
+
+            color: var(--msm-darker-green) !important;
+
+        }
+
+
+        /* =========================================
+           COPYRIGHT
+        ========================================= */
+
+        .copyright {
+
+            color: rgba(255, 255, 255, 0.65) !important;
+
+            border-top:
+                1px solid rgba(255, 255, 255, 0.12);
+
+            padding-top: 20px;
+
+        }
+
+
+        /* =========================================
+           LOADER
+        ========================================= */
+
+        #ftco-loader .path {
+
+            stroke: var(--msm-light-green) !important;
+
+        }
+
+
+        /* =========================================
+           MOBILE
+        ========================================= */
+
+        @media (max-width: 767px) {
+
+            .media-intro h2 {
+
+                font-size: 28px;
+
+            }
+
+
+            .media-heading h3 {
+
+                font-size: 23px;
+
+            }
+
+
+            .media-photo img {
+
+                height: 230px;
+
+            }
+
+
+            .media-collection:nth-child(even) {
+
+                padding: 25px 15px;
+
+            }
+
+
+            .social-media a {
+
+                margin-left: 12px !important;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+
+<!-- =================================================
      TOP BAR
-========================================= --><div class="top py-1"><div class="container">
+================================================== -->
 
-    <div class="row no-gutters d-flex align-items-center px-md-0">
+<div class="top py-1">
 
-        <div class="col">
+    <div class="container">
 
-            <p class="mb-0 phone">
-
-                <span class="fa-solid fa-phone"></span>
-
-                <a href="tel:+26656506092">
-                    +266 5650 6092
-                </a>
-
-            </p>
-
-        </div>
+        <div class="row no-gutters d-flex align-items-center px-md-0">
 
 
-        <div class="col-md-6 d-flex justify-content-md-end">
+            <div class="col">
 
-           <div class="social-media">
+                <p class="mb-0 phone">
 
-    <p class="mb-0 d-flex">
+                    <span class="fa-solid fa-phone"></span>
 
-        <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-           target="_blank"
-           title="Facebook">
+                    <a href="tel:+26656506092">
 
-            <i class="fa-brands fa-facebook-f"></i>
+                        +266 5650 6092
 
-        </a>
+                    </a>
 
-        <a href="https://www.instagram.com/mohaumosoeunyane/"
-           target="_blank"
-           title="Instagram">
+                </p>
 
-            <i class="fa-brands fa-instagram"></i>
+            </div>
 
-        </a>
 
-        <a href="https://wa.me/26656506092"
-           target="_blank"
-           title="WhatsApp">
 
-            <i class="fa-brands fa-whatsapp"></i>
+            <div class="col-md-6 d-flex justify-content-md-end">
 
-        </a>
+                <div class="social-media">
 
-        <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
-           target="_blank"
-           title="TikTok">
+                    <p class="mb-0 d-flex">
 
-            <i class="fa-brands fa-tiktok"></i>
 
-        </a>
+                        <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="Facebook">
 
-    </p>
+                            <i class="fa-brands fa-facebook-f"></i>
 
-</div>
+                        </a>
+
+
+                        <a href="https://www.instagram.com/mohaumosoeunyane/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+
+                        <a href="https://wa.me/26656506092"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="WhatsApp">
+
+                            <i class="fa-brands fa-whatsapp"></i>
+
+                        </a>
+
+
+                        <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           title="TikTok">
+
+                            <i class="fa-brands fa-tiktok"></i>
+
+                        </a>
+
+
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -588,1036 +836,338 @@
 
 </div>
 
-</div><!-- =========================================
+
+
+<!-- =================================================
      NAVIGATION
-========================================= --><nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light"
-     id="ftco-navbar"><div class="container">
+================================================== -->
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light"
+     id="ftco-navbar">
+
+    <div class="container">
 
 
-    <!-- LOGO -->
+        <!-- LOGO -->
 
-    <a class="navbar-brand"
-       href="index.html">
+        <a class="navbar-brand"
+           href="index.html">
 
-        <img src="images/LOGO.jpeg"
-             alt="MSM Training Company"
-             style="height:50px; width:auto;">
+            <img src="images/LOGO.jpeg"
+                 alt="MSM Training Company"
+                 style="height:50px; width:auto;">
 
-    </a>
-
-
-    <!-- SEARCH -->
-
-    <form action="#"
-          class="searchform order-sm-start order-lg-last">
-
-        <div class="form-group d-flex">
-
-            <input type="text"
-                   class="form-control pl-3"
-                   placeholder="Search">
-
-            <button type="submit"
-                    class="form-control search">
-
-                <span class="fa-solid fa-magnifying-glass"></span>
-
-            </button>
-
-        </div>
-
-    </form>
+        </a>
 
 
-    <!-- MOBILE MENU -->
 
-    <button class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#ftco-nav"
-            aria-controls="ftco-nav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
+        <!-- SEARCH -->
 
-        <span class="fa-solid fa-bars"></span>
-        Menu
+        <form action="#"
+              class="searchform order-sm-start order-lg-last"
+              id="mediaSearchForm">
 
-    </button>
+            <div class="form-group d-flex">
+
+                <input type="text"
+                       class="form-control pl-3"
+                       placeholder="Search">
+
+                <button type="submit"
+                        class="form-control search">
+
+                    <span class="fa-solid fa-magnifying-glass"></span>
+
+                </button>
+
+            </div>
+
+        </form>
 
 
-    <!-- MENU -->
 
-    <div class="collapse navbar-collapse"
-         id="ftco-nav">
+        <!-- MOBILE MENU -->
 
-        <ul class="navbar-nav m-auto">
+        <button class="navbar-toggler"
+                type="button"
+                aria-controls="ftco-nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
 
-            <li class="nav-item">
-                <a href="index.html"
-                   class="nav-link">
-                    Home
-                </a>
-            </li>
+            <span class="fa-solid fa-bars"></span>
 
-            <li class="nav-item">
-                <a href="about.html"
-                   class="nav-link">
-                    About Us
-                </a>
-            </li>
+            Menu
 
-            <li class="nav-item">
-                <a href="services.html"
-                   class="nav-link">
-                    Services
-                </a>
-            </li>
+        </button>
 
-            <li class="nav-item">
-                <a href="course.html"
-                   class="nav-link">
-                    Courses
-                </a>
-            </li>
 
-            <li class="nav-item">
-                <a href="digital-products.html"
-                   class="nav-link">
-                    Digital Products
-                </a>
-            </li>
 
-            <li class="nav-item active">
-                <a href="media.html"
-                   class="nav-link">
-                    Media
-                </a>
-            </li>
+        <!-- MENU -->
 
-            <li class="nav-item">
-                <a href="contact.html"
-                   class="nav-link">
-                    Contact Us
-                </a>
-            </li>
+        <div class="collapse navbar-collapse"
+             id="ftco-nav">
 
-        </ul>
+            <ul class="navbar-nav m-auto">
 
-    </div>
 
-</div>
+                <li class="nav-item">
 
-</nav><!-- =========================================
-     HERO
-========================================= --><section class="hero-wrap hero-wrap-2"
-         style="background-image: url('images/ureng.jpg');"
-         data-stellar-background-ratio="0.5"><div class="overlay"></div>
-
-<div class="container">
-
-    <div class="row no-gutters slider-text align-items-end">
-
-        <div class="col-md-9 ftco-animate pb-5">
-
-            <p class="breadcrumbs mb-2">
-
-                <span class="mr-2">
-
-                    <a href="index.html">
+                    <a href="index.html"
+                       class="nav-link">
 
                         Home
 
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a href="about.html"
+                       class="nav-link">
+
+                        About Us
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a href="services.html"
+                       class="nav-link">
+
+                        Services
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a href="course.html"
+                       class="nav-link">
+
+                        Courses
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a href="digital-products.html"
+                       class="nav-link">
+
+                        Digital Products
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item active">
+
+                    <a href="media.html"
+                       class="nav-link">
+
+                        Media
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a href="contact.html"
+                       class="nav-link">
+
+                        Contact Us
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+</nav>
+
+
+
+<!-- =================================================
+     HERO
+================================================== -->
+
+<section class="hero-wrap hero-wrap-2"
+         style="background-image: url('images/ureng.jpg');"
+         data-stellar-background-ratio="0.5">
+
+    <div class="overlay"></div>
+
+
+    <div class="container">
+
+        <div class="row no-gutters slider-text align-items-end">
+
+            <div class="col-md-9 ftco-animate pb-5">
+
+
+                <p class="breadcrumbs mb-2">
+
+
+                    <span class="mr-2">
+
+                        <a href="index.html">
+
+                            Home
+
+                            <i class="ion-ios-arrow-forward"></i>
+
+                        </a>
+
+                    </span>
+
+
+                    <span>
+
+                        Media
+
                         <i class="ion-ios-arrow-forward"></i>
 
-                    </a>
-
-                </span>
-
-                <span>
-
-                    Media
-
-                    <i class="ion-ios-arrow-forward"></i>
-
-                </span>
-
-            </p>
+                    </span>
 
 
-            <h1 class="mb-0 bread">
-                Media & Memories
-            </h1>
+                </p>
+
+
+                <h1 class="mb-0 bread">
+
+                    Media & Memories
+
+                </h1>
+
+
+            </div>
 
         </div>
 
     </div>
 
-</div>
+</section>
 
-</section><!-- =========================================
+
+
+<!-- =================================================
      MEDIA INTRODUCTION
-========================================= --><section class="media-section"><div class="container">
+================================================== -->
+
+<section class="media-section">
+
+    <div class="container">
 
 
-    <div class="media-intro ftco-animate">
+        <div class="media-intro ftco-animate">
 
-        <h2>
-            Our Media & Memories
-        </h2>
+            <h2>
 
-        <p>
+                Our Media & Memories
 
-            Welcome to our Media & Memories page — a collection
-            of moments from the journey we have shared together.
+            </h2>
 
-            From training sessions and courses to church services,
-            retreats, special events and community activities,
-            these memories remind us of the people, lessons and
-            moments that continue to shape our journey.
-
-        </p>
-
-    </div>
-
-
-
-    <!-- =====================================
-         SIX BLOCK ACTION COURSE
-    ====================================== -->
-
-    <div class="media-collection"
-         id="six-block">
-
-        <div class="media-heading">
-
-            <h3>
-                Six Block Action Course
-            </h3>
 
             <p>
-                Moments captured during our Six Block Action Course sessions.
+
+                Welcome to our Media & Memories page —
+                a collection of moments from the journey
+                we have shared together.
+
+                From training sessions and courses to
+                retreats, special events and community
+                activities, these memories remind us of
+                the people, lessons and moments that
+                continue to shape our journey.
+
             </p>
 
-            <div class="collection-divider"></div>
-
         </div>
 
 
-        <div class="row">
+
+        <!-- =================================================
+             SIX BLOCK ACTION COURSE
+        ================================================== -->
+
+        <div class="media-collection"
+             id="six-block">
 
 
-            <!-- IMAGE 1 -->
+            <div class="media-heading">
 
-            <div class="col-md-4">
+                <h3>
 
-                <div class="media-photo">
+                    Six Block Action Course
 
-                    <a href="images/545745856_1289194912657443_2017621403578173656_n.jpg"
-                       class="image-popup">
+                </h3>
 
-                        <img src="images/545745856_1289194912657443_2017621403578173656_n.jpg"
-                             alt="Six Block Action Course">
 
-                    </a>
+                <p>
 
-                    <div class="media-caption">
+                    Moments captured during our Six Block
+                    Action Course sessions.
 
-                        <h5>
-                            Six Block Action Course
-                        </h5>
+                </p>
 
-                        <p>
-                            Training & Development
-                        </p>
 
-                    </div>
-
-                </div>
+                <div class="collection-divider"></div>
 
             </div>
 
 
-
-            <!-- IMAGE 2 -->
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/549428233_1289193489324252_6343123772635651773_n.jpg"
-                       class="image-popup">
-
-                        <img src="images/549428233_1289193489324252_6343123772635651773_n.jpg"
-                             alt="Six Block Action Course">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Six Block Action Course
-                        </h5>
-
-                        <p>
-                            Learning & Growth
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- IMAGE 3 -->
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/me.jpg"
-                       class="image-popup">
-
-                        <img src="images/me.jpg"
-                             alt="Six Block Action Course">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Six Block Action Course
-                        </h5>
-
-                        <p>
-                            Building Better Futures
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =====================================
-         COUPLES RETREAT
-    ====================================== -->
-
-    <div class="media-collection"
-         id="couples-retreat">
-
-        <div class="media-heading">
-
-            <h3>
-                Couples Retreat
-            </h3>
-
-            <p>
-                Special moments from our couples' programmes and retreats.
-            </p>
-
-            <div class="collection-divider"></div>
-
-        </div>
-
-
-        <div class="row">
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/kawela.jpg"
-                       class="image-popup">
-
-                        <img src="images/kawela.jpg"
-                             alt="Couples Retreat">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Couples Retreat
-                        </h5>
-
-                        <p>
-                            Love • Growth • Connection
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/nka matha.jpg"
-                       class="image-popup">
-
-                        <img src="images/nka matha.jpg"
-                             alt="Couples Retreat">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Couples Retreat
-                        </h5>
-
-                        <p>
-                            Building Stronger Relationships
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/mpepebo.jpg"
-                       class="image-popup">
-
-                        <img src="images/mpepebo.jpg"
-                             alt="Couples Retreat">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Couples Retreat
-                        </h5>
-
-                        <p>
-                            Memories Together
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =====================================
-         MASTER CLASSES
-    ====================================== -->
-
-    <div class="media-collection"
-         id="master-class">
-
-        <div class="media-heading">
-
-            <h3>
-                Master Classes & Training
-            </h3>
-
-            <p>
-                Memories from our master classes, workshops and training sessions.
-            </p>
-
-            <div class="collection-divider"></div>
-
-        </div>
-
-
-        <div class="row">
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/MASTER CLASS KIT.jpeg"
-                       class="image-popup">
-
-                        <img src="images/MASTER CLASS KIT.jpeg"
-                             alt="Master Class">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Master Class
-                        </h5>
-
-                        <p>
-                            Knowledge & Transformation
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/keanahana akere.jpg"
-                       class="image-popup">
-
-                        <img src="images/keanahana akere.jpg"
-                             alt="Master Class">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Training Session
-                        </h5>
-
-                        <p>
-                            Learning & Development
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/548272310_1289168449326756_6757447956447187817_n.jpg"
-                       class="image-popup">
-
-                        <img src="images/548272310_1289168449326756_6757447956447187817_n.jpg"
-                             alt="Training Session">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Training Session
-                        </h5>
-
-                        <p>
-                            Growth & Empowerment
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =====================================
-         LIVE EVENTS
-    ====================================== -->
-
-    <div class="media-collection">
-
-        <div class="media-heading">
-
-            <h3>
-                Live Events & Podcasts
-            </h3>
-
-            <p>
-                Behind-the-scenes moments from our live broadcasts,
-                podcasts and events.
-            </p>
-
-            <div class="collection-divider"></div>
-
-        </div>
-
-
-        <div class="row">
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/wampona.jpg"
-                       class="image-popup">
-
-                        <img src="images/wampona.jpg"
-                             alt="Live Event">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Live Event
-                        </h5>
-
-                        <p>
-                            Live Streaming
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/nnakelejwetse.jpg"
-                       class="image-popup">
-
-                        <img src="images/nnakelejwetse.jpg"
-                             alt="Podcast">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Podcast
-                        </h5>
-
-                        <p>
-                            Conversations That Matter
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/i surrender.jpg"
-                       class="image-popup">
-
-                        <img src="images/i surrender.jpg"
-                             alt="Media Production">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Media Production
-                        </h5>
-
-                        <p>
-                            Behind the Scenes
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- =====================================
-         SPECIAL MOMENTS
-    ====================================== -->
-
-    <div class="media-collection">
-
-        <div class="media-heading">
-
-            <h3>
-                Special Moments
-            </h3>
-
-            <p>
-                A collection of unforgettable moments from our journey.
-            </p>
-
-            <div class="collection-divider"></div>
-
-        </div>
-
-
-        <div class="row">
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/lennake.jpg"
-                       class="image-popup">
-
-                        <img src="images/lennake.jpg"
-                             alt="Special Moment">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Special Moment
-                        </h5>
-
-                        <p>
-                            Memories We Treasure
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/helekka qeta.jpg"
-                       class="image-popup">
-
-                        <img src="images/helekka qeta.jpg"
-                             alt="Special Moment">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Our Journey
-                        </h5>
-
-                        <p>
-                            Moments That Matter
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="col-md-4">
-
-                <div class="media-photo">
-
-                    <a href="images/kefihlile.jpg"
-                       class="image-popup">
-
-                        <img src="images/kefihlile.jpg"
-                             alt="Special Moment">
-
-                    </a>
-
-                    <div class="media-caption">
-
-                        <h5>
-                            Our Journey
-                        </h5>
-
-                        <p>
-                            Growing Together
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-</section><!-- =========================================
-     FOOTER
-========================================= --><footer class="footer"><div class="container-fluid px-lg-5">
-
-    <div class="row">
-
-
-        <!-- LEFT FOOTER -->
-
-        <div class="col-md-9 py-5">
 
             <div class="row">
 
 
-                <!-- ABOUT -->
+                <!-- IMAGE 1 -->
 
-                <div class="col-md-4 mb-md-0 mb-4">
+                <div class="col-md-4">
 
-                    <h2 class="footer-heading">
-                        About Us
-                    </h2>
+                    <div class="media-photo">
 
-                    <p>
+                        <a href="images/545745856_1289194912657443_2017621403578173656_n.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
 
-                        Mohau and the Success Masters Motivation &
-                        Training Company is committed to helping
-                        individuals, couples and communities grow
-                        through training, motivation, counselling
-                        and life coaching.
+                            <img src="images/545745856_1289194912657443_2017621403578173656_n.jpg"
+                                 alt="Six Block Action Course">
 
-                    </p>
+                        </a>
 
 
-                    <!-- SOCIAL MEDIA -->
+                        <div class="media-caption">
 
-                    <ul class="ftco-footer-social p-0">
+                            <h5>
 
+                                Six Block Action Course
 
-                        <li>
+                            </h5>
 
-                            <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                               target="_blank"
-                               title="Facebook">
 
-                                <span class="fa-brands fa-facebook-f"></span>
+                            <p>
 
-                            </a>
+                                Training & Development
 
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://www.instagram.com/mohaumosoeunyane/"
-                               target="_blank"
-                               title="Instagram">
-
-                                <span class="fa-brands fa-instagram"></span>
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://wa.me/26656506092"
-                               target="_blank"
-                               title="WhatsApp">
-
-                                <span class="fa-brands fa-whatsapp"></span>
-
-                            </a>
-
-                        </li>
-
-
-                        <li>
-
-                            <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
-                               target="_blank"
-                               title="TikTok">
-
-                                <span class="fa-brands fa-tiktok"></span>
-
-                            </a>
-
-                        </li>
-
-
-                    </ul>
-
-                </div>
-
-
-
-                <!-- MEDIA -->
-
-                <div class="col-md-8">
-
-                    <div class="row justify-content-center">
-
-                        <div class="col-md-12 col-lg-10">
-
-                            <div class="row">
-
-
-                                <div class="col-md-4 mb-md-0 mb-4">
-
-                                    <h2 class="footer-heading">
-                                        Media
-                                    </h2>
-
-                                    <ul class="list-unstyled">
-
-                                        <li>
-                                            <a href="#six-block"
-                                               class="py-1 d-block">
-                                                Six Block Action Course
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#couples-retreat"
-                                               class="py-1 d-block">
-                                                Couples Retreat
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#master-class"
-                                               class="py-1 d-block">
-                                                Master Classes
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#"
-                                               class="py-1 d-block">
-                                                Live Events
-                                            </a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-
-
-                                <!-- SERVICES -->
-
-                                <div class="col-md-4 mb-md-0 mb-4">
-
-                                    <h2 class="footer-heading">
-                                        Services
-                                    </h2>
-
-                                    <ul class="list-unstyled">
-
-                                        <li>
-                                            <a href="services.html"
-                                               class="py-1 d-block">
-                                                Life Coaching
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="services.html"
-                                               class="py-1 d-block">
-                                                Counselling
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="services.html"
-                                               class="py-1 d-block">
-                                                Training
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="services.html"
-                                               class="py-1 d-block">
-                                                Motivation
-                                            </a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-
-
-                                <!-- QUICK LINKS -->
-
-                                <div class="col-md-4 mb-md-0 mb-4">
-
-                                    <h2 class="footer-heading">
-                                        Quick Links
-                                    </h2>
-
-                                    <ul class="list-unstyled">
-
-                                        <li>
-                                            <a href="index.html"
-                                               class="py-1 d-block">
-                                                Home
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="about.html"
-                                               class="py-1 d-block">
-                                                About Us
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="success-stories.html"
-                                               class="py-1 d-block">
-                                                Courses
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="contact.html"
-                                               class="py-1 d-block">
-                                                Contact
-                                            </a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-
-
-                            </div>
+                            </p>
 
                         </div>
 
@@ -1625,30 +1175,84 @@
 
                 </div>
 
-            </div>
 
 
+                <!-- IMAGE 2 -->
 
-            <!-- COPYRIGHT -->
+                <div class="col-md-4">
 
-            <div class="row mt-md-5">
+                    <div class="media-photo">
 
-                <div class="col-md-12">
+                        <a href="images/549428233_1289193489324252_6343123772635651773_n.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
 
-                    <p class="copyright">
+                            <img src="images/549428233_1289193489324252_6343123772635651773_n.jpg"
+                                 alt="Six Block Action Course">
 
-                        Copyright &copy;
+                        </a>
 
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
 
-                        MSM Training Company.
-                        All rights reserved.
+                        <div class="media-caption">
 
-                    </p>
+                            <h5>
+
+                                Six Block Action Course
+
+                            </h5>
+
+
+                            <p>
+
+                                Learning & Growth
+
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
+
+
+
+                <!-- IMAGE 3 -->
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/me.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/me.jpg"
+                                 alt="Six Block Action Course">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Six Block Action Course
+
+                            </h5>
+
+
+                            <p>
+
+                                Building Better Futures
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
 
             </div>
 
@@ -1656,130 +1260,1309 @@
 
 
 
-        <!-- =====================================
-             FREE CONSULTATION
-        ====================================== -->
+        <!-- =================================================
+             COUPLES RETREAT
+        ================================================== -->
 
-        <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
-
-            <h2 class="footer-heading">
-                Free Consultation
-            </h2>
+        <div class="media-collection"
+             id="couples-retreat">
 
 
-            <form action="#"
-                  class="form-consultation">
+            <div class="media-heading">
+
+                <h3>
+
+                    Couples Retreat
+
+                </h3>
 
 
-                <div class="form-group">
+                <p>
 
-                    <input type="text"
-                           class="form-control"
-                           placeholder="Your Name"
-                           required>
+                    Special moments from our couples'
+                    programmes and retreats.
+
+                </p>
+
+
+                <div class="collection-divider"></div>
+
+            </div>
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/kawela.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/kawela.jpg"
+                                 alt="Couples Retreat">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Couples Retreat
+
+                            </h5>
+
+
+                            <p>
+
+                                Love • Growth • Connection
+
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
 
-                <div class="form-group">
 
-                    <input type="email"
-                           class="form-control"
-                           placeholder="Your Email"
-                           required>
+                <div class="col-md-4">
 
-                </div>
+                    <div class="media-photo">
 
+                        <a href="images/nka matha.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
 
-                <div class="form-group">
+                            <img src="images/nka matha.jpg"
+                                 alt="Couples Retreat">
 
-                    <input type="text"
-                           class="form-control"
-                           placeholder="Subject"
-                           required>
-
-                </div>
+                        </a>
 
 
-                <div class="form-group">
+                        <div class="media-caption">
 
-                    <textarea cols="30"
-                              rows="3"
-                              class="form-control"
-                              placeholder="Message"
-                              required></textarea>
+                            <h5>
 
-                </div>
+                                Couples Retreat
+
+                            </h5>
 
 
-                <div class="form-group">
+                            <p>
 
-                    <button type="submit"
-                            class="form-control submit px-3">
+                                Building Stronger Relationships
 
-                        Send A Message
+                            </p>
 
-                    </button>
+                        </div>
+
+                    </div>
 
                 </div>
 
 
-            </form>
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/mpepebo.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/mpepebo.jpg"
+                                 alt="Couples Retreat">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Couples Retreat
+
+                            </h5>
+
+
+                            <p>
+
+                                Memories Together
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             MASTER CLASSES
+        ================================================== -->
+
+        <div class="media-collection"
+             id="master-class">
+
+
+            <div class="media-heading">
+
+                <h3>
+
+                    Master Classes & Training
+
+                </h3>
+
+
+                <p>
+
+                    Memories from our master classes,
+                    workshops and training sessions.
+
+                </p>
+
+
+                <div class="collection-divider"></div>
+
+            </div>
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/MASTER CLASS KIT.jpeg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/MASTER CLASS KIT.jpeg"
+                                 alt="Master Class">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Master Class
+
+                            </h5>
+
+
+                            <p>
+
+                                Knowledge & Transformation
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/keanahana akere.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/keanahana akere.jpg"
+                                 alt="Master Class">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Training Session
+
+                            </h5>
+
+
+                            <p>
+
+                                Learning & Development
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/548272310_1289168449326756_6757447956447187817_n.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/548272310_1289168449326756_6757447956447187817_n.jpg"
+                                 alt="Training Session">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Training Session
+
+                            </h5>
+
+
+                            <p>
+
+                                Growth & Empowerment
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             LIVE EVENTS
+        ================================================== -->
+
+        <div class="media-collection"
+             id="live-events">
+
+
+            <div class="media-heading">
+
+                <h3>
+
+                    Live Events & Podcasts
+
+                </h3>
+
+
+                <p>
+
+                    Behind-the-scenes moments from our
+                    live broadcasts, podcasts and events.
+
+                </p>
+
+
+                <div class="collection-divider"></div>
+
+            </div>
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/wampona.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/wampona.jpg"
+                                 alt="Live Event">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Live Event
+
+                            </h5>
+
+
+                            <p>
+
+                                Live Streaming
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/nnakelejwetse.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/nnakelejwetse.jpg"
+                                 alt="Podcast">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Podcast
+
+                            </h5>
+
+
+                            <p>
+
+                                Conversations That Matter
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/i surrender.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/i surrender.jpg"
+                                 alt="Media Production">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Media Production
+
+                            </h5>
+
+
+                            <p>
+
+                                Behind the Scenes
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             SPECIAL MOMENTS
+        ================================================== -->
+
+        <div class="media-collection"
+             id="special-moments">
+
+
+            <div class="media-heading">
+
+                <h3>
+
+                    Special Moments
+
+                </h3>
+
+
+                <p>
+
+                    A collection of unforgettable moments
+                    from our journey.
+
+                </p>
+
+
+                <div class="collection-divider"></div>
+
+            </div>
+
+
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/lennake.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/lennake.jpg"
+                                 alt="Special Moment">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Special Moment
+
+                            </h5>
+
+
+                            <p>
+
+                                Memories We Treasure
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/helekka qeta.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/helekka qeta.jpg"
+                                 alt="Special Moment">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Our Journey
+
+                            </h5>
+
+
+                            <p>
+
+                                Moments That Matter
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-md-4">
+
+                    <div class="media-photo">
+
+                        <a href="images/kefihlile.jpg"
+                           target="_blank"
+                           rel="noopener noreferrer">
+
+                            <img src="images/kefihlile.jpg"
+                                 alt="Special Moment">
+
+                        </a>
+
+
+                        <div class="media-caption">
+
+                            <h5>
+
+                                Our Journey
+
+                            </h5>
+
+
+                            <p>
+
+                                Growing Together
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     FOOTER
+================================================== -->
+
+<footer class="footer">
+
+    <div class="container-fluid px-lg-5">
+
+        <div class="row">
+
+
+            <!-- =========================================
+                 ABOUT
+            ========================================== -->
+
+            <div class="col-md-9 py-5">
+
+                <div class="row">
+
+
+                    <div class="col-md-4 mb-md-0 mb-4">
+
+
+                        <h2 class="footer-heading">
+
+                            About Us
+
+                        </h2>
+
+
+                        <p>
+
+                            Mohau and the Success Masters
+                            Motivation & Training Company is
+                            committed to helping individuals,
+                            couples and communities grow through
+                            training, motivation, counselling
+                            and life coaching.
+
+                        </p>
+
+
+
+                        <!-- SOCIAL -->
+
+                        <ul class="ftco-footer-social p-0">
+
+
+                            <li>
+
+                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   title="Facebook">
+
+                                    <span class="fa-brands fa-facebook-f"></span>
+
+                                </a>
+
+                            </li>
+
+
+                            <li>
+
+                                <a href="https://www.instagram.com/mohaumosoeunyane/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   title="Instagram">
+
+                                    <span class="fa-brands fa-instagram"></span>
+
+                                </a>
+
+                            </li>
+
+
+                            <li>
+
+                                <a href="https://wa.me/26656506092"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   title="WhatsApp">
+
+                                    <span class="fa-brands fa-whatsapp"></span>
+
+                                </a>
+
+                            </li>
+
+
+                            <li>
+
+                                <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   title="TikTok">
+
+                                    <span class="fa-brands fa-tiktok"></span>
+
+                                </a>
+
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- =================================
+                         MEDIA
+                    ================================== -->
+
+                    <div class="col-md-8">
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-md-12 col-lg-10">
+
+                                <div class="row">
+
+
+                                    <div class="col-md-4 mb-md-0 mb-4">
+
+
+                                        <h2 class="footer-heading">
+
+                                            Media
+
+                                        </h2>
+
+
+                                        <ul class="list-unstyled">
+
+
+                                            <li>
+
+                                                <a href="#six-block"
+                                                   class="py-1 d-block">
+
+                                                    Six Block Action Course
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="#couples-retreat"
+                                                   class="py-1 d-block">
+
+                                                    Couples Retreat
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="#master-class"
+                                                   class="py-1 d-block">
+
+                                                    Master Classes
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="#live-events"
+                                                   class="py-1 d-block">
+
+                                                    Live Events
+
+                                                </a>
+
+                                            </li>
+
+
+                                        </ul>
+
+                                    </div>
+
+
+
+                                    <!-- SERVICES -->
+
+                                    <div class="col-md-4 mb-md-0 mb-4">
+
+
+                                        <h2 class="footer-heading">
+
+                                            Services
+
+                                        </h2>
+
+
+                                        <ul class="list-unstyled">
+
+
+                                            <li>
+
+                                                <a href="services.html"
+                                                   class="py-1 d-block">
+
+                                                    Life Coaching
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="services.html"
+                                                   class="py-1 d-block">
+
+                                                    Counselling
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="services.html"
+                                                   class="py-1 d-block">
+
+                                                    Training
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="services.html"
+                                                   class="py-1 d-block">
+
+                                                    Motivation
+
+                                                </a>
+
+                                            </li>
+
+
+                                        </ul>
+
+                                    </div>
+
+
+
+                                    <!-- QUICK LINKS -->
+
+                                    <div class="col-md-4 mb-md-0 mb-4">
+
+
+                                        <h2 class="footer-heading">
+
+                                            Quick Links
+
+                                        </h2>
+
+
+                                        <ul class="list-unstyled">
+
+
+                                            <li>
+
+                                                <a href="index.html"
+                                                   class="py-1 d-block">
+
+                                                    Home
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="about.html"
+                                                   class="py-1 d-block">
+
+                                                    About Us
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="course.html"
+                                                   class="py-1 d-block">
+
+                                                    Courses
+
+                                                </a>
+
+                                            </li>
+
+
+                                            <li>
+
+                                                <a href="contact.html"
+                                                   class="py-1 d-block">
+
+                                                    Contact
+
+                                                </a>
+
+                                            </li>
+
+
+                                        </ul>
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- COPYRIGHT -->
+
+                <div class="row mt-md-5">
+
+                    <div class="col-md-12">
+
+                        <p class="copyright">
+
+                            Copyright &copy;
+
+                            <script>
+
+                                document.write(
+                                    new Date().getFullYear()
+                                );
+
+                            </script>
+
+                            MSM Training Company.
+                            All rights reserved.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 FREE CONSULTATION
+            ========================================== -->
+
+            <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
+
+
+                <h2 class="footer-heading">
+
+                    Free Consultation
+
+                </h2>
+
+
+                <form action="#"
+                      class="form-consultation"
+                      id="consultationForm">
+
+
+                    <div class="form-group">
+
+                        <input type="text"
+                               id="consultName"
+                               class="form-control"
+                               placeholder="Your Name"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input type="email"
+                               id="consultEmail"
+                               class="form-control"
+                               placeholder="Your Email"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input type="text"
+                               id="consultSubject"
+                               class="form-control"
+                               placeholder="Subject"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <textarea id="consultMessage"
+                                  cols="30"
+                                  rows="3"
+                                  class="form-control"
+                                  placeholder="Message"
+                                  required></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <button type="submit"
+                                class="form-control submit px-3">
+
+                            Send A Message
+
+                        </button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
 
         </div>
 
     </div>
 
+</footer>
+
+
+
+<!-- =================================================
+     LOADER
+================================================== -->
+
+<div id="ftco-loader"
+     class="show fullscreen">
+
+    <svg class="circular"
+         width="48px"
+         height="48px">
+
+
+        <circle class="path-bg"
+                cx="24"
+                cy="24"
+                r="22"
+                fill="none"
+                stroke-width="4"
+                stroke="#eeeeee"/>
+
+
+        <circle class="path"
+                cx="24"
+                cy="24"
+                r="22"
+                fill="none"
+                stroke-width="4"
+                stroke-miterlimit="10"
+                stroke="#7CB342"/>
+
+
+    </svg>
+
 </div>
 
-</footer><!-- =========================================
-     LOADER
-========================================= --><div id="ftco-loader"
-     class="show fullscreen"><svg class="circular"
-     width="48px"
-     height="48px">
 
-    <circle class="path-bg"
-            cx="24"
-            cy="24"
-            r="22"
-            fill="none"
-            stroke-width="4"
-            stroke="#eeeeee"/>
 
-    <circle class="path"
-            cx="24"
-            cy="24"
-            r="22"
-            fill="none"
-            stroke-width="4"
-            stroke-miterlimit="10"
-            stroke="#7CB342"/>
+<!-- =================================================
+     AVAILABLE LOCAL JAVASCRIPT FILES
+================================================== -->
 
-</svg>
+<script src="js/jquery.min.js"></script>
 
-</div><!-- =========================================
-     JAVASCRIPT
-========================================= --><script src="js/jquery.min.js"></script><script src="js/jquery-migrate-3.0.1.min.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/jquery.easing.1.3.js"></script><script src="js/jquery.waypoints.min.js"></script><script src="js/jquery.stellar.min.js"></script><script src="js/jquery.animateNumber.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/jquery.magnific-popup.min.js"></script><script src="js/scrollax.min.js"></script><script src="js/main.js"></script><!-- =========================================
-     IMAGE POPUP
-========================================= --><script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
 
-    $(document).ready(function() {
+<script src="js/popper.min.js"></script>
 
-        $('.image-popup').magnificPopup({
+<script src="js/jquery.easing.1.3.js"></script>
 
-            type: 'image',
+<script src="js/jquery.waypoints.min.js"></script>
 
-            closeOnContentClick: true,
+<script src="js/jquery.stellar.min.js"></script>
 
-            mainClass: 'mfp-img-mobile',
+<script src="js/jquery.animatenumber.min.js"></script>
 
-            image: {
-                verticalFit: true
-            }
+<script src="js/owl.carousel.min.js"></script>
 
-        });
+<script src="js/scrollax.min.js"></script>
 
-    });
+<script src="js/main.js"></script>
 
-</script></body></html>
+
+
+<!-- =================================================
+     MOBILE MENU + SEARCH + CONSULTATION
+================================================== -->
+
+<script>
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function() {
+
+
+        /* ==========================================
+           MOBILE MENU
+        ========================================== */
+
+        const menuButton =
+            document.querySelector(".navbar-toggler");
+
+
+        const menu =
+            document.getElementById("ftco-nav");
+
+
+        if (menuButton && menu) {
+
+            menuButton.addEventListener(
+                "click",
+                function() {
+
+                    menu.classList.toggle("show");
+
+
+                    const expanded =
+                        menu.classList.contains("show");
+
+
+                    menuButton.setAttribute(
+                        "aria-expanded",
+                        expanded ? "true" : "false"
+                    );
+
+                }
+            );
+
+        }
+
+
+
+        /* ==========================================
+           SEARCH
+        ========================================== */
+
+        const searchForm =
+            document.getElementById("mediaSearchForm");
+
+
+        if (searchForm) {
+
+            searchForm.addEventListener(
+                "submit",
+                function(event) {
+
+                    event.preventDefault();
+
+                }
+            );
+
+        }
+
+
+
+        /* ==========================================
+           FREE CONSULTATION
+        ========================================== */
+
+        const consultationForm =
+            document.getElementById("consultationForm");
+
+
+        if (consultationForm) {
+
+            consultationForm.addEventListener(
+                "submit",
+                function(event) {
+
+                    event.preventDefault();
+
+
+                    const name =
+                        document.getElementById(
+                            "consultName"
+                        ).value.trim();
+
+
+                    const email =
+                        document.getElementById(
+                            "consultEmail"
+                        ).value.trim();
+
+
+                    const subject =
+                        document.getElementById(
+                            "consultSubject"
+                        ).value.trim();
+
+
+                    const message =
+                        document.getElementById(
+                            "consultMessage"
+                        ).value.trim();
+
+
+                    const whatsappMessage =
+
+`*FREE CONSULTATION REQUEST*
+
+*Name:* ${name}
+
+*Email:* ${email}
+
+*Subject:* ${subject}
+
+*Message:*
+${message}`;
+
+
+                    const whatsappURL =
+
+                        "https://wa.me/26656506092?text=" +
+                        encodeURIComponent(
+                            whatsappMessage
+                        );
+
+
+                    window.location.href =
+                        whatsappURL;
+
+                }
+            );
+
+        }
+
+
+
+        /* ==========================================
+           LOADER FALLBACK
+        ========================================== */
+
+        setTimeout(
+            function() {
+
+                const loader =
+                    document.getElementById(
+                        "ftco-loader"
+                    );
+
+
+                if (loader) {
+
+                    loader.classList.remove("show");
+
+                }
+
+            },
+            1200
+        );
+
+
+    }
+);
+
+</script>
+
+
+</body>
+
+</html>

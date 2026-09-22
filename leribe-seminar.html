@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport"
@@ -9,23 +10,32 @@
 
     <title>Leribe Seminar Tour | MSM Training</title>
 
+
     <!-- Bootstrap -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+
     <!-- MSM Main Styles -->
     <link rel="stylesheet"
           href="css/style.css">
+
 
     <style>
 
         body {
             background: #f8f9fa;
         }
+
+
+        /* ================================
+           HEADER
+        ================================= */
 
         .seminar-header {
             background: #0B3D2E;
@@ -43,6 +53,11 @@
             font-size: 18px;
         }
 
+
+        /* ================================
+           MAIN CARD
+        ================================= */
+
         .seminar-card {
             background: white;
             padding: 35px;
@@ -51,6 +66,11 @@
             margin-top: -40px;
             position: relative;
         }
+
+
+        /* ================================
+           EVENT INFORMATION
+        ================================= */
 
         .seminar-info {
             margin-bottom: 25px;
@@ -61,6 +81,11 @@
             width: 25px;
         }
 
+
+        /* ================================
+           EARLY BIRD
+        ================================= */
+
         .early-bird {
             background: #7CB342;
             color: white;
@@ -68,6 +93,11 @@
             border-radius: 8px;
             margin: 25px 0;
         }
+
+
+        /* ================================
+           PRICE BOXES
+        ================================= */
 
         .price-box {
             border: 1px solid #ddd;
@@ -81,6 +111,11 @@
             font-weight: 700;
         }
 
+
+        /* ================================
+           PAYMENT BOX
+        ================================= */
+
         .payment-box {
             background: #f1f1f1;
             padding: 25px;
@@ -88,10 +123,20 @@
             margin-top: 25px;
         }
 
+
+        /* ================================
+           HEADINGS
+        ================================= */
+
         .register-title {
             color: #0B3D2E;
             font-weight: 700;
         }
+
+
+        /* ================================
+           REGISTER BUTTON
+        ================================= */
 
         .btn-register {
             background: #0B3D2E;
@@ -104,6 +149,11 @@
             color: white;
         }
 
+
+        /* ================================
+           WHATSAPP BUTTON
+        ================================= */
+
         .whatsapp-btn {
             background: #25D366;
             color: white;
@@ -114,6 +164,25 @@
             opacity: 0.9;
         }
 
+
+        /* ================================
+           FORM
+        ================================= */
+
+        .form-control {
+            border-radius: 5px;
+        }
+
+        .form-control:focus {
+            border-color: #7CB342;
+            box-shadow: 0 0 0 0.15rem rgba(124, 179, 66, 0.20);
+        }
+
+
+        /* ================================
+           FOOTER
+        ================================= */
+
         footer {
             background: #0B3D2E;
             color: white;
@@ -122,14 +191,43 @@
             text-align: center;
         }
 
+
+        /* ================================
+           MOBILE
+        ================================= */
+
+        @media (max-width: 576px) {
+
+            .seminar-header {
+                padding: 50px 15px;
+            }
+
+            .seminar-header h1 {
+                font-size: 30px;
+            }
+
+            .seminar-header p {
+                font-size: 16px;
+            }
+
+            .seminar-card {
+                padding: 25px 18px;
+                margin-top: -25px;
+            }
+
+        }
+
     </style>
 
 </head>
 
+
 <body>
 
 
-<!-- HEADER -->
+<!-- =====================================================
+     HEADER
+====================================================== -->
 
 <section class="seminar-header">
 
@@ -144,7 +242,9 @@
         </p>
 
         <p>
-            <strong>10 October 2026 | 09:00 AM – 4:00 PM</strong>
+            <strong>
+                10 October 2026 | 09:00 AM – 4:00 PM
+            </strong>
         </p>
 
     </div>
@@ -152,187 +252,233 @@
 </section>
 
 
-<!-- MAIN CONTENT -->
+
+<!-- =====================================================
+     MAIN CONTENT
+====================================================== -->
 
 <section class="container">
 
     <div class="seminar-card">
 
+
+        <!-- INTRODUCTION -->
+
         <div class="text-center mb-4">
 
             <h2 class="register-title">
-    Register for the Leribe Seminar
-</h2>
+                Register for the Leribe Seminar
+            </h2>
 
-<p class="text-center mb-4">
-    🔥 <strong>Early Bird: R299</strong><br>
-    Bring another person FREE — only <strong>5 spots left!</strong>
-</p>
+            <p class="text-center mb-4">
+
+                🔥 <strong>Early Bird: R299</strong>
+
+                <br>
+
+                Bring another person FREE —
+                only <strong>5 spots left!</strong>
+
+            </p>
 
             <p>
-                Come ready to learn, ask questions, connect
-                and work on your next level.
+
+                Come ready to learn, ask questions,
+                connect and work on your next level.
+
             </p>
 
         </div>
 
 
-        <!-- EVENT INFORMATION -->
+
+        <!-- =================================================
+             EVENT INFORMATION
+        ================================================== -->
 
         <div class="seminar-info">
 
             <p>
+
                 <i class="fa-solid fa-location-dot"></i>
-                <strong>Location:</strong> Leribe, Lesotho
+
+                <strong>Location:</strong>
+                Leribe, Lesotho
+
             </p>
 
+
             <p>
+
                 <i class="fa-solid fa-calendar"></i>
-                <strong>Date:</strong> 10 October 2026
+
+                <strong>Date:</strong>
+                10 October 2026
+
             </p>
 
+
             <p>
+
                 <i class="fa-solid fa-clock"></i>
-                <strong>Time:</strong> 09:00 AM – 4:00 PM
+
+                <strong>Time:</strong>
+                09:00 AM – 4:00 PM
+
             </p>
 
         </div>
 
 
+
+        <!-- =================================================
+             EARLY BIRD
+        ================================================== -->
+
+        <div class="early-bird text-center">
+
+            <h3>
+                🔥 EARLY BIRD – R299
+            </h3>
+
+            <p class="mb-0">
+
+                Bring another person FREE!
+
+                <br>
+
+                <strong id="earlyBirdSpots">
+                    Only 5 Early Bird spots left!
+                </strong>
+
+                <br>
+
+                <small>
+                    Limited to the first 20 registrations.
+                </small>
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             REGISTRATION OPTIONS
+        ================================================== -->
+
+        <h4 class="register-title mt-4 mb-3">
+
+            Registration Options
+
+        </h4>
+
+
+
         <!-- EARLY BIRD -->
 
-<!-- EARLY BIRD -->
+        <div class="price-box">
 
-<div class="early-bird text-center">
+            <h5>
+                🔥 Early Bird
+            </h5>
 
-    <h3>
-        🔥 EARLY BIRD – R299
-    </h3>
+            <p class="mb-0">
 
-    <p class="mb-0">
+                R299 per person
 
-        Bring another person FREE!
+                <br>
 
-        <br>
+                <strong>
+                    Bring another person FREE!
+                </strong>
 
-        <strong id="earlyBirdSpots">
-            Only 5 Early Bird spots left!
-        </strong>
+                <br>
 
-        <br>
+                <small>
+                    Only 5 spots left.
+                </small>
 
-        <small>
-            Limited to the first 20 registrations.
-        </small>
+            </p>
 
-    </p>
-
-</div>
-
-<!-- REGISTRATION OPTIONS -->
-
-<h4 class="register-title mt-4 mb-3">
-    Registration Options
-</h4>
+        </div>
 
 
-<!-- EARLY BIRD -->
 
-<div class="price-box">
+        <!-- INDIVIDUAL -->
 
-    <h5>
-        🔥 Early Bird
-    </h5>
+        <div class="price-box">
 
-    <p class="mb-0">
-        R299 per person
-        <br>
-        <strong>Bring another person FREE!</strong>
-        <br>
-        <small>Only 5 spots left.</small>
-    </p>
+            <h5>
+                Individual
+            </h5>
 
-</div>
+            <p class="mb-0">
+                R350 per person
+            </p>
+
+        </div>
 
 
-<!-- INDIVIDUAL -->
 
-<div class="price-box">
+        <!-- PAIR -->
 
-    <h5>
-        Individual
-    </h5>
+        <div class="price-box">
 
-    <p class="mb-0">
-        R350 per person
-    </p>
+            <h5>
+                Pair
+            </h5>
 
-</div>
+            <p class="mb-0">
+                R500 for two people
+            </p>
 
-
-<!-- PAIR -->
-
-<div class="price-box">
-
-    <h5>
-        Pair
-    </h5>
-
-    <p class="mb-0">
-        R500 for two people
-    </p>
-
-</div>
+        </div>
 
 
-<!-- GROUP -->
 
-<div class="price-box">
+        <!-- GROUP -->
 
-    <h5>
-        Group of 5
-    </h5>
+        <div class="price-box">
 
-    <p class="mb-0">
-        R1,000
-    </p>
+            <h5>
+                Group of 5
+            </h5>
 
-</div>
+            <p class="mb-0">
+                R1,000
+            </p>
+
+        </div>
 
 
-        <!-- REGISTRATION FORM -->
+
+        <!-- =================================================
+             REGISTRATION FORM
+        ================================================== -->
 
         <hr class="my-5">
 
 
         <h4 class="register-title mb-4">
+
             Registration Form
+
         </h4>
 
 
-        <form name="leribe-seminar-registration"
-      method="POST"
-      action="/registration-success.html"
-      data-netlify="true"
-      netlify-honeypot="bot-field">
+        <!--
+            IMPORTANT:
+            This form does NOT use Netlify.
+
+            It works with GitHub Pages by opening WhatsApp
+            with the registration details.
+        -->
+
+        <form id="leribeRegistrationForm">
 
 
-            <input type="hidden"
-                   name="form-name"
-                   value="leribe-seminar-registration">
-
-
-            <p style="display:none;">
-
-                <label>
-                    Don't fill this out if you're human:
-                    <input name="bot-field">
-                </label>
-
-            </p>
-
-
-            <!-- NAME -->
+            <!-- FULL NAME -->
 
             <div class="form-group">
 
@@ -341,11 +487,14 @@
                 </label>
 
                 <input type="text"
+                       id="fullName"
                        name="full-name"
                        class="form-control"
+                       placeholder="Enter your full name"
                        required>
 
             </div>
+
 
 
             <!-- PHONE -->
@@ -357,11 +506,14 @@
                 </label>
 
                 <input type="tel"
+                       id="phone"
                        name="phone"
                        class="form-control"
+                       placeholder="Enter your phone number"
                        required>
 
             </div>
+
 
 
             <!-- EMAIL -->
@@ -373,13 +525,16 @@
                 </label>
 
                 <input type="email"
+                       id="email"
                        name="email"
-                       class="form-control">
+                       class="form-control"
+                       placeholder="Enter your email address">
 
             </div>
 
 
-            <!-- REGISTRATION TYPE -->
+
+            <!-- REGISTRATION OPTION -->
 
             <div class="form-group">
 
@@ -387,32 +542,35 @@
                     Registration Option *
                 </label>
 
-                <select name="registration-option"
-        class="form-control"
-        required>
+                <select id="registrationOption"
+                        name="registration-option"
+                        class="form-control"
+                        required>
 
-    <option value="">
-        -- Select a registration option --
-    </option>
+                    <option value="">
+                        -- Select a registration option --
+                    </option>
 
-    <option value="Early Bird R299 - 5 spots left">
-        🔥 Early Bird – R299 (5 spots left)
-    </option>
+                    <option value="Early Bird R299 - 5 spots left">
+                        🔥 Early Bird – R299 (5 spots left)
+                    </option>
 
-    <option value="Individual R350">
-        Individual – R350
-    </option>
+                    <option value="Individual R350">
+                        Individual – R350
+                    </option>
 
-    <option value="Pair R500">
-        Pair – R500
-    </option>
+                    <option value="Pair R500">
+                        Pair – R500
+                    </option>
 
-    <option value="Group of 5 R1000">
-        Group of 5 – R1,000
-    </option>
+                    <option value="Group of 5 R1000">
+                        Group of 5 – R1,000
+                    </option>
 
-</select>
+                </select>
+
             </div>
+
 
 
             <!-- NUMBER OF PEOPLE -->
@@ -424,13 +582,16 @@
                 </label>
 
                 <input type="number"
+                       id="numberOfPeople"
                        name="number-of-people"
                        class="form-control"
                        min="1"
                        max="20"
+                       placeholder="Example: 1"
                        required>
 
             </div>
+
 
 
             <!-- SECOND PERSON -->
@@ -438,15 +599,23 @@
             <div class="form-group">
 
                 <label>
+
                     Name of Person You Are Bringing
-                    <small>(if applicable)</small>
+
+                    <small>
+                        (if applicable)
+                    </small>
+
                 </label>
 
                 <input type="text"
+                       id="secondPerson"
                        name="second-person"
-                       class="form-control">
+                       class="form-control"
+                       placeholder="Enter second person's name">
 
             </div>
+
 
 
             <!-- PAYMENT STATUS -->
@@ -457,7 +626,8 @@
                     Payment Status *
                 </label>
 
-                <select name="payment-status"
+                <select id="paymentStatus"
+                        name="payment-status"
                         class="form-control"
                         required>
 
@@ -478,6 +648,7 @@
             </div>
 
 
+
             <!-- MESSAGE -->
 
             <div class="form-group">
@@ -486,17 +657,22 @@
                     Message / Special Request
                 </label>
 
-                <textarea name="message"
+                <textarea id="message"
+                          name="message"
                           class="form-control"
-                          rows="4"></textarea>
+                          rows="4"
+                          placeholder="Any message or special request?"></textarea>
 
             </div>
 
 
+
+            <!-- SUBMIT -->
+
             <button type="submit"
                     class="btn btn-register btn-lg btn-block">
 
-                <i class="fa-solid fa-paper-plane mr-2"></i>
+                <i class="fa-brands fa-whatsapp mr-2"></i>
 
                 SUBMIT REGISTRATION
 
@@ -506,7 +682,10 @@
         </form>
 
 
-        <!-- PAYMENT DETAILS -->
+
+        <!-- =================================================
+             PAYMENT DETAILS
+        ================================================== -->
 
         <div class="payment-box">
 
@@ -516,30 +695,60 @@
 
             <hr>
 
+
             <p>
-                <strong>M-Pesa / EcoCash:</strong><br>
+
+                <strong>
+                    M-Pesa / EcoCash:
+                </strong>
+
+                <br>
+
                 0000104444
+
             </p>
 
+
             <p>
-                <strong>Standard Bank:</strong><br>
+
+                <strong>
+                    Standard Bank:
+                </strong>
+
+                <br>
+
                 9080009468508
+
             </p>
 
+
             <p>
-                <strong>Account Name:</strong><br>
+
+                <strong>
+                    Account Name:
+                </strong>
+
+                <br>
+
                 Mohau and the Success Masters
+
             </p>
+
 
             <p class="mb-0">
+
                 After making payment, please keep your
                 proof of payment.
+
             </p>
 
         </div>
 
 
-        <!-- WHATSAPP -->
+
+        <!-- =================================================
+             WHATSAPP
+        ================================================== -->
 
         <div class="text-center mt-4">
 
@@ -547,8 +756,10 @@
                 Need help with registration?
             </p>
 
+
             <a href="https://wa.me/26656506092"
                target="_blank"
+               rel="noopener noreferrer"
                class="btn whatsapp-btn">
 
                 <i class="fa-brands fa-whatsapp mr-2"></i>
@@ -557,14 +768,20 @@
 
             </a>
 
+
             <p class="mt-3 mb-0">
 
                 Call / WhatsApp:
-                <strong>+266 5650 6092</strong>
+
+                <strong>
+                    +266 5650 6092
+                </strong>
 
                 <br>
 
-                <strong>+266 6206 2250</strong>
+                <strong>
+                    +266 6206 2250
+                </strong>
 
             </p>
 
@@ -576,7 +793,10 @@
 </section>
 
 
-<!-- FOOTER -->
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
 
 <footer>
 
@@ -601,19 +821,150 @@
 </footer>
 
 
-<!-- Bootstrap JS -->
+
+<!-- =====================================================
+     JAVASCRIPT
+====================================================== -->
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
 
-</body>
+
 <script>
+
+    /* ==========================================
+       EARLY BIRD SPOTS
+    ========================================== */
+
     const earlyBirdSpots = 5;
 
-    document.getElementById("earlyBirdSpots").textContent =
-        "Only " + earlyBirdSpots + " Early Bird spots left!";
+    const spotsElement =
+        document.getElementById("earlyBirdSpots");
+
+    if (spotsElement) {
+
+        spotsElement.textContent =
+            "Only " + earlyBirdSpots + " Early Bird spots left!";
+
+    }
+
+
+
+    /* ==========================================
+       LERIBE REGISTRATION
+    ========================================== */
+
+    const registrationForm =
+        document.getElementById("leribeRegistrationForm");
+
+
+    if (registrationForm) {
+
+        registrationForm.addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+
+                /* GET FORM VALUES */
+
+                const fullName =
+                    document.getElementById("fullName").value.trim();
+
+                const phone =
+                    document.getElementById("phone").value.trim();
+
+                const email =
+                    document.getElementById("email").value.trim();
+
+                const registrationOption =
+                    document.getElementById("registrationOption").value;
+
+                const numberOfPeople =
+                    document.getElementById("numberOfPeople").value;
+
+                const secondPerson =
+                    document.getElementById("secondPerson").value.trim();
+
+                const paymentStatus =
+                    document.getElementById("paymentStatus").value;
+
+                const message =
+                    document.getElementById("message").value.trim();
+
+
+                /* CREATE WHATSAPP MESSAGE */
+
+                let whatsappMessage =
+                    "Hello MSM Training Company.%0A%0A" +
+
+                    "I would like to register for the Leribe Seminar Tour.%0A%0A" +
+
+                    "*LERIBE SEMINAR REGISTRATION*%0A" +
+
+                    "Name: " +
+                    encodeURIComponent(fullName) +
+                    "%0A" +
+
+                    "Phone: " +
+                    encodeURIComponent(phone) +
+                    "%0A" +
+
+                    "Email: " +
+                    encodeURIComponent(email || "Not provided") +
+                    "%0A" +
+
+                    "Registration Option: " +
+                    encodeURIComponent(registrationOption) +
+                    "%0A" +
+
+                    "Number of People: " +
+                    encodeURIComponent(numberOfPeople) +
+                    "%0A" +
+
+                    "Person I am bringing: " +
+                    encodeURIComponent(secondPerson || "Not applicable") +
+                    "%0A" +
+
+                    "Payment Status: " +
+                    encodeURIComponent(paymentStatus) +
+                    "%0A" +
+
+                    "Message: " +
+                    encodeURIComponent(message || "None") +
+
+                    "%0A%0A" +
+
+                    "Event: Leribe Seminar Tour%0A" +
+
+                    "Date: 10 October 2026%0A" +
+
+                    "Time: 09:00 AM – 4:00 PM";
+
+
+                /* OPEN WHATSAPP */
+
+                const whatsappURL =
+                    "https://wa.me/26656506092?text=" +
+                    whatsappMessage;
+
+
+                window.open(
+                    whatsappURL,
+                    "_blank"
+                );
+
+            }
+        );
+
+    }
+
 </script>
+
+
+</body>
 
 </html>

@@ -9,7 +9,7 @@
 
     <title>Sales & Marketing Workshop | MSM Training</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
@@ -131,6 +131,27 @@
             margin-right: 10px;
         }
 
+        @media (max-width: 576px) {
+
+            .workshop-header {
+                padding: 50px 15px;
+            }
+
+            .workshop-header h1 {
+                font-size: 28px;
+            }
+
+            .workshop-header p {
+                font-size: 16px;
+            }
+
+            .workshop-card {
+                padding: 25px 18px;
+                margin-top: -25px;
+            }
+
+        }
+
     </style>
 
 </head>
@@ -203,24 +224,28 @@
 
             <p>
                 <i class="fa-solid fa-calendar"></i>
+
                 <strong>Date:</strong>
                 14 November 2026
             </p>
 
             <p>
                 <i class="fa-solid fa-clock"></i>
+
                 <strong>Time:</strong>
                 08:00 AM – 6:00 PM
             </p>
 
             <p>
                 <i class="fa-solid fa-location-dot"></i>
+
                 <strong>Location:</strong>
                 State Library, Maseru, Lesotho
             </p>
 
             <p>
                 <i class="fa-solid fa-user"></i>
+
                 <strong>Trainer:</strong>
                 Mohau P Mosoeunyane
             </p>
@@ -395,7 +420,7 @@
                 </div>
 
 
-                <!-- PRICE OPTION -->
+                <!-- REGISTRATION OPTION -->
 
                 <div class="form-group">
 
@@ -542,6 +567,7 @@
 
             <a href="https://wa.me/26656506092"
                target="_blank"
+               rel="noopener noreferrer"
                class="btn whatsapp-btn">
 
                 <i class="fa-brands fa-whatsapp mr-2"></i>
@@ -620,13 +646,13 @@ document.getElementById("salesWorkshopForm")
 
 
     const name =
-        document.getElementById("sales-name").value;
+        document.getElementById("sales-name").value.trim();
 
     const phone =
-        document.getElementById("sales-phone").value;
+        document.getElementById("sales-phone").value.trim();
 
     const email =
-        document.getElementById("sales-email").value;
+        document.getElementById("sales-email").value.trim();
 
     const people =
         document.getElementById("sales-people").value;
@@ -638,7 +664,7 @@ document.getElementById("salesWorkshopForm")
         document.getElementById("sales-payment").value;
 
     const message =
-        document.getElementById("sales-message").value;
+        document.getElementById("sales-message").value.trim();
 
 
     const whatsappMessage =
@@ -660,15 +686,16 @@ Message / Special Request:
 ${message || "None"}
 
 
-*Workshop Details*
+*WORKSHOP DETAILS*
 
 Date: 14 November 2026
 
 Time: 08:00 AM – 6:00 PM
 
-Location: State Library, Maseru
+Location: State Library, Maseru, Lesotho
 
 Trainer: Mohau P Mosoeunyane
+
 
 Thank you.
 *MSM Training Company*`;
@@ -687,7 +714,6 @@ Thank you.
 
 
 <!-- Bootstrap JS -->
-
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
