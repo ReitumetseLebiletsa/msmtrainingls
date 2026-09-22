@@ -62,19 +62,35 @@
         ========================= */
 
         .wrap {
-            background: var(--msm-dark) !important;
-        }
+    background: var(--msm-dark) !important;
+}
 
-        .wrap p,
-        .wrap a,
-        .wrap span,
-        .wrap i {
-            color: var(--msm-white) !important;
-        }
+.wrap p,
+.wrap a,
+.wrap span,
+.wrap i {
+    color: var(--msm-white) !important;
+}
 
-        .social-media a:hover {
-            background: var(--msm-green) !important;
-        }
+/* REMOVE SQUARES FROM TOP SOCIAL ICONS */
+
+.social-media a {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* HOVER */
+
+.social-media a:hover {
+    background: transparent !important;
+    color: var(--msm-green) !important;
+}
+
+.social-media a:hover i {
+    color: var(--msm-green) !important;
+}
 
 
         /* =========================
