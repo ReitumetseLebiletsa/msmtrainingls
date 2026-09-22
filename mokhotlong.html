@@ -1,0 +1,530 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"><meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Mokhotlong Seminar Tour | MSM Training</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<!-- MSM Main Styles -->
+<link rel="stylesheet"
+      href="css/style.css">
+
+<style>
+
+    body {
+        background: #f8f9fa;
+    }
+
+    .seminar-header {
+        background: #0B3D2E;
+        color: white;
+        padding: 70px 20px;
+        text-align: center;
+    }
+
+    .seminar-header h1 {
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .seminar-header p {
+        font-size: 18px;
+    }
+
+    .seminar-card {
+        background: white;
+        padding: 35px;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+        margin-top: -40px;
+        position: relative;
+    }
+
+    .seminar-info {
+        margin-bottom: 25px;
+    }
+
+    .seminar-info i {
+        color: #7CB342;
+        width: 25px;
+    }
+
+    .early-bird {
+        background: #7CB342;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 25px 0;
+    }
+
+    .price-box {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 15px;
+    }
+
+    .price-box h5 {
+        color: #0B3D2E;
+        font-weight: 700;
+    }
+
+    .payment-box {
+        background: #f1f1f1;
+        padding: 25px;
+        border-radius: 8px;
+        margin-top: 25px;
+    }
+
+    .register-title {
+        color: #0B3D2E;
+        font-weight: 700;
+    }
+
+    .btn-register {
+        background: #0B3D2E;
+        color: white;
+        border: none;
+    }
+
+    .btn-register:hover {
+        background: #7CB342;
+        color: white;
+    }
+
+    .whatsapp-btn {
+        background: #25D366;
+        color: white;
+    }
+
+    .whatsapp-btn:hover {
+        color: white;
+        opacity: 0.9;
+    }
+
+    footer {
+        background: #0B3D2E;
+        color: white;
+        padding: 30px 0;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+</style>
+
+</head><body><!-- HEADER --><section class="seminar-header"><div class="container">
+
+    <h1>
+        MOKHOTLONG SEMINAR TOUR
+    </h1>
+
+    <p>
+        How to Master Your Mind, Money, Business and Self
+    </p>
+
+    <p>
+        <strong>10 October 2026 | 09:00 AM – 4:00 PM</strong>
+    </p>
+
+</div>
+
+</section><!-- MAIN CONTENT --><section class="container"><div class="seminar-card">
+
+    <div class="text-center mb-4">
+
+        <h2 class="register-title">
+            Register for the Mokhotlong Seminar
+        </h2>
+
+        <p class="text-center mb-4">
+            🔥 <strong>Early Bird: R299</strong><br>
+            Bring another person FREE — only <strong>5 spots left!</strong>
+        </p>
+
+        <p>
+            Come ready to learn, ask questions, connect
+            and work on your next level.
+        </p>
+
+    </div>
+
+
+    <!-- EVENT INFORMATION -->
+
+    <div class="seminar-info">
+
+        <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <strong>Location:</strong> Mokhotlong, Lesotho
+        </p>
+
+        <p>
+            <i class="fa-solid fa-calendar"></i>
+            <strong>Date:</strong> 10 October 2026
+        </p>
+
+        <p>
+            <i class="fa-solid fa-clock"></i>
+            <strong>Time:</strong> 09:00 AM – 4:00 PM
+        </p>
+
+    </div>
+
+
+    <!-- EARLY BIRD -->
+
+    <div class="early-bird text-center">
+
+        <h3>
+            🔥 EARLY BIRD – R299
+        </h3>
+
+        <p class="mb-0">
+
+            Bring another person FREE!
+
+            <br>
+
+            <strong id="earlyBirdSpots">
+                Only 5 Early Bird spots left!
+            </strong>
+
+            <br>
+
+            <small>
+                Limited to the first 20 registrations.
+            </small>
+
+        </p>
+
+    </div>
+
+
+    <!-- REGISTRATION OPTIONS -->
+
+  <form id="mokhotlongForm"><h4 class="register-title mb-4">
+    Registration Form
+</h4>
+
+<!-- FULL NAME -->
+<div class="form-group">
+    <label>Full Name *</label>
+
+    <input type="text"
+           id="mokhotlong-name"
+           class="form-control"
+           required>
+</div>
+
+
+<!-- PHONE -->
+<div class="form-group">
+    <label>Phone / WhatsApp Number *</label>
+
+    <input type="tel"
+           id="mokhotlong-phone"
+           class="form-control"
+           required>
+</div>
+
+
+<!-- EMAIL -->
+<div class="form-group">
+    <label>Email Address</label>
+
+    <input type="email"
+           id="mokhotlong-email"
+           class="form-control">
+</div>
+
+
+<!-- REGISTRATION OPTION -->
+<div class="form-group">
+
+    <label>Registration Option *</label>
+
+    <select id="mokhotlong-option"
+            class="form-control"
+            required>
+
+        <option value="">
+            -- Select a registration option --
+        </option>
+
+        <option value="Early Bird R299">
+            🔥 Early Bird – R299 (5 spots left)
+        </option>
+
+        <option value="Individual R350">
+            Individual – R350
+        </option>
+
+        <option value="Pair R500">
+            Pair – R500
+        </option>
+
+        <option value="Group of 5 R1000">
+            Group of 5 – R1,000
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- NUMBER OF PEOPLE -->
+<div class="form-group">
+
+    <label>Number of People *</label>
+
+    <input type="number"
+           id="mokhotlong-people"
+           class="form-control"
+           min="1"
+           max="20"
+           required>
+
+</div>
+
+
+<!-- SECOND PERSON -->
+<div class="form-group">
+
+    <label>
+        Name of Person You Are Bringing
+        <small>(if applicable)</small>
+    </label>
+
+    <input type="text"
+           id="mokhotlong-second-person"
+           class="form-control">
+
+</div>
+
+
+<!-- PAYMENT STATUS -->
+<div class="form-group">
+
+    <label>Payment Status *</label>
+
+    <select id="mokhotlong-payment"
+            class="form-control"
+            required>
+
+        <option value="">
+            -- Select --
+        </option>
+
+        <option value="I have paid">
+            I have paid
+        </option>
+
+        <option value="I will pay">
+            I will pay
+        </option>
+
+    </select>
+
+</div>
+
+
+<!-- MESSAGE -->
+<div class="form-group">
+
+    <label>
+        Message / Special Request
+    </label>
+
+    <textarea id="mokhotlong-message"
+              class="form-control"
+              rows="4"></textarea>
+
+</div>
+
+
+<!-- SUBMIT -->
+<button type="submit"
+        class="btn btn-register btn-lg btn-block">
+
+    <i class="fa-brands fa-whatsapp mr-2"></i>
+
+    REGISTER VIA WHATSAPP
+
+</button>
+
+</form><script>
+
+document.getElementById("mokhotlongForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("mokhotlong-name").value;
+
+    const phone =
+        document.getElementById("mokhotlong-phone").value;
+
+    const email =
+        document.getElementById("mokhotlong-email").value;
+
+    const option =
+        document.getElementById("mokhotlong-option").value;
+
+    const people =
+        document.getElementById("mokhotlong-people").value;
+
+    const secondPerson =
+        document.getElementById("mokhotlong-second-person").value;
+
+    const payment =
+        document.getElementById("mokhotlong-payment").value;
+
+    const message =
+        document.getElementById("mokhotlong-message").value;
+
+
+    const whatsappMessage =
+`*MOKHOTLONG SEMINAR REGISTRATION*
+
+Full Name: ${name}
+
+Phone / WhatsApp: ${phone}
+
+Email: ${email || "Not provided"}
+
+Registration Option: ${option}
+
+Number of People: ${people}
+
+Person Bringing: ${secondPerson || "None"}
+
+Payment Status: ${payment}
+
+Message / Special Request:
+${message || "None"}
+
+
+*Mokhotlong Seminar Tour*
+07 November 2026
+09:00 AM – 4:00 PM`;
+
+
+    const whatsappURL =
+        "https://wa.me/26656506092?text=" +
+        encodeURIComponent(whatsappMessage);
+
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+
+    <!-- PAYMENT DETAILS -->
+
+    <div class="payment-box">
+
+        <h4 class="register-title">
+            Payment Details
+        </h4>
+
+        <hr>
+
+        <p>
+            <strong>M-Pesa / EcoCash:</strong><br>
+            0000104444
+        </p>
+
+        <p>
+            <strong>Standard Bank:</strong><br>
+            9080009468508
+        </p>
+
+        <p>
+            <strong>Account Name:</strong><br>
+            Mohau and the Success Masters
+        </p>
+
+        <p class="mb-0">
+            After making payment, please keep your
+            proof of payment.
+        </p>
+
+    </div>
+
+
+    <!-- WHATSAPP -->
+
+    <div class="text-center mt-4">
+
+        <p>
+            Need help with registration?
+        </p>
+
+        <a href="https://wa.me/26656506092"
+           target="_blank"
+           class="btn whatsapp-btn">
+
+            <i class="fa-brands fa-whatsapp mr-2"></i>
+
+            WhatsApp Us
+
+        </a>
+
+        <p class="mt-3 mb-0">
+
+            Call / WhatsApp:
+            <strong>+266 5650 6092</strong>
+
+            <br>
+
+            <strong>+266 6206 2250</strong>
+
+        </p>
+
+    </div>
+
+
+</div>
+
+</section><!-- FOOTER --><footer><div class="container">
+
+    <p class="mb-0">
+
+        © 2026 Mohau and the Success Masters.
+
+        All Rights Reserved.
+
+    </p>
+
+    <p class="mb-0">
+
+        SUCCESS IS A CHOICE!
+
+    </p>
+
+</div>
+
+</footer><!-- Bootstrap JS --><script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script><!-- EARLY BIRD SCRIPT --><script>
+
+    const earlyBirdSpots = 5;
+
+    const earlyBirdElement =
+        document.getElementById("earlyBirdSpots");
+
+    if (earlyBirdElement) {
+
+        earlyBirdElement.textContent =
+            "Only " + earlyBirdSpots + " Early Bird spots left!";
+
+    }
+
+</script></body></html>

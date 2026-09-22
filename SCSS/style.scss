@@ -1,0 +1,1939 @@
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/variables';
+
+/* =========================================================
+   MSM TRAINING COMPANY & COUNSELLING SERVICES
+   CLEAN MSM BRAND THEME
+   ========================================================= */
+
+
+/* =========================================================
+   MSM BRAND COLOURS
+   ========================================================= */
+
+$font-primary: 'Poppins', Arial, sans-serif;
+
+$white: #FFFFFF;
+$black: #111111;
+
+$primary: #0B3D2E;       // MSM Deep Green
+$secondary: #7CB342;     // MSM Light Green
+$accent: #A8D08D;        // MSM Soft Green
+$darken: #06271D;        // MSM Dark Green
+$light-bg: #F4F8F5;      // Very Light Green
+$text-color: #555555;
+$muted: #6F8177;
+$border-color: #E1EAE4;
+
+
+/* =========================================================
+   CSS VARIABLES
+   ========================================================= */
+
+:root {
+    --msm-deep-green: #0B3D2E;
+    --msm-light-green: #7CB342;
+    --msm-soft-green: #A8D08D;
+    --msm-dark-green: #06271D;
+    --msm-light-bg: #F4F8F5;
+    --msm-white: #FFFFFF;
+    --msm-black: #111111;
+    --msm-text: #555555;
+    --msm-muted: #6F8177;
+    --msm-border: #E1EAE4;
+}
+
+
+/* =========================================================
+   GENERAL
+   ========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-primary;
+    background: $white !important;
+    color: $text-color !important;
+    font-size: 15px;
+    line-height: 1.8;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+a {
+    transition: .3s all ease;
+    color: $primary !important;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: $secondary !important;
+    outline: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font-family: $font-primary;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.3;
+    color: $primary;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+::selection {
+    background: $primary;
+    color: $white;
+}
+
+
+/* =========================================================
+   TOP BAR
+   ========================================================= */
+
+.wrap {
+    background: $darken !important;
+    color: $white !important;
+}
+
+.wrap,
+.wrap p,
+.wrap span,
+.wrap a,
+.wrap i {
+    color: $white !important;
+}
+
+.wrap .phone,
+.wrap .mail {
+    font-size: 13px;
+}
+
+.wrap .phone i,
+.wrap .mail i {
+    color: $secondary !important;
+    margin-right: 6px;
+}
+
+.wrap a:hover,
+.wrap i:hover {
+    color: $secondary !important;
+}
+
+
+/* =========================================================
+   SOCIAL MEDIA
+   ========================================================= */
+
+.social-media p {
+    margin-bottom: 0;
+}
+
+.social-media a {
+    width: 34px;
+    height: 34px;
+    margin-left: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.08) !important;
+    color: $white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+.social-media a span,
+.social-media a i {
+    font-size: 14px;
+    color: $white !important;
+}
+
+.social-media a:hover {
+    background: $secondary !important;
+    color: $white !important;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.ftco-navbar-light,
+.navbar.bg-dark {
+    background: $white !important;
+    box-shadow: 0 3px 20px rgba(11,61,46,.08);
+    position: relative;
+    z-index: 1000;
+}
+
+.ftco-navbar-light .navbar-brand,
+.navbar-brand {
+    color: $primary !important;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.ftco-navbar-light .navbar-brand img,
+.navbar-brand img {
+    max-height: 55px;
+    width: auto;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: $primary !important;
+    padding: 1.4rem 15px;
+    position: relative;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before {
+    content: "";
+    position: absolute;
+    bottom: 12px;
+    left: 15px;
+    right: 15px;
+    height: 2px;
+    background: $secondary;
+    transform: scaleX(0);
+    transition: .3s ease;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+    color: $secondary !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
+    transform: scaleX(1);
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+    color: $secondary !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link:before {
+    transform: scaleX(1);
+}
+
+
+/* =========================================================
+   MOBILE NAVBAR
+   ========================================================= */
+
+.navbar-toggler {
+    background: $primary !important;
+    border-color: $primary !important;
+    color: $white !important;
+    border-radius: 5px;
+}
+
+.navbar-toggler span,
+.navbar-toggler i {
+    color: $white !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* =========================================================
+   DROPDOWN
+   ========================================================= */
+
+.dropdown-menu {
+    border: none;
+    border-top: 3px solid $secondary;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 10px 35px rgba(11,61,46,.12);
+    padding: 10px 0;
+}
+
+.dropdown-menu .dropdown-item {
+    color: $primary !important;
+    font-size: 14px;
+    padding: 9px 20px;
+    transition: .3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background: $primary !important;
+    color: $white !important;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero-wrap {
+    position: relative;
+    min-height: 650px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-wrap .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(6,39,29,.92),
+        rgba(11,61,46,.72),
+        rgba(11,61,46,.45)
+    ) !important;
+}
+
+.hero-wrap .slider-text {
+    min-height: 650px;
+}
+
+.hero-wrap .slider-text h1 {
+    font-size: 52px;
+    font-weight: 800;
+    color: $white !important;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-wrap .slider-text h1 span {
+    color: $accent !important;
+}
+
+.hero-wrap .slider-text p {
+    color: rgba(255,255,255,.9) !important;
+    font-size: 17px;
+    max-width: 650px;
+}
+
+.hero-wrap .slider-text .subheading {
+    color: $accent !important;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.btn {
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 25px;
+    transition: all .3s ease;
+    border: none;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-primary,
+button.btn-primary,
+input.btn-primary {
+    background: $primary !important;
+    border-color: $primary !important;
+    color: $white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+button.btn-primary:hover {
+    background: $secondary !important;
+    border-color: $secondary !important;
+    color: $white !important;
+}
+
+.btn-secondary,
+button.btn-secondary {
+    background: $secondary !important;
+    border-color: $secondary !important;
+    color: $white !important;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background: $primary !important;
+    border-color: $primary !important;
+    color: $white !important;
+}
+
+.btn-outline-primary {
+    color: $primary !important;
+    border: 1px solid $primary !important;
+    background: transparent !important;
+}
+
+.btn-outline-primary:hover {
+    background: $primary !important;
+    color: $white !important;
+}
+
+.btn-outline-light {
+    color: $white !important;
+    border: 1px solid rgba(255,255,255,.8);
+}
+
+.btn-outline-light:hover {
+    background: $white !important;
+    color: $primary !important;
+}
+
+.btn-white {
+    background: $white !important;
+    color: $primary !important;
+}
+
+.btn-white:hover {
+    background: $secondary !important;
+    color: $white !important;
+}
+
+
+/* =========================================================
+   SECTION BACKGROUNDS
+   ========================================================= */
+
+.bg-light,
+.ftco-section.bg-light {
+    background: $light-bg !important;
+}
+
+.bg-primary {
+    background: $primary !important;
+    color: $white !important;
+}
+
+.bg-secondary {
+    background: $primary !important;
+    color: $white !important;
+}
+
+.ftco-bg-dark {
+    background: $darken !important;
+    color: $white !important;
+}
+
+
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+
+.ftco-section {
+    padding: 90px 0;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+.heading-section {
+    margin-bottom: 30px;
+}
+
+.heading-section .subheading,
+.ftco-section .subheading {
+    display: block;
+    color: $secondary !important;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.heading-section h1,
+.heading-section h2,
+.heading-section h3,
+.heading-section h4,
+.heading-section h5,
+.heading-section h6,
+.ftco-section h1,
+.ftco-section h2,
+.ftco-section h3,
+.ftco-section h4,
+.ftco-section h5,
+.ftco-section h6 {
+    color: $primary !important;
+}
+
+.heading-section h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.heading-section p {
+    color: $text-color;
+}
+
+.heading-section-white h2 {
+    color: $white !important;
+}
+
+.heading-section-white .subheading {
+    color: $accent !important;
+}
+
+.heading-section-white p {
+    color: rgba(255,255,255,.8);
+}
+
+
+/* =========================================================
+   BRAND TEXT
+   ========================================================= */
+
+.text-primary,
+.text-success {
+    color: $primary !important;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+.msm-highlight {
+    color: $secondary !important;
+    font-weight: 700;
+}
+
+.msm-title {
+    color: $primary !important;
+    font-weight: 800;
+}
+
+.msm-divider {
+    width: 60px;
+    height: 3px;
+    background: $secondary;
+    margin: 15px auto 25px;
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   OWL CAROUSEL
+   ========================================================= */
+
+.owl-carousel {
+    position: relative;
+}
+
+.owl-carousel .owl-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.owl-carousel .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #D7E2DC !important;
+}
+
+.owl-carousel .owl-dot.active {
+    background: $secondary !important;
+}
+
+.owl-carousel .owl-nav .owl-prev,
+.owl-carousel .owl-nav .owl-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $primary !important;
+    color: $white !important;
+    transition: .3s ease;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover,
+.owl-carousel .owl-nav .owl-next:hover {
+    background: $secondary !important;
+}
+
+
+/* =========================================================
+   INTRO BOX
+   ========================================================= */
+
+.intro-box {
+    background: $white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(11,61,46,.07);
+    border-left: 4px solid $secondary;
+}
+
+.intro-box h3 {
+    color: $primary !important;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   SERVICES
+   ========================================================= */
+
+.services {
+    background: $white;
+    padding: 35px 25px;
+    border-radius: 10px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 8px 30px rgba(11,61,46,.06);
+    transition: all .3s ease;
+    border: 1px solid $border-color;
+    border-bottom: 3px solid transparent;
+}
+
+.services:hover {
+    transform: translateY(-7px);
+    border-bottom-color: $secondary;
+    box-shadow: 0 15px 40px rgba(11,61,46,.12);
+}
+
+.services .icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: $light-bg !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .icon span,
+.services .icon i {
+    font-size: 30px;
+    color: $primary !important;
+}
+
+.services:hover .icon {
+    background: $primary !important;
+}
+
+.services:hover .icon span,
+.services:hover .icon i {
+    color: $white !important;
+}
+
+.services h3 {
+    font-size: 19px;
+    color: $primary !important;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   SERVICES 2
+   ========================================================= */
+
+.services-2 {
+    padding: 30px;
+    background: $white;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(11,61,46,.06);
+    border: 1px solid $border-color;
+    transition: .3s ease;
+}
+
+.services-2:hover {
+    transform: translateY(-5px);
+    border-color: $secondary;
+}
+
+.services-2 .icon {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: $primary !important;
+    color: $white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.services-2 .icon i,
+.services-2 .icon span {
+    color: $white !important;
+    font-size: 25px;
+}
+
+.services-2:hover .icon {
+    background: $secondary !important;
+}
+
+.services-2 h3 {
+    font-size: 20px;
+    color: $primary !important;
+}
+
+
+/* =========================================================
+   STORY / SUCCESS STORIES
+   ========================================================= */
+
+.story-wrap {
+    background: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(11,61,46,.08);
+    border: 1px solid $border-color;
+}
+
+.story-wrap .text {
+    padding: 30px;
+}
+
+.story-wrap .text h3 {
+    color: $primary !important;
+}
+
+.story-wrap .text .meta {
+    color: $secondary !important;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   COUNTERS
+   ========================================================= */
+
+.ftco-counter {
+    background: $primary !important;
+    padding: 70px 0;
+}
+
+.ftco-counter .text {
+    color: $white !important;
+}
+
+.ftco-counter .number {
+    font-size: 42px;
+    font-weight: 800;
+    color: $accent !important;
+}
+
+.ftco-counter span {
+    color: rgba(255,255,255,.8) !important;
+}
+
+
+/* =========================================================
+   STAFF
+   ========================================================= */
+
+.staff {
+    background: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(11,61,46,.07);
+    border: 1px solid $border-color;
+    transition: .3s ease;
+}
+
+.staff:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(11,61,46,.13);
+    border-color: $secondary;
+}
+
+.staff .img {
+    min-height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.staff .text {
+    padding: 25px;
+    text-align: center;
+}
+
+.staff .text h3 {
+    color: $primary !important;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.staff .position {
+    color: $secondary !important;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.staff .ftco-social {
+    margin-top: 15px;
+}
+
+.staff .ftco-social a {
+    color: $primary !important;
+    margin: 0 5px;
+}
+
+.staff .ftco-social a:hover {
+    color: $secondary !important;
+}
+
+
+/* =========================================================
+   FORMS
+   ========================================================= */
+
+.form-control {
+    height: 52px;
+    background: $white !important;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    color: $black !important;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.form-control:focus {
+    border-color: $secondary !important;
+    box-shadow: 0 0 0 .15rem rgba(124,179,66,.15) !important;
+}
+
+.form-control::placeholder {
+    color: #9BAAA2;
+}
+
+textarea.form-control {
+    height: auto;
+    min-height: 140px;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.info-wrap {
+    background: $primary !important;
+    color: $white !important;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.info-wrap h3 {
+    color: $white !important;
+}
+
+.info-wrap p {
+    color: rgba(255,255,255,.8) !important;
+}
+
+.info-wrap .dbox {
+    margin-bottom: 25px;
+}
+
+.info-wrap .dbox .icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: $secondary !important;
+    color: $white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.info-wrap .dbox .text {
+    color: rgba(255,255,255,.85) !important;
+}
+
+.info-wrap .dbox .text span {
+    color: $accent !important;
+    font-weight: 600;
+}
+
+.info-wrap .dbox .text a {
+    color: $white !important;
+}
+
+.info-wrap .dbox .text a:hover {
+    color: $accent !important;
+}
+
+
+/* =========================================================
+   VIDEO ICON
+   ========================================================= */
+
+.icon-video {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: $secondary !important;
+    color: $white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(124,179,66,.25);
+}
+
+.icon-video:hover {
+    background: $primary !important;
+    color: $white !important;
+}
+
+
+/* =========================================================
+   EVENTS
+   ========================================================= */
+
+.event-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .5s ease;
+}
+
+.event-image:hover img {
+    transform: scale(1.05);
+}
+
+.event-card {
+    background: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(11,61,46,.07);
+    border: 1px solid $border-color;
+    transition: .3s ease;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(11,61,46,.12);
+    border-color: $secondary;
+}
+
+.event-card .event-content {
+    padding: 25px;
+}
+
+.event-card h3 {
+    font-size: 21px;
+    color: $primary !important;
+}
+
+.event-card .event-date,
+.event-date {
+    color: $secondary !important;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   DIGITAL PRODUCTS
+   ========================================================= */
+
+.digital-product-card {
+    background: $white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(11,61,46,.08);
+    height: 100%;
+    transition: all .3s ease;
+    border: 1px solid $border-color;
+}
+
+.digital-product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 45px rgba(11,61,46,.14);
+    border-color: $secondary;
+}
+
+.digital-product-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.digital-product-card .product-content {
+    padding: 28px;
+}
+
+.digital-product-card .product-content h3 {
+    color: $primary !important;
+    font-size: 22px;
+}
+
+.digital-product-card .price,
+.product-price {
+    color: $secondary !important;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.product-category {
+    background: $light-bg !important;
+    color: $primary !important;
+}
+
+
+/* =========================================================
+   ORDER BUTTON
+   ========================================================= */
+
+.order-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: $primary !important;
+    color: $white !important;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: $secondary !important;
+    color: $white !important;
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PAYMENT SECTION
+   ========================================================= */
+
+#payment-section {
+    background: $white !important;
+    border-top: 4px solid $secondary;
+}
+
+#payment-section h2,
+#payment-section h3 {
+    color: $primary !important;
+}
+
+.payment-option {
+    background: $white !important;
+    border: 1px solid $border-color !important;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    transition: .3s ease;
+}
+
+.payment-option:hover {
+    border-color: $secondary !important;
+    background: $light-bg !important;
+    box-shadow: 0 5px 20px rgba(11,61,46,.07);
+}
+
+.payment-option h4 {
+    color: $primary !important;
+    font-size: 18px;
+}
+
+.pay-btn {
+    background: $primary !important;
+    color: $white !important;
+}
+
+.pay-btn:hover {
+    background: $secondary !important;
+    color: $white !important;
+}
+
+#download-product {
+    background: $secondary !important;
+    border-color: $secondary !important;
+    color: $white !important;
+}
+
+#download-product:hover {
+    background: $primary !important;
+    border-color: $primary !important;
+}
+
+
+/* =========================================================
+   PRICING
+   ========================================================= */
+
+.block-7 {
+    background: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(11,61,46,.08);
+    border: 1px solid $border-color;
+    transition: .3s ease;
+}
+
+.block-7:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 45px rgba(11,61,46,.13);
+    border-color: $secondary;
+}
+
+.block-7 .heading {
+    background: $primary !important;
+    color: $white !important;
+    padding: 25px;
+}
+
+.block-7 .heading h3 {
+    color: $white !important;
+}
+
+.block-7 .price {
+    color: $secondary !important;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.block-7 .price .number {
+    color: $secondary !important;
+}
+
+.block-7 ul li {
+    color: $text-color;
+    padding: 8px 0;
+}
+
+.block-7 ul li:before {
+    color: $secondary !important;
+}
+
+.pricing-text li i,
+.pricing-text li .fa {
+    color: $secondary !important;
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+   ========================================================= */
+
+.testimony-section {
+    background: $light-bg !important;
+}
+
+.testimony-wrap {
+    background: $white !important;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(11,61,46,.06);
+}
+
+.testimony-wrap .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $primary !important;
+    color: $white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.testimony-wrap .icon i {
+    color: $white !important;
+    font-size: 20px;
+}
+
+.testimony-wrap .text p {
+    color: $text-color;
+}
+
+.testimony-wrap .name {
+    color: $primary !important;
+    font-weight: 700;
+}
+
+.testimony-wrap .position {
+    color: $secondary !important;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   BLOG
+   ========================================================= */
+
+.blog-entry {
+    background: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(11,61,46,.06);
+    border: 1px solid $border-color;
+    transition: .3s ease;
+}
+
+.blog-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(11,61,46,.12);
+    border-color: $secondary;
+}
+
+.blog-entry .text {
+    padding: 25px;
+}
+
+.blog-entry .text h3 {
+    font-size: 20px;
+}
+
+.blog-entry .text h3 a {
+    color: $primary !important;
+}
+
+.blog-entry .text h3 a:hover {
+    color: $secondary !important;
+}
+
+.blog-entry .text .meta {
+    color: $muted;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar-box {
+    background: $white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 20px rgba(11,61,46,.05);
+}
+
+.sidebar-box h3 {
+    color: $primary !important;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border-left: 3px solid $secondary;
+    padding-left: 12px;
+}
+
+.sidebar-box ul li {
+    border-bottom: 1px solid $border-color;
+    padding: 8px 0;
+}
+
+.sidebar-box ul li a {
+    color: $text-color !important;
+}
+
+.sidebar-box ul li a:hover {
+    color: $secondary !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.footer {
+    background: $darken !important;
+    color: rgba(255,255,255,.75) !important;
+    padding: 70px 0 30px;
+}
+
+.footer h2,
+.footer h3,
+.footer h4,
+.footer h5,
+.footer .footer-heading {
+    color: $white !important;
+}
+
+.footer .footer-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.footer .footer-heading:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background: $secondary;
+}
+
+.footer p {
+    color: rgba(255,255,255,.7) !important;
+}
+
+.footer a {
+    color: rgba(255,255,255,.7) !important;
+}
+
+.footer a:hover {
+    color: $secondary !important;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer .copyright {
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding-top: 25px;
+    margin-top: 40px;
+    color: rgba(255,255,255,.55) !important;
+}
+
+
+/* =========================================================
+   FOOTER SOCIAL ICONS
+   ========================================================= */
+
+.ftco-footer-social li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.ftco-footer-social li a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $secondary !important;
+    color: $white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ftco-footer-social li a i {
+    color: $white !important;
+}
+
+.ftco-footer-social li a:hover {
+    background: $white !important;
+    color: $primary !important;
+    transform: translateY(-3px);
+}
+
+.ftco-footer-social li a:hover i {
+    color: $primary !important;
+}
+
+
+/* =========================================================
+   ASIDE STRETCH
+   ========================================================= */
+
+.aside-stretch-right {
+    background: $primary !important;
+    color: $white !important;
+    position: relative;
+}
+
+.aside-stretch-right:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    background: $primary !important;
+    z-index: -1;
+}
+
+.aside-stretch-right h2,
+.aside-stretch-right h3,
+.aside-stretch-right h4 {
+    color: $white !important;
+}
+
+.aside-stretch-right p {
+    color: rgba(255,255,255,.8) !important;
+}
+
+
+/* =========================================================
+   SEARCH
+   ========================================================= */
+
+.searchform {
+    position: relative;
+}
+
+.searchform .form-control {
+    padding-right: 55px;
+}
+
+.searchform .search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 52px;
+    border: none;
+    background: $primary !important;
+    color: $white !important;
+    border-radius: 0 5px 5px 0;
+}
+
+
+/* =========================================================
+   CONSULTATION
+   ========================================================= */
+
+.consultation {
+    background: $white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 35px rgba(11,61,46,.08);
+}
+
+.consultation h3 {
+    color: $primary !important;
+}
+
+.consultation .btn-submit {
+    background: $secondary !important;
+    color: $white !important;
+    border: none;
+}
+
+.consultation .btn-submit:hover {
+    background: $primary !important;
+}
+
+
+/* =========================================================
+   MEDIA / IMAGES
+   ========================================================= */
+
+.img {
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-fluid {
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+.table {
+    background: $white;
+}
+
+.table thead {
+    background: $primary !important;
+    color: $white !important;
+}
+
+.table thead th {
+    border: none;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid $border-color;
+}
+
+.table tbody tr:hover {
+    background: $light-bg !important;
+}
+
+
+/* =========================================================
+   BADGES
+   ========================================================= */
+
+.badge-primary {
+    background: $primary !important;
+}
+
+.badge-secondary,
+.badge-success {
+    background: $secondary !important;
+}
+
+
+/* =========================================================
+   ALERTS
+   ========================================================= */
+
+.alert-primary,
+.alert-success {
+    background: $light-bg !important;
+    border-color: $accent !important;
+    color: $primary !important;
+}
+
+
+/* =========================================================
+   PAGINATION
+   ========================================================= */
+
+.pagination .page-link {
+    color: $primary !important;
+    border-color: $border-color;
+}
+
+.pagination .page-link:hover {
+    background: $light-bg !important;
+    color: $secondary !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: $primary !important;
+    border-color: $primary !important;
+    color: $white !important;
+}
+
+
+/* =========================================================
+   LOADER
+   ========================================================= */
+
+#ftco-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: $white !important;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+
+#ftco-loader .path {
+    stroke: $secondary !important;
+}
+
+
+/* =========================================================
+   PULSE
+   ========================================================= */
+
+@keyframes pulse {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(124,179,66,.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(124,179,66,0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(124,179,66,0);
+    }
+
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+
+/* =========================================================
+   WHATSAPP
+   ========================================================= */
+
+.whatsapp-icon {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.whatsapp-btn {
+    background: $secondary !important;
+    color: $white !important;
+    border-radius: 5px;
+    padding: 12px 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.whatsapp-btn:hover {
+    background: $primary !important;
+    color: $white !important;
+}
+
+
+/* =========================================================
+   SPECIAL MSM BRAND BOX
+   ========================================================= */
+
+.msm-brand-box {
+    background: $primary !important;
+    color: $white !important;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(11,61,46,.12);
+}
+
+.msm-brand-box h1,
+.msm-brand-box h2,
+.msm-brand-box h3,
+.msm-brand-box h4 {
+    color: $white !important;
+}
+
+.msm-brand-box p {
+    color: rgba(255,255,255,.85) !important;
+}
+
+.msm-brand-box .btn {
+    background: $secondary !important;
+    color: $white !important;
+}
+
+.msm-brand-box .btn:hover {
+    background: $white !important;
+    color: $primary !important;
+}
+
+
+/* =========================================================
+   GLOBAL COLOUR PROTECTION
+   Prevent old Colorlib colours from showing
+   ========================================================= */
+
+.navbar,
+.ftco-navbar-light {
+    background-color: $white !important;
+}
+
+.btn-primary,
+.btn-secondary,
+.order-btn,
+.pay-btn {
+    color: $white !important;
+}
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-secondary {
+    background-color: $primary !important;
+}
+
+.text-primary {
+    color: $primary !important;
+}
+
+.text-secondary {
+    color: $secondary !important;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        padding: 12px 15px;
+    }
+
+    .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:before {
+        display: none;
+    }
+
+    .ftco-navbar-light .navbar-brand img {
+        max-height: 48px;
+    }
+
+    .hero-wrap {
+        min-height: 560px;
+    }
+
+    .hero-wrap .slider-text {
+        min-height: 560px;
+    }
+
+    .hero-wrap .slider-text h1 {
+        font-size: 38px;
+    }
+
+    .ftco-section {
+        padding: 65px 0;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .wrap {
+        text-align: center;
+    }
+
+    .wrap .phone,
+    .wrap .mail {
+        margin-bottom: 5px;
+    }
+
+    .social-media {
+        margin-top: 8px;
+        justify-content: center;
+    }
+
+    .hero-wrap {
+        min-height: 500px;
+    }
+
+    .hero-wrap .slider-text {
+        min-height: 500px;
+    }
+
+    .hero-wrap .slider-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-wrap .slider-text p {
+        font-size: 15px;
+    }
+
+    .ftco-section {
+        padding: 50px 0;
+    }
+
+    .heading-section h2 {
+        font-size: 28px;
+    }
+
+    .services,
+    .services-2,
+    .staff,
+    .event-card,
+    .digital-product-card {
+        margin-bottom: 25px;
+    }
+
+    .event-image {
+        height: 220px;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+
+    .hero-wrap {
+        min-height: 460px;
+    }
+
+    .hero-wrap .slider-text {
+        min-height: 460px;
+    }
+
+    .hero-wrap .slider-text h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+
+    .heading-section h2 {
+        font-size: 25px;
+    }
+
+    .event-image {
+        height: 200px;
+    }
+
+    .info-wrap {
+        padding: 25px 20px;
+    }
+
+    .consultation {
+        padding: 25px 20px;
+    }
+
+}
+/* MSM SOCIAL ICONS - NO CIRCLES */
+.social-media a,
+.top-social a {
+    background: transparent !important;
+    border: none !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0 8px !important;
+    margin: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #FFFFFF !important;
+    line-height: 1 !important;
+}
+
+.social-media a i,
+.top-social a i {
+    font-size: 20px !important;
+    line-height: 1 !important;
+    margin: 0 !important;
+}
+
+.social-media a:hover,
+.top-social a:hover {
+    background: transparent !important;
+    color: #7CB342 !important;
+}
+/* =========================================================
+   MSM HOMEPAGE - FORCE WHAT WE DO & WHY US TO SHOW
+   ========================================================= */
+
+#what-we-do,
+#why-us {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+#what-we-do .section-heading,
+#what-we-do .service-box,
+#what-we-do .service-box h3,
+#what-we-do .service-box p,
+#what-we-do .service-icon,
+#why-us .section-heading,
+#why-us .why-box,
+#why-us .why-box h3,
+#why-us .why-box p,
+#why-us .why-box i {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+#what-we-do .service-box h3,
+#what-we-do .service-box p {
+    display: block !important;
+}
+
+#why-us .why-box h3,
+#why-us .why-box p {
+    display: block !important;
+}
+
+#what-we-do .service-box h3 {
+    color: #0B3D2E !important;
+}
+
+#what-we-do .service-box p {
+    color: #555555 !important;
+}
+
+#why-us .why-box h3 {
+    color: #FFFFFF !important;
+}
+
+#why-us .why-box p {
+    color: #DCE8E2 !important;
+}
+
+#why-us .why-box i {
+    color: #7CB342 !important;
+}
