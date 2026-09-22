@@ -2279,7 +2279,7 @@
 
                     <div class="event-image">
 
-                        <img src="images/17 mafeteng.jpeg"
+                        <img src="images/mafeteng.jpeg"
                              alt="Mafeteng Seminar Tour"
                              class="img-fluid">
 
@@ -2293,7 +2293,7 @@
                         </span>
 
                         <span class="excerpt d-block">
-                            17 OCTOBER 2026
+                            18 OCTOBER 2026
                         </span>
 
 
@@ -2301,7 +2301,7 @@
 
                             <li>
                                 <i class="fa-solid fa-calendar mr-2"></i>
-                                17 OCTOBER 2026
+                                18 OCTOBER 2026
                             </li>
 
                             <li>
@@ -3144,6 +3144,85 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const counters = document.querySelectorAll(".number[data-number]");
+
+    const startCounter = function (counter) {
+
+        const target = parseInt(
+            counter.getAttribute("data-number"),
+            10
+        );
+
+        let current = 0;
+
+        const duration = 2000;
+        const startTime = performance.now();
+
+        function updateCounter(currentTime) {
+
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+
+            current = Math.floor(progress * target);
+
+            counter.textContent = current.toLocaleString();
+
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.textContent = target.toLocaleString();
+            }
+        }
+
+        requestAnimationFrame(updateCounter);
+    };
+
+
+    if ("IntersectionObserver" in window) {
+
+        const observer = new IntersectionObserver(
+            function (entries, observer) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        startCounter(entry.target);
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.3
+            }
+        );
+
+
+        counters.forEach(function (counter) {
+
+            observer.observe(counter);
+
+        });
+
+    } else {
+
+        counters.forEach(function (counter) {
+
+            startCounter(counter);
+
+        });
+
+    }
+
+});
 </script>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
