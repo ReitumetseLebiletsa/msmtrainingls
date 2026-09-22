@@ -27,10 +27,6 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-    <!-- =====================================================
-         DIGITAL PRODUCTS CUSTOM CSS
-    ====================================================== -->
-
     <style>
 
         /* =========================================
@@ -281,6 +277,63 @@
 
 
         /* =========================================
+           GITHUB PAGES ANIMATION FALLBACK
+        ========================================= */
+
+        .github-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition:
+                opacity 0.8s ease,
+                transform 0.8s ease;
+        }
+
+        .github-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* =========================================
+           HERO ANIMATION
+        ========================================= */
+
+        .hero-content-fallback {
+            opacity: 0;
+            transform: translateY(30px);
+            transition:
+                opacity 1s ease,
+                transform 1s ease;
+        }
+
+        .hero-content-fallback.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        /* =========================================
+           MOBILE MENU FALLBACK
+        ========================================= */
+
+        @media (max-width: 991.98px) {
+
+            #ftco-nav.show {
+                display: block !important;
+            }
+
+            #ftco-nav {
+                width: 100%;
+            }
+
+            #ftco-nav .navbar-nav {
+                padding: 15px 0;
+            }
+
+        }
+
+
+        /* =========================================
            MOBILE
         ========================================= */
 
@@ -349,9 +402,7 @@
 
                     <p class="mb-0 d-flex">
 
-
                         <!-- FACEBOOK -->
-
                         <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -367,7 +418,6 @@
 
 
                         <!-- INSTAGRAM -->
-
                         <a href="https://www.instagram.com/mohaumosoeunyane/"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -383,7 +433,6 @@
 
 
                         <!-- WHATSAPP -->
-
                         <a href="https://wa.me/26656506092"
                            target="_blank"
                            rel="noopener noreferrer"
@@ -419,7 +468,6 @@
      id="ftco-navbar">
 
     <div class="container">
-
 
         <!-- LOGO -->
 
@@ -479,7 +527,6 @@
              id="ftco-nav">
 
             <ul class="navbar-nav m-auto">
-
 
                 <li class="nav-item">
 
@@ -588,8 +635,7 @@
 
         <div class="row no-gutters slider-text align-items-end">
 
-            <div class="col-md-9 ftco-animate pb-5">
-
+            <div class="col-md-9 pb-5 hero-content-fallback">
 
                 <p class="breadcrumbs mb-2">
 
@@ -641,10 +687,9 @@
 
     <div class="container">
 
-
         <!-- INTRO -->
 
-        <div class="digital-intro">
+        <div class="digital-intro github-animate">
 
             <span class="subheading">
 
@@ -676,26 +721,18 @@
         <div class="row justify-content-center">
 
 
-            <!-- =========================================
-                 MASTER CLASS KIT
-            ========================================== -->
+            <!-- MASTER CLASS KIT -->
 
-            <div class="col-md-8 col-lg-5 d-flex">
+            <div class="col-md-8 col-lg-5 d-flex github-animate">
 
                 <div class="product-card">
-
-
-                    <!-- IMAGE -->
 
                     <img src="images/MASTER CLASS KIT.jpeg"
                          alt="MSM Master Class Kit"
                          class="product-image">
 
 
-                    <!-- CONTENT -->
-
                     <div class="product-content">
-
 
                         <span class="product-category">
 
@@ -727,8 +764,6 @@
 
                         </div>
 
-
-                        <!-- BUY BUTTON -->
 
                         <button type="button"
                                 class="order-btn"
@@ -773,7 +808,6 @@
                             border-radius:10px;
                             box-shadow:0 5px 25px rgba(0,0,0,0.08);">
 
-
                     <div class="text-center mb-4">
 
                         <span class="subheading">
@@ -790,7 +824,6 @@
                         </h2>
 
                     </div>
-
 
 
                     <!-- PRODUCT SUMMARY -->
@@ -850,7 +883,6 @@
                     </div>
 
 
-
                     <div class="form-group">
 
                         <label for="customer-email">
@@ -867,7 +899,6 @@
                                required>
 
                     </div>
-
 
 
                     <div class="form-group">
@@ -900,9 +931,6 @@
                     </h5>
 
 
-
-                    <!-- MPESA -->
-
                     <label class="payment-option">
 
                         <input type="radio"
@@ -915,9 +943,6 @@
 
                     </label>
 
-
-
-                    <!-- ECOCASH -->
 
                     <label class="payment-option">
 
@@ -932,9 +957,6 @@
                     </label>
 
 
-
-                    <!-- FNB -->
-
                     <label class="payment-option">
 
                         <input type="radio"
@@ -947,9 +969,6 @@
 
                     </label>
 
-
-
-                    <!-- STANDARD LESOTHO BANK -->
 
                     <label class="payment-option">
 
@@ -964,9 +983,6 @@
                     </label>
 
 
-
-                    <!-- NETBANK -->
-
                     <label class="payment-option">
 
                         <input type="radio"
@@ -980,9 +996,6 @@
                     </label>
 
 
-
-                    <!-- PAYPAL -->
-
                     <label class="payment-option">
 
                         <input type="radio"
@@ -994,7 +1007,6 @@
                         PayPal
 
                     </label>
-
 
 
                     <!-- PAYMENT BUTTON -->
@@ -1010,9 +1022,6 @@
                     </button>
 
 
-
-                    <!-- SECURITY -->
-
                     <div class="text-center mt-3">
 
                         <small style="color:#777;">
@@ -1025,9 +1034,6 @@
 
                     </div>
 
-
-
-                    <!-- BACK -->
 
                     <div class="text-center mt-3">
 
@@ -1072,7 +1078,6 @@
                                 padding:40px;
                                 border-radius:10px;
                                 box-shadow:0 5px 25px rgba(0,0,0,0.08);">
-
 
                         <i class="fa fa-circle-check"
                            style="font-size:60px;
@@ -1135,8 +1140,7 @@
 
     <div class="container">
 
-
-        <div class="text-center mb-5">
+        <div class="text-center mb-5 github-animate">
 
             <span class="subheading">
 
@@ -1161,17 +1165,12 @@
         </div>
 
 
-
         <div class="row justify-content-center">
 
-
-            <!-- SIX BLOCK ACTION COURSE -->
-
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 github-animate">
 
                 <div class="product-card"
                      style="opacity:0.75;">
-
 
                     <img src="images/SIX BLOCK CORRECTIONS.jpeg"
                          alt="Six Block Action Course"
@@ -1179,7 +1178,6 @@
 
 
                     <div class="product-content">
-
 
                         <span class="product-category">
 
@@ -1234,10 +1232,9 @@
 
     <div class="container">
 
-
         <div class="row justify-content-center">
 
-            <div class="col-md-8 text-center mb-5">
+            <div class="col-md-8 text-center mb-5 github-animate">
 
                 <span class="subheading">
 
@@ -1265,16 +1262,13 @@
         </div>
 
 
-
         <div class="row">
-
 
             <!-- STEP 1 -->
 
             <div class="col-md-4">
 
-                <div class="step-box">
-
+                <div class="step-box github-animate">
 
                     <div class="step-icon">
 
@@ -1302,13 +1296,11 @@
             </div>
 
 
-
             <!-- STEP 2 -->
 
             <div class="col-md-4">
 
-                <div class="step-box">
-
+                <div class="step-box github-animate">
 
                     <div class="step-icon">
 
@@ -1336,13 +1328,11 @@
             </div>
 
 
-
             <!-- STEP 3 -->
 
             <div class="col-md-4">
 
-                <div class="step-box">
-
+                <div class="step-box github-animate">
 
                     <div class="step-icon">
 
@@ -1387,8 +1377,7 @@
 
         <div class="row justify-content-center">
 
-            <div class="col-md-9 text-center">
-
+            <div class="col-md-9 text-center github-animate">
 
                 <span class="subheading">
 
@@ -1444,13 +1433,11 @@
 
         <div class="row">
 
-
             <!-- ABOUT -->
 
             <div class="col-md-9 py-5">
 
                 <div class="row">
-
 
                     <div class="col-md-4 mb-md-0 mb-4">
 
@@ -1473,9 +1460,6 @@
 
                         <ul class="ftco-footer-social p-0">
 
-
-                            <!-- FACEBOOK -->
-
                             <li class="ftco-animate">
 
                                 <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
@@ -1489,9 +1473,6 @@
 
                             </li>
 
-
-
-                            <!-- TIKTOK -->
 
                             <li class="ftco-animate">
 
@@ -1507,9 +1488,6 @@
                             </li>
 
 
-
-                            <!-- INSTAGRAM -->
-
                             <li class="ftco-animate">
 
                                 <a href="https://www.instagram.com/mohaumosoeunyane/"
@@ -1523,9 +1501,6 @@
 
                             </li>
 
-
-
-                            <!-- WHATSAPP -->
 
                             <li class="ftco-animate">
 
@@ -1545,7 +1520,6 @@
                     </div>
 
 
-
                     <!-- FOOTER LINKS -->
 
                     <div class="col-md-8">
@@ -1555,7 +1529,6 @@
                             <div class="col-md-12 col-lg-10">
 
                                 <div class="row">
-
 
                                     <!-- COURSES -->
 
@@ -1569,7 +1542,6 @@
 
 
                                         <ul class="list-unstyled">
-
 
                                             <li>
 
@@ -1623,7 +1595,6 @@
                                     </div>
 
 
-
                                     <!-- DIGITAL PRODUCTS -->
 
                                     <div class="col-md-4 mb-md-0 mb-4">
@@ -1636,7 +1607,6 @@
 
 
                                         <ul class="list-unstyled">
-
 
                                             <li>
 
@@ -1690,7 +1660,6 @@
                                     </div>
 
 
-
                                     <!-- CONTACT -->
 
                                     <div class="col-md-4 mb-md-0 mb-4">
@@ -1703,7 +1672,6 @@
 
 
                                         <ul class="list-unstyled">
-
 
                                             <li>
 
@@ -1769,7 +1737,6 @@
                 </div>
 
 
-
                 <!-- COPYRIGHT -->
 
                 <div class="row mt-md-5">
@@ -1781,7 +1748,11 @@
                             Copyright &copy;
 
                             <script>
-                                document.write(new Date().getFullYear());
+
+                                document.write(
+                                    new Date().getFullYear()
+                                );
+
                             </script>
 
                             MSM Training Company.
@@ -1795,7 +1766,6 @@
                 </div>
 
             </div>
-
 
 
             <!-- FREE CONSULTATION -->
@@ -1883,10 +1853,13 @@
 
 <!-- =====================================================
      LOADER
+     
+     IMPORTANT:
+     No "show" class here.
 ====================================================== -->
 
 <div id="ftco-loader"
-     class="show fullscreen">
+     class="fullscreen">
 
     <svg class="circular"
          width="48px"
@@ -1931,80 +1904,243 @@
 
 <script src="js/jquery.stellar.min.js"></script>
 
-<!-- CORRECT filename from GitHub -->
+<!-- Exact filename in GitHub repository -->
 <script src="js/jquery.animatenumber.min.js"></script>
 
 <script src="js/owl.carousel.min.js"></script>
 
 <script src="js/scrollax.min.js"></script>
 
-<!-- Main JavaScript -->
 <script src="js/main.js"></script>
 
 
 
 <!-- =====================================================
-     WHATSAPP CONSULTATION FORM
+     GITHUB PAGES FALLBACK JAVASCRIPT
 ====================================================== -->
 
 <script>
 
-document.getElementById("consultationForm").addEventListener("submit", function(event) {
-
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
 
 
-    var name =
-        document.getElementById("consultation-name").value.trim();
+    /* =========================================
+       HERO ANIMATION
+    ========================================= */
 
-    var email =
-        document.getElementById("consultation-email").value.trim();
+    var hero =
+        document.querySelector(".hero-content-fallback");
 
-    var subject =
-        document.getElementById("consultation-subject").value.trim();
+    if (hero) {
 
-    var message =
-        document.getElementById("consultation-message").value.trim();
+        setTimeout(function () {
 
+            hero.classList.add("visible");
 
-    if (!name || !email || !subject || !message) {
-
-        alert(
-            "Please complete all the fields before sending your consultation request."
-        );
-
-        return;
+        }, 150);
 
     }
 
 
-    var whatsappText =
-        "Hello MSM Training Company,\n\n" +
-        "FREE CONSULTATION REQUEST\n\n" +
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n" +
-        "Subject: " + subject + "\n\n" +
-        "Message:\n" + message;
+    /* =========================================
+       SCROLL ANIMATIONS
+    ========================================= */
+
+    var animatedElements =
+        document.querySelectorAll(".github-animate");
 
 
-    var whatsappURL =
-        "https://wa.me/26656506092?text=" +
-        encodeURIComponent(whatsappText);
+    if ("IntersectionObserver" in window) {
+
+        var observer =
+            new IntersectionObserver(function (entries) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("visible");
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            }, {
+
+                threshold: 0.10
+
+            });
 
 
-    window.location.href = whatsappURL;
+        animatedElements.forEach(function (element) {
+
+            observer.observe(element);
+
+        });
+
+    } else {
+
+        animatedElements.forEach(function (element) {
+
+            element.classList.add("visible");
+
+        });
+
+    }
+
+
+    /* =========================================
+       MOBILE MENU FALLBACK
+    ========================================= */
+
+    var menuButton =
+        document.querySelector(".navbar-toggler");
+
+    var menu =
+        document.getElementById("ftco-nav");
+
+
+    if (menuButton && menu) {
+
+        menuButton.addEventListener("click", function () {
+
+            menu.classList.toggle("show");
+
+            var expanded =
+                menu.classList.contains("show");
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                expanded ? "true" : "false"
+            );
+
+        });
+
+    }
+
+
+    /* =========================================
+       SEARCH
+    ========================================= */
+
+    var searchForm =
+        document.querySelector(".searchform");
+
+
+    if (searchForm) {
+
+        searchForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+
+            var searchInput =
+                searchForm.querySelector("input");
+
+
+            if (searchInput &&
+                searchInput.value.trim() !== "") {
+
+                alert(
+                    "Search is currently being prepared. " +
+                    "Please use the menu to browse our services " +
+                    "and digital products."
+                );
+
+            }
+
+        });
+
+    }
+
+
+    /* =========================================
+       CONSULTATION FORM
+    ========================================= */
+
+    var consultationForm =
+        document.getElementById("consultationForm");
+
+
+    if (consultationForm) {
+
+        consultationForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                var name =
+                    document
+                    .getElementById("consultation-name")
+                    .value
+                    .trim();
+
+
+                var email =
+                    document
+                    .getElementById("consultation-email")
+                    .value
+                    .trim();
+
+
+                var subject =
+                    document
+                    .getElementById("consultation-subject")
+                    .value
+                    .trim();
+
+
+                var message =
+                    document
+                    .getElementById("consultation-message")
+                    .value
+                    .trim();
+
+
+                if (!name ||
+                    !email ||
+                    !subject ||
+                    !message) {
+
+                    alert(
+                        "Please complete all the fields " +
+                        "before sending your consultation request."
+                    );
+
+                    return;
+
+                }
+
+
+                var whatsappText =
+                    "Hello MSM Training Company,\n\n" +
+                    "FREE CONSULTATION REQUEST\n\n" +
+                    "Name: " + name + "\n" +
+                    "Email: " + email + "\n" +
+                    "Subject: " + subject + "\n\n" +
+                    "Message:\n" + message;
+
+
+                var whatsappURL =
+                    "https://wa.me/26656506092?text=" +
+                    encodeURIComponent(whatsappText);
+
+
+                window.location.href =
+                    whatsappURL;
+
+            }
+        );
+
+    }
 
 });
 
-</script>
 
-
-
-<!-- =====================================================
-     DIGITAL PRODUCT PAYMENT FUNCTIONS
-====================================================== -->
-
-<script>
 
 /* =========================================
    OPEN PAYMENT
@@ -2016,11 +2152,19 @@ function openPayment() {
         document.getElementById("payment-section");
 
 
-    paymentSection.style.display = "block";
+    if (!paymentSection) {
+        return;
+    }
+
+
+    paymentSection.style.display =
+        "block";
 
 
     paymentSection.scrollIntoView({
+
         behavior: "smooth"
+
     });
 
 }
@@ -2037,12 +2181,21 @@ function closePayment() {
         document.getElementById("payment-section");
 
 
-    paymentSection.style.display = "none";
+    if (!paymentSection) {
+        return;
+    }
+
+
+    paymentSection.style.display =
+        "none";
 
 
     window.scrollTo({
+
         top: 0,
+
         behavior: "smooth"
+
     });
 
 }
@@ -2055,16 +2208,26 @@ function closePayment() {
 
 function startPayment() {
 
+
     var name =
-        document.getElementById("customer-name").value.trim();
+        document
+        .getElementById("customer-name")
+        .value
+        .trim();
 
 
     var email =
-        document.getElementById("customer-email").value.trim();
+        document
+        .getElementById("customer-email")
+        .value
+        .trim();
 
 
     var phone =
-        document.getElementById("customer-phone").value.trim();
+        document
+        .getElementById("customer-phone")
+        .value
+        .trim();
 
 
     var payment =
@@ -2075,10 +2238,13 @@ function startPayment() {
 
     /* CUSTOMER DETAILS */
 
-    if (!name || !email || !phone) {
+    if (!name ||
+        !email ||
+        !phone) {
 
         alert(
-            "Please enter your name, email address and phone number."
+            "Please enter your name, email address " +
+            "and phone number."
         );
 
         return;
@@ -2100,12 +2266,14 @@ function startPayment() {
 
 
     /*
-        REAL PAYMENT GATEWAY WILL BE CONNECTED HERE.
+        IMPORTANT:
 
-        At the moment this page does NOT confirm payment.
+        This is NOT a real payment gateway yet.
 
-        This prevents customers from receiving the
-        digital product without verified payment.
+        The website must not tell the customer
+        that payment was successful until a real
+        payment gateway is connected and payment
+        has been verified.
     */
 
     alert(
