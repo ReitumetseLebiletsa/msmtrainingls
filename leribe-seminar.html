@@ -1,970 +1,403 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Leribe Seminar Tour | MSM Training</title>
-
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-
-    <!-- MSM Main Styles -->
-    <link rel="stylesheet"
-          href="css/style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leribe Seminar | MSM Training Company</title>
 
     <style>
+        :root {
+            --dark-green: #0B3D2E;
+            --light-green: #7CB342;
+            --soft-green: #A8D08D;
+            --white: #ffffff;
+            --light-bg: #f4f8f2;
+            --text: #25352d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            background: #f8f9fa;
+            font-family: Arial, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: var(--light-bg);
         }
 
+        a {
+            text-decoration: none;
+        }
 
-        /* ================================
-           HEADER
-        ================================= */
-
-        .seminar-header {
-            background: #0B3D2E;
+        .hero {
+            background: linear-gradient(
+                rgba(11, 61, 46, 0.92),
+                rgba(11, 61, 46, 0.92)
+            ),
+            url("images/leribe-seminar.jpg") center/cover;
             color: white;
-            padding: 70px 20px;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero h2 {
+            color: var(--soft-green);
+            font-size: clamp(1.2rem, 3vw, 2rem);
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            font-size: 1.1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--light-green);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--soft-green);
+            color: var(--dark-green);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+        }
+
+        .section {
+            padding: 55px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section h2 {
+            color: var(--dark-green);
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .detail-card {
+            background: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            border-top: 5px solid var(--light-green);
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+        }
+
+        .detail-card h3 {
+            color: var(--dark-green);
+            margin-bottom: 8px;
+        }
+
+        .pricing {
+            background: var(--dark-green);
+            color: white;
             text-align: center;
         }
 
-        .seminar-header h1 {
-            font-weight: 700;
-            margin-bottom: 15px;
+        .pricing h2 {
+            color: white;
         }
 
-        .seminar-header p {
-            font-size: 18px;
+        .price-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 18px;
+            margin-top: 30px;
         }
 
-
-        /* ================================
-           MAIN CARD
-        ================================= */
-
-        .seminar-card {
+        .price-card {
             background: white;
-            padding: 35px;
-            border-radius: 10px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-            margin-top: -40px;
-            position: relative;
+            color: var(--text);
+            padding: 25px 15px;
+            border-radius: 12px;
         }
 
-
-        /* ================================
-           EVENT INFORMATION
-        ================================= */
-
-        .seminar-info {
-            margin-bottom: 25px;
+        .price-card h3 {
+            color: var(--dark-green);
+            margin-bottom: 10px;
         }
 
-        .seminar-info i {
-            color: #7CB342;
-            width: 25px;
+        .price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--light-green);
         }
 
-
-        /* ================================
-           EARLY BIRD
-        ================================= */
-
-        .early-bird {
-            background: #7CB342;
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
+        .topics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
         }
 
+        .topic {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
 
-        /* ================================
-           PRICE BOXES
-        ================================= */
+        .topic h3 {
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
 
-        .price-box {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
+        .cta {
+            background: var(--soft-green);
+            text-align: center;
+            padding: 65px 20px;
+        }
+
+        .cta h2 {
+            color: var(--dark-green);
             margin-bottom: 15px;
         }
 
-        .price-box h5 {
-            color: #0B3D2E;
-            font-weight: 700;
+        .cta p {
+            margin-bottom: 20px;
         }
-
-
-        /* ================================
-           PAYMENT BOX
-        ================================= */
-
-        .payment-box {
-            background: #f1f1f1;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 25px;
-        }
-
-
-        /* ================================
-           HEADINGS
-        ================================= */
-
-        .register-title {
-            color: #0B3D2E;
-            font-weight: 700;
-        }
-
-
-        /* ================================
-           REGISTER BUTTON
-        ================================= */
-
-        .btn-register {
-            background: #0B3D2E;
-            color: white;
-            border: none;
-        }
-
-        .btn-register:hover {
-            background: #7CB342;
-            color: white;
-        }
-
-
-        /* ================================
-           WHATSAPP BUTTON
-        ================================= */
-
-        .whatsapp-btn {
-            background: #25D366;
-            color: white;
-        }
-
-        .whatsapp-btn:hover {
-            color: white;
-            opacity: 0.9;
-        }
-
-
-        /* ================================
-           FORM
-        ================================= */
-
-        .form-control {
-            border-radius: 5px;
-        }
-
-        .form-control:focus {
-            border-color: #7CB342;
-            box-shadow: 0 0 0 0.15rem rgba(124, 179, 66, 0.20);
-        }
-
-
-        /* ================================
-           FOOTER
-        ================================= */
 
         footer {
-            background: #0B3D2E;
+            background: var(--dark-green);
             color: white;
-            padding: 30px 0;
-            margin-top: 50px;
             text-align: center;
+            padding: 30px 20px;
         }
 
-
-        /* ================================
-           MOBILE
-        ================================= */
-
-        @media (max-width: 576px) {
-
-            .seminar-header {
-                padding: 50px 15px;
-            }
-
-            .seminar-header h1 {
-                font-size: 30px;
-            }
-
-            .seminar-header p {
-                font-size: 16px;
-            }
-
-            .seminar-card {
-                padding: 25px 18px;
-                margin-top: -25px;
-            }
-
+        footer a {
+            color: var(--soft-green);
         }
 
+        @media (max-width: 600px) {
+            .hero {
+                padding: 65px 15px;
+            }
+
+            .section {
+                padding: 40px 15px;
+            }
+        }
     </style>
-
 </head>
-
 
 <body>
 
+    <header class="hero">
 
-<!-- =====================================================
-     HEADER
-====================================================== -->
+    <img src="images/leribe-seminar.jpeg"
+         alt="Leribe Seminar 2026"
+         class="leribe-poster">
 
-<section class="seminar-header">
+    <h1>Leribe Seminar 2026</h1>
 
-    <div class="container">
+    <h2>Master Your Mind, Money, Business & Self</h2>
 
-        <h1>
-            LERIBE SEMINAR TOUR
-        </h1>
+    <p>
+        Stop waiting for success to happen.
+        Learn, grow and take practical action towards
+        becoming the person you were created to be.
+    </p>
+
+    <a href="#register" class="btn">REGISTER NOW</a>
+
+    <a href="#details" class="btn btn-outline">VIEW DETAILS</a>
+
+</header>
+
+    <!-- INTRODUCTION -->
+    <section class="section">
+        <h2>Are You Ready for Your Next Level?</h2>
+
+        <p class="intro">
+            Your mind, your money and your business all matter.
+            Join MSM Training Company for a powerful day of learning,
+            motivation and practical strategies to help you move forward
+            in life and business.
+        </p>
+    </section>
+
+    <!-- EVENT DETAILS -->
+    <section class="section" id="details">
+        <h2>Seminar Details</h2>
+
+        <div class="details">
+
+            <div class="detail-card">
+                <h3>📅 Date</h3>
+                <p>10 October 2026</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>⏰ Time</h3>
+                <p>09:00 – 16:00</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>📍 Location</h3>
+                <p>Leribe, Lesotho</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>🎯 Theme</h3>
+                <p>Master Your Mind, Money, Business & Self</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- WHAT YOU WILL LEARN -->
+    <section class="section">
+        <h2>What Will You Gain?</h2>
+
+        <div class="topics">
+
+            <div class="topic">
+                <h3>🧠 Master Your Mind</h3>
+                <p>
+                    Understand your mindset, overcome limiting beliefs
+                    and develop a stronger attitude towards success.
+                </p>
+            </div>
+
+            <div class="topic">
+                <h3>💰 Master Your Money</h3>
+                <p>
+                    Learn practical ways to think differently about money,
+                    manage your finances and build financial awareness.
+                </p>
+            </div>
+
+            <div class="topic">
+                <h3>📈 Master Your Business</h3>
+                <p>
+                    Discover the importance of business thinking,
+                    taking action and creating value for others.
+                </p>
+            </div>
+
+            <div class="topic">
+                <h3>🙌 Master Yourself</h3>
+                <p>
+                    Build discipline, personal responsibility and the
+                    courage to take the next step in your journey.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section pricing">
+        <h2>Choose Your Booking</h2>
 
         <p>
-            How to Master Your Mind, Money, Business and Self
+            Secure your place and invite someone to grow with you.
         </p>
+
+        <div class="price-grid">
+
+            <div class="price-card">
+                <h3>Early Bird</h3>
+                <p class="price">R299</p>
+                <p>First 20 people</p>
+            </div>
+
+            <div class="price-card">
+                <h3>Individual</h3>
+                <p class="price">R350</p>
+                <p>Normal booking</p>
+            </div>
+
+            <div class="price-card">
+                <h3>Pair Booking</h3>
+                <p class="price">R500</p>
+                <p>Bring someone with you</p>
+            </div>
+
+            <div class="price-card">
+                <h3>Group of 5</h3>
+                <p class="price">R1,000</p>
+                <p>Grow together as a team</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta" id="register">
+        <h2>Ready to Take Action?</h2>
 
         <p>
-            <strong>
-                10 October 2026 | 09:00 AM – 4:00 PM
-            </strong>
+            Do not wait until the opportunity passes.
+            Contact MSM Training Company today to secure your place.
         </p>
 
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     MAIN CONTENT
-====================================================== -->
-
-<section class="container">
-
-    <div class="seminar-card">
-
-
-        <!-- INTRODUCTION -->
-
-        <div class="text-center mb-4">
-
-            <h2 class="register-title">
-                Register for the Leribe Seminar
-            </h2>
-
-            <p class="text-center mb-4">
-
-                🔥 <strong>Early Bird: R299</strong>
-
-                <br>
-
-                Bring another person FREE —
-                only <strong>1 spot left<strong>
-
-            </p>
-
-            <p>
-
-                Come ready to learn, ask questions,
-                connect and work on your next level.
-
-            </p>
-
-        </div>
-
-
-
-        <!-- =================================================
-             EVENT INFORMATION
-        ================================================== -->
-
-        <div class="seminar-info">
-
-            <p>
-
-                <i class="fa-solid fa-location-dot"></i>
-
-                <strong>Location:</strong>
-                Leribe, Lesotho
-
-            </p>
-
-
-            <p>
-
-                <i class="fa-solid fa-calendar"></i>
-
-                <strong>Date:</strong>
-                10 October 2026
-
-            </p>
-
-
-            <p>
-
-                <i class="fa-solid fa-clock"></i>
-
-                <strong>Time:</strong>
-                09:00 AM – 4:00 PM
-
-            </p>
-
-        </div>
-
-
-
-        <!-- =================================================
-             EARLY BIRD
-        ================================================== -->
-
-        <div class="early-bird text-center">
-
-            <h3>
-                🔥 EARLY BIRD – R299
-            </h3>
-
-            <p class="mb-0">
-
-                Bring another person FREE!
-
-                <br>
-
-                <strong id="earlyBirdSpots">
-                   1 spot left
-                </strong>
-
-                <br>
-
-                <small>
-                    Limited to the first 20 registrations.
-                </small>
-
-            </p>
-
-        </div>
-
-
-
-        <!-- =================================================
-             REGISTRATION OPTIONS
-        ================================================== -->
-
-        <h4 class="register-title mt-4 mb-3">
-
-            Registration Options
-
-        </h4>
-
-
-
-        <!-- EARLY BIRD -->
-
-        <div class="price-box">
-
-            <h5>
-                🔥 Early Bird
-            </h5>
-
-            <p class="mb-0">
-
-                R299 per person
-
-                <br>
-
-                <strong>
-                    Bring another person FREE!
-                </strong>
-
-                <br>
-
-                <small>
-                   1 spot left
-                </small>
-
-            </p>
-
-        </div>
-
-
-
-        <!-- INDIVIDUAL -->
-
-        <div class="price-box">
-
-            <h5>
-                Individual
-            </h5>
-
-            <p class="mb-0">
-                R350 per person
-            </p>
-
-        </div>
-
-
-
-        <!-- PAIR -->
-
-        <div class="price-box">
-
-            <h5>
-                Pair
-            </h5>
-
-            <p class="mb-0">
-                R500 for two people
-            </p>
-
-        </div>
-
-
-
-        <!-- GROUP -->
-
-        <div class="price-box">
-
-            <h5>
-                Group of 5
-            </h5>
-
-            <p class="mb-0">
-                R1,000
-            </p>
-
-        </div>
-
-
-
-        <!-- =================================================
-             REGISTRATION FORM
-        ================================================== -->
-
-        <hr class="my-5">
-
-
-        <h4 class="register-title mb-4">
-
-            Registration Form
-
-        </h4>
-
-
-        <!--
-            IMPORTANT:
-            This form does NOT use Netlify.
-
-            It works with GitHub Pages by opening WhatsApp
-            with the registration details.
-        -->
-
-        <form id="leribeRegistrationForm">
-
-
-            <!-- FULL NAME -->
-
-            <div class="form-group">
-
-                <label>
-                    Full Name *
-                </label>
-
-                <input type="text"
-                       id="fullName"
-                       name="full-name"
-                       class="form-control"
-                       placeholder="Enter your full name"
-                       required>
-
-            </div>
-
-
-
-            <!-- PHONE -->
-
-            <div class="form-group">
-
-                <label>
-                    Phone / WhatsApp Number *
-                </label>
-
-                <input type="tel"
-                       id="phone"
-                       name="phone"
-                       class="form-control"
-                       placeholder="Enter your phone number"
-                       required>
-
-            </div>
-
-
-
-            <!-- EMAIL -->
-
-            <div class="form-group">
-
-                <label>
-                    Email Address
-                </label>
-
-                <input type="email"
-                       id="email"
-                       name="email"
-                       class="form-control"
-                       placeholder="Enter your email address">
-
-            </div>
-
-
-
-            <!-- REGISTRATION OPTION -->
-
-            <div class="form-group">
-
-                <label>
-                    Registration Option *
-                </label>
-
-                <select id="registrationOption"
-                        name="registration-option"
-                        class="form-control"
-                        required>
-
-                    <option value="">
-                        -- Select a registration option --
-                    </option>
-
-                    <option value="Early Bird R299 -1 spot left!">
-                        🔥 Early Bird – R299 (1 spot left!)
-                    </option>
-
-                    <option value="Individual R350">
-                        Individual – R350
-                    </option>
-
-                    <option value="Pair R500">
-                        Pair – R500
-                    </option>
-
-                    <option value="Group of 5 R1000">
-                        Group of 5 – R1,000
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- NUMBER OF PEOPLE -->
-
-            <div class="form-group">
-
-                <label>
-                    Number of People *
-                </label>
-
-                <input type="number"
-                       id="numberOfPeople"
-                       name="number-of-people"
-                       class="form-control"
-                       min="1"
-                       max="20"
-                       placeholder="Example: 1"
-                       required>
-
-            </div>
-
-
-
-            <!-- SECOND PERSON -->
-
-            <div class="form-group">
-
-                <label>
-
-                    Name of Person You Are Bringing
-
-                    <small>
-                        (if applicable)
-                    </small>
-
-                </label>
-
-                <input type="text"
-                       id="secondPerson"
-                       name="second-person"
-                       class="form-control"
-                       placeholder="Enter second person's name">
-
-            </div>
-
-
-
-            <!-- PAYMENT STATUS -->
-
-            <div class="form-group">
-
-                <label>
-                    Payment Status *
-                </label>
-
-                <select id="paymentStatus"
-                        name="payment-status"
-                        class="form-control"
-                        required>
-
-                    <option value="">
-                        -- Select --
-                    </option>
-
-                    <option value="I have paid">
-                        I have paid
-                    </option>
-
-                    <option value="I will pay">
-                        I will pay
-                    </option>
-
-                </select>
-
-            </div>
-
-
-
-            <!-- MESSAGE -->
-
-            <div class="form-group">
-
-                <label>
-                    Message / Special Request
-                </label>
-
-                <textarea id="message"
-                          name="message"
-                          class="form-control"
-                          rows="4"
-                          placeholder="Any message or special request?"></textarea>
-
-            </div>
-
-
-
-            <!-- SUBMIT -->
-
-            <button type="submit"
-                    class="btn btn-register btn-lg btn-block">
-
-                <i class="fa-brands fa-whatsapp mr-2"></i>
-
-                SUBMIT REGISTRATION
-
-            </button>
-
-
-        </form>
-
-
-
-        <!-- =================================================
-             PAYMENT DETAILS
-        ================================================== -->
-
-        <div class="payment-box">
-
-            <h4 class="register-title">
-                Payment Details
-            </h4>
-
-            <hr>
-
-
-            <p>
-
-                <strong>
-                    M-Pesa / EcoCash:
-                </strong>
-
-                <br>
-
-                0000104444
-
-            </p>
-
-
-            <p>
-
-                <strong>
-                    Standard Bank:
-                </strong>
-
-                <br>
-
-                9080009468508
-
-            </p>
-
-
-            <p>
-
-                <strong>
-                    Account Name:
-                </strong>
-
-                <br>
-
-                Mohau and the Success Masters
-
-            </p>
-
-
-            <p class="mb-0">
-
-                After making payment, please keep your
-                proof of payment.
-
-            </p>
-
-        </div>
-
-
-
-        <!-- =================================================
-             WHATSAPP
-        ================================================== -->
-
-        <div class="text-center mt-4">
-
-            <p>
-                Need help with registration?
-            </p>
-
-
-            <a href="https://wa.me/26656506092"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn whatsapp-btn">
-
-                <i class="fa-brands fa-whatsapp mr-2"></i>
-
-                WhatsApp Us
-
+        <a
+            href="https://wa.me/26656506092?text=Hello%20MSM%20Training%2C%20I%20would%20like%20to%20register%20for%20the%20Leribe%20Seminar."
+            class="btn"
+            target="_blank"
+            rel="noopener"
+        >
+            REGISTER ON WHATSAPP
+        </a>
+
+        <p>
+            Or visit:
+            <a href="https://msmtrainingls.com" target="_blank">
+                msmtrainingls.com
             </a>
+        </p>
+    </section>
 
-
-            <p class="mt-3 mb-0">
-
-                Call / WhatsApp:
-
-                <strong>
-                    +266 5650 6092
-                </strong>
-
-                <br>
-
-                <strong>
-                    +266 6206 2250
-                </strong>
-
-            </p>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-====================================================== -->
-
-<footer>
-
-    <div class="container">
-
-        <p class="mb-0">
-
-            © 2026 Mohau and the Success Masters.
-
-            All Rights Reserved.
-
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            <strong>Mohau and the Success Masters Motivation & Training
+            Company and Counselling Services</strong>
         </p>
 
-        <p class="mb-0">
+        <p>SUCCESS IS A CHOICE!</p>
 
-            SUCCESS IS A CHOICE!
-
+        <p>
+            📞 +266 5650 6092 |
+            🌐 <a href="https://msmtrainingls.com">msmtrainingls.com</a>
         </p>
 
-    </div>
-
-</footer>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-====================================================== -->
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-
-
-<script>
-
-    /* ==========================================
-       EARLY BIRD SPOTS
-    ========================================== */
-
-    const earlyBirdSpots = 1;
-
-    const spotsElement =
-        document.getElementById("earlyBirdSpots");
-
-    if (spotsElement) {
-
-        spotsElement.textContent =
-            "Only " + earlyBirdSpots + " Early Bird spots left!";
-
-    }
-
-
-
-    /* ==========================================
-       LERIBE REGISTRATION
-    ========================================== */
-
-    const registrationForm =
-        document.getElementById("leribeRegistrationForm");
-
-
-    if (registrationForm) {
-
-        registrationForm.addEventListener(
-            "submit",
-            function(event) {
-
-                event.preventDefault();
-
-
-                /* GET FORM VALUES */
-
-                const fullName =
-                    document.getElementById("fullName").value.trim();
-
-                const phone =
-                    document.getElementById("phone").value.trim();
-
-                const email =
-                    document.getElementById("email").value.trim();
-
-                const registrationOption =
-                    document.getElementById("registrationOption").value;
-
-                const numberOfPeople =
-                    document.getElementById("numberOfPeople").value;
-
-                const secondPerson =
-                    document.getElementById("secondPerson").value.trim();
-
-                const paymentStatus =
-                    document.getElementById("paymentStatus").value;
-
-                const message =
-                    document.getElementById("message").value.trim();
-
-
-                /* CREATE WHATSAPP MESSAGE */
-
-                let whatsappMessage =
-                    "Hello MSM Training Company.%0A%0A" +
-
-                    "I would like to register for the Leribe Seminar Tour.%0A%0A" +
-
-                    "*LERIBE SEMINAR REGISTRATION*%0A" +
-
-                    "Name: " +
-                    encodeURIComponent(fullName) +
-                    "%0A" +
-
-                    "Phone: " +
-                    encodeURIComponent(phone) +
-                    "%0A" +
-
-                    "Email: " +
-                    encodeURIComponent(email || "Not provided") +
-                    "%0A" +
-
-                    "Registration Option: " +
-                    encodeURIComponent(registrationOption) +
-                    "%0A" +
-
-                    "Number of People: " +
-                    encodeURIComponent(numberOfPeople) +
-                    "%0A" +
-
-                    "Person I am bringing: " +
-                    encodeURIComponent(secondPerson || "Not applicable") +
-                    "%0A" +
-
-                    "Payment Status: " +
-                    encodeURIComponent(paymentStatus) +
-                    "%0A" +
-
-                    "Message: " +
-                    encodeURIComponent(message || "None") +
-
-                    "%0A%0A" +
-
-                    "Event: Leribe Seminar Tour%0A" +
-
-                    "Date: 10 October 2026%0A" +
-
-                    "Time: 09:00 AM – 4:00 PM";
-
-
-                /* OPEN WHATSAPP */
-
-                const whatsappURL =
-                    "https://wa.me/26656506092?text=" +
-                    whatsappMessage;
-
-
-                window.open(
-                    whatsappURL,
-                    "_blank"
-                );
-
-            }
-        );
-
-    }
-
-</script>
-
+        <p>&copy; 2026 MSM Training Company. All rights reserved.</p>
+    </footer>
 
 </body>
-
 </html>
