@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Youth Mentorship Camp | MSM Training Company</title>
+
+    <meta name="description"
+        content="7-Day Youth Mentorship Camp by MSM Training Company in Maseru, Lesotho. For young people aged 14-25.">
+
+    <style>
+
+        :root {
+            --dark-green: #0B3D2E;
+            --light-green: #7CB342;
+            --soft-green: #A8D08D;
+            --white: #ffffff;
+            --dark: #222222;
+            --light: #f5f8f5;
+            --border: #dddddd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--dark);
+            background: var(--light);
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+
+        nav {
+            background: var(--dark-green);
+            padding: 15px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: var(--soft-green);
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 75vh;
+
+            background:
+                linear-gradient(
+                    rgba(11, 61, 46, 0.88),
+                    rgba(11, 61, 46, 0.88)
+                ),
+                url("images/youth-camp.jpg") center/cover no-repeat;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            color: white;
+
+            padding: 70px 20px;
+        }
+
+        .hero-content {
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            line-height: 1.15;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            color: var(--soft-green);
+            font-size: 27px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 19px;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: var(--light-green);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: var(--soft-green);
+            color: var(--dark-green);
+        }
+
+        /* GENERAL SECTIONS */
+
+        section {
+            padding: 70px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--dark-green);
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .section-intro {
+            max-width: 750px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        /* DETAILS */
+
+        .cards {
+            max-width: 1100px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card .icon {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+
+        /* CONTENT */
+
+        .content-box {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 18px;
+
+            box-shadow:
+                0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .content-box ul {
+            padding-left: 25px;
+        }
+
+        .content-box li {
+            margin-bottom: 12px;
+        }
+
+        /* PRICING */
+
+        .pricing {
+            background: var(--dark-green);
+            color: white;
+            text-align: center;
+        }
+
+        .pricing .section-title {
+            color: white;
+        }
+
+        .price-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .price-card {
+            width: 300px;
+            background: white;
+            color: var(--dark);
+
+            padding: 35px;
+
+            border-radius: 18px;
+        }
+
+        .price-card.special {
+            border: 5px solid var(--light-green);
+        }
+
+        .price {
+            color: var(--dark-green);
+            font-size: 38px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .limited {
+            color: #d62828;
+            font-weight: bold;
+        }
+
+        /* REGISTRATION */
+
+        .registration-section {
+            background: #f5f8f5;
+        }
+
+        .registration-container {
+            max-width: 900px;
+            margin: auto;
+
+            background: white;
+
+            padding: 45px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        .registration-heading {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .registration-heading span {
+            display: inline-block;
+
+            background: var(--light-green);
+            color: white;
+
+            padding: 7px 15px;
+
+            border-radius: 20px;
+
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .registration-heading h2 {
+            color: var(--dark-green);
+            font-size: 32px;
+            margin: 15px 0;
+        }
+
+        .registration-heading p {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .form-section {
+            margin-bottom: 35px;
+
+            padding-bottom: 30px;
+
+            border-bottom:
+                1px solid var(--border);
+        }
+
+        .form-section h3 {
+            color: var(--dark-green);
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        .form-row {
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+
+            font-weight: bold;
+
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+
+            width: 100%;
+
+            padding: 13px 15px;
+
+            border:
+                1px solid #ccc;
+
+            border-radius: 8px;
+
+            font-size: 15px;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+
+            outline: none;
+
+            border-color:
+                var(--light-green);
+        }
+
+        .form-note {
+
+            background:
+                #f1f7ed;
+
+            padding: 12px 15px;
+
+            border-left:
+                4px solid var(--light-green);
+
+            margin-bottom: 20px;
+        }
+
+        .agreement {
+
+            margin: 25px 0;
+        }
+
+        .checkbox-label {
+
+            display: flex;
+
+            gap: 12px;
+
+            align-items:
+                flex-start;
+
+            font-size: 14px;
+        }
+
+        .checkbox-label input {
+            margin-top: 4px;
+        }
+
+        .register-btn {
+
+            width: 100%;
+
+            border: none;
+
+            background:
+                var(--dark-green);
+
+            color: white;
+
+            padding: 16px;
+
+            border-radius: 30px;
+
+            font-size: 17px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .register-btn:hover {
+            background:
+                var(--light-green);
+        }
+
+        .secure-note {
+
+            text-align: center;
+
+            font-size: 13px;
+
+            margin-top: 15px;
+
+            color: #666;
+        }
+
+        /* CTA */
+
+        .cta {
+
+            background:
+                var(--soft-green);
+
+            text-align: center;
+        }
+
+        .cta h2 {
+
+            color:
+                var(--dark-green);
+
+            font-size: 34px;
+        }
+
+        .cta p {
+
+            max-width: 700px;
+
+            margin:
+                15px auto;
+        }
+
+        /* FOOTER */
+
+        footer {
+
+            background:
+                #06291f;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 30px 20px;
+        }
+
+        footer a {
+
+            color:
+                var(--soft-green);
+
+            text-decoration: none;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            nav {
+
+                flex-direction:
+                    column;
+
+                gap: 10px;
+            }
+
+            nav a {
+
+                margin: 5px;
+
+                font-size: 13px;
+            }
+
+            .hero h1 {
+
+                font-size: 36px;
+            }
+
+            .hero h2 {
+
+                font-size: 21px;
+            }
+
+            .hero p {
+
+                font-size: 16px;
+            }
+
+            section {
+
+                padding:
+                    50px 5%;
+            }
+
+            .content-box {
+
+                padding: 25px;
+            }
+
+            .registration-container {
+
+                padding: 25px 18px;
+            }
+
+            .registration-heading h2 {
+
+                font-size: 25px;
+            }
+
+            .form-row {
+
+                grid-template-columns:
+                    1fr;
+
+                gap: 0;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        MSM TRAINING
+    </div>
+
+    <div>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="service.html">
+            Services
+        </a>
+
+        <a href="course.html">
+            Courses
+        </a>
+
+        <a href="media.html">
+            Media
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>
+            7-DAY YOUTH
+            MENTORSHIP CAMP
+        </h1>
+
+        <h2>
+            SUCCESS • LEADERSHIP • PURPOSE • LIFE
+        </h2>
+
+        <p>
+
+            A transformational 7-day experience
+            for young people aged 14–25,
+            led by Success and Life Coaches.
+
+        </p>
+
+        <a
+            href="#register"
+            class="btn btn-primary">
+
+            RESERVE YOUR SPACE
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- CAMP DETAILS -->
+
+<section>
+
+    <h2 class="section-title">
+        YOUTH MENTORSHIP CAMP
+    </h2>
+
+    <p class="section-intro">
+
+        Seven days of mentorship, coaching,
+        personal development, leadership,
+        activities and meaningful experiences
+        designed to help young people discover
+        their potential and build a successful future.
+
+    </p>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="icon">
+                📅
+            </div>
+
+            <h3>
+                DATES
+            </h3>
+
+            <p>
+                07 – 13 December 2026
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                📍
+            </div>
+
+            <h3>
+                VENUE
+            </h3>
+
+            <p>
+                China-Sehlabeng<br>
+                Maseru, Lesotho
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                👥
+            </div>
+
+            <h3>
+                AGE
+            </h3>
+
+            <p>
+                14 – 25 Years
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🔥
+            </div>
+
+            <h3>
+                LIMITED SPACES
+            </h3>
+
+            <p>
+                Only 30 youths
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIENCE -->
+
+<section>
+
+    <h2 class="section-title">
+        WHAT WILL YOU EXPERIENCE?
+    </h2>
+
+
+    <div class="content-box">
+
+        <ul>
+
+            <li>
+                Success and Life Coaching
+            </li>
+
+            <li>
+                Leadership Development
+            </li>
+
+            <li>
+                Personal Development
+            </li>
+
+            <li>
+                Goal Setting and Life Planning
+            </li>
+
+            <li>
+                Confidence and Self-Belief Building
+            </li>
+
+            <li>
+                Entrepreneurship and Business Mindset
+            </li>
+
+            <li>
+                Financial Awareness
+            </li>
+
+            <li>
+                Team Building Activities
+            </li>
+
+            <li>
+                Motivational Sessions
+            </li>
+
+            <li>
+                Fun and Outdoor Activities
+            </li>
+
+            <li>
+                Mentorship and Meaningful Conversations
+            </li>
+
+            <li>
+                Networking with other young people
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- WHAT IS INCLUDED -->
+
+<section>
+
+    <h2 class="section-title">
+        YOUR ENTRY FEE COVERS
+    </h2>
+
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="icon">
+                🍽️
+            </div>
+
+            <h3>
+                MEALS
+            </h3>
+
+            <p>
+                Meals throughout the camp.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🏕️
+            </div>
+
+            <h3>
+                ACCOMMODATION
+            </h3>
+
+            <p>
+                Accommodation for the full camp.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🎯
+            </div>
+
+            <h3>
+                ACTIVITIES
+            </h3>
+
+            <p>
+                Camp activities and
+                team-building experiences.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                🎤
+            </div>
+
+            <h3>
+                EVENTS & SESSIONS
+            </h3>
+
+            <p>
+                Coaching, mentorship
+                and motivational sessions.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section class="pricing">
+
+    <h2 class="section-title">
+        ENTRY FEES
+    </h2>
+
+    <p>
+        Only <strong>30 spaces</strong> are available.
+    </p>
+
+
+    <div class="price-container">
+
+
+        <div class="price-card special">
+
+            <h3>
+                EARLY BIRD SPECIAL
+            </h3>
+
+            <div class="price">
+                R2,500
+            </div>
+
+            <p class="limited">
+                FIRST 5 PEOPLE ONLY!
+            </p>
+
+            <p>
+                Secure your place early
+                and save.
+            </p>
+
+        </div>
+
+
+        <div class="price-card">
+
+            <h3>
+                REGULAR FEE
+            </h3>
+
+            <div class="price">
+                R3,200
+            </div>
+
+            <p>
+                Regular entry fee after
+                the first 5 early-bird
+                registrations.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- REGISTRATION -->
+
+<section
+    class="registration-section"
+    id="register">
+
+
+    <div class="registration-container">
+
+
+        <div class="registration-heading">
+
+            <span>
+                ONLY 30 SPACES
+            </span>
+
+            <h2>
+                REGISTER FOR THE CAMP
+            </h2>
+
+            <p>
+
+                Complete the form below
+                to begin your registration.
+
+                The first 5 confirmed registrations
+                qualify for the Early Bird fee
+                of <strong>R2,500</strong>.
+
+            </p>
+
+        </div>
+
+
+        <form
+            id="campRegistrationForm">
+
+
+            <!-- PARTICIPANT -->
+
+            <div class="form-section">
+
+                <h3>
+                    1. Participant Details
+                </h3>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="fullName">
+                            Full Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="age">
+                            Age *
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            min="14"
+                            max="25"
+                            required>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="gender">
+                            Gender *
+                        </label>
+
+                        <select
+                            id="gender"
+                            required>
+
+                            <option value="">
+                                Select gender
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Participant Phone *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+266..."
+                            required>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="example@email.com">
+
+                </div>
+
+
+            </div>
+
+
+            <!-- GUARDIAN -->
+
+            <div class="form-section">
+
+                <h3>
+                    2. Parent / Guardian Details
+                </h3>
+
+
+                <p class="form-note">
+
+                    <strong>Important:</strong>
+
+                    Participants under 18 years
+                    must provide parent/guardian
+                    information.
+
+                </p>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="guardianName">
+                            Parent / Guardian Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="guardianName">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="guardianPhone">
+                            Parent / Guardian Phone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="guardianPhone"
+                            placeholder="+266...">
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="relationship">
+                        Relationship to Participant
+                    </label>
+
+                    <input
+                        type="text"
+                        id="relationship"
+                        placeholder="Mother, Father, Guardian, etc.">
+
+                </div>
+
+
+            </div>
+
+
+            <!-- EMERGENCY -->
+
+            <div class="form-section">
+
+                <h3>
+                    3. Emergency Contact
+                </h3>
+
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="emergencyName">
+                            Emergency Contact Name *
+                        </label>
+
+                        <input
+                            type="text"
+                            id="emergencyName"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="emergencyPhone">
+                            Emergency Contact Number *
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="emergencyPhone"
+                            placeholder="+266..."
+                            required>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- MOTIVATION -->
+
+            <div class="form-section">
+
+                <h3>
+                    4. About You
+                </h3>
+
+
+                <div class="form-group">
+
+                    <label for="motivation">
+
+                        Why would you like
+                        to attend this camp? *
+
+                    </label>
+
+                    <textarea
+                        id="motivation"
+                        rows="5"
+                        placeholder="Tell us briefly why you want to attend..."
+                        required></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="expectation">
+
+                        What do you hope
+                        to gain from the camp?
+
+                    </label>
+
+                    <textarea
+                        id="expectation"
+                        rows="4"
+                        placeholder="What would you like to learn or achieve?"></textarea>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- SPECIAL REQUIREMENTS -->
+
+            <div class="form-section">
+
+                <h3>
+                    5. Special Requirements
+                </h3>
+
+
+                <div class="form-group">
+
+                    <label for="requirements">
+
+                        Medical, dietary or
+                        other important information
+
+                    </label>
+
+                    <textarea
+                        id="requirements"
+                        rows="4"
+                        placeholder="Please tell us anything important we should know."></textarea>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- CONSENT -->
+
+            <div class="form-section">
+
+                <h3>
+                    6. Confirmation
+                </h3>
+
+
+                <p class="form-note">
+
+                    Participants under 18 must have
+                    parent/guardian permission to attend
+                    the camp.
+
+                </p>
+
+
+                <label class="checkbox-label">
+
+                    <input
+                        type="checkbox"
+                        id="agreement"
+                        required>
+
+                    <span>
+
+                        I confirm that the information
+                        provided is correct. I understand
+                        that submitting this form does not
+                        by itself confirm my place until MSM
+                        Training Company confirms my
+                        registration and payment.
+
+                    </span>
+
+                </label>
+
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="register-btn">
+
+                SUBMIT REGISTRATION
+
+            </button>
+
+
+            <p class="secure-note">
+
+                After submitting, WhatsApp will open
+                with your registration information.
+                MSM Training will then assist you
+                with confirmation and payment.
+
+            </p>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FINAL CTA -->
+
+<section class="cta">
+
+    <h2>
+        YOUR FUTURE STARTS WITH A DECISION
+    </h2>
+
+    <p>
+
+        Only 30 young people will be accepted.
+        Don't wait until all the spaces are gone.
+
+    </p>
+
+    <a
+        href="#register"
+        class="btn btn-primary">
+
+        REGISTER NOW
+
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        <strong>
+            MSM Training Company & Counselling Services
+        </strong>
+    </p>
+
+    <p>
+        SUCCESS IS A CHOICE!
+    </p>
+
+    <p>
+        Maseru, Lesotho
+    </p>
+
+    <p>
+        <a href="https://msmtrainingls.com">
+            msmtrainingls.com
+        </a>
+    </p>
+
+    <p>
+        WhatsApp: +266 5650 6092
+    </p>
+
+    <br>
+
+    <p>
+        &copy; 2026 MSM Training Company.
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- WHATSAPP REGISTRATION SCRIPT -->
+
+<script>
+
+document
+    .getElementById("campRegistrationForm")
+    .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+
+        const fullName =
+            document.getElementById("fullName").value;
+
+        const age =
+            document.getElementById("age").value;
+
+        const gender =
+            document.getElementById("gender").value;
+
+        const phone =
+            document.getElementById("phone").value;
+
+        const email =
+            document.getElementById("email").value;
+
+        const guardianName =
+            document.getElementById("guardianName").value;
+
+        const guardianPhone =
+            document.getElementById("guardianPhone").value;
+
+        const relationship =
+            document.getElementById("relationship").value;
+
+        const emergencyName =
+            document.getElementById("emergencyName").value;
+
+        const emergencyPhone =
+            document.getElementById("emergencyPhone").value;
+
+        const motivation =
+            document.getElementById("motivation").value;
+
+        const expectation =
+            document.getElementById("expectation").value;
+
+        const requirements =
+            document.getElementById("requirements").value;
+
+
+        const message =
+
+`*7-DAY YOUTH MENTORSHIP CAMP REGISTRATION*
+
+*PARTICIPANT DETAILS*
+
+Full Name: ${fullName}
+
+Age: ${age}
+
+Gender: ${gender}
+
+Phone: ${phone}
+
+Email: ${email}
+
+
+*PARENT / GUARDIAN*
+
+Name: ${guardianName}
+
+Phone: ${guardianPhone}
+
+Relationship: ${relationship}
+
+
+*EMERGENCY CONTACT*
+
+Name: ${emergencyName}
+
+Phone: ${emergencyPhone}
+
+
+*ABOUT THE PARTICIPANT*
+
+Why they want to attend:
+
+${motivation}
+
+
+What they hope to gain:
+
+${expectation}
+
+
+Medical / Dietary / Other Information:
+
+${requirements}
+
+
+*CAMP DETAILS*
+
+7-Day Youth Mentorship Camp
+
+Date: 07 – 13 December 2026
+
+Venue: China-Sehlabeng, Maseru, Lesotho
+
+Age: 14 – 25 years
+
+Spaces: Only 30 youths
+
+Early Bird: R2,500 – First 5
+
+Regular: R3,200
+
+Includes:
+Meals
+Accommodation
+Activities
+Events and mentorship sessions`;
+
+
+        const whatsappURL =
+
+            "https://wa.me/26656506092?text="
+            +
+            encodeURIComponent(message);
+
+
+        window.open(
+            whatsappURL,
+            "_blank"
+        );
+
+
+    });
+
+</script>
+
+
+</body>
+</html>
