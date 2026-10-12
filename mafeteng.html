@@ -1,990 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Mafeteng Seminar Tour | MSM Training</title>
-
+    <meta name="description" content="Join the Mafeteng Seminar Tour with Mohau Mosoeunyane on 18 October 2026. Master your mind, money, business and self.">
 
     <!-- Bootstrap -->
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-
     <!-- Font Awesome -->
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-
     <!-- MSM Main Styles -->
-    <link rel="stylesheet"
-          href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
+        :root {
+            --poster-blue: #101090;
+            --poster-navy: #08083F;
+            --poster-orange: #F26B21;
+            --poster-white: #FFFFFF;
+            --poster-light: #F3F3FA;
+            --poster-text: #191939;
+        }
 
         body {
-            background: #f8f9fa;
+            background: var(--poster-navy);
+            color: var(--poster-text);
         }
 
-
-        /* ==========================================
-           SEMINAR HEADER
-        ========================================== */
-
+        /* SEMINAR HEADER */
         .seminar-header {
-            background: #0B3D2E;
-            color: white;
+            background: linear-gradient(145deg, var(--poster-blue), var(--poster-navy));
+            color: var(--poster-white);
             padding: 70px 20px;
             text-align: center;
+            border-bottom: 5px solid var(--poster-orange);
         }
-
 
         .seminar-header h1 {
-            font-weight: 700;
+            font-weight: 800;
             margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
-
 
         .seminar-header p {
             font-size: 18px;
+            margin-bottom: 12px;
         }
 
+        .seminar-header .event-date {
+            display: inline-block;
+            background: var(--poster-orange);
+            color: var(--poster-white);
+            padding: 10px 18px;
+            border-radius: 4px;
+            font-weight: 700;
+        }
 
-        /* ==========================================
-           MAIN CARD
-        ========================================== */
-
+        /* MAIN CARD */
         .seminar-card {
-            background: white;
+            background: var(--poster-white);
+            color: var(--poster-text);
             padding: 35px;
             border-radius: 10px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-            margin-top: -40px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
+            margin-top: -35px;
             position: relative;
         }
 
+        /* TITLES */
+        .register-title {
+            color: var(--poster-blue);
+            font-weight: 800;
+        }
 
-        /* ==========================================
-           SEMINAR INFORMATION
-        ========================================== */
-
+        /* EVENT INFORMATION */
         .seminar-info {
             margin-bottom: 25px;
         }
 
-
         .seminar-info i {
-            color: #7CB342;
+            color: var(--poster-orange);
             width: 25px;
         }
 
-
-        /* ==========================================
-           EARLY BIRD
-        ========================================== */
-
+        /* EARLY BIRD */
         .early-bird {
-            background: #7CB342;
-            color: white;
-            padding: 20px;
+            background: var(--poster-orange);
+            color: var(--poster-white);
+            padding: 22px;
             border-radius: 8px;
             margin: 25px 0;
         }
 
+        .early-bird h3 {
+            font-weight: 800;
+        }
 
-        /* ==========================================
-           PRICE BOX
-        ========================================== */
-
+        /* PRICE BOXES */
         .price-box {
-            border: 1px solid #ddd;
+            background: var(--poster-white);
+            border: 2px solid var(--poster-blue);
+            border-left: 6px solid var(--poster-orange);
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 15px;
         }
 
-
         .price-box h5 {
-            color: #0B3D2E;
-            font-weight: 700;
+            color: var(--poster-blue);
+            font-weight: 800;
         }
 
+        .price-amount {
+            color: var(--poster-orange);
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
 
-        /* ==========================================
-           PAYMENT BOX
-        ========================================== */
-
+        /* PAYMENT BOX */
         .payment-box {
-            background: #f1f1f1;
+            background: var(--poster-light);
+            color: var(--poster-text);
             padding: 25px;
             border-radius: 8px;
             margin-top: 25px;
+            border-top: 4px solid var(--poster-orange);
+            overflow-wrap: anywhere;
         }
 
+        /* REGISTRATION BUTTON */
+        .btn-register {
+            background: var(--poster-blue);
+            color: var(--poster-white);
+            border: 2px solid var(--poster-blue);
+            font-weight: 800;
+            white-space: normal;
+        }
 
-        /* ==========================================
-           TITLES
-        ========================================== */
+        .btn-register:hover,
+        .btn-register:focus {
+            background: var(--poster-orange);
+            border-color: var(--poster-orange);
+            color: var(--poster-white);
+        }
 
-        .register-title {
-            color: #0B3D2E;
+        /* WHATSAPP BUTTON */
+        .whatsapp-btn {
+            background: #25D366;
+            color: var(--poster-white);
+            border: none;
             font-weight: 700;
         }
 
-
-        /* ==========================================
-           REGISTER BUTTON
-        ========================================== */
-
-        .btn-register {
-            background: #0B3D2E;
-            color: white;
-            border: none;
-        }
-
-
-        .btn-register:hover {
-            background: #7CB342;
-            color: white;
-        }
-
-
-        /* ==========================================
-           WHATSAPP BUTTON
-        ========================================== */
-
-        .whatsapp-btn {
-            background: #25D366;
-            color: white;
-        }
-
-
-        .whatsapp-btn:hover {
-            color: white;
+        .whatsapp-btn:hover,
+        .whatsapp-btn:focus {
+            color: var(--poster-white);
             opacity: 0.9;
         }
 
-
-        /* ==========================================
-           FORM
-        ========================================== */
-
+        /* FORM */
         .form-control {
             min-height: 45px;
+            border: 1px solid #C9C9DD;
+            border-radius: 5px;
         }
 
+        .form-control:focus {
+            border-color: var(--poster-blue);
+            box-shadow: 0 0 0 0.2rem rgba(16, 16, 144, 0.15);
+        }
 
         label {
-            font-weight: 600;
+            font-weight: 700;
+            color: var(--poster-text);
         }
 
+        /* HORIZONTAL RULE */
+        .seminar-card hr {
+            border-top: 1px solid #D9D9EA;
+        }
 
-        /* ==========================================
-           FOOTER
-        ========================================== */
-
+        /* FOOTER */
         footer {
-            background: #0B3D2E;
-            color: white;
+            background: var(--poster-navy);
+            color: var(--poster-white);
             padding: 30px 0;
             margin-top: 50px;
             text-align: center;
+            border-top: 4px solid var(--poster-orange);
         }
 
+        footer p {
+            margin-bottom: 5px;
+        }
 
-        /* ==========================================
-           MOBILE
-        ========================================== */
+        /* ACCESSIBILITY */
+        a:focus,
+        button:focus {
+            outline-offset: 3px;
+        }
 
+        /* MOBILE */
         @media (max-width: 576px) {
-
             .seminar-header {
                 padding: 50px 15px;
             }
 
-
             .seminar-header h1 {
-                font-size: 30px;
+                font-size: 29px;
             }
-
 
             .seminar-header p {
                 font-size: 16px;
             }
-
 
             .seminar-card {
                 padding: 25px 18px;
                 margin-top: -25px;
             }
 
+            .early-bird h3 {
+                font-size: 23px;
+            }
+
+            .btn-register {
+                font-size: 15px;
+            }
         }
-
     </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =================================================
-     HEADER
-================================================== -->
-
+<!-- SEMINAR HEADER -->
 <section class="seminar-header">
-
     <div class="container">
+        <p class="text-uppercase font-weight-bold mb-2">
+            Mohau and the Success Masters
+        </p>
 
-        <h1>
-            MAFETENG SEMINAR TOUR
-        </h1>
-
+        <h1>Success Mafeteng Seminar</h1>
 
         <p>
             How to Master Your Mind, Money, Business and Self
         </p>
 
-
-        <p>
-            <strong>
-                18 OCTOBER 2026 | 09:00 AM – 4:00 PM
-            </strong>
+        <p class="event-date">
+            <i class="fa-solid fa-calendar-days mr-2"></i>
+            18 OCTOBER 2026
+            <span class="mx-2">|</span>
+            12:00 PM – 5:00 PM
         </p>
-
     </div>
-
 </section>
 
-
-
-<!-- =================================================
-     MAIN CONTENT
-================================================== -->
-
+<!-- MAIN CONTENT -->
 <section class="container">
-
     <div class="seminar-card">
 
-
-        <!-- ==========================================
-             INTRODUCTION
-        =========================================== -->
-
+        <!-- INTRODUCTION -->
         <div class="text-center mb-4">
-
             <h2 class="register-title">
                 Register for the Mafeteng Seminar
             </h2>
 
+            <p class="mt-3">
+                <strong style="color: #F26B21;">
+                    Early Bird: M300
+                </strong>
+            </p>
 
-            <p class="mb-4">
-
-                🔥 <strong>Early Bird: R299</strong>
-
+            <p>
+                Bring another person FREE!
                 <br>
-
-                Bring another person FREE —
-                only <strong>5 spots left!</strong>
-
+                <strong>Limited to the first 20 registrations.</strong>
             </p>
-
 
             <p>
-
-                Come ready to learn, ask questions,
-                connect and work on your next level.
-
+                Come ready to learn, ask questions, connect and work
+                on your next level.
             </p>
-
         </div>
 
-
-
-        <!-- ==========================================
-             EVENT INFORMATION
-        =========================================== -->
-
+        <!-- EVENT INFORMATION -->
         <div class="seminar-info">
-
-
             <p>
-
                 <i class="fa-solid fa-location-dot"></i>
-
-                <strong>Location:</strong>
-                Mafeteng, Lesotho
-
+                <strong>Location:</strong> Mafeteng, Lesotho
             </p>
 
-
             <p>
-
                 <i class="fa-solid fa-calendar"></i>
-
-                <strong>Date:</strong>
-                18 October 2026
-
+                <strong>Date:</strong> 18 October 2026
             </p>
-
 
             <p>
-
                 <i class="fa-solid fa-clock"></i>
-
-                <strong>Time:</strong>
-                09:00 AM – 4:00 PM
-
+                <strong>Time:</strong> 12:00 PM – 5:00 PM
             </p>
 
-
+            <p>
+                <i class="fa-solid fa-user-tie"></i>
+                <strong>Facilitator:</strong> Mohau Mosoeunyane
+            </p>
         </div>
 
-
-
-        <!-- ==========================================
-             EARLY BIRD
-        =========================================== -->
-
+        <!-- EARLY BIRD -->
         <div class="early-bird text-center">
-
             <h3>
-                🔥 EARLY BIRD – R299
+                <i class="fa-solid fa-fire mr-2"></i>
+                EARLY BIRD – M300
             </h3>
 
-
-            <p class="mb-0">
-
+            <p class="mb-2">
                 Bring another person FREE!
-
-                <br>
-
-                <strong id="earlyBirdSpots">
-                    Only 5 Early Bird spots left!
-                </strong>
-
-                <br>
-
-                <small>
-                    Limited to the first 20 registrations.
-                </small>
-
             </p>
 
+            <strong>
+                Limited to the first 20 registrations.
+            </strong>
+
+            <p class="mb-0 mt-2">
+                Contact us to confirm remaining early-bird places.
+            </p>
         </div>
 
-
-
-        <!-- ==========================================
-             REGISTRATION OPTIONS
-        =========================================== -->
-
+        <!-- REGISTRATION OPTIONS -->
         <h4 class="register-title mt-4 mb-3">
-
             Registration Options
-
         </h4>
 
-
-
         <div class="price-box">
-
-            <h5>
-                🔥 Early Bird
-            </h5>
-
+            <h5>Early Bird</h5>
             <p class="mb-0">
-
-                R299 per person
-
+                <span class="price-amount">M300</span> per registration
                 <br>
-
-                <strong>
-                    Bring another person FREE!
-                </strong>
-
+                <strong>Bring another person FREE!</strong>
                 <br>
-
-                <small>
-                    Only 5 spots left.
-                </small>
-
+                <small>Limited to the first 20 registrations.</small>
             </p>
-
         </div>
-
-
 
         <div class="price-box">
-
-            <h5>
-                Individual
-            </h5>
-
+            <h5>Individual</h5>
             <p class="mb-0">
-                R350 per person
+                <span class="price-amount">M350</span> per person
             </p>
-
         </div>
-
-
 
         <div class="price-box">
-
-            <h5>
-                Pair
-            </h5>
-
+            <h5>A Pair</h5>
             <p class="mb-0">
-                R500 for two people
+                <span class="price-amount">M500</span> for two people
             </p>
-
         </div>
-
-
 
         <div class="price-box">
-
-            <h5>
-                Group of 5
-            </h5>
-
+            <h5>Group of 5</h5>
             <p class="mb-0">
-                R1,000
+                <span class="price-amount">M1,000</span>
             </p>
-
         </div>
-
-
 
         <hr class="my-5">
 
-
-
-        <!-- ==========================================
-             REGISTRATION FORM
-        =========================================== -->
-
+        <!-- REGISTRATION FORM -->
         <h4 class="register-title mb-4">
-
             Registration Form
-
         </h4>
-
 
         <form id="mafetengForm">
 
-
-            <!-- FULL NAME -->
-
             <div class="form-group">
-
-                <label for="mafeteng-name">
-                    Full Name *
-                </label>
-
-
+                <label for="mafeteng-name">Full Name *</label>
                 <input type="text"
                        id="mafeteng-name"
+                       name="name"
                        class="form-control"
                        placeholder="Enter your full name"
+                       autocomplete="name"
                        required>
-
             </div>
 
-
-
-            <!-- PHONE -->
-
             <div class="form-group">
-
                 <label for="mafeteng-phone">
                     Phone / WhatsApp Number *
                 </label>
-
-
                 <input type="tel"
                        id="mafeteng-phone"
+                       name="phone"
                        class="form-control"
                        placeholder="e.g. 62123456"
+                       autocomplete="tel"
                        required>
-
             </div>
 
-
-
-            <!-- EMAIL -->
-
             <div class="form-group">
-
-                <label for="mafeteng-email">
-                    Email Address
-                </label>
-
-
+                <label for="mafeteng-email">Email Address</label>
                 <input type="email"
                        id="mafeteng-email"
+                       name="email"
                        class="form-control"
-                       placeholder="Enter your email address">
-
+                       placeholder="Enter your email address"
+                       autocomplete="email">
             </div>
 
-
-
-            <!-- REGISTRATION OPTION -->
-
             <div class="form-group">
-
                 <label for="mafeteng-option">
                     Registration Option *
                 </label>
 
-
                 <select id="mafeteng-option"
+                        name="option"
                         class="form-control"
                         required>
-
-                    <option value="">
-                        -- Select a registration option --
+                    <option value="">-- Select a registration option --</option>
+                    <option value="Early Bird M300 - bring another person free">
+                        Early Bird – M300 (bring another person free)
                     </option>
-
-
-                    <option value="Early Bird R299">
-                        🔥 Early Bird – R299
+                    <option value="Individual M350">
+                        Individual – M350
                     </option>
-
-
-                    <option value="Individual R350">
-                        Individual – R350
+                    <option value="Pair M500">
+                        Pair – M500
                     </option>
-
-
-                    <option value="Pair R500">
-                        Pair – R500
+                    <option value="Group of 5 M1000">
+                        Group of 5 – M1,000
                     </option>
-
-
-                    <option value="Group of 5 R1000">
-                        Group of 5 – R1,000
-                    </option>
-
                 </select>
-
             </div>
 
-
-
-            <!-- NUMBER OF PEOPLE -->
-
             <div class="form-group">
-
-                <label for="mafeteng-people">
-                    Number of People *
-                </label>
-
-
+                <label for="mafeteng-people">Number of People *</label>
                 <input type="number"
                        id="mafeteng-people"
+                       name="people"
                        class="form-control"
                        min="1"
                        max="20"
                        value="1"
                        required>
-
             </div>
 
-
-
-            <!-- SECOND PERSON -->
-
             <div class="form-group">
-
                 <label for="mafeteng-second-person">
-
                     Name of Person You Are Bringing
-
-                    <small>
-                        (if applicable)
-                    </small>
-
+                    <small>(if applicable)</small>
                 </label>
-
-
                 <input type="text"
                        id="mafeteng-second-person"
+                       name="secondPerson"
                        class="form-control"
                        placeholder="Enter name if bringing another person">
-
             </div>
 
-
-
-            <!-- PAYMENT STATUS -->
-
             <div class="form-group">
-
-                <label for="mafeteng-payment">
-                    Payment Status *
-                </label>
-
-
+                <label for="mafeteng-payment">Payment Status *</label>
                 <select id="mafeteng-payment"
+                        name="payment"
                         class="form-control"
                         required>
-
-                    <option value="">
-                        -- Select payment status --
-                    </option>
-
-
-                    <option value="I have paid">
-                        I have paid
-                    </option>
-
-
-                    <option value="I will pay">
-                        I will pay
-                    </option>
-
-
+                    <option value="">-- Select payment status --</option>
+                    <option value="I have paid">I have paid</option>
+                    <option value="I will pay">I will pay</option>
                     <option value="I need payment information">
                         I need payment information
                     </option>
-
                 </select>
-
             </div>
 
-
-
-            <!-- MESSAGE -->
-
             <div class="form-group">
-
                 <label for="mafeteng-message">
                     Message / Special Request
                 </label>
-
-
                 <textarea id="mafeteng-message"
+                          name="message"
                           class="form-control"
                           rows="4"
-                          placeholder="Any questions or special request?"></textarea>
-
+                          placeholder="Any questions or special requests?"></textarea>
             </div>
-
-
-
-            <!-- SUBMIT BUTTON -->
 
             <div class="form-group">
-
                 <button type="submit"
                         class="btn btn-register btn-lg btn-block">
-
                     <i class="fa-brands fa-whatsapp mr-2"></i>
-
                     REGISTER VIA WHATSAPP
-
                 </button>
-
             </div>
 
-
             <p class="text-center text-muted mt-3">
-
-                Your registration details will be prepared
-                in WhatsApp for confirmation.
-
+                Your registration details will be prepared in WhatsApp
+                for confirmation. Submitting this form opens WhatsApp;
+                it does not automatically confirm your booking.
             </p>
-
-
         </form>
 
-
-
-        <!-- ==========================================
-             PAYMENT DETAILS
-        =========================================== -->
-
+        <!-- PAYMENT DETAILS -->
         <div class="payment-box">
-
-
-            <h4 class="register-title">
-                Payment Details
-            </h4>
-
-
+            <h4 class="register-title">Payment Details</h4>
             <hr>
 
-
             <p>
-
-                <strong>
-                    M-Pesa / EcoCash:
-                </strong>
-
+                <strong>M-Pesa / EcoCash:</strong>
                 <br>
-
                 34304 / 0000104444
-
             </p>
 
-
             <p>
-
-                <strong>
-                    Standard Bank:
-                </strong>
-
+                <strong>Standard Bank:</strong>
                 <br>
-
                 9080009468508
-
             </p>
-
 
             <p>
-
-                <strong>
-                    Account Name:
-                </strong>
-
+                <strong>Account Name:</strong>
                 <br>
-
                 Mohau and the Success Masters
-
             </p>
-
 
             <p class="mb-0">
-
-                After making payment,
-                please keep your proof of payment.
-
+                After making payment, please keep your proof of payment.
+                Contact the team if you need help confirming payment.
             </p>
-
         </div>
 
-
-
-        <!-- ==========================================
-             WHATSAPP CONTACT
-        =========================================== -->
-
+        <!-- WHATSAPP CONTACT -->
         <div class="text-center mt-4">
-
-
-            <p>
-                Need help with registration?
-            </p>
-
+            <p>Need help with registration?</p>
 
             <a href="https://wa.me/26656506092"
                target="_blank"
                rel="noopener noreferrer"
                class="btn whatsapp-btn">
-
                 <i class="fa-brands fa-whatsapp mr-2"></i>
-
                 WhatsApp Us
-
             </a>
 
-
             <p class="mt-3 mb-0">
-
                 Call / WhatsApp:
-
-                <strong>
-                    +266 5650 6092
-                </strong>
-
                 <br>
-
-                <strong>
-                    +266 6206 2250
-                </strong>
-
+                <strong>+266 5650 6092</strong>
                 <br>
-
-                <strong>
-                    +27 78 776 7772
-                </strong>
-
+                <strong>+266 6206 2250</strong>
+                <br>
+                <strong>+27 78 776 7772</strong>
             </p>
-
         </div>
 
-
     </div>
-
 </section>
 
-
-
-<!-- =================================================
-     FOOTER
-================================================== -->
-
+<!-- FOOTER -->
 <footer>
-
     <div class="container">
-
-        <p class="mb-0">
-
+        <p class="mb-1">
             © 2026 Mohau and the Success Masters.
-
             All Rights Reserved.
-
         </p>
-
-
-        <p class="mb-0">
-
+        <p class="mb-0 font-weight-bold">
             SUCCESS IS A CHOICE!
-
         </p>
-
     </div>
-
 </footer>
 
-
-
-<!-- =================================================
-     WHATSAPP REGISTRATION SCRIPT
-================================================== -->
-
+<!-- WHATSAPP REGISTRATION SCRIPT -->
 <script>
+(function () {
+    const form = document.getElementById("mafetengForm");
 
-document.getElementById("mafetengForm").addEventListener(
-    "submit",
-    function(event) {
+    if (!form) {
+        return;
+    }
 
+    form.addEventListener("submit", function (event) {
         event.preventDefault();
 
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
 
-        /* ==========================================
-           GET FORM VALUES
-        ========================================== */
-
-        const name =
-            document.getElementById("mafeteng-name").value.trim();
-
-
-        const phone =
-            document.getElementById("mafeteng-phone").value.trim();
-
-
-        const email =
-            document.getElementById("mafeteng-email").value.trim();
-
-
-        const option =
-            document.getElementById("mafeteng-option").value;
-
-
-        const people =
-            document.getElementById("mafeteng-people").value;
-
-
-        const secondPerson =
-            document.getElementById("mafeteng-second-person").value.trim();
-
-
-        const payment =
-            document.getElementById("mafeteng-payment").value;
-
-
-        const message =
-            document.getElementById("mafeteng-message").value.trim();
-
-
-
-        /* ==========================================
-           CREATE WHATSAPP MESSAGE
-        ========================================== */
+        const name = document.getElementById("mafeteng-name").value.trim();
+        const phone = document.getElementById("mafeteng-phone").value.trim();
+        const email = document.getElementById("mafeteng-email").value.trim();
+        const option = document.getElementById("mafeteng-option").value;
+        const people = document.getElementById("mafeteng-people").value;
+        const secondPerson = document.getElementById("mafeteng-second-person").value.trim();
+        const payment = document.getElementById("mafeteng-payment").value;
+        const message = document.getElementById("mafeteng-message").value.trim();
 
         const whatsappMessage =
 `*MAFETENG SEMINAR REGISTRATION*
 
 *Full Name:* ${name}
-
 *Phone / WhatsApp:* ${phone}
-
 *Email:* ${email || "Not provided"}
-
 *Registration Option:* ${option}
-
 *Number of People:* ${people}
-
 *Person Bringing:* ${secondPerson || "None"}
-
 *Payment Status:* ${payment}
 
 *Message / Special Request:*
 ${message || "None"}
 
 *EVENT DETAILS*
-
-*Event:* Mafeteng Seminar Tour
-*Date:* 17 October 2026
-*Time:* 09:00 AM – 4:00 PM
+*Event:* Success Mafeteng Seminar
+*Topic:* How to Master Your Mind, Money, Business and Self
+*Facilitator:* Mohau Mosoeunyane
+*Date:* 18 October 2026
+*Time:* 12:00 PM – 5:00 PM
 *Location:* Mafeteng, Lesotho
 
-I would like to register for the Mafeteng Seminar Tour.`;
-
-
-
-        /* ==========================================
-           WHATSAPP LINK
-        ========================================== */
+I would like to register for the Mafeteng Seminar.`;
 
         const whatsappURL =
             "https://wa.me/26656506092?text=" +
             encodeURIComponent(whatsappMessage);
 
-
-
-        /* ==========================================
-           OPEN WHATSAPP
-        ========================================== */
-
         window.location.href = whatsappURL;
-
-    }
-);
-
-
-
-/* ==========================================
-   EARLY BIRD SPOTS
-========================================== */
-
-const earlyBirdSpots = 5;
-
-const spotsElement =
-    document.getElementById("earlyBirdSpots");
-
-
-if (spotsElement) {
-
-    spotsElement.textContent =
-        "Only " + earlyBirdSpots +
-        " Early Bird spots left!";
-
-}
-
+    });
+})();
 </script>
 
-
 </body>
-
 </html>
