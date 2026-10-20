@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Leribe Seminar 2026 | MSM Training Company</title>
+    <meta
+        name="description"
+        content="The MSM Training Company Leribe Seminar on 10 October 2026 is sold out. Contact MSM to enquire about upcoming seminars and future events."
+    >
+
+    <meta name="theme-color" content="#0B3D2E">
+
+    <title>Leribe Seminar 2026 | SOLD OUT | MSM Training Company</title>
 
     <style>
         :root {
@@ -15,6 +22,8 @@
             --light-bg: #f4f8f2;
             --text: #25352d;
             --border: #dce8d8;
+            --sold-out: #c62828;
+            --sold-out-light: #ffebee;
         }
 
         * {
@@ -25,6 +34,7 @@
 
         html {
             scroll-behavior: smooth;
+            scroll-padding-top: 20px;
         }
 
         body {
@@ -38,24 +48,53 @@
             text-decoration: none;
         }
 
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
         /* =========================
            HERO
         ========================== */
 
         .hero {
-            background:
-                linear-gradient(
-                    rgba(11, 61, 46, 0.94),
-                    rgba(11, 61, 46, 0.94)
-                );
-            color: white;
+            background: linear-gradient(
+                rgba(11, 61, 46, 0.96),
+                rgba(11, 61, 46, 0.96)
+            );
+            color: var(--white);
             text-align: center;
             padding: 55px 20px 70px;
+            position: relative;
+            overflow: hidden;
         }
 
         .hero-content {
             max-width: 900px;
             margin: auto;
+        }
+
+        .sold-out-badge {
+            display: inline-block;
+            background: var(--sold-out);
+            color: var(--white);
+            padding: 13px 30px;
+            border-radius: 6px;
+            font-size: 1.3rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 28px;
+            border: 2px solid var(--white);
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
+            transform: rotate(-2deg);
+        }
+
+        .sold-out-subtitle {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            margin-top: 3px;
+            font-weight: 700;
         }
 
         .leribe-poster {
@@ -65,7 +104,7 @@
             display: block;
             margin: 0 auto 30px;
             border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
         }
 
         .hero h1 {
@@ -86,6 +125,20 @@
             font-size: 1.1rem;
         }
 
+        .hero-notice {
+            max-width: 650px;
+            margin: 25px auto;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid var(--soft-green);
+            border-radius: 10px;
+        }
+
+        .hero-notice strong {
+            color: var(--soft-green);
+            font-size: 1.1rem;
+        }
+
         /* =========================
            BUTTONS
         ========================== */
@@ -93,7 +146,7 @@
         .btn {
             display: inline-block;
             background: var(--light-green);
-            color: white;
+            color: var(--white);
             padding: 14px 28px;
             border-radius: 30px;
             font-weight: bold;
@@ -101,6 +154,7 @@
             border: 2px solid var(--light-green);
             transition: 0.3s;
             cursor: pointer;
+            text-align: center;
         }
 
         .btn:hover {
@@ -111,12 +165,25 @@
 
         .btn-outline {
             background: transparent;
-            border: 2px solid white;
+            border: 2px solid var(--white);
+            color: var(--white);
         }
 
         .btn-outline:hover {
-            background: white;
+            background: var(--white);
             color: var(--dark-green);
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            border-color: #25D366;
+            color: var(--white);
+        }
+
+        .btn-whatsapp:hover {
+            background: #1DA851;
+            border-color: #1DA851;
+            color: var(--white);
         }
 
         /* =========================
@@ -149,18 +216,21 @@
 
         .details {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(210px, 1fr)
+            );
             gap: 20px;
             margin-top: 35px;
         }
 
         .detail-card {
-            background: white;
+            background: var(--white);
             padding: 25px;
             text-align: center;
             border-radius: 12px;
             border-top: 5px solid var(--light-green);
-            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
         }
 
         .detail-card h3 {
@@ -174,16 +244,20 @@
 
         .topics {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
             gap: 20px;
             margin-top: 30px;
         }
 
         .topic {
-            background: white;
+            background: var(--white);
             padding: 25px;
             border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+            border-bottom: 4px solid var(--light-green);
         }
 
         .topic h3 {
@@ -198,27 +272,37 @@
         .pricing {
             max-width: none;
             background: var(--dark-green);
-            color: white;
+            color: var(--white);
             text-align: center;
         }
 
         .pricing h2 {
-            color: white;
+            color: var(--white);
+        }
+
+        .price-intro {
+            max-width: 700px;
+            margin: 0 auto;
         }
 
         .price-grid {
             max-width: 1100px;
             margin: 30px auto 0;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(190px, 1fr)
+            );
             gap: 18px;
         }
 
         .price-card {
-            background: white;
+            background: var(--white);
             color: var(--text);
             padding: 25px 15px;
             border-radius: 12px;
+            position: relative;
+            overflow: hidden;
         }
 
         .price-card h3 {
@@ -237,105 +321,112 @@
             border: 4px solid var(--soft-green);
         }
 
+        .sold-out-label {
+            display: inline-block;
+            background: var(--sold-out);
+            color: var(--white);
+            padding: 7px 13px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin-top: 12px;
+        }
+
+        .pricing-notice {
+            max-width: 750px;
+            margin: 30px auto 0;
+            padding: 18px;
+            border: 1px solid var(--soft-green);
+            border-radius: 8px;
+            color: var(--white);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
         /* =========================
-           REGISTRATION
+           SOLD-OUT NOTICE
+        ========================== */
+
+        .sold-out-section {
+            background: var(--sold-out-light);
+            padding: 45px 20px;
+        }
+
+        .sold-out-container {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            border: 2px solid #efb6b6;
+            background: var(--white);
+            padding: 35px 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        .sold-out-container h2 {
+            color: var(--sold-out);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .sold-out-container p {
+            margin-bottom: 15px;
+        }
+
+        .sold-out-icon {
+            display: block;
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+
+        /* =========================
+           FUTURE EVENT ENQUIRY
         ========================== */
 
         .registration-section {
-            background: white;
+            background: var(--white);
             padding: 60px 20px;
         }
 
         .registration-container {
             max-width: 750px;
             margin: auto;
+            text-align: center;
         }
 
         .registration-container h2 {
             color: var(--dark-green);
-            text-align: center;
             margin-bottom: 10px;
             font-size: 2rem;
         }
 
         .registration-intro {
-            text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
-        .registration-form {
+        .enquiry-card {
             background: var(--light-bg);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid var(--light-green);
         }
 
-        .form-group {
+        .enquiry-card p {
             margin-bottom: 20px;
         }
 
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            color: var(--dark-green);
-            margin-bottom: 7px;
-        }
-
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 13px;
-            border: 1px solid #cbd8c7;
-            border-radius: 8px;
-            font-size: 1rem;
-            background: white;
-            font-family: Arial, sans-serif;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--light-green);
-            box-shadow: 0 0 0 2px rgba(124,179,66,0.15);
-        }
-
-        .form-note {
+        .enquiry-note {
             background: #edf6e9;
             border-left: 5px solid var(--light-green);
             padding: 15px;
             margin-bottom: 25px;
             border-radius: 6px;
+            text-align: left;
         }
 
-        .form-note strong {
+        .enquiry-note strong {
             color: var(--dark-green);
-        }
-
-        .submit-btn {
-            width: 100%;
-            border: none;
-            font-size: 1rem;
-        }
-
-        /* =========================
-           SUCCESS MESSAGE
-        ========================== */
-
-        #successMessage {
-            display: none;
-            background: #edf6e9;
-            border: 2px solid var(--light-green);
-            padding: 30px;
-            margin-top: 25px;
-            border-radius: 12px;
-            text-align: center;
-        }
-
-        #successMessage h3 {
-            color: var(--dark-green);
-            margin-bottom: 10px;
         }
 
         /* =========================
@@ -368,7 +459,7 @@
 
         footer {
             background: var(--dark-green);
-            color: white;
+            color: var(--white);
             text-align: center;
             padding: 30px 20px;
         }
@@ -379,6 +470,11 @@
 
         footer a {
             color: var(--soft-green);
+        }
+
+        footer a:hover {
+            color: var(--white);
+            text-decoration: underline;
         }
 
         /* =========================
@@ -399,7 +495,7 @@
                 padding: 40px 15px;
             }
 
-            .registration-form {
+            .enquiry-card {
                 padding: 20px;
             }
 
@@ -416,6 +512,24 @@
                 width: 100%;
                 margin: 10px 0;
             }
+
+            .sold-out-badge {
+                font-size: 1.05rem;
+                padding: 11px 22px;
+            }
+
+            .sold-out-container h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* =========================
+           ACCESSIBILITY
+        ========================== */
+
+        a:focus-visible {
+            outline: 3px solid var(--light-green);
+            outline-offset: 4px;
         }
     </style>
 </head>
@@ -430,9 +544,16 @@
 
         <div class="hero-content">
 
+            <div class="sold-out-badge" role="status">
+                SOLD OUT!
+                <span class="sold-out-subtitle">
+                    REGISTRATION CLOSED
+                </span>
+            </div>
+
             <img
                 src="images/leribe.jpeg"
-                alt="Leribe Seminar 2026"
+                alt="Leribe Seminar 2026 poster"
                 class="leribe-poster"
             >
 
@@ -441,17 +562,31 @@
             <h2>Master Your Mind, Money, Business &amp; Self</h2>
 
             <p>
-                Stop waiting for success to happen.
-                Learn, grow and take practical action towards
-                becoming the person you were created to be.
+                Thank you to everyone who showed interest in the
+                Leribe Seminar. Registration for this event is now
+                closed because the seminar is sold out.
             </p>
 
-            <a href="#register" class="btn">
-                REGISTER NOW
+            <div class="hero-notice">
+                <strong>ALL PLACES HAVE BEEN TAKEN!</strong>
+                <p style="margin: 8px 0 0;">
+                    You can still contact MSM to enquire about
+                    upcoming seminars and future events.
+                </p>
+            </div>
+
+            <a
+                href="#future-events"
+                class="btn"
+            >
+                ENQUIRE ABOUT FUTURE EVENTS
             </a>
 
-            <a href="#details" class="btn btn-outline">
-                VIEW DETAILS
+            <a
+                href="#details"
+                class="btn btn-outline"
+            >
+                VIEW SEMINAR DETAILS
             </a>
 
         </div>
@@ -465,13 +600,14 @@
 
     <section class="section">
 
-        <h2>Are You Ready for Your Next Level?</h2>
+        <h2>Thank You for Your Interest!</h2>
 
         <p class="intro">
-            Your mind, your money and your business all matter.
-            Join MSM Training Company for a powerful day of learning,
-            motivation and practical strategies to help you move forward
-            in life and business.
+            The Leribe Seminar was created to encourage personal
+            growth and help people think differently about their
+            mindset, money, business and personal development.
+            We appreciate everyone who supported the event and
+            showed interest in attending.
         </p>
 
     </section>
@@ -511,16 +647,22 @@
 
         </div>
 
+        <p class="intro" style="margin-top: 25px;">
+            <strong>Registration status: SOLD OUT.</strong>
+            These details are retained for visitors looking for
+            information about this event. New bookings are closed.
+        </p>
+
     </section>
 
 
     <!-- =========================
-         WHAT YOU WILL GAIN
+         WHAT THE SEMINAR COVERED
     ========================== -->
 
     <section class="section">
 
-        <h2>What Will You Gain?</h2>
+        <h2>What Was the Seminar About?</h2>
 
         <div class="topics">
 
@@ -528,8 +670,9 @@
                 <h3>🧠 Master Your Mind</h3>
 
                 <p>
-                    Understand your mindset, overcome limiting beliefs
-                    and develop a stronger attitude towards success.
+                    Explore mindset, limiting beliefs and the
+                    importance of developing a stronger attitude
+                    towards personal growth.
                 </p>
             </div>
 
@@ -537,8 +680,8 @@
                 <h3>💰 Master Your Money</h3>
 
                 <p>
-                    Learn practical ways to think differently about money,
-                    manage your finances and build financial awareness.
+                    Reflect on financial habits, money management
+                    and building greater financial awareness.
                 </p>
             </div>
 
@@ -546,8 +689,8 @@
                 <h3>📈 Master Your Business</h3>
 
                 <p>
-                    Discover the importance of business thinking,
-                    taking action and creating value for others.
+                    Consider business thinking, creating value,
+                    identifying opportunities and taking action.
                 </p>
             </div>
 
@@ -555,8 +698,8 @@
                 <h3>🙌 Master Yourself</h3>
 
                 <p>
-                    Build discipline, personal responsibility and the
-                    courage to take the next step in your journey.
+                    Focus on discipline, personal responsibility
+                    and taking practical steps towards your goals.
                 </p>
             </div>
 
@@ -566,15 +709,17 @@
 
 
     <!-- =========================
-         PRICING
+         PRICING INFORMATION
     ========================== -->
 
     <section class="section pricing">
 
-        <h2>Choose Your Booking</h2>
+        <h2>Booking Status: SOLD OUT</h2>
 
-        <p>
-            Secure your place and invite someone to grow with you.
+        <p class="price-intro">
+            All booking categories for the Leribe Seminar are
+            closed. The prices below are displayed for reference
+            only and are no longer available for new bookings.
         </p>
 
         <div class="price-grid">
@@ -585,16 +730,17 @@
 
                 <p class="price">R299</p>
 
-                <p>
-                    First 20 people
-                </p>
+                <p>First 20 people</p>
 
-                <small>
-                    Bring another person free
-                </small>
+                <small>Bring another person free</small>
+
+                <br>
+
+                <span class="sold-out-label">
+                    SOLD OUT
+                </span>
 
             </div>
-
 
             <div class="price-card">
 
@@ -602,12 +748,13 @@
 
                 <p class="price">R350</p>
 
-                <p>
-                    Normal booking
-                </p>
+                <p>Normal booking</p>
+
+                <span class="sold-out-label">
+                    SOLD OUT
+                </span>
 
             </div>
-
 
             <div class="price-card">
 
@@ -615,12 +762,13 @@
 
                 <p class="price">R500</p>
 
-                <p>
-                    For 2 people
-                </p>
+                <p>For 2 people</p>
+
+                <span class="sold-out-label">
+                    SOLD OUT
+                </span>
 
             </div>
-
 
             <div class="price-card">
 
@@ -628,11 +776,65 @@
 
                 <p class="price">R1,000</p>
 
-                <p>
-                    Bring your team
-                </p>
+                <p>Bring your team</p>
+
+                <span class="sold-out-label">
+                    SOLD OUT
+                </span>
 
             </div>
+
+        </div>
+
+        <div class="pricing-notice">
+            <strong>PLEASE NOTE:</strong>
+            These prices apply to the Leribe Seminar listing only.
+            Contact MSM to enquire about prices and availability
+            for future events.
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOLD-OUT ANNOUNCEMENT
+    ========================== -->
+
+    <section class="sold-out-section">
+
+        <div class="sold-out-container">
+
+            <span class="sold-out-icon" aria-hidden="true">
+                🎉
+            </span>
+
+            <h2>LERIBE SEMINAR: SOLD OUT!</h2>
+
+            <p>
+                Thank you for the overwhelming interest in the
+                Leribe Seminar 2026.
+            </p>
+
+            <p>
+                <strong>
+                    Registration is officially closed.
+                </strong>
+            </p>
+
+            <p>
+                If you missed this event, do not worry.
+                Contact MSM to ask about upcoming seminars,
+                workshops and other opportunities to learn and grow.
+            </p>
+
+            <a
+                href="https://wa.me/26656506092?text=Hello%20MSM%20Training%20Company%2C%20I%20saw%20that%20the%20Leribe%20Seminar%202026%20is%20sold%20out.%20Please%20inform%20me%20about%20your%20upcoming%20events."
+                class="btn btn-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                ASK ABOUT UPCOMING EVENTS
+            </a>
 
         </div>
 
@@ -640,233 +842,55 @@
 
 
     <!-- =========================
-         REGISTRATION FORM
+         FUTURE EVENT ENQUIRIES
     ========================== -->
 
-    <section class="registration-section" id="register">
+    <section
+        class="registration-section"
+        id="future-events"
+    >
 
         <div class="registration-container">
 
-            <h2>Register for the Leribe Seminar</h2>
+            <h2>Missed Leribe? Stay Connected!</h2>
 
             <p class="registration-intro">
-                Complete the form below. After submitting,
-                your registration details will be prepared for
-                WhatsApp and sent to MSM Training Company.
+                The Leribe Seminar is sold out, but you can still
+                contact MSM Training Company to enquire about
+                upcoming events and future opportunities.
             </p>
 
+            <div class="enquiry-card">
 
-            <div class="form-note">
+                <div class="enquiry-note">
 
-                <strong>Booking options:</strong>
+                    <strong>Important:</strong>
 
-                <br>
-
-                🔥 Early Bird – R299 for the first 20 people
-                (bring another person free)
-
-                <br>
-
-                👤 Individual – R350
-
-                <br>
-
-                👥 Pair – R500
-
-                <br>
-
-                👥👥 Group of 5 – R1,000
-
-            </div>
-
-
-            <form
-                id="registrationForm"
-                class="registration-form"
-            >
-
-                <!-- NAME -->
-
-                <div class="form-group">
-
-                    <label for="fullName">
-                        Full Name *
-                    </label>
-
-                    <input
-                        type="text"
-                        id="fullName"
-                        name="fullName"
-                        placeholder="Enter your full name"
-                        required
-                    >
+                    <p style="margin: 8px 0 0;">
+                        This page is no longer accepting registrations
+                        for Leribe. The WhatsApp button below is for
+                        enquiries about future events only.
+                    </p>
 
                 </div>
-
-
-                <!-- PHONE -->
-
-                <div class="form-group">
-
-                    <label for="phone">
-                        Phone / WhatsApp Number *
-                    </label>
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="e.g. 56506092"
-                        required
-                    >
-
-                </div>
-
-
-                <!-- EMAIL -->
-
-                <div class="form-group">
-
-                    <label for="email">
-                        Email Address
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email address"
-                    >
-
-                </div>
-
-
-                <!-- BOOKING OPTION -->
-
-                <div class="form-group">
-
-                    <label for="booking">
-                        Select Booking Option *
-                    </label>
-
-                    <select
-                        id="booking"
-                        name="booking"
-                        required
-                    >
-
-                        <option value="">
-                            -- Select booking option --
-                        </option>
-
-                        <option value="Early Bird - R299">
-                            Early Bird - R299
-                        </option>
-
-                        <option value="Individual - R350">
-                            Individual - R350
-                        </option>
-
-                        <option value="Pair Booking - R500">
-                            Pair Booking - R500
-                        </option>
-
-                        <option value="Group of 5 - R1,000">
-                            Group of 5 - R1,000
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- NUMBER OF PEOPLE -->
-
-                <div class="form-group">
-
-                    <label for="people">
-                        Number of People *
-                    </label>
-
-                    <select
-                        id="people"
-                        name="people"
-                        required
-                    >
-
-                        <option value="">
-                            -- Select number of people --
-                        </option>
-
-                        <option value="1">
-                            1 person
-                        </option>
-
-                        <option value="2">
-                            2 people
-                        </option>
-
-                        <option value="3">
-                            3 people
-                        </option>
-
-                        <option value="4">
-                            4 people
-                        </option>
-
-                        <option value="5">
-                            5 people
-                        </option>
-
-                        <option value="More than 5">
-                            More than 5
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- MESSAGE -->
-
-                <div class="form-group">
-
-                    <label for="message">
-                        Additional Information
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        placeholder="Anything you would like us to know?"
-                    ></textarea>
-
-                </div>
-
-
-                <!-- SUBMIT -->
-
-                <button
-                    type="submit"
-                    class="btn submit-btn"
-                >
-                    CONTINUE TO WHATSAPP
-                </button>
-
-            </form>
-
-
-            <!-- SUCCESS -->
-
-            <div id="successMessage">
-
-                <h3>Registration Details Ready! ✅</h3>
 
                 <p>
-                    Your registration information has been prepared.
-                    WhatsApp will now open so you can send your details
-                    directly to MSM Training Company.
+                    Send us a WhatsApp message to ask about upcoming
+                    seminars, workshops, dates, venues and registration
+                    arrangements.
+                </p>
+
+                <a
+                    href="https://wa.me/26656506092?text=Hello%20MSM%20Training%20Company%2C%20I%20missed%20the%20Leribe%20Seminar.%20Please%20share%20information%20about%20your%20upcoming%20seminars%20and%20workshops."
+                    class="btn btn-whatsapp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    CONTACT MSM ON WHATSAPP
+                </a>
+
+                <p style="margin-top: 20px; margin-bottom: 0;">
+                    <strong>WhatsApp:</strong> +266 5650 6092
                 </p>
 
             </div>
@@ -882,33 +906,34 @@
 
     <section class="cta">
 
-        <h2>Ready to Take Action?</h2>
+        <h2>Keep Growing. Keep Learning.</h2>
 
         <p>
-            Do not wait until the opportunity passes.
-            Register today and join us in Leribe.
+            Missing one event does not mean missing the next
+            opportunity. Stay connected with MSM and look out
+            for upcoming seminars and workshops.
         </p>
 
         <a
-            href="#register"
+            href="https://wa.me/26656506092?text=Hello%20MSM%2C%20please%20keep%20me%20informed%20about%20upcoming%20seminars%20and%20workshops."
             class="btn"
+            target="_blank"
+            rel="noopener noreferrer"
         >
-            REGISTER NOW
+            ENQUIRE ABOUT FUTURE SEMINARS
         </a>
 
         <p>
-
             Or visit:
 
             <a
                 href="https://msmtrainingls.com"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
                 class="website-link"
             >
                 msmtrainingls.com
             </a>
-
         </p>
 
     </section>
@@ -932,19 +957,28 @@
         </p>
 
         <p>
-            📞 +266 5650 6092 |
+            📞
+            <a
+                href="https://wa.me/26656506092"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                +266 5650 6092
+            </a>
+            |
             🌐
             <a
                 href="https://msmtrainingls.com"
                 target="_blank"
-                rel="noopener"
+                rel="noopener noreferrer"
             >
                 msmtrainingls.com
             </a>
         </p>
 
         <p>
-            &copy; 2026 MSM Training Company.
+            &copy; <span id="currentYear">2026</span>
+            MSM Training Company.
             All rights reserved.
         </p>
 
@@ -956,123 +990,19 @@
     ========================== -->
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-        document
-            .getElementById("registrationForm")
-            .addEventListener("submit", function(event) {
+            // Update the footer year automatically.
+            var yearElement = document.getElementById("currentYear");
 
-                event.preventDefault();
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
 
+            // No registration form is active because the seminar is sold out.
+            // WhatsApp links are available only for future-event enquiries.
 
-                // Get form information
-
-                const fullName =
-                    document.getElementById("fullName").value.trim();
-
-                const phone =
-                    document.getElementById("phone").value.trim();
-
-                const email =
-                    document.getElementById("email").value.trim();
-
-                const booking =
-                    document.getElementById("booking").value;
-
-                const people =
-                    document.getElementById("people").value;
-
-                const message =
-                    document.getElementById("message").value.trim();
-
-
-                // Create WhatsApp message
-
-                let whatsappMessage =
-                    "Hello MSM Training Company,%0A%0A" +
-
-                    "*LERIBE SEMINAR REGISTRATION*%0A%0A" +
-
-                    "Full Name: " +
-                    encodeURIComponent(fullName) +
-
-                    "%0A" +
-
-                    "Phone / WhatsApp: " +
-                    encodeURIComponent(phone) +
-
-                    "%0A" +
-
-                    "Email: " +
-                    encodeURIComponent(
-                        email || "Not provided"
-                    ) +
-
-                    "%0A" +
-
-                    "Booking Option: " +
-                    encodeURIComponent(booking) +
-
-                    "%0A" +
-
-                    "Number of People: " +
-                    encodeURIComponent(people) +
-
-                    "%0A";
-
-
-                if (message !== "") {
-
-                    whatsappMessage +=
-                        "Additional Information: " +
-                        encodeURIComponent(message) +
-                        "%0A";
-
-                }
-
-
-                whatsappMessage +=
-
-                    "%0A" +
-
-                    "Seminar: Leribe Seminar 2026%0A" +
-
-                    "Date: 10 October 2026%0A" +
-
-                    "Time: 09:00 - 16:00%0A" +
-
-                    "Theme: Master Your Mind, Money, Business & Self";
-
-
-                // Show success message
-
-                document
-                    .getElementById("successMessage")
-                    .style.display = "block";
-
-
-                // Open WhatsApp
-
-                const whatsappURL =
-                    "https://wa.me/26656506092?text=" +
-                    whatsappMessage;
-
-
-                window.open(
-                    whatsappURL,
-                    "_blank"
-                );
-
-
-                // Scroll to confirmation
-
-                document
-                    .getElementById("successMessage")
-                    .scrollIntoView({
-                        behavior: "smooth"
-                    });
-
-            });
-
+        });
     </script>
 
 </body>
