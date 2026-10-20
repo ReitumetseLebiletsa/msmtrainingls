@@ -1,724 +1,1826 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sales & Marketing Workshop | MSM Training</title>
+    <meta
+        name="description"
+        content="Join Mohau P Mosoeunyane for the MSM one-day Sales and Marketing Workshop on 14 November 2026 at State Library, Maseru, Lesotho."
+    >
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <meta name="theme-color" content="#0B3D2E">
+
+    <title>Sales & Marketing Workshop | MSM Training Company</title>
+
+    <!-- Bootstrap -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    >
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
     <!-- MSM Main Styles -->
-    <link rel="stylesheet"
-          href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <style>
+        :root {
+            --msm-green: #0B3D2E;
+            --msm-green-light: #155740;
+            --msm-lime: #7CB342;
+            --msm-lime-light: #EAF4DF;
+            --msm-white: #FFFFFF;
+            --msm-background: #F5F8F4;
+            --msm-text: #26352C;
+            --msm-muted: #66756C;
+            --msm-border: #DDE7DC;
+            --msm-whatsapp: #25D366;
+            --msm-gold: #F2C14E;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 25px;
+        }
 
         body {
-            background: #f8f9fa;
+            margin: 0;
+            background: var(--msm-background);
+            color: var(--msm-text);
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
         }
 
-        .workshop-header {
-            background: #0B3D2E;
-            color: white;
-            padding: 70px 20px;
-            text-align: center;
+        a {
+            transition: all 0.25s ease;
         }
 
-        .workshop-header h1 {
-            font-weight: 700;
-            margin-bottom: 15px;
+        a:hover {
+            text-decoration: none;
         }
 
-        .workshop-header p {
-            font-size: 18px;
+        /* NAVIGATION */
+
+        .msm-nav {
+            background: var(--msm-green);
+            padding: 15px 0;
+            border-bottom: 4px solid var(--msm-lime);
         }
 
-        .workshop-card {
-            background: white;
-            padding: 35px;
-            border-radius: 10px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.08);
-            margin-top: -40px;
+        .brand-name {
+            color: var(--msm-white);
+            font-weight: 900;
+            font-size: 19px;
+            line-height: 1.25;
+        }
+
+        .brand-name:hover {
+            color: var(--msm-lime);
+        }
+
+        .brand-subtitle {
+            display: block;
+            font-size: 10px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: #DCE9DC;
+            margin-top: 4px;
+        }
+
+        .nav-enquire {
+            display: inline-block;
+            padding: 9px 16px;
+            border-radius: 5px;
+            background: var(--msm-lime);
+            color: var(--msm-white);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .nav-enquire:hover {
+            background: var(--msm-white);
+            color: var(--msm-green);
+        }
+
+        /* HERO */
+
+        .workshop-hero {
             position: relative;
+            overflow: hidden;
+            padding: 75px 0 100px;
+            background:
+                radial-gradient(
+                    circle at 90% 10%,
+                    rgba(124, 179, 66, 0.18),
+                    transparent 30%
+                ),
+                linear-gradient(
+                    135deg,
+                    #082D22,
+                    var(--msm-green),
+                    #155740
+                );
+            color: var(--msm-white);
         }
 
-        .workshop-info {
+        .hero-label {
+            display: inline-block;
+            padding: 8px 14px;
+            border: 1px solid rgba(255,255,255,0.25);
+            border-radius: 30px;
+            background: rgba(255,255,255,0.08);
+            color: #DFF1D0;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .workshop-hero h1 {
+            color: var(--msm-white);
+            font-size: 47px;
+            line-height: 1.12;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .workshop-hero h1 span {
+            color: var(--msm-lime);
+        }
+
+        .hero-description {
+            color: #E3EEE5;
+            font-size: 17px;
+            max-width: 620px;
             margin-bottom: 25px;
         }
 
-        .workshop-info i {
-            color: #7CB342;
-            width: 25px;
-        }
-
-        .early-bird {
-            background: #7CB342;
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
+        .hero-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
             margin: 25px 0;
         }
 
-        .price-box {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 15px;
-        }
-
-        .price-box h5 {
-            color: #0B3D2E;
+        .hero-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 11px 13px;
+            border-radius: 7px;
+            background: rgba(255,255,255,0.08);
+            color: var(--msm-white);
+            font-size: 13px;
             font-weight: 700;
         }
 
-        .payment-box {
-            background: #f1f1f1;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 25px;
+        .hero-meta-item i {
+            color: var(--msm-lime);
         }
 
-        .register-title {
-            color: #0B3D2E;
-            font-weight: 700;
-        }
-
-        .btn-register {
-            background: #0B3D2E;
-            color: white;
-            border: none;
-        }
-
-        .btn-register:hover {
-            background: #7CB342;
-            color: white;
-        }
-
-        .whatsapp-btn {
-            background: #25D366;
-            color: white;
-        }
-
-        .whatsapp-btn:hover {
-            color: white;
-            opacity: 0.9;
-        }
-
-        footer {
-            background: #0B3D2E;
-            color: white;
-            padding: 30px 0;
-            margin-top: 50px;
+        .btn-msm {
+            display: inline-block;
+            padding: 14px 23px;
+            border: 2px solid var(--msm-lime);
+            border-radius: 6px;
+            background: var(--msm-lime);
+            color: var(--msm-white);
+            font-size: 13px;
+            font-weight: 900;
             text-align: center;
         }
 
+        .btn-msm:hover {
+            background: var(--msm-white);
+            border-color: var(--msm-white);
+            color: var(--msm-green);
+            transform: translateY(-2px);
+        }
+
+        .btn-hero-outline {
+            display: inline-block;
+            padding: 14px 22px;
+            border: 2px solid rgba(255,255,255,0.75);
+            border-radius: 6px;
+            color: var(--msm-white);
+            font-size: 13px;
+            font-weight: 800;
+            margin-left: 8px;
+            text-align: center;
+        }
+
+        .btn-hero-outline:hover {
+            background: var(--msm-white);
+            color: var(--msm-green);
+        }
+
+        .hero-side-card {
+            background: var(--msm-white);
+            color: var(--msm-text);
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.22);
+            border-top: 6px solid var(--msm-lime);
+        }
+
+        .hero-side-card .eyebrow {
+            color: var(--msm-muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 11px;
+            font-weight: 800;
+        }
+
+        .hero-side-card h2 {
+            color: var(--msm-green);
+            font-size: 25px;
+            font-weight: 900;
+            margin: 12px 0;
+        }
+
+        .hero-side-card .trainer {
+            color: var(--msm-muted);
+            font-size: 14px;
+        }
+
+        .hero-divider {
+            border-top: 1px solid var(--msm-border);
+            margin: 20px 0;
+        }
+
+        .hero-fact {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 15px;
+        }
+
+        .hero-fact:last-child {
+            margin-bottom: 0;
+        }
+
+        .hero-fact i {
+            color: var(--msm-lime);
+            font-size: 18px;
+            width: 23px;
+            margin-top: 4px;
+        }
+
+        .hero-fact strong {
+            display: block;
+            color: var(--msm-green);
+            font-size: 13px;
+        }
+
+        .hero-fact span {
+            display: block;
+            color: var(--msm-muted);
+            font-size: 13px;
+        }
+
+        /* MAIN CONTENT */
+
+        .main-content {
+            position: relative;
+            margin-top: -48px;
+            z-index: 2;
+            padding-bottom: 60px;
+        }
+
+        .content-card {
+            background: var(--msm-white);
+            padding: 38px;
+            border: 1px solid var(--msm-border);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(11,61,46,0.07);
+        }
+
+        .section-heading {
+            color: var(--msm-green);
+            font-size: 29px;
+            font-weight: 900;
+            line-height: 1.3;
+            margin-bottom: 13px;
+        }
+
+        .section-intro {
+            color: var(--msm-muted);
+            font-size: 15px;
+        }
+
+        .heading-line {
+            width: 60px;
+            height: 5px;
+            background: var(--msm-lime);
+            border-radius: 5px;
+            margin: 0 auto 23px;
+        }
+
+        .heading-line.left {
+            margin-left: 0;
+        }
+
+        /* BENEFITS */
+
+        .benefit-card {
+            height: 100%;
+            padding: 23px 20px;
+            border: 1px solid var(--msm-border);
+            border-radius: 9px;
+            background: #FCFDFC;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 9px 24px rgba(11,61,46,0.09);
+        }
+
+        .benefit-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 17px;
+            border-radius: 12px;
+            background: var(--msm-lime-light);
+            color: var(--msm-green);
+            font-size: 21px;
+        }
+
+        .benefit-card h3 {
+            color: var(--msm-green);
+            font-size: 17px;
+            font-weight: 900;
+            margin-bottom: 9px;
+        }
+
+        .benefit-card p {
+            color: var(--msm-muted);
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+        /* LEARNING LIST */
+
+        .learn-list {
+            padding: 0;
+            list-style: none;
+            margin: 25px 0;
+        }
+
         .learn-list li {
-            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 13px 0;
+            border-bottom: 1px solid #EDF1EC;
+            font-size: 14px;
+        }
+
+        .learn-list li:last-child {
+            border-bottom: none;
         }
 
         .learn-list i {
-            color: #7CB342;
-            margin-right: 10px;
+            color: var(--msm-lime);
+            font-size: 17px;
+            margin-top: 4px;
         }
 
-        @media (max-width: 576px) {
+        /* PRICING */
 
-            .workshop-header {
-                padding: 50px 15px;
-            }
-
-            .workshop-header h1 {
-                font-size: 28px;
-            }
-
-            .workshop-header p {
-                font-size: 16px;
-            }
-
-            .workshop-card {
-                padding: 25px 18px;
-                margin-top: -25px;
-            }
-
+        .pricing-section {
+            padding: 60px 0;
+            background: var(--msm-lime-light);
         }
 
+        .price-card {
+            height: 100%;
+            padding: 30px;
+            background: var(--msm-white);
+            border: 1px solid var(--msm-border);
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 6px 22px rgba(11,61,46,0.05);
+        }
+
+        .price-card.featured {
+            border: 2px solid var(--msm-green);
+        }
+
+        .price-label {
+            display: inline-block;
+            padding: 6px 12px;
+            background: var(--msm-lime-light);
+            color: var(--msm-green);
+            border-radius: 30px;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .price-card h3 {
+            color: var(--msm-green);
+            font-size: 20px;
+            font-weight: 900;
+            margin: 18px 0 8px;
+        }
+
+        .price {
+            color: var(--msm-green);
+            font-size: 43px;
+            line-height: 1.2;
+            font-weight: 900;
+            margin: 15px 0;
+        }
+
+        .price small {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .price-card p {
+            color: var(--msm-muted);
+            font-size: 14px;
+        }
+
+        .sold-out {
+            display: inline-block;
+            padding: 7px 12px;
+            border-radius: 5px;
+            background: #FCE8E6;
+            color: #A52714;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .deposit-note {
+            margin-top: 25px;
+            padding: 16px 18px;
+            border-left: 5px solid var(--msm-lime);
+            border-radius: 6px;
+            background: var(--msm-white);
+            color: var(--msm-green);
+            font-size: 14px;
+        }
+
+        /* REGISTRATION */
+
+        .registration-section {
+            padding: 70px 0;
+            background: var(--msm-white);
+        }
+
+        .registration-card {
+            padding: 35px;
+            border: 1px solid var(--msm-border);
+            border-top: 6px solid var(--msm-lime);
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(11,61,46,0.07);
+        }
+
+        .registration-card h2 {
+            color: var(--msm-green);
+            font-size: 29px;
+            font-weight: 900;
+        }
+
+        .form-group label {
+            color: var(--msm-green);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .form-control {
+            min-height: 46px;
+            border: 1px solid #D5E0D5;
+            border-radius: 6px;
+            font-size: 14px;
+            color: var(--msm-text);
+            background: #FFFFFF;
+        }
+
+        textarea.form-control {
+            min-height: 110px;
+        }
+
+        .form-control:focus {
+            border-color: var(--msm-lime);
+            box-shadow: 0 0 0 3px rgba(124,179,66,0.17);
+        }
+
+        .form-help {
+            color: var(--msm-muted);
+            font-size: 12px;
+            margin-top: 5px;
+        }
+
+        .btn-register {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: var(--msm-green);
+            color: var(--msm-white);
+            border: 2px solid var(--msm-green);
+            border-radius: 6px;
+            font-weight: 900;
+            font-size: 14px;
+            transition: all 0.25s ease;
+        }
+
+        .btn-register:hover {
+            background: var(--msm-lime);
+            border-color: var(--msm-lime);
+            color: var(--msm-white);
+            transform: translateY(-2px);
+        }
+
+        .privacy-note {
+            color: var(--msm-muted);
+            font-size: 12px;
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        /* PAYMENT */
+
+        .payment-card {
+            padding: 28px;
+            height: 100%;
+            border: 1px solid var(--msm-border);
+            border-radius: 10px;
+            background: #F8FAF7;
+        }
+
+        .payment-card h3 {
+            color: var(--msm-green);
+            font-size: 20px;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }
+
+        .payment-method {
+            padding: 14px 0;
+            border-bottom: 1px solid var(--msm-border);
+        }
+
+        .payment-method:last-child {
+            border-bottom: none;
+        }
+
+        .payment-method strong {
+            display: block;
+            color: var(--msm-green);
+            font-size: 13px;
+        }
+
+        .payment-method span {
+            display: block;
+            color: var(--msm-muted);
+            font-size: 14px;
+        }
+
+        .payment-warning {
+            padding: 14px;
+            background: #FFF5D9;
+            border-radius: 6px;
+            color: #705400;
+            font-size: 12px;
+            margin-top: 18px;
+        }
+
+        /* CONTACT */
+
+        .contact-band {
+            padding: 45px 20px;
+            background: var(--msm-green);
+            text-align: center;
+            color: var(--msm-white);
+        }
+
+        .contact-band h2 {
+            color: var(--msm-white);
+            font-size: 27px;
+            font-weight: 900;
+        }
+
+        .contact-band p {
+            color: #E4F0E0;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            padding: 13px 22px;
+            border-radius: 6px;
+            background: var(--msm-whatsapp);
+            color: var(--msm-white);
+            font-weight: 900;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1EBE5D;
+            color: var(--msm-white);
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+
+        .msm-footer {
+            background: #082D22;
+            color: var(--msm-white);
+            padding: 30px 0;
+            text-align: center;
+            border-top: 4px solid var(--msm-lime);
+        }
+
+        .msm-footer p {
+            margin-bottom: 5px;
+            color: #E4F0E0;
+            font-size: 13px;
+        }
+
+        .msm-footer strong {
+            color: var(--msm-lime);
+        }
+
+        /* FLOATING WHATSAPP */
+
+        .whatsapp-float {
+            position: fixed;
+            right: 18px;
+            bottom: 18px;
+            z-index: 999;
+            width: 56px;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--msm-whatsapp);
+            color: var(--msm-white);
+            font-size: 29px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.2);
+        }
+
+        .whatsapp-float:hover {
+            color: var(--msm-white);
+            transform: scale(1.07);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 991px) {
+            .workshop-hero {
+                padding: 55px 0 85px;
+            }
+
+            .workshop-hero h1 {
+                font-size: 38px;
+            }
+
+            .hero-side-card {
+                margin-top: 35px;
+            }
+
+            .main-content {
+                margin-top: -35px;
+            }
+
+            .nav-enquire {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .workshop-hero {
+                padding: 45px 0 70px;
+                text-align: center;
+            }
+
+            .workshop-hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-meta {
+                justify-content: center;
+            }
+
+            .btn-msm,
+            .btn-hero-outline {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .hero-side-card {
+                text-align: left;
+                padding: 24px;
+            }
+
+            .content-card,
+            .registration-card {
+                padding: 24px 18px;
+            }
+
+            .section-heading,
+            .registration-card h2 {
+                font-size: 25px;
+            }
+
+            .price {
+                font-size: 37px;
+            }
+
+            .registration-section,
+            .pricing-section {
+                padding: 45px 0;
+            }
+
+            .whatsapp-float {
+                width: 51px;
+                height: 51px;
+                right: 12px;
+                bottom: 12px;
+                font-size: 26px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+                animation: none !important;
+            }
+        }
     </style>
-
 </head>
 
 <body>
 
-
-<!-- =================================================
-     WORKSHOP HEADER
-================================================== -->
-
-<section class="workshop-header">
-
-    <div class="container">
-
-        <h1>
-            1 DAY SALES & MARKETING WORKSHOP
-        </h1>
-
-        <p>
-            With Mohau P Mosoeunyane
-            <br>
-            <strong>Success Trainer</strong>
-        </p>
-
-        <p>
-            <strong>
-                14 NOVEMBER 2026 | 08:00 AM – 6:00 PM
-            </strong>
-        </p>
-
-        <p>
-            State Library, Maseru, Lesotho
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- =================================================
-     MAIN CONTENT
-================================================== -->
-
-<section class="container">
-
-    <div class="workshop-card">
-
-
-        <!-- INTRO -->
-
-        <div class="text-center mb-4">
-
-            <h2 class="register-title">
-                1 Day Sales & Marketing Workshop
-            </h2>
-
-            <p>
-                This is a practical workshop for people who want
-                to understand selling, marketing, customer
-                acquisition and social media advertising.
-            </p>
-
-        </div>
-
-
-        <!-- EVENT INFORMATION -->
-
-        <div class="workshop-info">
-
-            <p>
-                <i class="fa-solid fa-calendar"></i>
-
-                <strong>Date:</strong>
-                14 November 2026
-            </p>
-
-            <p>
-                <i class="fa-solid fa-clock"></i>
-
-                <strong>Time:</strong>
-                08:00 AM – 6:00 PM
-            </p>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-
-                <strong>Location:</strong>
-                State Library, Maseru, Lesotho
-            </p>
-
-            <p>
-                <i class="fa-solid fa-user"></i>
-
-                <strong>Trainer:</strong>
-                Mohau P Mosoeunyane
-            </p>
-
-        </div>
-
-
-        <!-- PRICING -->
-
-        <div class="price-box">
-
-            <h5>
-                Regular Price
-            </h5>
-
-            <h3>
-                R750 per person
-            </h3>
-
-        </div>
-
-
-        <!-- EARLY BIRD -->
-
-        <div class="early-bird text-center">
-
-            <h3>
-                🔥 EARLY BIRD SPECIAL – SOLD OUT
-            </h3>
-
-            <p class="mb-0">
-
-                First 10 people only!
-
-                <br>
-
-                <strong>
-                    Save R200
-                </strong>
-
-            </p>
-
-        </div>
-
-
-        <!-- WHAT YOU WILL LEARN -->
-
-        <div class="mt-5">
-
-            <h4 class="register-title mb-4">
-                What You Will Learn
-            </h4>
-
-            <ul class="list-unstyled learn-list">
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    Psychology and science of selling
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    Effective marketing strategies in this region
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    10 proven sales techniques
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    Facebook and other social media ads mastery
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    3-step sales and customer acquisition process
-                    with a template
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check"></i>
-                    The most effective sales pitch formula
-                </li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- REGISTRATION -->
-
-        <div class="mt-5">
-
-            <h4 class="register-title mb-4">
-                Register for the Workshop
-            </h4>
-
-            <p>
-                Minimum deposit:
-                <strong>R200</strong>
-            </p>
-
-
-            <form id="salesWorkshopForm">
-
-
-                <!-- FULL NAME -->
-
-                <div class="form-group">
-
-                    <label>
-                        Full Name *
-                    </label>
-
-                    <input type="text"
-                           id="sales-name"
-                           class="form-control"
-                           required>
-
-                </div>
-
-
-                <!-- PHONE -->
-
-                <div class="form-group">
-
-                    <label>
-                        Phone / WhatsApp Number *
-                    </label>
-
-                    <input type="tel"
-                           id="sales-phone"
-                           class="form-control"
-                           required>
-
-                </div>
-
-
-                <!-- EMAIL -->
-
-                <div class="form-group">
-
-                    <label>
-                        Email Address
-                    </label>
-
-                    <input type="email"
-                           id="sales-email"
-                           class="form-control">
-
-                </div>
-
-
-                <!-- NUMBER OF PEOPLE -->
-
-                <div class="form-group">
-
-                    <label>
-                        Number of People *
-                    </label>
-
-                    <input type="number"
-                           id="sales-people"
-                           class="form-control"
-                           min="1"
-                           max="20"
-                           value="1"
-                           required>
-
-                </div>
-
-
-                <!-- REGISTRATION OPTION -->
-
-                <div class="form-group">
-
-                    <label>
-                        Registration Option *
-                    </label>
-
-                    <select id="sales-option"
-                            class="form-control"
-                            required>
-
-                        <option value="">
-                            -- Select an option --
-                        </option>
-
-                        <option value="Early Bird R550">
-                            🔥 Early Bird – R550
-                        </option>
-
-                        <option value="Regular Price R750">
-                            Regular Price – R750
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- PAYMENT -->
-
-                <div class="form-group">
-
-                    <label>
-                        Payment Status *
-                    </label>
-
-                    <select id="sales-payment"
-                            class="form-control"
-                            required>
-
-                        <option value="">
-                            -- Select --
-                        </option>
-
-                        <option value="I have paid the deposit">
-                            I have paid the deposit
-                        </option>
-
-                        <option value="I have paid in full">
-                            I have paid in full
-                        </option>
-
-                        <option value="I will pay">
-                            I will pay
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <!-- MESSAGE -->
-
-                <div class="form-group">
-
-                    <label>
-                        Message / Special Request
-                    </label>
-
-                    <textarea id="sales-message"
-                              class="form-control"
-                              rows="4"></textarea>
-
-                </div>
-
-
-                <!-- SUBMIT -->
-
-                <button type="submit"
-                        class="btn btn-register btn-lg btn-block">
-
-                    <i class="fa-brands fa-whatsapp mr-2"></i>
-
-                    REGISTER VIA WHATSAPP
-
-                </button>
-
-            </form>
-
-        </div>
-
-
-        <!-- =================================================
-             PAYMENT DETAILS
-        ================================================== -->
-
-        <div class="payment-box">
-
-            <h4 class="register-title">
-                Payment Details
-            </h4>
-
-            <hr>
-
-            <p>
-                <strong>M-Pesa:</strong><br>
-                34304
-            </p>
-
-            <p>
-                <strong>EcoCash:</strong><br>
-                0000104444
-            </p>
-
-            <p>
-                <strong>Account Name:</strong><br>
-                Mohau & the Success Masters
-            </p>
-
-            <p class="mb-0">
-
-                Minimum deposit:
-                <strong>R200</strong>
-
-                <br>
-
-                After making payment, please keep your
-                proof of payment.
-
-            </p>
-
-        </div>
-
-
-        <!-- =================================================
-             CONTACT
-        ================================================== -->
-
-        <div class="text-center mt-4">
-
-            <p>
-                Need help with registration?
-            </p>
-
-            <a href="https://wa.me/26656506092"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn whatsapp-btn">
-
-                <i class="fa-brands fa-whatsapp mr-2"></i>
-
-                WhatsApp Us
-
+    <!-- NAVIGATION -->
+
+    <nav class="msm-nav">
+        <div class="container d-flex align-items-center justify-content-between flex-wrap">
+
+            <a href="index.html" class="brand-name">
+                MSM TRAINING COMPANY
+                <span class="brand-subtitle">
+                    AND COUNSELLING SERVICES
+                </span>
             </a>
 
-            <p class="mt-3 mb-0">
+            <a href="#registration" class="nav-enquire">
+                <i class="fa-solid fa-ticket mr-2"></i>
+                REGISTER NOW
+            </a>
 
-                Call / WhatsApp:
+        </div>
+    </nav>
 
-                <strong>
-                    +266 5650 6092
-                </strong>
 
-                <br>
+    <!-- HERO -->
 
-                <strong>
-                    +266 6206 2250
-                </strong>
+    <header class="workshop-hero">
+        <div class="container">
 
-                <br>
+            <div class="row align-items-center">
 
-                <strong>
-                    +27 78 776 7772
-                </strong>
+                <div class="col-lg-7">
 
+                    <span class="hero-label">
+                        Practical Skills · Real-World Learning
+                    </span>
+
+                    <h1>
+                        1 DAY SALES &<br>
+                        <span>MARKETING</span><br>
+                        WORKSHOP
+                    </h1>
+
+                    <p class="hero-description">
+                        Learn how to sell with confidence, market your
+                        business, attract customers and use social
+                        media more strategically.
+                    </p>
+
+                    <p class="mb-1">
+                        Presented by
+                        <strong>Mohau P Mosoeunyane</strong>
+                    </p>
+
+                    <p class="text-light">
+                        Success Trainer
+                    </p>
+
+                    <div class="hero-meta">
+
+                        <div class="hero-meta-item">
+                            <i class="fa-regular fa-calendar"></i>
+                            14 November 2026
+                        </div>
+
+                        <div class="hero-meta-item">
+                            <i class="fa-regular fa-clock"></i>
+                            08:00 – 18:00
+                        </div>
+
+                        <div class="hero-meta-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Maseru, Lesotho
+                        </div>
+
+                    </div>
+
+                    <a href="#registration" class="btn-msm">
+                        SECURE YOUR PLACE
+                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+
+                    <a href="#learning" class="btn-hero-outline">
+                        WHAT YOU WILL LEARN
+                    </a>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="hero-side-card">
+
+                        <span class="eyebrow">
+                            One-day intensive workshop
+                        </span>
+
+                        <h2>
+                            Stop Guessing.<br>
+                            Start Selling Smarter.
+                        </h2>
+
+                        <p class="trainer">
+                            A practical learning experience for
+                            entrepreneurs, business owners, salespeople
+                            and anyone looking to improve their marketing.
+                        </p>
+
+                        <div class="hero-divider"></div>
+
+                        <div class="hero-fact">
+                            <i class="fa-solid fa-calendar-check"></i>
+                            <div>
+                                <strong>DATE</strong>
+                                <span>Saturday, 14 November 2026</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-fact">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>VENUE</strong>
+                                <span>State Library, Maseru, Lesotho</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-fact">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <div>
+                                <strong>TRAINER</strong>
+                                <span>Mohau P Mosoeunyane</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-divider"></div>
+
+                        <div class="text-center">
+                            <span class="text-muted small">
+                                REGULAR WORKSHOP FEE
+                            </span>
+
+                            <div class="price mb-1">
+                                R750
+                            </div>
+
+                            <span class="text-muted small">
+                                Per person
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- MAIN INTRODUCTION -->
+
+    <main class="main-content">
+        <div class="container">
+
+            <div class="content-card">
+
+                <div class="text-center mb-5">
+
+                    <h2 class="section-heading">
+                        Your Next Customer Won't Find You by Accident
+                    </h2>
+
+                    <div class="heading-line"></div>
+
+                    <p class="section-intro">
+                        Having a good product or service is one thing.
+                        Knowing how to communicate its value, reach
+                        the right people and turn interest into sales
+                        is another.
+                    </p>
+
+                    <p class="section-intro mb-0">
+                        This workshop focuses on practical sales and
+                        marketing concepts that you can apply to your
+                        business, work or entrepreneurial journey.
+                    </p>
+
+                </div>
+
+
+                <!-- BENEFITS -->
+
+                <div class="row">
+
+                    <div class="col-md-4 mb-4">
+
+                        <div class="benefit-card">
+
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+
+                            <h3>Sell with Confidence</h3>
+
+                            <p>
+                                Understand selling techniques and how
+                                to communicate value to potential
+                                customers.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+
+                        <div class="benefit-card">
+
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-bullhorn"></i>
+                            </div>
+
+                            <h3>Market More Effectively</h3>
+
+                            <p>
+                                Explore marketing strategies that help
+                                you reach and connect with your intended
+                                audience.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+
+                        <div class="benefit-card">
+
+                            <div class="benefit-icon">
+                                <i class="fa-solid fa-users"></i>
+                            </div>
+
+                            <h3>Attract Customers</h3>
+
+                            <p>
+                                Learn about customer acquisition and
+                                the steps involved in moving prospects
+                                towards a purchase.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LEARNING TOPICS -->
+
+                <section id="learning" class="mt-5">
+
+                    <div class="row">
+
+                        <div class="col-lg-7">
+
+                            <h2 class="section-heading">
+                                What You Will Learn
+                            </h2>
+
+                            <div class="heading-line left"></div>
+
+                            <p class="section-intro">
+                                The workshop covers the following
+                                sales and marketing topics:
+                            </p>
+
+                            <ul class="learn-list">
+
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>
+                                        <strong>Psychology and science of selling</strong>
+                                        — understand the principles behind
+                                        customer decisions.
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>
+                                        <strong>Effective marketing strategies</strong>
+                                        — explore strategies relevant to
+                                        businesses in the region.
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>
+                                        <strong>10 sales techniques</strong>
+                                        — explore practical approaches
+                                        to sales conversations.
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>
+                                        <strong>Facebook and social media advertising</strong>
+                                        — understand the role of social
+                                        media ads in marketing.
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>
+                                        <strong>Customer acquisition process</strong>
+                                        — work through a three-step process
+                                        supported by a template.
+                                    </span>
+                                </li>
+
+                                <li>
+                                    <i class="fa-solid fa-circle-check"></i>
+                                    <span>
+                                        <strong>Sales pitch formula</strong>
+                                        — explore how to present your
+                                        offer clearly and persuasively.
+                                    </span>
+                                </li>
+
+                            </ul>
+
+                            <a href="#registration" class="btn-msm">
+                                I'M INTERESTED
+                                <i class="fa-solid fa-arrow-right ml-2"></i>
+                            </a>
+
+                        </div>
+
+                        <div class="col-lg-5 mt-4 mt-lg-0">
+
+                            <div class="benefit-card h-100">
+
+                                <div class="benefit-icon">
+                                    <i class="fa-solid fa-lightbulb"></i>
+                                </div>
+
+                                <h3>
+                                    Who Should Attend?
+                                </h3>
+
+                                <p>
+                                    This workshop may be useful for:
+                                </p>
+
+                                <ul class="learn-list">
+
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Entrepreneurs and business owners
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Sales and marketing professionals
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        People starting a business
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Service providers and freelancers
+                                    </li>
+
+                                    <li>
+                                        <i class="fa-solid fa-check"></i>
+                                        Anyone wanting to improve their
+                                        sales and marketing knowledge
+                                    </li>
+
+                                </ul>
+
+                                <div class="deposit-note">
+                                    <strong>
+                                        Come ready to learn.
+                                    </strong>
+                                    Bring your questions, ideas and
+                                    business challenges.
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- PRICING -->
+
+    <section class="pricing-section" id="pricing">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2 class="section-heading">
+                    Workshop Registration
+                </h2>
+
+                <div class="heading-line"></div>
+
+                <p class="section-intro">
+                    Choose the available registration option.
+                    Contact MSM if you need assistance.
+                </p>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6 col-lg-5 mb-4">
+
+                    <div class="price-card featured">
+
+                        <span class="price-label">
+                            Standard Registration
+                        </span>
+
+                        <h3>
+                            Regular Workshop Fee
+                        </h3>
+
+                        <div class="price">
+                            R750
+                        </div>
+
+                        <p>
+                            Per person
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            The standard registration price
+                            for the one-day workshop.
+                        </p>
+
+                        <a href="#registration" class="btn-msm">
+                            REGISTER AT R750
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-5 mb-4">
+
+                    <div class="price-card">
+
+                        <span class="price-label">
+                            Early Bird Offer
+                        </span>
+
+                        <h3>
+                            First 10 Registrations
+                        </h3>
+
+                        <div class="price">
+                            R550
+                        </div>
+
+                        <p>
+                            Save R200 compared with the regular fee.
+                        </p>
+
+                        <hr>
+
+                        <span class="sold-out">
+                            SOLD OUT
+                        </span>
+
+                        <p class="mt-3 mb-0">
+                            The early-bird allocation is sold out.
+                            Please select the regular registration
+                            option in the form.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-10">
+
+                    <div class="deposit-note">
+                        <i class="fa-solid fa-circle-info mr-2"></i>
+                        <strong>Minimum deposit: R200.</strong>
+                        Please contact MSM to confirm payment
+                        arrangements and the balance due before
+                        completing your registration.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REGISTRATION FORM -->
+
+    <section class="registration-section" id="registration">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-7 mb-4">
+
+                    <div class="registration-card">
+
+                        <h2>
+                            Register for the Workshop
+                        </h2>
+
+                        <p class="section-intro mb-4">
+                            Complete the form below. WhatsApp will
+                            open with your registration details ready
+                            to send to MSM.
+                        </p>
+
+                        <form id="salesWorkshopForm">
+
+                            <div class="form-group">
+
+                                <label for="sales-name">
+                                    Full Name *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="sales-name"
+                                    name="name"
+                                    class="form-control"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    maxlength="100"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="sales-phone">
+                                    Phone / WhatsApp Number *
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="sales-phone"
+                                    name="phone"
+                                    class="form-control"
+                                    placeholder="Enter your contact number"
+                                    autocomplete="tel"
+                                    maxlength="30"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="sales-email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="sales-email"
+                                    name="email"
+                                    class="form-control"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    maxlength="150"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="sales-people">
+                                    Number of People *
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="sales-people"
+                                    name="people"
+                                    class="form-control"
+                                    min="1"
+                                    max="20"
+                                    value="1"
+                                    required
+                                >
+
+                                <div class="form-help">
+                                    For groups larger than 20, contact MSM.
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="sales-option">
+                                    Registration Option *
+                                </label>
+
+                                <select
+                                    id="sales-option"
+                                    name="option"
+                                    class="form-control"
+                                    required
+                                >
+
+                                    <option value="">
+                                        -- Select registration option --
+                                    </option>
+
+                                    <option value="Regular Price - R750">
+                                        Regular Registration — R750 per person
+                                    </option>
+
+                                </select>
+
+                                <div class="form-help">
+                                    The R550 early-bird offer is sold out.
+                                </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="sales-payment">
+                                    Payment Status *
+                                </label>
+
+                                <select
+                                    id="sales-payment"
+                                    name="payment"
+                                    class="form-control"
+                                    required
+                                >
+
+                                    <option value="">
+                                        -- Select payment status --
+                                    </option>
+
+                                    <option value="I have paid the deposit">
+                                        I have paid the deposit
+                                    </option>
+
+                                    <option value="I have paid in full">
+                                        I have paid in full
+                                    </option>
+
+                                    <option value="I will pay">
+                                        I will pay
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="sales-message">
+                                    Message / Special Request
+                                </label>
+
+                                <textarea
+                                    id="sales-message"
+                                    name="message"
+                                    class="form-control"
+                                    rows="4"
+                                    maxlength="1000"
+                                    placeholder="Any questions or special requests?"
+                                ></textarea>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn-register"
+                            >
+                                <i class="fa-brands fa-whatsapp mr-2"></i>
+                                CONTINUE REGISTRATION ON WHATSAPP
+                            </button>
+
+                            <p class="privacy-note">
+                                Your browser will open WhatsApp with
+                                the information you entered. Review
+                                it before sending.
+                            </p>
+
+                            <div
+                                id="registrationError"
+                                class="alert alert-danger mt-3"
+                                role="alert"
+                                hidden
+                            ></div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PAYMENT DETAILS -->
+
+                <div class="col-lg-5 mb-4">
+
+                    <div class="payment-card">
+
+                        <h3>
+                            <i class="fa-solid fa-wallet mr-2"></i>
+                            Payment Details
+                        </h3>
+
+                        <p class="section-intro">
+                            Use the payment details below and keep
+                            your proof of payment.
+                        </p>
+
+                        <div class="payment-method">
+
+                            <strong>
+                                <i class="fa-solid fa-mobile-screen mr-2"></i>
+                                M-Pesa
+                            </strong>
+
+                            <span>34304</span>
+
+                        </div>
+
+                        <div class="payment-method">
+
+                            <strong>
+                                <i class="fa-solid fa-mobile-screen mr-2"></i>
+                                EcoCash
+                            </strong>
+
+                            <span>0000104444</span>
+
+                        </div>
+
+                        <div class="payment-method">
+
+                            <strong>
+                                <i class="fa-solid fa-user mr-2"></i>
+                                Account Name
+                            </strong>
+
+                            <span>
+                                Mohau &amp; the Success Masters
+                            </span>
+
+                        </div>
+
+                        <div class="payment-method">
+
+                            <strong>
+                                <i class="fa-solid fa-money-bill-wave mr-2"></i>
+                                Minimum Deposit
+                            </strong>
+
+                            <span>R200</span>
+
+                        </div>
+
+                        <div class="payment-warning">
+                            <i class="fa-solid fa-triangle-exclamation mr-1"></i>
+                            Before paying, confirm the payment
+                            method, account details and registration
+                            arrangements directly with MSM.
+                        </div>
+
+                        <hr>
+
+                        <h3 class="mt-4">
+                            Need Help?
+                        </h3>
+
+                        <p class="section-intro">
+                            Contact the team if you have questions
+                            about registration, payment or the venue.
+                        </p>
+
+                        <a
+                            href="https://wa.me/26656506092"
+                            class="whatsapp-btn"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <i class="fa-brands fa-whatsapp mr-2"></i>
+                            CONTACT MSM
+                        </a>
+
+                        <div class="mt-4">
+
+                            <p class="mb-2">
+                                <strong>WhatsApp / Contact Numbers</strong>
+                            </p>
+
+                            <p class="mb-1">
+                                +266 5650 6092
+                            </p>
+
+                            <p class="mb-1">
+                                +266 6206 2250
+                            </p>
+
+                            <p class="mb-0">
+                                +27 78 776 7772
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FINAL CALL TO ACTION -->
+
+    <section class="contact-band">
+
+        <div class="container">
+
+            <h2>
+                Better Selling Starts with Better Learning.
+            </h2>
+
+            <p class="mt-3 mb-4">
+                Join MSM Training Company for a day of sales and
+                marketing learning in Maseru.
+            </p>
+
+            <a
+                href="#registration"
+                class="btn-msm"
+            >
+                REGISTER FOR 14 NOVEMBER
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="msm-footer">
+
+        <div class="container">
+
+            <p>
+                &copy; <span id="currentYear">2026</span>
+                <strong>MSM Training Company and Counselling Services</strong>
+            </p>
+
+            <p>
+                Mohau and the Success Masters
+            </p>
+
+            <p>
+                SUCCESS IS A CHOICE!
             </p>
 
         </div>
 
-
-    </div>
-
-</section>
+    </footer>
 
 
-<!-- =================================================
-     FOOTER
-================================================== -->
+    <!-- FLOATING WHATSAPP -->
 
-<footer>
-
-    <div class="container">
-
-        <p class="mb-0">
-
-            © 2026 Mohau and the Success Masters.
-
-            All Rights Reserved.
-
-        </p>
-
-        <p class="mb-0">
-
-            SUCCESS IS A CHOICE!
-
-        </p>
-
-    </div>
-
-</footer>
+    <a
+        href="https://wa.me/26656506092"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contact MSM on WhatsApp"
+        title="Contact MSM on WhatsApp"
+    >
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
 
-<!-- =================================================
-     WHATSAPP REGISTRATION SCRIPT
-================================================== -->
+    <!-- JAVASCRIPT -->
 
-<script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
 
-document.getElementById("salesWorkshopForm")
-.addEventListener("submit", function(event) {
+            // Automatically update the copyright year.
+            var yearElement = document.getElementById("currentYear");
 
-    event.preventDefault();
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
 
+            var form = document.getElementById("salesWorkshopForm");
+            var errorBox = document.getElementById("registrationError");
 
-    const name =
-        document.getElementById("sales-name").value.trim();
+            form.addEventListener("submit", function (event) {
 
-    const phone =
-        document.getElementById("sales-phone").value.trim();
+                event.preventDefault();
 
-    const email =
-        document.getElementById("sales-email").value.trim();
+                errorBox.hidden = true;
+                errorBox.textContent = "";
 
-    const people =
-        document.getElementById("sales-people").value;
+                if (!form.checkValidity()) {
+                    form.reportValidity();
+                    return;
+                }
 
-    const option =
-        document.getElementById("sales-option").value;
+                var name = document
+                    .getElementById("sales-name")
+                    .value.trim();
 
-    const payment =
-        document.getElementById("sales-payment").value;
+                var phone = document
+                    .getElementById("sales-phone")
+                    .value.trim();
 
-    const message =
-        document.getElementById("sales-message").value.trim();
+                var email = document
+                    .getElementById("sales-email")
+                    .value.trim();
 
+                var people = Number(
+                    document.getElementById("sales-people").value
+                );
 
-    const whatsappMessage =
-`*1 DAY SALES & MARKETING WORKSHOP REGISTRATION*
+                var option = document
+                    .getElementById("sales-option")
+                    .value;
 
-Full Name: ${name}
+                var payment = document
+                    .getElementById("sales-payment")
+                    .value;
 
-Phone / WhatsApp: ${phone}
+                var message = document
+                    .getElementById("sales-message")
+                    .value.trim();
 
-Email: ${email || "Not provided"}
+                if (!name || !phone || !option || !payment) {
+                    errorBox.textContent =
+                        "Please complete all required fields.";
+                    errorBox.hidden = false;
+                    return;
+                }
 
-Number of People: ${people}
+                if (!Number.isInteger(people) || people < 1 || people > 20) {
+                    errorBox.textContent =
+                        "Please enter a number of attendees between 1 and 20.";
+                    errorBox.hidden = false;
+                    return;
+                }
 
-Registration Option: ${option}
+                var pricePerPerson = 750;
+                var total = people * pricePerPerson;
 
-Payment Status: ${payment}
+                var whatsappMessage =
+                    "*MSM SALES & MARKETING WORKSHOP REGISTRATION*\n\n" +
 
-Message / Special Request:
-${message || "None"}
+                    "*ATTENDEE DETAILS*\n" +
+                    "Full Name: " + name + "\n" +
+                    "Phone / WhatsApp: " + phone + "\n" +
+                    "Email: " + (email || "Not provided") + "\n" +
+                    "Number of People: " + people + "\n\n" +
 
+                    "*REGISTRATION*\n" +
+                    "Option: " + option + "\n" +
+                    "Price per person: R" + pricePerPerson + "\n" +
+                    "Estimated total: R" + total + "\n" +
+                    "Payment Status: " + payment + "\n\n" +
 
-*WORKSHOP DETAILS*
+                    "*MESSAGE / SPECIAL REQUEST*\n" +
+                    (message || "None") + "\n\n" +
 
-Date: 14 November 2026
+                    "*WORKSHOP DETAILS*\n" +
+                    "Event: 1 Day Sales & Marketing Workshop\n" +
+                    "Date: 14 November 2026\n" +
+                    "Time: 08:00 AM – 6:00 PM\n" +
+                    "Venue: State Library, Maseru, Lesotho\n" +
+                    "Trainer: Mohau P Mosoeunyane\n\n" +
 
-Time: 08:00 AM – 6:00 PM
+                    "Please assist me with my registration. Thank you.";
 
-Location: State Library, Maseru, Lesotho
+                var whatsappURL =
+                    "https://wa.me/26656506092?text=" +
+                    encodeURIComponent(whatsappMessage);
 
-Trainer: Mohau P Mosoeunyane
+                window.open(
+                    whatsappURL,
+                    "_blank",
+                    "noopener,noreferrer"
+                );
+            });
 
-
-Thank you.
-*MSM Training Company*`;
-
-
-    const whatsappURL =
-        "https://wa.me/26656506092?text=" +
-        encodeURIComponent(whatsappMessage);
-
-
-    window.location.href = whatsappURL;
-
-});
-
-</script>
-
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
+        });
+    </script>
 
 </body>
-
 </html>
