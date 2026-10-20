@@ -4,16 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Mafeteng Seminar Tour | MSM Training</title>
-    <meta name="description" content="Join the Mafeteng Seminar Tour with Mohau Mosoeunyane on 18 October 2026. Master your mind, money, business and self.">
+    <title>Mafeteng Seminar 2026 | SOLD OUT | MSM Training</title>
+
+    <meta
+        name="description"
+        content="The MSM Training Company Mafeteng Seminar is sold out. Registration is closed. Contact MSM to enquire about upcoming seminars and workshops."
+    >
+
+    <meta name="theme-color" content="#08083F">
 
     <!-- Bootstrap -->
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    >
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
     <!-- MSM Main Styles -->
     <link rel="stylesheet" href="css/style.css">
@@ -26,14 +36,36 @@
             --poster-white: #FFFFFF;
             --poster-light: #F3F3FA;
             --poster-text: #191939;
+            --sold-out-red: #C62828;
+            --sold-out-light: #FFF0F0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 20px;
         }
 
         body {
             background: var(--poster-navy);
             color: var(--poster-text);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
         }
 
-        /* SEMINAR HEADER */
+        a:focus-visible,
+        button:focus-visible {
+            outline: 3px solid var(--poster-orange);
+            outline-offset: 4px;
+        }
+
+        /* =========================
+           SEMINAR HEADER
+        ========================== */
+
         .seminar-header {
             background: linear-gradient(
                 145deg,
@@ -41,7 +73,7 @@
                 var(--poster-navy)
             );
             color: var(--poster-white);
-            padding: 70px 20px;
+            padding: 65px 20px;
             text-align: center;
             border-bottom: 5px solid var(--poster-orange);
         }
@@ -65,9 +97,111 @@
             padding: 10px 18px;
             border-radius: 4px;
             font-weight: 700;
+            margin-top: 12px;
         }
 
-        /* OFFICIAL POSTER */
+        .brand-name {
+            letter-spacing: 1px;
+        }
+
+        /* =========================
+           SOLD-OUT BADGE
+        ========================== */
+
+        .sold-out-badge {
+            display: inline-block;
+            background: var(--sold-out-red);
+            color: var(--poster-white);
+            padding: 15px 28px;
+            border: 3px solid var(--poster-white);
+            border-radius: 7px;
+            font-size: 1.5rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            line-height: 1.3;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .sold-out-badge small {
+            display: block;
+            font-size: 0.75rem;
+            letter-spacing: 1.5px;
+            margin-top: 5px;
+        }
+
+        .sold-out-notice {
+            max-width: 750px;
+            margin: 25px auto 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.09);
+            border: 2px solid var(--poster-orange);
+            border-radius: 8px;
+        }
+
+        .sold-out-notice strong {
+            color: #FFB27D;
+            font-size: 1.15rem;
+        }
+
+        /* =========================
+           BUTTONS
+        ========================== */
+
+        .btn-future {
+            background: var(--poster-orange);
+            color: var(--poster-white);
+            border: 2px solid var(--poster-orange);
+            font-weight: 800;
+            padding: 13px 24px;
+            border-radius: 5px;
+            white-space: normal;
+            transition: 0.25s ease;
+        }
+
+        .btn-future:hover,
+        .btn-future:focus {
+            background: var(--poster-white);
+            color: var(--poster-blue);
+            border-color: var(--poster-white);
+        }
+
+        .btn-outline-light-custom {
+            background: transparent;
+            color: var(--poster-white);
+            border: 2px solid var(--poster-white);
+            font-weight: 800;
+            padding: 13px 24px;
+            border-radius: 5px;
+        }
+
+        .btn-outline-light-custom:hover,
+        .btn-outline-light-custom:focus {
+            background: var(--poster-white);
+            color: var(--poster-blue);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: var(--poster-white);
+            border: 2px solid #25D366;
+            font-weight: 800;
+            padding: 13px 24px;
+            border-radius: 5px;
+            white-space: normal;
+        }
+
+        .whatsapp-btn:hover,
+        .whatsapp-btn:focus {
+            background: #1DA851;
+            border-color: #1DA851;
+            color: var(--poster-white);
+        }
+
+        /* =========================
+           OFFICIAL POSTER
+        ========================== */
+
         .seminar-poster-section {
             background: var(--poster-navy);
             padding: 40px 15px;
@@ -101,14 +235,17 @@
             max-width: 650px;
             margin: 20px auto;
             padding: 20px;
-            background: #FFFFFF;
+            background: var(--poster-white);
             color: #8B1E1E;
             border: 2px solid var(--poster-orange);
             border-radius: 6px;
             overflow-wrap: anywhere;
         }
 
-        /* MAIN CARD */
+        /* =========================
+           GENERAL CONTENT
+        ========================== */
+
         .seminar-card {
             background: var(--poster-white);
             color: var(--poster-text);
@@ -116,18 +253,32 @@
             border-radius: 10px;
             box-shadow: 0 5px 25px rgba(0, 0, 0, 0.25);
             margin-top: 25px;
-            position: relative;
+            margin-bottom: 40px;
         }
 
-        /* TITLES */
         .register-title {
             color: var(--poster-blue);
             font-weight: 800;
         }
 
-        /* EVENT INFORMATION */
+        .intro-text {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .seminar-info {
-            margin-bottom: 25px;
+            margin: 25px 0;
+            padding: 20px;
+            background: var(--poster-light);
+            border-radius: 8px;
+        }
+
+        .seminar-info p {
+            margin-bottom: 12px;
+        }
+
+        .seminar-info p:last-child {
+            margin-bottom: 0;
         }
 
         .seminar-info i {
@@ -135,20 +286,40 @@
             width: 25px;
         }
 
-        /* EARLY BIRD */
-        .early-bird {
-            background: var(--poster-orange);
-            color: var(--poster-white);
-            padding: 22px;
+        /* =========================
+           SOLD-OUT ANNOUNCEMENT
+        ========================== */
+
+        .sold-out-panel {
+            background: var(--sold-out-light);
+            border: 2px solid #F0B7B7;
+            border-left: 7px solid var(--sold-out-red);
             border-radius: 8px;
-            margin: 25px 0;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
         }
 
-        .early-bird h3 {
-            font-weight: 800;
+        .sold-out-panel h2 {
+            color: var(--sold-out-red);
+            font-weight: 900;
+            margin-bottom: 15px;
         }
 
-        /* PRICE BOXES */
+        .sold-out-panel p:last-child {
+            margin-bottom: 0;
+        }
+
+        .sold-out-icon {
+            font-size: 2.5rem;
+            color: var(--sold-out-red);
+            margin-bottom: 12px;
+        }
+
+        /* =========================
+           PRICES
+        ========================== */
+
         .price-box {
             background: var(--poster-white);
             border: 2px solid var(--poster-blue);
@@ -156,11 +327,13 @@
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 15px;
+            position: relative;
         }
 
         .price-box h5 {
             color: var(--poster-blue);
             font-weight: 800;
+            margin-bottom: 10px;
         }
 
         .price-amount {
@@ -169,7 +342,68 @@
             font-weight: 800;
         }
 
-        /* PAYMENT BOX */
+        .price-status {
+            display: inline-block;
+            background: var(--sold-out-red);
+            color: var(--poster-white);
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            margin-top: 12px;
+        }
+
+        .pricing-note {
+            background: var(--poster-light);
+            border-top: 4px solid var(--poster-orange);
+            border-radius: 6px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        /* =========================
+           FUTURE EVENTS
+        ========================== */
+
+        .future-events-section {
+            background: var(--poster-light);
+            padding: 55px 20px;
+        }
+
+        .future-events-card {
+            max-width: 800px;
+            margin: auto;
+            background: var(--poster-white);
+            border-radius: 10px;
+            padding: 35px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid var(--poster-orange);
+        }
+
+        .future-events-card h2 {
+            color: var(--poster-blue);
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .future-events-card p {
+            margin-bottom: 20px;
+        }
+
+        .future-events-note {
+            background: #FFF5ED;
+            border-left: 5px solid var(--poster-orange);
+            padding: 15px;
+            text-align: left;
+            margin: 25px 0;
+        }
+
+        /* =========================
+           PAYMENT INFORMATION
+        ========================== */
+
         .payment-box {
             background: var(--poster-light);
             color: var(--poster-text);
@@ -180,85 +414,48 @@
             overflow-wrap: anywhere;
         }
 
-        /* REGISTRATION BUTTON */
-        .btn-register {
-            background: var(--poster-blue);
-            color: var(--poster-white);
-            border: 2px solid var(--poster-blue);
+        .payment-box h4 {
+            color: var(--poster-blue);
             font-weight: 800;
-            white-space: normal;
         }
 
-        .btn-register:hover,
-        .btn-register:focus {
-            background: var(--poster-orange);
-            border-color: var(--poster-orange);
-            color: var(--poster-white);
+        .payment-box p:last-child {
+            margin-bottom: 0;
         }
 
-        /* WHATSAPP BUTTON */
-        .whatsapp-btn {
-            background: #25D366;
-            color: var(--poster-white);
-            border: none;
-            font-weight: 700;
-        }
+        /* =========================
+           FOOTER
+        ========================== */
 
-        .whatsapp-btn:hover,
-        .whatsapp-btn:focus {
-            color: var(--poster-white);
-            opacity: 0.9;
-        }
-
-        /* FORM */
-        .form-control {
-            min-height: 45px;
-            border: 1px solid #C9C9DD;
-            border-radius: 5px;
-        }
-
-        .form-control:focus {
-            border-color: var(--poster-blue);
-            box-shadow: 0 0 0 0.2rem rgba(16, 16, 144, 0.15);
-        }
-
-        label {
-            font-weight: 700;
-            color: var(--poster-text);
-        }
-
-        /* HORIZONTAL RULE */
-        .seminar-card hr {
-            border-top: 1px solid #D9D9EA;
-        }
-
-        /* FOOTER */
         footer {
             background: var(--poster-navy);
             color: var(--poster-white);
             padding: 30px 0;
-            margin-top: 50px;
+            margin-top: 0;
             text-align: center;
             border-top: 4px solid var(--poster-orange);
         }
 
         footer p {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
-        /* ACCESSIBILITY */
-        a:focus,
-        button:focus,
-        input:focus,
-        select:focus,
-        textarea:focus {
-            outline-offset: 3px;
+        footer a {
+            color: #FFB27D;
         }
 
-        /* MOBILE */
+        footer a:hover {
+            color: var(--poster-white);
+            text-decoration: underline;
+        }
+
+        /* =========================
+           MOBILE
+        ========================== */
+
         @media (max-width: 576px) {
             .seminar-header {
-                padding: 50px 15px;
+                padding: 45px 15px;
             }
 
             .seminar-header h1 {
@@ -281,12 +478,29 @@
                 padding: 25px 18px;
             }
 
-            .early-bird h3 {
-                font-size: 23px;
+            .sold-out-badge {
+                font-size: 1.2rem;
+                padding: 12px 20px;
             }
 
-            .btn-register {
-                font-size: 15px;
+            .sold-out-notice {
+                padding: 15px;
+            }
+
+            .sold-out-panel {
+                padding: 20px 15px;
+            }
+
+            .future-events-card {
+                padding: 25px 18px;
+            }
+
+            .btn-future,
+            .btn-outline-light-custom,
+            .whatsapp-btn {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
             }
         }
     </style>
@@ -294,13 +508,22 @@
 
 <body>
 
-<!-- SEMINAR HEADER -->
-<section class="seminar-header">
+<!-- =========================
+     SEMINAR HEADER
+========================== -->
+
+<header class="seminar-header">
     <div class="container">
 
-        <p class="text-uppercase font-weight-bold mb-2">
+        <p class="text-uppercase font-weight-bold mb-3 brand-name">
             Mohau and the Success Masters
         </p>
+
+        <div class="sold-out-badge" role="status">
+            <i class="fa-solid fa-circle-check mr-2"></i>
+            SOLD OUT!
+            <small>REGISTRATION CLOSED</small>
+        </div>
 
         <h1>Success Mafeteng Seminar</h1>
 
@@ -315,10 +538,42 @@
             12:00 PM – 5:00 PM
         </p>
 
-    </div>
-</section>
+        <div class="sold-out-notice">
+            <strong>
+                THANK YOU, MAFETENG!
+            </strong>
 
-<!-- OFFICIAL MAFETENG POSTER -->
+            <p class="mt-2 mb-0">
+                All places for this seminar have been filled.
+                Registration is now officially closed.
+            </p>
+        </div>
+
+        <div class="mt-4">
+            <a
+                href="#future-events"
+                class="btn btn-future mr-2"
+            >
+                <i class="fa-solid fa-calendar-check mr-2"></i>
+                ENQUIRE ABOUT FUTURE EVENTS
+            </a>
+
+            <a
+                href="#seminar-details"
+                class="btn btn-outline-light-custom"
+            >
+                VIEW SEMINAR DETAILS
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- =========================
+     OFFICIAL MAFETENG POSTER
+========================== -->
+
 <section class="seminar-poster-section">
     <div class="container">
 
@@ -326,27 +581,23 @@
             OFFICIAL MAFETENG SEMINAR POSTER
         </h2>
 
-        <!--
-            IMAGE LOCATION:
-            images/correct mafeteng.jpeg
-
-            If the image is beside this HTML file instead,
-            change the src to ./correct%20mafeteng.jpeg
-        -->
         <img
             src="images/correct%20mafeteng.jpeg"
-            alt="Official Success Mafeteng Seminar poster"
+            alt="Official Success Mafeteng Seminar 2026 poster"
             class="mafeteng-poster"
             id="mafetengPoster"
         >
 
         <div id="posterError" class="poster-error" hidden>
             <strong>The poster image could not be loaded.</strong>
+
             <p class="mb-2">
                 Please check that the image has been uploaded to GitHub
-                and that its name and folder match the path below:
+                and that its filename and folder match the path below:
             </p>
+
             <code>images/correct mafeteng.jpeg</code>
+
             <p class="mt-2 mb-0">
                 The filename must match exactly, including spaces,
                 capital letters and the .jpeg extension.
@@ -354,43 +605,74 @@
         </div>
 
         <p class="poster-caption">
-            Join us in Mafeteng for a practical learning experience
-            focused on your mind, money, business and self.
+            The Mafeteng Seminar is sold out.
+            Thank you to everyone who showed interest and support.
         </p>
 
     </div>
 </section>
 
-<!-- MAIN CONTENT -->
-<section class="container">
+
+<!-- =========================
+     MAIN SEMINAR INFORMATION
+========================== -->
+
+<section class="container" id="seminar-details">
+
     <div class="seminar-card">
 
-        <!-- INTRODUCTION -->
         <div class="text-center mb-4">
+
             <h2 class="register-title">
-                Register for the Mafeteng Seminar
+                Mafeteng Seminar 2026
             </h2>
 
-            <p class="mt-3">
-                <strong style="color: #F26B21;">
-                    Early Bird: M300
-                </strong>
+            <p class="intro-text mt-3">
+                The Success Mafeteng Seminar was designed to encourage
+                personal development and help participants think
+                differently about their minds, money, business and
+                personal growth.
             </p>
 
-            <p>
-                Bring another person FREE!
-                <br>
-                <strong>Limited to the first 20 registrations.</strong>
-            </p>
-
-            <p>
-                Come ready to learn, ask questions, connect and work
-                on your next level.
-            </p>
         </div>
 
-        <!-- EVENT INFORMATION -->
+
+        <!-- SOLD-OUT NOTICE -->
+
+        <div class="sold-out-panel">
+
+            <div class="sold-out-icon" aria-hidden="true">
+                <i class="fa-solid fa-ticket"></i>
+            </div>
+
+            <h2>SEMINAR SOLD OUT!</h2>
+
+            <p>
+                <strong>Registration is officially closed.</strong>
+            </p>
+
+            <p>
+                We appreciate everyone who supported this event.
+                No new bookings are being accepted for the Mafeteng
+                Seminar.
+            </p>
+
+            <p>
+                If you missed this one, contact MSM to enquire about
+                upcoming seminars and workshops.
+            </p>
+
+        </div>
+
+
+        <!-- EVENT DETAILS -->
+
+        <h4 class="register-title mt-4 mb-3">
+            Event Information
+        </h4>
+
         <div class="seminar-info">
+
             <p>
                 <i class="fa-solid fa-location-dot"></i>
                 <strong>Location:</strong> Mafeteng, Lesotho
@@ -410,224 +692,197 @@
                 <i class="fa-solid fa-user-tie"></i>
                 <strong>Facilitator:</strong> Mohau Mosoeunyane
             </p>
-        </div>
 
-        <!-- EARLY BIRD -->
-        <div class="early-bird text-center">
-            <h3>
-                <i class="fa-solid fa-fire mr-2"></i>
-                EARLY BIRD – M300
-            </h3>
-
-            <p class="mb-2">
-                Bring another person FREE!
+            <p>
+                <i class="fa-solid fa-circle-xmark"></i>
+                <strong>Registration Status:</strong>
+                <span style="color: #C62828; font-weight: 900;">
+                    SOLD OUT
+                </span>
             </p>
 
-            <strong>
-                Limited to the first 20 registrations.
-            </strong>
-
-            <p class="mb-0 mt-2">
-                Contact us to confirm remaining early-bird places.
-            </p>
         </div>
 
-        <!-- REGISTRATION OPTIONS -->
+
+        <!-- SEMINAR TOPICS -->
+
         <h4 class="register-title mt-4 mb-3">
-            Registration Options
+            What Was the Seminar About?
         </h4>
 
         <div class="price-box">
-            <h5>Early Bird</h5>
+
+            <h5>
+                <i class="fa-solid fa-brain mr-2"></i>
+                Master Your Mind
+            </h5>
+
             <p class="mb-0">
-                <span class="price-amount">M300</span> per registration
-                <br>
-                <strong>Bring another person FREE!</strong>
-                <br>
-                <small>Limited to the first 20 registrations.</small>
+                Explore mindset, personal beliefs and the importance
+                of developing a stronger attitude towards growth.
             </p>
+
         </div>
 
         <div class="price-box">
-            <h5>Individual</h5>
+
+            <h5>
+                <i class="fa-solid fa-coins mr-2"></i>
+                Master Your Money
+            </h5>
+
             <p class="mb-0">
-                <span class="price-amount">M350</span> per person
+                Reflect on financial habits, money management
+                and making more informed financial decisions.
             </p>
+
         </div>
 
         <div class="price-box">
-            <h5>A Pair</h5>
+
+            <h5>
+                <i class="fa-solid fa-chart-line mr-2"></i>
+                Master Your Business
+            </h5>
+
             <p class="mb-0">
-                <span class="price-amount">M500</span> for two people
+                Explore business thinking, opportunities, value
+                creation and taking practical action.
             </p>
+
         </div>
 
         <div class="price-box">
-            <h5>Group of 5</h5>
+
+            <h5>
+                <i class="fa-solid fa-person-circle-check mr-2"></i>
+                Master Yourself
+            </h5>
+
             <p class="mb-0">
-                <span class="price-amount">M1,000</span>
+                Focus on discipline, personal responsibility
+                and taking steps towards your goals.
             </p>
+
         </div>
+
 
         <hr class="my-5">
 
-        <!-- REGISTRATION FORM -->
-        <h4 class="register-title mb-4">
-            Registration Form
+
+        <!-- PRICING REFERENCE -->
+
+        <h4 class="register-title mb-3">
+            Original Registration Options
         </h4>
 
-        <form id="mafetengForm">
+        <p>
+            The prices below are retained for reference only.
+            They are no longer available because this seminar is sold out.
+        </p>
 
-            <div class="form-group">
-                <label for="mafeteng-name">Full Name *</label>
-                <input
-                    type="text"
-                    id="mafeteng-name"
-                    name="name"
-                    class="form-control"
-                    placeholder="Enter your full name"
-                    autocomplete="name"
-                    required
-                >
-            </div>
 
-            <div class="form-group">
-                <label for="mafeteng-phone">
-                    Phone / WhatsApp Number *
-                </label>
-                <input
-                    type="tel"
-                    id="mafeteng-phone"
-                    name="phone"
-                    class="form-control"
-                    placeholder="e.g. 62123456"
-                    autocomplete="tel"
-                    required
-                >
-            </div>
+        <div class="price-box">
 
-            <div class="form-group">
-                <label for="mafeteng-email">Email Address</label>
-                <input
-                    type="email"
-                    id="mafeteng-email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Enter your email address"
-                    autocomplete="email"
-                >
-            </div>
+            <h5>
+                <i class="fa-solid fa-fire mr-2"></i>
+                Early Bird
+            </h5>
 
-            <div class="form-group">
-                <label for="mafeteng-option">
-                    Registration Option *
-                </label>
-
-                <select
-                    id="mafeteng-option"
-                    name="option"
-                    class="form-control"
-                    required
-                >
-                    <option value="">
-                        -- Select a registration option --
-                    </option>
-                    <option value="Early Bird M300 - bring another person free">
-                        Early Bird – M300 (bring another person free)
-                    </option>
-                    <option value="Individual M350">
-                        Individual – M350
-                    </option>
-                    <option value="Pair M500">
-                        Pair – M500
-                    </option>
-                    <option value="Group of 5 M1000">
-                        Group of 5 – M1,000
-                    </option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="mafeteng-people">Number of People *</label>
-                <input
-                    type="number"
-                    id="mafeteng-people"
-                    name="people"
-                    class="form-control"
-                    min="1"
-                    max="20"
-                    value="1"
-                    required
-                >
-            </div>
-
-            <div class="form-group">
-                <label for="mafeteng-second-person">
-                    Name of Person You Are Bringing
-                    <small>(if applicable)</small>
-                </label>
-                <input
-                    type="text"
-                    id="mafeteng-second-person"
-                    name="secondPerson"
-                    class="form-control"
-                    placeholder="Enter name if bringing another person"
-                >
-            </div>
-
-            <div class="form-group">
-                <label for="mafeteng-payment">Payment Status *</label>
-                <select
-                    id="mafeteng-payment"
-                    name="payment"
-                    class="form-control"
-                    required
-                >
-                    <option value="">
-                        -- Select payment status --
-                    </option>
-                    <option value="I have paid">I have paid</option>
-                    <option value="I will pay">I will pay</option>
-                    <option value="I need payment information">
-                        I need payment information
-                    </option>
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="mafeteng-message">
-                    Message / Special Request
-                </label>
-                <textarea
-                    id="mafeteng-message"
-                    name="message"
-                    class="form-control"
-                    rows="4"
-                    placeholder="Any questions or special requests?"
-                ></textarea>
-            </div>
-
-            <div class="form-group">
-                <button
-                    type="submit"
-                    class="btn btn-register btn-lg btn-block"
-                >
-                    <i class="fa-brands fa-whatsapp mr-2"></i>
-                    REGISTER VIA WHATSAPP
-                </button>
-            </div>
-
-            <p class="text-center text-muted mt-3">
-                Your registration details will be prepared in WhatsApp
-                for confirmation. Submitting this form opens WhatsApp;
-                it does not automatically confirm your booking.
+            <p class="mb-0">
+                <span class="price-amount">M300</span>
+                <br>
+                Bring another person free.
+                <br>
+                <small>Originally limited to the first 20 registrations.</small>
             </p>
 
-        </form>
+            <span class="price-status">
+                SOLD OUT
+            </span>
 
-        <!-- PAYMENT DETAILS -->
+        </div>
+
+
+        <div class="price-box">
+
+            <h5>Individual</h5>
+
+            <p class="mb-0">
+                <span class="price-amount">M350</span>
+                per person
+            </p>
+
+            <span class="price-status">
+                SOLD OUT
+            </span>
+
+        </div>
+
+
+        <div class="price-box">
+
+            <h5>A Pair</h5>
+
+            <p class="mb-0">
+                <span class="price-amount">M500</span>
+                for two people
+            </p>
+
+            <span class="price-status">
+                SOLD OUT
+            </span>
+
+        </div>
+
+
+        <div class="price-box">
+
+            <h5>Group of 5</h5>
+
+            <p class="mb-0">
+                <span class="price-amount">M1,000</span>
+            </p>
+
+            <span class="price-status">
+                SOLD OUT
+            </span>
+
+        </div>
+
+
+        <div class="pricing-note">
+
+            <h5 class="register-title">
+                <i class="fa-solid fa-circle-info mr-2"></i>
+                Please Note
+            </h5>
+
+            <p class="mb-0">
+                These are the original advertised prices for the
+                Mafeteng Seminar. They are displayed for information
+                only. Please contact MSM for details about future
+                events, including their dates, venues and prices.
+            </p>
+
+        </div>
+
+
+        <!-- PAYMENT INFORMATION REFERENCE -->
+
         <div class="payment-box">
-            <h4 class="register-title">Payment Details</h4>
+
+            <h4>
+                Original Payment Information
+            </h4>
+
+            <p class="text-muted">
+                The following payment details are retained from
+                the original event information. This seminar is
+                sold out, and no new payments should be made for
+                bookings on this page.
+            </p>
+
             <hr>
 
             <p>
@@ -649,136 +904,239 @@
             </p>
 
             <p class="mb-0">
-                After making payment, please keep your proof of payment.
-                Contact the team if you need help confirming payment.
+                For enquiries about future events, contact MSM directly.
+                Please confirm the correct payment details for any
+                future event before making a payment.
             </p>
+
         </div>
 
-        <!-- WHATSAPP CONTACT -->
-        <div class="text-center mt-4">
-            <p>Need help with registration?</p>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FUTURE EVENTS
+========================== -->
+
+<section class="future-events-section" id="future-events">
+
+    <div class="container">
+
+        <div class="future-events-card">
+
+            <h2>
+                Missed Mafeteng? Stay Connected!
+            </h2>
+
+            <p>
+                The Mafeteng Seminar is sold out, but there will be
+                more opportunities to learn, grow and connect.
+            </p>
+
+            <p>
+                Contact MSM Training Company to enquire about upcoming
+                seminars, workshops and future events.
+            </p>
+
+            <div class="future-events-note">
+
+                <strong>
+                    Please note:
+                </strong>
+
+                <p class="mb-0 mt-2">
+                    This page is no longer accepting registrations
+                    or payments for the Mafeteng Seminar. The WhatsApp
+                    button below is for future-event enquiries only.
+                </p>
+
+            </div>
 
             <a
-                href="https://wa.me/26656506092"
+                href="https://wa.me/26656506092?text=Hello%20MSM%20Training%20Company.%20I%20saw%20that%20the%20Mafeteng%20Seminar%20is%20sold%20out.%20Please%20share%20information%20about%20your%20upcoming%20seminars%20and%20workshops."
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn whatsapp-btn"
             >
                 <i class="fa-brands fa-whatsapp mr-2"></i>
-                WhatsApp Us
+                ENQUIRE ABOUT FUTURE EVENTS
             </a>
 
-            <p class="mt-3 mb-0">
-                Call / WhatsApp:
-                <br>
-                <strong>+266 5650 6092</strong>
-                <br>
-                <strong>+266 6206 2250</strong>
-                <br>
-                <strong>+27 78 776 7772</strong>
-            </p>
+            <div class="mt-4">
+
+                <p class="mb-2">
+                    <strong>WhatsApp:</strong>
+                    +266 5650 6092
+                </p>
+
+                <p class="mb-2">
+                    <strong>Additional contact numbers:</strong>
+                </p>
+
+                <p class="mb-1">
+                    +266 6206 2250
+                </p>
+
+                <p class="mb-0">
+                    +27 78 776 7772
+                </p>
+
+            </div>
+
         </div>
 
     </div>
+
 </section>
 
-<!-- FOOTER -->
-<footer>
+
+<!-- =========================
+     FINAL CALL TO ACTION
+========================== -->
+
+<section
+    style="
+        background: #F26B21;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 50px 20px;
+    "
+>
+
     <div class="container">
-        <p class="mb-1">
-            © 2026 Mohau and the Success Masters.
-            All Rights Reserved.
+
+        <h2 class="font-weight-bold mb-3">
+            MAFETENG SEMINAR — SOLD OUT!
+        </h2>
+
+        <p>
+            Thank you for your interest and support.
+            Stay connected with MSM so you do not miss the next event.
         </p>
 
-        <p class="mb-0 font-weight-bold">
+        <a
+            href="https://wa.me/26656506092?text=Hello%20MSM.%20Please%20keep%20me%20informed%20about%20your%20upcoming%20seminars%20and%20workshops."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline-light-custom"
+        >
+            <i class="fa-brands fa-whatsapp mr-2"></i>
+            ASK ABOUT UPCOMING SEMINARS
+        </a>
+
+        <p class="mt-4 mb-0">
+            <a
+                href="https://msmtrainingls.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                style="color: #FFFFFF; font-weight: 800;"
+            >
+                Visit msmtrainingls.com
+            </a>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="container">
+
+        <p class="font-weight-bold mb-2">
+            Mohau and the Success Masters Motivation &amp;
+            Training Company and Counselling Services
+        </p>
+
+        <p class="font-weight-bold">
             SUCCESS IS A CHOICE!
         </p>
+
+        <p>
+            WhatsApp:
+            <a
+                href="https://wa.me/26656506092"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                +266 5650 6092
+            </a>
+        </p>
+
+        <p>
+            Website:
+            <a
+                href="https://msmtrainingls.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                msmtrainingls.com
+            </a>
+        </p>
+
+        <p class="mb-0">
+            &copy; <span id="currentYear">2026</span>
+            MSM Training Company. All Rights Reserved.
+        </p>
+
     </div>
+
 </footer>
 
-<!-- POSTER IMAGE ERROR CHECK -->
+
+<!-- =========================
+     JAVASCRIPT
+========================== -->
+
 <script>
-(function () {
-    const poster = document.getElementById("mafetengPoster");
-    const errorMessage = document.getElementById("posterError");
+    document.addEventListener("DOMContentLoaded", function () {
 
-    if (poster && errorMessage) {
-        poster.addEventListener("error", function () {
-            poster.hidden = true;
-            errorMessage.hidden = false;
-        });
+        // Update the footer year automatically.
+        const yearElement = document.getElementById("currentYear");
 
-        poster.addEventListener("load", function () {
-            poster.hidden = false;
-            errorMessage.hidden = true;
-        });
-
-        // Also check if the image failed before the event listener was added.
-        if (poster.complete && poster.naturalWidth === 0) {
-            poster.hidden = true;
-            errorMessage.hidden = false;
-        }
-    }
-})();
-</script>
-
-<!-- WHATSAPP REGISTRATION SCRIPT -->
-<script>
-(function () {
-    const form = document.getElementById("mafetengForm");
-
-    if (!form) {
-        return;
-    }
-
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        if (!form.checkValidity()) {
-            form.reportValidity();
-            return;
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
         }
 
-        const name = document.getElementById("mafeteng-name").value.trim();
-        const phone = document.getElementById("mafeteng-phone").value.trim();
-        const email = document.getElementById("mafeteng-email").value.trim();
-        const option = document.getElementById("mafeteng-option").value;
-        const people = document.getElementById("mafeteng-people").value;
-        const secondPerson = document.getElementById("mafeteng-second-person").value.trim();
-        const payment = document.getElementById("mafeteng-payment").value;
-        const message = document.getElementById("mafeteng-message").value.trim();
+        // Check whether the official Mafeteng poster exists.
+        const poster = document.getElementById("mafetengPoster");
+        const posterError = document.getElementById("posterError");
 
-        const whatsappMessage =
-`*MAFETENG SEMINAR REGISTRATION*
+        if (poster && posterError) {
 
-*Full Name:* ${name}
-*Phone / WhatsApp:* ${phone}
-*Email:* ${email || "Not provided"}
-*Registration Option:* ${option}
-*Number of People:* ${people}
-*Person Bringing:* ${secondPerson || "None"}
-*Payment Status:* ${payment}
+            function checkPoster() {
+                if (poster.naturalWidth === 0) {
+                    poster.hidden = true;
+                    posterError.hidden = false;
+                } else {
+                    poster.hidden = false;
+                    posterError.hidden = true;
+                }
+            }
 
-*Message / Special Request:*
-${message || "None"}
+            poster.addEventListener("error", function () {
+                poster.hidden = true;
+                posterError.hidden = false;
+            });
 
-*EVENT DETAILS*
-*Event:* Success Mafeteng Seminar
-*Topic:* How to Master Your Mind, Money, Business and Self
-*Facilitator:* Mohau Mosoeunyane
-*Date:* 18 October 2026
-*Time:* 12:00 PM – 5:00 PM
-*Location:* Mafeteng, Lesotho
+            poster.addEventListener("load", checkPoster);
 
-I would like to register for the Mafeteng Seminar.`;
+            if (poster.complete) {
+                checkPoster();
+            }
+        }
 
-        const whatsappURL =
-            "https://wa.me/26656506092?text=" +
-            encodeURIComponent(whatsappMessage);
+        // Registration form and registration submission have been removed.
+        // WhatsApp links are exclusively for future-event enquiries.
 
-        window.location.href = whatsappURL;
     });
-})();
 </script>
 
 </body>
