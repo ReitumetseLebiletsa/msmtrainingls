@@ -2,1478 +2,816 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Join MSM Training Company and Counselling Services for the Mokhotlong seminar on mindset, personal development, money and business growth."
-    >
+    <title>Mokhotlong Seminar Tour 2026 | MSM Training Company</title>
+    <meta name="description" content="Register for the MSM Training Company Mokhotlong Seminar Tour on 7 November 2026. Success is a choice.">
 
-    <meta
-        name="theme-color"
-        content="#0B3D2E"
-    >
+    <link rel="icon" href="images/mohau.png" type="image/png">
 
-    <title>Mokhotlong Seminar | MSM Training Company</title>
-
-    <!-- Bootstrap 4 -->
-    <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    >
-
-    <!-- Font Awesome -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
-        /* =====================================================
-           MSM MOKHOTLONG SEMINAR
-           Brand colours:
-           Forest Green: #0B3D2E
-           Lime Green:   #7CB342
-           White:        #FFFFFF
-           Light Grey:   #F8F9FA
-        ===================================================== */
-
         :root {
-            --msm-green: #0B3D2E;
-            --msm-lime: #7CB342;
-            --msm-white: #FFFFFF;
-            --msm-light: #F8F9FA;
-            --msm-text: #26352C;
-            --msm-muted: #66756C;
-            --msm-border: #DCE7DC;
-            --msm-whatsapp: #25D366;
+            --primary: #101090;
+            --dark: #08083F;
+            --orange: #F26B21;
+            --white: #FFFFFF;
+            --light: #F5F5FC;
+            --text: #252542;
+            --muted: #686880;
+            --border: #E0E0EF;
+            --whatsapp: #25D366;
         }
 
-        * {
-            box-sizing: border-box;
-        }
+        * { box-sizing: border-box; }
 
-        html {
-            scroll-behavior: smooth;
-            scroll-padding-top: 90px;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             margin: 0;
-            padding: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: var(--msm-light);
-            color: var(--msm-text);
             line-height: 1.7;
+            color: var(--text);
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
+        a { text-decoration: none; }
+
+        .navbar {
+            background: var(--dark);
+            padding: 12px 0;
         }
 
-        a {
-            transition: all 0.25s ease;
-        }
-
-        a:hover {
-            text-decoration: none;
-        }
-
-        /* =====================================================
-           NAVIGATION
-        ===================================================== */
-
-        .msm-navbar {
-            background: var(--msm-green);
-            padding: 14px 0;
-            border-bottom: 4px solid var(--msm-lime);
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
-        }
-
-        .msm-navbar .navbar-brand {
-            color: var(--msm-white);
-            font-size: 19px;
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            color: var(--white) !important;
             font-weight: 800;
-            line-height: 1.3;
-            white-space: normal;
+            font-size: 15px;
         }
 
-        .msm-navbar .navbar-brand:hover {
-            color: var(--msm-lime);
+        .navbar-brand img {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            margin-right: 10px;
+            padding: 3px;
+            background: white;
+            border-radius: 50%;
         }
 
-        .brand-small {
-            display: block;
-            color: #E4F0E0;
-            font-size: 11px;
-            font-weight: normal;
-            letter-spacing: 1px;
-            margin-top: 3px;
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 600;
+            margin-left: 10px;
         }
 
-        .msm-navbar .nav-link {
-            color: var(--msm-white) !important;
-            font-size: 14px;
-            font-weight: 700;
-            margin-left: 8px;
-        }
+        .navbar-nav .nav-link:hover { color: var(--orange) !important; }
 
-        .msm-navbar .nav-link:hover {
-            color: var(--msm-lime) !important;
-        }
+        .navbar-toggler { border: 1px solid white; }
 
-        .navbar-toggler {
-            border: 1px solid rgba(255, 255, 255, 0.6);
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
-
-        .navbar-toggler:focus {
-            outline: 2px solid var(--msm-lime);
-        }
-
-        .register-nav {
-            display: inline-block;
-            background: var(--msm-lime);
-            color: var(--msm-white) !important;
-            padding: 9px 17px !important;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .register-nav:hover {
-            background: var(--msm-white);
-            color: var(--msm-green) !important;
-        }
-
-        /* =====================================================
-           HERO SECTION
-        ===================================================== */
 
         .hero {
-            position: relative;
+            padding: 90px 0;
+            min-height: 570px;
+            display: flex;
+            align-items: center;
+            color: white;
             background:
-                linear-gradient(
-                    115deg,
-                    rgba(11, 61, 46, 0.97),
-                    rgba(11, 61, 46, 0.86)
-                );
-            color: var(--msm-white);
-            padding: 75px 0;
-            overflow: hidden;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            right: -100px;
-            bottom: -160px;
-            border: 35px solid rgba(124, 179, 66, 0.18);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
+                linear-gradient(90deg, rgba(8,8,63,.97), rgba(16,16,144,.82)),
+                url("images/MOKHO.jpeg") center/cover no-repeat;
         }
 
         .hero-label {
             display: inline-block;
-            background: var(--msm-lime);
-            color: var(--msm-white);
-            padding: 7px 14px;
-            border-radius: 4px;
-            font-size: 12px;
+            padding: 7px 15px;
+            border-radius: 30px;
+            background: var(--orange);
+            color: white;
+            font-size: 13px;
             font-weight: 800;
-            letter-spacing: 1.3px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 18px;
         }
 
         .hero h1 {
-            color: var(--msm-white);
-            font-size: 46px;
-            line-height: 1.15;
+            font-size: clamp(36px, 5vw, 62px);
             font-weight: 900;
-            margin-bottom: 20px;
+            line-height: 1.12;
         }
 
-        .hero h1 span {
-            color: var(--msm-lime);
-        }
+        .hero h1 span { color: var(--orange); }
 
-        .hero-description {
-            color: #E7EFE8;
-            font-size: 17px;
-            max-width: 620px;
-            margin-bottom: 25px;
+        .hero p {
+            max-width: 650px;
+            color: rgba(255,255,255,.92);
+            font-size: 18px;
+            margin: 20px 0;
         }
 
         .hero-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
             margin: 25px 0;
         }
 
         .hero-detail {
-            display: inline-block;
-            margin: 0 18px 10px 0;
-            font-size: 14px;
+            padding: 10px 15px;
+            background: rgba(255,255,255,.12);
+            border: 1px solid rgba(255,255,255,.25);
+            border-radius: 7px;
             font-weight: 700;
         }
 
         .hero-detail i {
-            color: var(--msm-lime);
+            color: var(--orange);
             margin-right: 7px;
         }
 
-        .hero-image-wrap {
-            background: var(--msm-white);
-            padding: 8px;
-            border-radius: 12px;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
-        }
-
-        .hero-image {
-            display: block;
-            width: 100%;
-            height: auto;
-            max-height: 560px;
-            object-fit: contain;
-            border-radius: 7px;
-        }
-
-        /* =====================================================
-           BUTTONS
-        ===================================================== */
-
-        .btn-msm {
+        .btn-orange {
             display: inline-block;
-            background: var(--msm-lime);
-            color: var(--msm-white);
-            border: 2px solid var(--msm-lime);
-            border-radius: 5px;
-            padding: 13px 23px;
-            font-size: 14px;
-            font-weight: 800;
-            text-align: center;
-            transition: all 0.25s ease;
-        }
-
-        .btn-msm:hover {
-            background: var(--msm-white);
-            border-color: var(--msm-white);
-            color: var(--msm-green);
-            transform: translateY(-2px);
-        }
-
-        .btn-outline-msm {
-            display: inline-block;
-            background: transparent;
-            color: var(--msm-white);
-            border: 2px solid var(--msm-white);
-            border-radius: 5px;
-            padding: 13px 23px;
-            font-size: 14px;
-            font-weight: 800;
-            text-align: center;
-            margin-left: 8px;
-        }
-
-        .btn-outline-msm:hover {
-            background: var(--msm-white);
-            color: var(--msm-green);
-        }
-
-        .btn-whatsapp {
-            display: inline-block;
-            background: var(--msm-whatsapp);
-            color: #FFFFFF;
-            border: 2px solid var(--msm-whatsapp);
-            border-radius: 5px;
             padding: 13px 22px;
+            border-radius: 6px;
+            border: 2px solid var(--orange);
+            background: var(--orange);
+            color: white;
             font-weight: 800;
-            text-align: center;
+            cursor: pointer;
+            transition: .2s;
         }
 
-        .btn-whatsapp:hover {
-            background: #1EBE5D;
-            border-color: #1EBE5D;
-            color: #FFFFFF;
-            transform: translateY(-2px);
+        .btn-orange:hover {
+            background: #D95712;
+            border-color: #D95712;
+            color: white;
         }
 
-        /* =====================================================
-           GENERAL SECTIONS
-        ===================================================== */
-
-        .section {
-            padding: 70px 0;
+        .btn-outline-white {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 13px 22px;
+            border: 2px solid white;
+            border-radius: 6px;
+            color: white;
+            font-weight: 800;
         }
 
-        .section-white {
-            background: var(--msm-white);
+        .btn-outline-white:hover {
+            color: var(--dark);
+            background: white;
+        }
+
+        .section { padding: 75px 0; }
+
+        .section-light { background: var(--light); }
+
+        .section-dark {
+            background: var(--dark);
+            color: white;
         }
 
         .section-heading {
-            color: var(--msm-green);
-            font-size: 32px;
+            color: var(--dark);
+            font-size: clamp(28px, 4vw, 40px);
             font-weight: 900;
-            line-height: 1.25;
-            margin-bottom: 15px;
+            line-height: 1.2;
         }
 
-        .section-subheading {
-            color: var(--msm-muted);
-            max-width: 720px;
-            margin: 0 auto 35px;
-            font-size: 16px;
-        }
+        .section-dark .section-heading { color: white; }
 
-        .heading-line {
-            width: 65px;
+        .accent-line {
+            width: 68px;
             height: 5px;
-            background: var(--msm-lime);
+            background: var(--orange);
             border-radius: 5px;
-            margin: 0 0 25px;
+            margin: 18px 0 25px;
         }
 
-        .heading-line.centered {
-            margin: 0 auto 25px;
-        }
+        .center-line { margin-left: auto; margin-right: auto; }
 
         .section-intro {
-            color: var(--msm-muted);
-            font-size: 16px;
+            max-width: 760px;
+            margin: 0 auto 40px;
+            color: var(--muted);
         }
 
-        /* =====================================================
-           EVENT DETAILS
-        ===================================================== */
+        .section-dark .section-intro { color: rgba(255,255,255,.8); }
 
         .event-card {
-            background: var(--msm-white);
             height: 100%;
-            padding: 28px 22px;
-            border: 1px solid var(--msm-border);
-            border-radius: 9px;
-            box-shadow: 0 5px 20px rgba(11, 61, 46, 0.06);
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
-        }
-
-        .event-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 28px rgba(11, 61, 46, 0.12);
+            padding: 28px;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 8px 25px rgba(8,8,63,.06);
         }
 
         .event-icon {
-            width: 58px;
-            height: 58px;
             display: flex;
+            width: 56px;
+            height: 56px;
             align-items: center;
             justify-content: center;
-            background: #E8F2DF;
-            color: var(--msm-green);
-            border-radius: 50%;
+            border-radius: 12px;
+            background: var(--primary);
+            color: white;
             font-size: 23px;
             margin-bottom: 18px;
         }
 
         .event-card h3 {
-            color: var(--msm-green);
-            font-size: 19px;
+            color: var(--dark);
+            font-size: 20px;
             font-weight: 800;
-            margin-bottom: 10px;
         }
 
-        .event-card p {
-            color: var(--msm-muted);
-            margin-bottom: 0;
-            font-size: 14px;
-        }
+        .event-card p { color: var(--muted); margin-bottom: 0; }
 
-        /* =====================================================
-           SEMINAR TOPICS
-        ===================================================== */
-
-        .topic-list {
-            list-style: none;
-            padding: 0;
-            margin: 25px 0;
-        }
+        .topic-list { list-style: none; padding: 0; }
 
         .topic-list li {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 15px;
-            color: var(--msm-text);
+            padding: 11px 0;
+            border-bottom: 1px solid rgba(255,255,255,.15);
         }
 
         .topic-list i {
-            color: var(--msm-lime);
-            font-size: 18px;
-            margin-right: 12px;
-            margin-top: 4px;
+            color: var(--orange);
+            margin-right: 9px;
         }
 
-        .topic-box {
-            height: 100%;
-            background: #F1F7EC;
-            border-left: 5px solid var(--msm-lime);
-            border-radius: 7px;
-            padding: 28px;
+        .topic-image {
+            width: 100%;
+            min-height: 280px;
+            object-fit: cover;
+            border-radius: 12px;
         }
 
-        .topic-box h3 {
-            color: var(--msm-green);
-            font-size: 23px;
-            font-weight: 900;
-            margin-bottom: 15px;
-        }
-
-        .topic-box p {
-            color: var(--msm-muted);
-        }
-
-        /* =====================================================
-           MOTIVATIONAL BANNER
-        ===================================================== */
-
-        .banner {
-            background: var(--msm-green);
-            color: var(--msm-white);
+        .highlight-banner {
             padding: 55px 20px;
             text-align: center;
+            background: linear-gradient(120deg, var(--primary), var(--dark));
+            color: white;
+            border-top: 5px solid var(--orange);
+            border-bottom: 5px solid var(--orange);
         }
 
-        .banner h2 {
-            color: var(--msm-white);
-            font-size: 32px;
+        .highlight-banner h2 {
+            font-size: clamp(28px, 4vw, 42px);
             font-weight: 900;
-            margin-bottom: 15px;
         }
 
-        .banner h2 span {
-            color: var(--msm-lime);
+        .highlight-banner p {
+            max-width: 750px;
+            margin: 18px auto 25px;
+            color: rgba(255,255,255,.88);
         }
 
-        .banner p {
-            color: #E4F0E0;
-            max-width: 760px;
-            margin: 0 auto 25px;
-        }
-
-        /* =====================================================
-           REGISTRATION SECTION
-        ===================================================== */
-
+        /* Registration form */
         .registration-section {
-            background: #F1F7EC;
-            padding: 70px 0;
+            background: var(--light);
         }
 
         .registration-card {
-            background: var(--msm-white);
-            border-radius: 12px;
-            padding: 38px;
-            border-top: 6px solid var(--msm-lime);
-            box-shadow: 0 8px 30px rgba(11, 61, 46, 0.09);
+            background: white;
+            border: 1px solid var(--border);
+            border-top: 7px solid var(--orange);
+            border-radius: 14px;
+            padding: 35px;
+            box-shadow: 0 12px 35px rgba(8,8,63,.1);
         }
 
         .registration-card h2 {
-            color: var(--msm-green);
-            font-size: 30px;
+            color: var(--dark);
             font-weight: 900;
-            margin-bottom: 15px;
         }
 
-        .registration-card p {
-            color: var(--msm-muted);
+        .form-description { color: var(--muted); }
+
+        .form-group label {
+            display: block;
+            color: var(--dark);
+            font-weight: 700;
+            margin-bottom: 7px;
         }
 
-        .registration-note {
-            background: #E8F2DF;
-            color: var(--msm-green);
+        .form-control {
+            min-height: 48px;
+            border: 1px solid #D5D5E7;
             border-radius: 6px;
-            padding: 14px 16px;
-            margin: 20px 0;
+            padding: 10px 12px;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 .2rem rgba(16,16,144,.12);
+        }
+
+        textarea.form-control { min-height: 100px; }
+
+        .form-note {
+            padding: 13px 15px;
+            background: #FFF1E8;
+            color: #83380E;
+            border-radius: 7px;
             font-size: 14px;
         }
 
-        .registration-note i {
-            color: var(--msm-lime);
-            margin-right: 8px;
+        .registration-contact {
+            margin-top: 20px;
+            color: var(--muted);
+            font-size: 14px;
         }
 
-        /* =====================================================
-           ABOUT MSM
-        ===================================================== */
+        .about-text { color: var(--muted); }
 
-        .about-card {
-            background: var(--msm-white);
-            border: 1px solid var(--msm-border);
-            border-radius: 9px;
-            padding: 28px;
+        .about-logo {
+            max-width: 145px;
+            max-height: 145px;
+            object-fit: contain;
+            margin-bottom: 18px;
+        }
+
+        .stats-row { margin-top: 30px; }
+
+        .stat-box {
             height: 100%;
+            padding: 20px 10px;
+            background: var(--light);
+            border-radius: 10px;
         }
 
-        .about-card h3 {
-            color: var(--msm-green);
-            font-size: 21px;
+        .stat-box strong {
+            display: block;
+            font-size: 25px;
+            color: var(--primary);
             font-weight: 900;
-            margin-bottom: 15px;
         }
 
-        .about-card p {
-            color: var(--msm-muted);
-            font-size: 15px;
-        }
+        .stat-box span { color: var(--muted); font-size: 13px; }
 
-        .motto {
-            display: inline-block;
-            background: #E8F2DF;
-            color: var(--msm-green);
-            padding: 9px 14px;
-            border-left: 4px solid var(--msm-lime);
-            border-radius: 4px;
-            font-weight: 900;
-            letter-spacing: 1px;
-            margin-top: 8px;
-        }
-
-        /* =====================================================
-           FOOTER
-        ===================================================== */
-
-        .msm-footer {
-            background: var(--msm-green);
-            color: var(--msm-white);
+        footer {
             padding: 45px 0 20px;
-            border-top: 5px solid var(--msm-lime);
+            color: white;
+            background: var(--dark);
         }
 
-        .msm-footer h4 {
-            color: var(--msm-white);
-            font-size: 18px;
-            font-weight: 900;
-            margin-bottom: 15px;
+        footer h5 {
+            color: var(--orange);
+            font-weight: 800;
+            margin-bottom: 16px;
         }
 
-        .msm-footer p {
-            color: #E4F0E0;
-            font-size: 14px;
-        }
+        footer p, footer a { color: rgba(255,255,255,.8); }
 
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .footer-links li {
-            margin-bottom: 9px;
-        }
-
-        .footer-links a {
-            color: #E4F0E0;
-            font-size: 14px;
-        }
-
-        .footer-links a:hover {
-            color: var(--msm-lime);
-        }
+        footer a:hover { color: var(--orange); }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            margin-top: 30px;
+            margin-top: 25px;
             padding-top: 18px;
+            border-top: 1px solid rgba(255,255,255,.15);
             text-align: center;
-            color: #E4F0E0;
-            font-size: 12px;
+            font-size: 14px;
+            color: rgba(255,255,255,.65);
         }
-
-        .footer-bottom strong {
-            color: var(--msm-lime);
-        }
-
-        /* =====================================================
-           FLOATING WHATSAPP BUTTON
-        ===================================================== */
 
         .whatsapp-float {
             position: fixed;
+            z-index: 1000;
             right: 20px;
             bottom: 20px;
-            z-index: 999;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 58px;
             height: 58px;
             border-radius: 50%;
-            background: var(--msm-whatsapp);
-            color: var(--msm-white);
+            background: var(--whatsapp);
+            color: white;
             font-size: 30px;
-            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 5px 18px rgba(0,0,0,.25);
         }
 
-        .whatsapp-float:hover {
-            background: #1EBE5D;
-            color: var(--msm-white);
-            transform: scale(1.06);
-        }
-
-        /* =====================================================
-           RESPONSIVE DESIGN
-        ===================================================== */
-
-        @media (max-width: 991px) {
-            .hero {
-                padding: 55px 0;
-            }
-
-            .hero h1 {
-                font-size: 38px;
-            }
-
-            .hero-image-wrap {
-                margin-top: 30px;
-            }
-
-            .msm-navbar .nav-link {
-                margin-left: 0;
-                padding: 10px 0;
-            }
-
-            .register-nav {
-                display: block;
-                margin-top: 8px;
-            }
-        }
+        .whatsapp-float:hover { color: white; }
 
         @media (max-width: 767px) {
-            .hero {
-                padding: 45px 0;
-                text-align: center;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .hero-description {
-                font-size: 15px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-detail {
-                display: block;
-                margin-right: 0;
-            }
-
-            .btn-msm,
-            .btn-outline-msm {
-                display: block;
-                width: 100%;
-                margin: 10px 0;
-            }
-
-            .section {
-                padding: 48px 0;
-            }
-
-            .section-heading {
-                font-size: 27px;
-            }
-
-            .banner h2 {
-                font-size: 26px;
-            }
-
-            .registration-card {
-                padding: 25px 20px;
-            }
-
-            .registration-card h2 {
-                font-size: 25px;
-            }
-
-            .event-card {
-                margin-bottom: 5px;
-            }
-
-            .whatsapp-float {
-                width: 53px;
-                height: 53px;
-                right: 14px;
-                bottom: 14px;
-                font-size: 27px;
-            }
-        }
-
-        @media (max-width: 380px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            .hero-label {
-                font-size: 10px;
-            }
-
-            .section-heading {
-                font-size: 24px;
-            }
+            .hero { min-height: auto; padding: 65px 0; }
+            .hero p { font-size: 16px; }
+            .btn-outline-white { margin: 10px 0 0; }
+            .section { padding: 55px 0; }
+            .registration-card { padding: 23px; }
+            .navbar-brand { font-size: 12px; }
+            .navbar-brand img { width: 38px; height: 38px; }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- =====================================================
-         NAVIGATION
-    ====================================================== -->
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            <img src="images/mohau.png" alt="MSM logo">
+            <span>MSM TRAINING COMPANY</span>
+        </a>
 
-    <nav class="navbar navbar-expand-lg navbar-dark msm-navbar">
-        <div class="container">
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse" data-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <a class="navbar-brand" href="index.html">
-                MSM TRAINING COMPANY
-
-                <span class="brand-small">
-                    AND COUNSELLING SERVICES
-                </span>
-            </a>
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#msmNavigation"
-                aria-controls="msmNavigation"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div
-                class="collapse navbar-collapse"
-                id="msmNavigation"
-            >
-                <ul class="navbar-nav ml-auto align-items-lg-center">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            About MSM
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#seminar">
-                            About the Seminar
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">
-                            Contact
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a
-                            class="nav-link register-nav"
-                            href="#register"
-                        >
-                            Register / Enquire
-                        </a>
-                    </li>
-
-                </ul>
-            </div>
-
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#seminar">Seminar</a></li>
+                <li class="nav-item"><a class="nav-link" href="#topics">Topics</a></li>
+                <li class="nav-item"><a class="nav-link" href="#register">Register</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            </ul>
         </div>
-    </nav>
-
-
-    <!-- =====================================================
-         HERO SECTION
-    ====================================================== -->
-
-    <header class="hero">
-        <div class="container hero-content">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-7">
-
-                    <span class="hero-label">
-                        MSM Personal Development Seminar
-                    </span>
-
-                    <h1>
-                        MOKHOTLONG <br>
-                        <span>YOUR MINDSET.</span>
-                        YOUR FUTURE.
-                    </h1>
-
-                    <p class="hero-description">
-                        A personal-development seminar designed to
-                        encourage growth, challenge limiting beliefs,
-                        and help you think differently about your life,
-                        money and business.
-                    </p>
-
-                    <div class="hero-details">
-
-                        <div class="hero-detail">
-                            <i class="far fa-calendar-alt"></i>
-                            7 November 2026
-                        </div>
-
-                        <div class="hero-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            Mokhotlong, Lesotho
-                        </div>
-
-                    </div>
-
-                    <a
-                        href="#register"
-                        class="btn-msm"
-                    >
-                        FIND OUT HOW TO REGISTER
-                        <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-
-                    <a
-                        href="#seminar"
-                        class="btn-outline-msm"
-                    >
-                        LEARN MORE
-                    </a>
-
-                </div>
-
-                <div class="col-lg-5">
-
-                    <div class="hero-image-wrap">
-
-                        <img
-                            src="images/MOKHO.jpeg"
-                            alt="MSM Training Company Mokhotlong seminar poster"
-                            class="hero-image"
-                            loading="eager"
-                        >
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-    </header>
-
-
-    <!-- =====================================================
-         EVENT DETAILS
-    ====================================================== -->
-
-    <section class="section section-white" id="seminar">
-
-        <div class="container">
-
-            <div class="text-center mb-5">
-
-                <h2 class="section-heading">
-                    It Starts With a Different Mindset
-                </h2>
-
-                <div class="heading-line centered"></div>
-
-                <p class="section-subheading">
-                    Sometimes the change we need begins with how we
-                    think, the decisions we make and the actions we
-                    take every day.
-                </p>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-4 mb-4">
-
-                    <div class="event-card">
-
-                        <div class="event-icon">
-                            <i class="far fa-calendar-alt"></i>
-                        </div>
-
-                        <h3>Seminar Date</h3>
-
-                        <p>
-                            Join MSM in Mokhotlong on
-                            <strong>7 November 2026</strong>.
-                            Contact the organisers to confirm the
-                            programme and arrangements.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 mb-4">
-
-                    <div class="event-card">
-
-                        <div class="event-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-
-                        <h3>Location</h3>
-
-                        <p>
-                            The seminar is planned for
-                            <strong>Mokhotlong, Lesotho</strong>.
-                            Contact MSM to confirm the venue and
-                            other event details.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-4 mb-4">
-
-                    <div class="event-card">
-
-                        <div class="event-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-
-                        <h3>Who Should Attend?</h3>
-
-                        <p>
-                            Anyone interested in personal growth,
-                            improving their mindset, developing
-                            their ideas and learning to approach
-                            life and business differently.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         WHAT THE SEMINAR IS ABOUT
-    ====================================================== -->
-
-    <section class="section" id="topics">
-
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-6 mb-4 mb-lg-0">
-
-                    <h2 class="section-heading">
-                        Change How You Think.
-                        Change How You Move.
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                    <p class="section-intro">
-                        The way we think influences the choices we
-                        make, the opportunities we recognise and
-                        how we respond when life becomes difficult.
-                    </p>
-
-                    <p class="section-intro">
-                        This seminar is an opportunity to reflect,
-                        learn and explore practical ways to approach
-                        personal development, money and business
-                        with a more intentional mindset.
-                    </p>
-
-                    <ul class="topic-list">
-
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-
-                            <span>
-                                <strong>Mindset and personal growth</strong>
-                                — challenge limiting beliefs and
-                                develop a growth-oriented attitude.
-                            </span>
-                        </li>
-
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-
-                            <span>
-                                <strong>Money and financial thinking</strong>
-                                — reflect on financial habits,
-                                choices and long-term thinking.
-                            </span>
-                        </li>
-
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-
-                            <span>
-                                <strong>Business and opportunity</strong>
-                                — think more intentionally about
-                                ideas, decisions and action.
-                            </span>
-                        </li>
-
-                        <li>
-                            <i class="fas fa-check-circle"></i>
-
-                            <span>
-                                <strong>Personal responsibility</strong>
-                                — consider the practical steps
-                                you can take towards your goals.
-                            </span>
-                        </li>
-
-                    </ul>
-
-                    <a
-                        href="#register"
-                        class="btn-msm"
-                    >
-                        ENQUIRE ABOUT ATTENDING
-                    </a>
-
-                </div>
-
-                <div class="col-lg-6">
-
-                    <div class="topic-box">
-
-                        <h3>
-                            Your Next Chapter Can Start Here
-                        </h3>
-
-                        <p>
-                            You may not be able to control every
-                            situation you face, but you can learn
-                            to examine your thinking, improve your
-                            decisions and take meaningful steps
-                            towards the future you want.
-                        </p>
-
-                        <p>
-                            Come ready to reflect, learn and
-                            consider what needs to change in
-                            your own life.
-                        </p>
-
-                        <p class="mb-0">
-                            <strong>
-                                SUCCESS IS A CHOICE.
-                            </strong>
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         MOTIVATIONAL BANNER
-    ====================================================== -->
-
-    <section class="banner">
-
-        <div class="container">
-
-            <h2>
-                Your Future Deserves <span>Your Attention.</span>
-            </h2>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+    <div class="container">
+        <div class="col-lg-10 px-0">
+            <span class="hero-label">MSM SEMINAR TOUR 2026</span>
+
+            <h1>MOKHOTLONG<br><span>SEMINAR TOUR</span></h1>
 
             <p>
-                Do not just wish for a better future. Learn, reflect,
-                make better decisions and take the next practical step.
-                Join MSM in Mokhotlong and invest in your personal growth.
+                Your next level begins with a decision. Join MSM Training
+                Company for a learning experience designed to challenge your
+                mindset, strengthen your financial thinking and inspire action.
             </p>
 
-            <a
-                href="#register"
-                class="btn-msm"
-            >
-                GET SEMINAR INFORMATION
+            <div class="hero-details">
+                <div class="hero-detail">
+                    <i class="fas fa-calendar-alt"></i> 7 November 2026
+                </div>
+                <div class="hero-detail">
+                    <i class="fas fa-map-marker-alt"></i> Mokhotlong, Lesotho
+                </div>
+            </div>
+
+            <a href="#register" class="btn-orange">
+                REGISTER NOW <i class="fas fa-arrow-right ml-2"></i>
             </a>
+            <a href="#seminar" class="btn-outline-white">Learn More</a>
+        </div>
+    </div>
+</header>
 
+<!-- SEMINAR -->
+<section class="section" id="seminar">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading">Your Growth Starts Here</h2>
+            <div class="accent-line center-line"></div>
+            <p class="section-intro">
+                Sometimes your next step is not about working harder.
+                It is about learning differently, thinking differently
+                and taking action with purpose.
+            </p>
         </div>
 
-    </section>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="event-card">
+                    <div class="event-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Mindset Transformation</h3>
+                    <p>Challenge limiting beliefs, build confidence and develop a mindset that supports your goals.</p>
+                </div>
+            </div>
 
+            <div class="col-md-4 mb-4">
+                <div class="event-card">
+                    <div class="event-icon"><i class="fas fa-coins"></i></div>
+                    <h3>Financial Awareness</h3>
+                    <p>Think intentionally about money, your habits and the financial decisions you make.</p>
+                </div>
+            </div>
 
-    <!-- =====================================================
-         REGISTRATION / ENQUIRIES
-    ====================================================== -->
+            <div class="col-md-4 mb-4">
+                <div class="event-card">
+                    <div class="event-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Business and Personal Growth</h3>
+                    <p>Discover practical ideas to help you recognise opportunities and take meaningful steps forward.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section class="registration-section" id="register">
+<!-- TOPICS -->
+<section class="section section-dark" id="topics">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4">
+                <h2 class="section-heading">Create Change With Knowledge, Not Emotions</h2>
+                <div class="accent-line"></div>
 
-        <div class="container">
+                <p class="section-intro" style="margin-left:0; margin-bottom:20px;">
+                    Your decisions today shape the direction of your tomorrow.
+                    Make room for new knowledge, better decisions and purposeful action.
+                </p>
 
-            <div class="row justify-content-center">
+                <ul class="topic-list">
+                    <li><i class="fas fa-check-circle"></i> Mindset and personal development</li>
+                    <li><i class="fas fa-check-circle"></i> Money habits and financial thinking</li>
+                    <li><i class="fas fa-check-circle"></i> Business awareness and opportunity</li>
+                    <li><i class="fas fa-check-circle"></i> Confidence, purpose and taking action</li>
+                    <li><i class="fas fa-check-circle"></i> Practical ideas for everyday life</li>
+                </ul>
 
-                <div class="col-lg-9">
+                <a href="#register" class="btn-orange">SAVE MY PLACE</a>
+            </div>
 
-                    <div class="registration-card text-center">
+            <div class="col-lg-6">
+                <img src="images/MOKHO.jpeg"
+                     alt="Mokhotlong Seminar Tour poster"
+                     class="topic-image"
+                     onerror="this.style.display='none';">
+            </div>
+        </div>
+    </div>
+</section>
 
-                        <h2>
-                            Interested in Attending?
-                        </h2>
+<!-- BANNER -->
+<section class="highlight-banner">
+    <div class="container">
+        <h2>SUCCESS IS A CHOICE.</h2>
+        <p>
+            You cannot change yesterday, but you can learn from it.
+            Invest in your thinking and take the next step towards your goals.
+        </p>
+        <a href="#register" class="btn-orange">REGISTER FOR THE SEMINAR</a>
+    </div>
+</section>
 
-                        <div class="heading-line centered"></div>
-
-                        <p>
-                            Contact MSM Training Company and
-                            Counselling Services to enquire about
-                            registration, the venue, seminar fees
-                            and the programme for the Mokhotlong
-                            seminar on 7 November 2026.
+<!-- REGISTRATION FORM -->
+<section class="section registration-section" id="register">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="registration-card">
+                    <div class="text-center mb-4">
+                        <span class="hero-label">YOUR NEXT CHAPTER STARTS HERE</span>
+                        <h2>Register for Mokhotlong Seminar</h2>
+                        <div class="accent-line center-line"></div>
+                        <p class="form-description">
+                            Complete the form below. When you submit it,
+                            WhatsApp will open with your details ready to send
+                            to the MSM Training Company team.
                         </p>
+                    </div>
 
-                        <div class="registration-note">
-
-                            <i class="fas fa-info-circle"></i>
-
-                            Please confirm the current registration
-                            fee, venue and attendance arrangements
-                            directly with the organisers.
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" class="form-control"
+                                   id="fullName" name="fullName"
+                                   placeholder="Enter your full name"
+                                   autocomplete="name" required>
                         </div>
 
-                        <a
-                            href="https://wa.me/26656506092?text=Hello%20MSM%20Training%20Company%2C%20I%20would%20like%20to%20enquire%20about%20the%20Mokhotlong%20seminar%20on%207%20November%202026."
-                            class="btn-whatsapp"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        <div class="form-group">
+                            <label for="phone">Phone / WhatsApp Number *</label>
+                            <input type="tel" class="form-control"
+                                   id="phone" name="phone"
+                                   placeholder="e.g. +266 5XXXXXXX"
+                                   autocomplete="tel" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address (optional)</label>
+                            <input type="email" class="form-control"
+                                   id="email" name="email"
+                                   placeholder="you@example.com"
+                                   autocomplete="email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="package">Registration Package *</label>
+                            <select class="form-control" id="package"
+                                    name="package" required>
+                                <option value="">Choose a package</option>
+                                <option value="Individual - R350">Individual - R350</option>
+                                <option value="Pair - R500">Pair - R500</option>
+                                <option value="Group of 5 - R1000">Group of 5 - R1000</option>
+                                <option value="Early bird / promotion enquiry">Early bird / promotion enquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="attendees">Number of Attendees *</label>
+                            <select class="form-control" id="attendees"
+                                    name="attendees" required>
+                                <option value="">Select number of attendees</option>
+                                <option value="1">1 person</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                                <option value="5">5 people</option>
+                                <option value="More than 5">More than 5 people</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">Additional Information (optional)</label>
+                            <textarea class="form-control" id="notes"
+                                      name="notes"
+                                      placeholder="Names of additional attendees or any questions"></textarea>
+                        </div>
+
+                        <div class="form-note mb-4">
+                            <i class="fas fa-info-circle mr-1"></i>
+                            Submitting this form opens WhatsApp. Your registration
+                            is not confirmed until the MSM team replies and confirms
+                            the arrangements and payment details.
+                        </div>
+
+                        <button type="submit" class="btn-orange btn-block">
                             <i class="fab fa-whatsapp mr-2"></i>
-                            ENQUIRE ON WHATSAPP
-                        </a>
+                            SUBMIT REGISTRATION VIA WHATSAPP
+                        </button>
 
-                        <p class="mt-3 mb-0">
-                            <small>
-                                WhatsApp: +266 5650 6092
-                            </small>
-                        </p>
+                        <p id="formMessage" class="mt-3 mb-0"
+                           role="status" aria-live="polite"></p>
+                    </form>
 
+                    <div class="registration-contact text-center">
+                        <i class="fas fa-calendar-alt mr-1"></i>
+                        Saturday, 7 November 2026
+                        <br>
+                        <i class="fas fa-phone-alt mr-1"></i>
+                        Need help? Contact +266 5650 6092
                     </div>
-
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- ABOUT -->
+<section class="section" id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-center mb-4">
+                <img src="images/mohau.png" alt="MSM Training Company logo"
+                     class="about-logo"
+                     onerror="this.style.display='none';">
+                <h4 style="font-weight:900;color:var(--dark);">MSM Training Company</h4>
+                <p style="font-weight:800;color:var(--orange);">SUCCESS IS A CHOICE</p>
             </div>
 
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         ABOUT MSM
-    ====================================================== -->
-
-    <section class="section section-white" id="about">
-
-        <div class="container">
-
-            <div class="text-center mb-5">
-
-                <h2 class="section-heading">
-                    About MSM Training Company
-                </h2>
-
-                <div class="heading-line centered"></div>
-
-                <p class="section-subheading">
-                    Supporting personal development, learning
-                    and growth through training and motivation.
+            <div class="col-lg-8">
+                <h2 class="section-heading">About Us</h2>
+                <div class="accent-line"></div>
+                <p class="about-text">
+                    MSM Training Company and Counselling Services, also known
+                    as Mohau and the Success Masters Motivation & Training
+                    Company, focuses on personal development, motivation and
+                    training to help people approach life with greater purpose.
                 </p>
-
-            </div>
-
-            <div class="row">
-
-                <div class="col-md-6 mb-4">
-
-                    <div class="about-card">
-
-                        <h3>
-                            Who We Are
-                        </h3>
-
-                        <p>
-                            MSM Training Company and Counselling
-                            Services, also known through its
-                            motivation and training work as
-                            Mohau and the Success Masters,
-                            focuses on personal development,
-                            motivation and learning.
-                        </p>
-
-                        <p>
-                            Founded in 2015 by Mohau Paul
-                            Mosoeunyane, MSM aims to encourage
-                            individuals and communities to develop
-                            their potential through training,
-                            workshops and personal-development
-                            programmes.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-md-6 mb-4">
-
-                    <div class="about-card">
-
-                        <h3>
-                            Our Motto
-                        </h3>
-
-                        <p>
-                            We believe that personal growth begins
-                            with a willingness to learn, reflect,
-                            make choices and take action.
-                        </p>
-
-                        <p>
-                            Our goal is to encourage people to
-                            approach their lives, relationships,
-                            goals and opportunities with greater
-                            awareness and purpose.
-                        </p>
-
-                        <div class="motto">
-                            SUCCESS IS A CHOICE
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-
-    <footer class="msm-footer" id="contact">
-
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-md-5 mb-4">
-
-                    <h4>
-                        MSM TRAINING COMPANY
-                    </h4>
-
-                    <p>
-                        MSM Training Company and Counselling
-                        Services works to encourage personal
-                        development, motivation, learning and
-                        growth.
-                    </p>
-
-                    <p>
-                        <strong>
-                            SUCCESS IS A CHOICE
-                        </strong>
-                    </p>
-
-                </div>
-
-                <div class="col-md-3 mb-4">
-
-                    <h4>
-                        Quick Links
-                    </h4>
-
-                    <ul class="footer-links">
-
-                        <li>
-                            <a href="index.html">
-                                Home
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#seminar">
-                                Mokhotlong Seminar
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#topics">
-                                Seminar Topics
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#register">
-                                Registration Enquiries
-                            </a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <div class="col-md-4 mb-4">
-
-                    <h4>
-                        Contact MSM
-                    </h4>
-
-                    <p>
-                        <i class="fab fa-whatsapp mr-2"></i>
-                        <a
-                            href="https://wa.me/26656506092"
-                            style="color: #FFFFFF;"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            +266 5650 6092
-                        </a>
-                    </p>
-
-                    <p>
-                        <i class="fas fa-globe mr-2"></i>
-                        <a
-                            href="https://msmtrainingls.com"
-                            style="color: #FFFFFF;"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            msmtrainingls.com
-                        </a>
-                    </p>
-
-                    <p>
-                        <i class="fab fa-facebook mr-2"></i>
-                        <a
-                            href="https://www.facebook.com/Mohauandthesuccessmasters"
-                            style="color: #FFFFFF;"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            MSM on Facebook
-                        </a>
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
-
-                <p class="mb-0">
-                    &copy; <span id="currentYear">2026</span>
-                    <strong>MSM Training Company and Counselling Services.</strong>
-                    All rights reserved.
+                <p class="about-text">
+                    Through workshops, seminars and learning programmes,
+                    MSM encourages individuals and communities to develop
+                    their thinking, recognise opportunities and take action
+                    towards their goals.
                 </p>
-
+                <a href="https://www.facebook.com/Mohauandthesuccessmasters"
+                   class="btn-orange" target="_blank"
+                   rel="noopener noreferrer">
+                    <i class="fab fa-facebook-f mr-2"></i> FOLLOW MSM
+                </a>
             </div>
-
         </div>
 
-    </footer>
+        <div class="row stats-row text-center">
+            <div class="col-6 col-md-3 mb-3">
+                <div class="stat-box"><strong>2015</strong><span>Founded</span></div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="stat-box"><strong>100+</strong><span>Workshops and seminars</span></div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="stat-box"><strong>12,000+</strong><span>People reached</span></div>
+            </div>
+            <div class="col-6 col-md-3 mb-3">
+                <div class="stat-box"><strong>50+</strong><span>Schools reached</span></div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h5>MSM TRAINING COMPANY</h5>
+                <p>Personal development. Motivation. Training.</p>
+                <p><strong>SUCCESS IS A CHOICE.</strong></p>
+            </div>
 
-    <!-- =====================================================
-         FLOATING WHATSAPP BUTTON
-    ====================================================== -->
+            <div class="col-md-3 mb-4">
+                <h5>Quick Links</h5>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#topics">Topics</a></p>
+                <p><a href="#register">Register</a></p>
+            </div>
 
-    <a
-        href="https://wa.me/26656506092?text=Hello%20MSM%2C%20I%20would%20like%20more%20information%20about%20your%20seminars."
-        class="whatsapp-float"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Contact MSM on WhatsApp"
-        title="Contact MSM on WhatsApp"
-    >
-        <i class="fab fa-whatsapp"></i>
-    </a>
+            <div class="col-md-3 mb-4">
+                <h5>Contact</h5>
+                <p>
+                    <i class="fab fa-whatsapp mr-2"></i>
+                    <a href="https://wa.me/26656506092"
+                       target="_blank" rel="noopener noreferrer">
+                        +266 5650 6092
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/Mohauandthesuccessmasters"
+                       target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook mr-2"></i> Facebook
+                    </a>
+                </p>
+            </div>
+        </div>
 
+        <div class="footer-bottom">
+            &copy; <span id="currentYear"></span>
+            MSM Training Company & Counselling Services. All rights reserved.
+        </div>
+    </div>
+</footer>
 
-    <!-- =====================================================
-         JAVASCRIPT
-    ====================================================== -->
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/26656506092?text=Hello%20MSM%20Training%20Company%2C%20please%20send%20me%20information%20about%20the%20Mokhotlong%20Seminar."
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Contact MSM on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("registrationForm").addEventListener("submit", function (event) {
+        event.preventDefault();
 
-            // Automatically update the copyright year.
-            var yearElement = document.getElementById("currentYear");
+        const fullName = document.getElementById("fullName").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const packageChoice = document.getElementById("package").value;
+        const attendees = document.getElementById("attendees").value;
+        const notes = document.getElementById("notes").value.trim();
 
-            if (yearElement) {
-                yearElement.textContent = new Date().getFullYear();
-            }
+        if (!fullName || !phone || !packageChoice || !attendees) {
+            document.getElementById("formMessage").textContent =
+                "Please complete all required fields.";
+            return;
+        }
 
-            // Close the mobile navigation after selecting a link.
-            var navigationLinks = document.querySelectorAll(
-                ".msm-navbar .nav-link"
-            );
+        const message =
+            "MOKHOTLONG SEMINAR REGISTRATION - MSM TRAINING COMPANY\n\n" +
+            "Event: Mokhotlong Seminar Tour\n" +
+            "Date: 7 November 2026\n\n" +
+            "Full Name: " + fullName + "\n" +
+            "Phone / WhatsApp: " + phone + "\n" +
+            "Email: " + (email || "Not provided") + "\n" +
+            "Package: " + packageChoice + "\n" +
+            "Number of Attendees: " + attendees + "\n" +
+            "Additional Information: " + (notes || "None") + "\n\n" +
+            "Please contact me to confirm my registration and payment details.";
 
-            navigationLinks.forEach(function (link) {
+        const whatsappURL =
+            "https://wa.me/26656506092?text=" + encodeURIComponent(message);
 
-                link.addEventListener("click", function () {
+        document.getElementById("formMessage").textContent =
+            "Opening WhatsApp with your registration details. Please press Send in WhatsApp to submit your enquiry.";
 
-                    if (window.innerWidth < 992) {
+        const whatsappWindow = window.open(whatsappURL, "_blank");
 
-                        if (typeof jQuery !== "undefined") {
-                            jQuery("#msmNavigation").collapse("hide");
-                        }
-
-                    }
-
-                });
-
-            });
-
-        });
-    </script>
+        if (!whatsappWindow) {
+            window.location.href = whatsappURL;
+        }
+    });
+</script>
 
 </body>
 </html>
