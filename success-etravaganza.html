@@ -201,9 +201,7 @@ section { padding: 80px 7%; }
 
 .about-content p { margin-bottom: 20px; }
 
-.speakers {
-  background: white;
-}
+.speakers { background: white; }
 
 .speaker-grid {
   display: grid;
@@ -303,6 +301,7 @@ section { padding: 80px 7%; }
   letter-spacing: 1px;
 }
 
+/* REGISTRATION */
 .registration {
   background: #f5f8f5;
   text-align: center;
@@ -317,16 +316,81 @@ section { padding: 80px 7%; }
   box-shadow: 0 8px 30px rgba(0,0,0,.07);
 }
 
-.qr-code {
-  width: 210px;
-  height: 210px;
-  object-fit: contain;
-  margin: 20px auto;
-  display: block;
+.form-group {
+  text-align: left;
+  margin-bottom: 18px;
 }
 
-.qr-note {
+.form-group label {
+  display: block;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d5ded7;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 14px;
+  background: #fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--light-green);
+  box-shadow: 0 0 0 2px rgba(124,179,66,.15);
+}
+
+.form-note {
+  font-size: 12px;
   color: #758078;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 16px;
+  border-radius: 5px;
+  font-weight: 900;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.submit-btn:hover {
+  background: var(--light-green);
+}
+
+.registration-message {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background: #e8f5e9;
+  border-radius: 8px;
+  color: var(--green);
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background: var(--green);
+  color: white;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-weight: 800;
   font-size: 13px;
 }
 
@@ -369,8 +433,13 @@ footer p {
   .hero { padding: 75px 5%; min-height: 600px; }
   section { padding: 60px 5%; }
   .speaker-grid { grid-template-columns: 1fr; }
-  .speaker-card { max-width: 340px; margin: auto; width: 100%; }
+  .speaker-card {
+    max-width: 340px;
+    margin: auto;
+    width: 100%;
+  }
   .detail { min-width: 140px; }
+  .registration-card { padding: 30px 18px; }
 }
 </style>
 </head>
@@ -421,7 +490,7 @@ footer p {
     </div>
 
     <a href="#registration" class="btn btn-gold">
-      GET EARLY-BIRD ACCESS
+      REGISTER NOW
     </a>
 
     <a href="#speakers" class="btn btn-outline">
@@ -546,41 +615,100 @@ footer p {
 <section class="registration" id="registration">
 
   <div class="section-title">
-    <small>BE FIRST IN LINE</small>
-    <h2>EARLY-BIRD TICKETS</h2>
+    <small>SECURE YOUR PLACE</small>
+    <h2>REGISTER FOR SUCCESS EXTRAVAGANZA 2027</h2>
     <p>
-      Don't miss the opportunity to access our special
-      early-bird ticket offers.
+      Complete the form below to register your interest.
+      Our team will contact you about payment and ticket confirmation.
     </p>
   </div>
 
   <div class="registration-card">
 
-    <h2 style="color:#0B3D2E;">
-      REGISTER YOUR INTEREST
+    <h2 style="color:#0B3D2E;margin-bottom:10px;">
+      ATTENDEE REGISTRATION FORM
     </h2>
 
-    <p>
-      Scan the QR code below to complete the early-bird
-      registration form and receive updates about ticket offers.
+    <p style="margin-bottom:25px;">
+      16 January 2027 | Maseru, Lesotho
     </p>
 
-    <div id="qr-container">
-      <img id="qr-image" class="qr-code" alt="Early-bird registration QR code">
-      <a id="form-button" class="btn btn-gold" target="_blank" rel="noopener">
-        COMPLETE REGISTRATION FORM
-      </a>
+    <form id="registrationForm">
+
+      <div class="form-group">
+        <label for="fullName">Full Name and Surname *</label>
+        <input type="text" id="fullName" name="fullName"
+          autocomplete="name" required
+          placeholder="Enter your full name">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone / WhatsApp Number *</label>
+        <input type="tel" id="phone" name="phone"
+          autocomplete="tel" required
+          placeholder="+266...">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email"
+          autocomplete="email"
+          placeholder="Enter your email address">
+      </div>
+
+      <div class="form-group">
+        <label for="tickets">Number of Tickets *</label>
+        <select id="tickets" name="tickets" required>
+          <option value="">Select number of tickets</option>
+          <option value="1">1 Ticket</option>
+          <option value="2">2 Tickets</option>
+          <option value="3">3 Tickets</option>
+          <option value="4">4 Tickets</option>
+          <option value="5">5 Tickets</option>
+          <option value="6 or more">6 or more Tickets</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="ticketType">Ticket Type *</label>
+        <select id="ticketType" name="ticketType" required>
+          <option value="">Select ticket type</option>
+          <option value="Early Bird">Early Bird</option>
+          <option value="Regular">Regular</option>
+          <option value="Group Booking">Group Booking</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="payment">Payment Status *</label>
+        <select id="payment" name="payment" required>
+          <option value="">Select payment status</option>
+          <option value="Not yet paid">Not yet paid</option>
+          <option value="Already paid">Already paid</option>
+          <option value="Need payment details">Need payment details</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Additional Message (Optional)</label>
+        <textarea id="message" name="message" rows="4"
+          placeholder="Any questions or special requests?"></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">
+        SUBMIT REGISTRATION
+      </button>
+
+    </form>
+
+    <div id="registrationMessage" class="registration-message"
+         role="status" aria-live="polite">
     </div>
 
-    <div id="coming-soon">
-      <p class="qr-note">
-        Early-bird registration form coming soon.
-        Stay connected for the official registration link.
-      </p>
-    </div>
-
-    <p class="qr-note">
-      Registration of interest does not constitute a confirmed ticket.
+    <p class="form-note">
+      Please note: Submitting your details does not automatically
+      confirm your ticket. Your registration will be sent to MSM
+      through WhatsApp for follow-up and payment arrangements.
     </p>
 
   </div>
@@ -607,6 +735,7 @@ footer p {
 
 </section>
 
+<!-- FOOTER -->
 <footer>
 
   <h2>MSM TRAINING COMPANY</h2>
@@ -616,6 +745,8 @@ footer p {
   <p>Motivation | Personal Development | Training | Empowerment</p>
 
   <p>Follow us on Facebook and Instagram</p>
+
+  <p>WhatsApp: +266 5650 6092</p>
 
   <p>© 2027 MSM Training Company & Counselling Services.</p>
 
@@ -631,6 +762,7 @@ footer p {
 const eventDate = new Date('2027-01-16T08:00:00+02:00').getTime();
 
 function updateCountdown() {
+
   const now = new Date().getTime();
   const difference = eventDate - now;
 
@@ -659,28 +791,52 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 
 
-// EARLY-BIRD GOOGLE FORM
-// Replace this with your actual Google Form URL.
+// REGISTRATION THROUGH WHATSAPP
+document.getElementById('registrationForm')
+.addEventListener('submit', function(e) {
 
-const FORM_URL = '';
+  e.preventDefault();
 
-if (FORM_URL.trim()) {
+  const name = document.getElementById('fullName').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const tickets = document.getElementById('tickets').value;
+  const ticketType = document.getElementById('ticketType').value;
+  const payment = document.getElementById('payment').value;
+  const message = document.getElementById('message').value.trim();
 
-  document.getElementById('qr-container').style.display = 'block';
-  document.getElementById('coming-soon').style.display = 'none';
+  const registrationText =
+    "SUCCESS EXTRAVAGANZA 2027 REGISTRATION\n\n" +
+    "Full Name: " + name + "\n" +
+    "Phone: " + phone + "\n" +
+    "Email: " + (email || "Not provided") + "\n" +
+    "Number of Tickets: " + tickets + "\n" +
+    "Ticket Type: " + ticketType + "\n" +
+    "Payment Status: " + payment + "\n" +
+    "Additional Message: " + (message || "None");
 
-  document.getElementById('qr-image').src =
-    'https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=' +
-    encodeURIComponent(FORM_URL);
+  const whatsappURL =
+    "https://wa.me/26656506092?text=" +
+    encodeURIComponent(registrationText);
 
-  document.getElementById('form-button').href = FORM_URL;
+  const result = document.getElementById('registrationMessage');
 
-} else {
+  result.style.display = "block";
 
-  document.getElementById('qr-container').style.display = 'none';
-  document.getElementById('coming-soon').style.display = 'block';
+  result.innerHTML =
+    "<strong>Your registration details are ready!</strong>" +
+    "<p>Please click the button below to send your registration " +
+    "to the MSM team.</p>" +
+    '<a href="' + whatsappURL +
+    '" target="_blank" rel="noopener noreferrer" ' +
+    'class="whatsapp-btn">SEND REGISTRATION TO MSM ON WHATSAPP</a>';
 
-}
+  result.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+
+});
 
 </script>
 
