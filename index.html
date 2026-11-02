@@ -2169,2285 +2169,184 @@
      EVENTS
 ====================================================== -->
 
-<section class="ftco-section bg-light">
+<style>
+    .msm-event-card {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 100%;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+        transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .msm-event-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.13);
+    }
+
+    .msm-event-image {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+        background: #eee;
+    }
+
+    .msm-event-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .msm-event-content {
+        padding: 24px 20px;
+        text-align: center;
+    }
+
+    .msm-event-content h4 {
+        color: #0B3D2E;
+        font-size: 19px;
+        font-weight: 700;
+        min-height: 48px;
+        margin-bottom: 12px;
+    }
+
+    .msm-event-content p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .msm-event-details {
+        list-style: none;
+        padding: 0;
+        margin: 18px 0;
+        text-align: left;
+    }
+
+    .msm-event-details li {
+        font-size: 13px;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+    .msm-event-details i {
+        color: #7CB342;
+        width: 20px;
+    }
+
+    .msm-event-button {
+        background: #0B3D2E;
+        border: none;
+        color: #fff !important;
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border-radius: 5px;
+        font-weight: 700;
+        text-decoration: none !important;
+        transition: background .3s ease;
+    }
+
+    .msm-event-button:hover {
+        background: #7CB342;
+        color: #fff !important;
+    }
+
+    .msm-sold-out {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        background: #c62828;
+        color: #fff;
+        padding: 9px 18px;
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        z-index: 2;
+    }
+
+    .msm-sold-out-button {
+        background: #777;
+        color: #fff;
+        cursor: not-allowed;
+        opacity: .85;
+    }
+
+    .msm-countdown {
+        background: #f3f7f1;
+        border-radius: 6px;
+        padding: 12px 8px;
+        margin: 15px 0;
+        color: #0B3D2E;
+        font-weight: 700;
+    }
+
+    .msm-countdown span {
+        display: inline-block;
+        margin: 3px 5px;
+        font-size: 17px;
+    }
+
+    .msm-countdown small {
+        display: block;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    .msm-event-label {
+        display: inline-block;
+        padding: 5px 12px;
+        background: #e9f3e4;
+        color: #0B3D2E;
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .msm-price {
+        color: #0B3D2E;
+        font-weight: 700;
+    }
+
+    .msm-event-note {
+        color: #777;
+        font-size: 12px;
+    }
+
+    @media (max-width: 767px) {
+        .msm-event-image {
+            height: 210px;
+        }
+
+        .msm-event-content {
+            padding: 20px 16px;
+        }
+    }
+</style>
+
+
+<section class="ftco-section bg-light" id="our-events">
 
     <div class="container">
 
-
         <div class="row justify-content-center pb-5 mb-3">
+            <div class="col-md-8 heading-section text-center ftco-animate">
 
-            <div class="col-md-7 heading-section text-center ftco-animate">
-
-                <h2>
-                    OUR EVENTS
-                </h2>
+                <h2>OUR EVENTS</h2>
 
                 <span class="subheading">
                     Upcoming Events &amp; Special Offers
                 </span>
 
-            </div>
-
-        </div>
-
-
-        <div class="row">
-
-
-            <!-- =================================================
-                 MASTER CLASS
-            ================================================== -->
-
-            <div class="col-md-6 col-lg-3 ftco-animate">
-
-                <div class="block-7"
-                     id="master-class">
-
-                    <div class="event-image">
-
-                        <img src="images/master class kit.jpeg"
-                             alt="Master Class Kit"
-                             class="img-fluid">
-
-                    </div>
-
-
-                    <div class="text-center">
-
-                        <span class="excerpt d-block">
-                            Master Class Kit
-                        </span>
-
-                        <span class="excerpt d-block">
-                            Wealth Creation
-                        </span>
-
-
-                        <ul class="pricing-text mb-5">
-
-                            <li>
-                                <i class="fa-solid fa-check mr-2"></i>
-                                Pen
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check mr-2"></i>
-                                Flash drive
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-check mr-2"></i>
-                                Booklet
-                            </li>
-
-                        </ul>
-
-
-                        <a href="digital-products.html"
-                           class="btn btn-primary d-block px-2 py-3">
-
-                            BUY NOW
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-           <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <title>MSM TRAINING COMPANY AND COUNSELLING SERVICES</title>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- GOOGLE FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
-          rel="stylesheet">
-
-    <!-- BOOTSTRAP CSS -->
-    <link rel="stylesheet"
-          href="css/bootstrap.min.css">
-<!-- FONT AWESOME -->
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-       
-    <!-- EXISTING CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/style.css">
-
-
-    <!-- =====================================================
-         MSM BRAND COLOURS
-    ====================================================== -->
-
-    <style>
-
-        :root {
-            --msm-dark-green: #0B3D2E;
-            --msm-light-green: #7CB342;
-            --msm-soft-green: #A8D08D;
-            --msm-darker-green: #06271D;
-            --msm-light-bg: #F4F8F5;
-            --msm-white: #FFFFFF;
-            --msm-dark-text: #111111;
-            --msm-text: #555555;
-            --msm-muted: #6F8177;
-            --msm-border: #E1EAE4;
-        }
-
-
-        /* BODY */
-
-        body {
-            color: var(--msm-text);
-            background: var(--msm-white);
-        }
-
-
-        /* LINKS */
-
-        a {
-            color: var(--msm-dark-green);
-        }
-
-        a:hover {
-            color: var(--msm-light-green);
-        }
-
-
-        /* TOP BAR */
-
-        .wrap {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .wrap p,
-        .wrap span,
-        .wrap a,
-        .wrap i {
-            color: var(--msm-white) !important;
-        }
-
-        .wrap a:hover,
-        .wrap i:hover {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* TOP BAR SOCIAL ICONS */
-
-        .social-media {
-            display: flex !important;
-            align-items: center !important;
-        }
-
-        .social-media a {
-            background: transparent !important;
-            border: none !important;
-            width: auto !important;
-            height: auto !important;
-            min-width: 0 !important;
-            min-height: 0 !important;
-            padding: 0 8px !important;
-            margin: 0 !important;
-            display: inline-flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            color: var(--msm-white) !important;
-            line-height: 1 !important;
-            box-shadow: none !important;
-        }
-
-        .social-media a i {
-            width: auto !important;
-            height: auto !important;
-            display: inline-flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            font-size: 18px !important;
-            line-height: 1 !important;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        .social-media a:hover {
-            background: transparent !important;
-            color: var(--msm-light-green) !important;
-        }
-
-        .social-media a:hover i {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* NAVIGATION */
-
-        .ftco-navbar-light,
-        .ftco-navbar-light.bg-dark {
-            background: var(--msm-white) !important;
-        }
-
-        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-            color: var(--msm-dark-green) !important;
-        }
-
-        .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-            color: var(--msm-light-green) !important;
-        }
-
-        .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* MOBILE MENU */
-
-        .navbar-toggler {
-            background: var(--msm-dark-green) !important;
-            border-color: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .navbar-toggler i {
-            color: var(--msm-white) !important;
-        }
-
-
-        /* SEARCH BUTTON */
-
-        .searchform .search {
-            background: var(--msm-dark-green) !important;
-            border-color: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .searchform .search:hover {
-            background: var(--msm-light-green) !important;
-            border-color: var(--msm-light-green) !important;
-        }
-
-
-        /* HERO */
-
-        .hero-wrap .overlay {
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(6, 39, 29, 0.95),
-                    rgba(11, 61, 46, 0.80),
-                    rgba(11, 61, 46, 0.45)
-                ) !important;
-        }
-
-        .hero-wrap h1,
-        .hero-wrap h2,
-        .hero-wrap p {
-            color: var(--msm-white) !important;
-        }
-
-
-        /* HERO BUTTON */
-
-        .hero-wrap .btn-white {
-            background: var(--msm-white) !important;
-            color: var(--msm-dark-green) !important;
-            border-color: var(--msm-white) !important;
-        }
-
-        .hero-wrap .btn-white:hover {
-            background: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-            border-color: var(--msm-light-green) !important;
-        }
-
-
-        /* GENERAL BUTTONS */
-
-        .btn-primary,
-        button.btn-primary,
-        input.btn-primary {
-            background: var(--msm-dark-green) !important;
-            border-color: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .btn-primary:hover,
-        button.btn-primary:hover,
-        input.btn-primary:hover {
-            background: var(--msm-light-green) !important;
-            border-color: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .btn-outline-primary {
-            color: var(--msm-dark-green) !important;
-            border-color: var(--msm-dark-green) !important;
-            background: transparent !important;
-        }
-
-        .btn-outline-primary:hover {
-            background: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-
-        /* LIGHT BACKGROUNDS */
-
-        .bg-light,
-        .ftco-section.bg-light,
-        .intro.bg-light {
-            background: var(--msm-light-bg) !important;
-        }
-
-
-        /* INTRO */
-
-        .intro-box .icon {
-            background: var(--msm-dark-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .intro-box .icon i,
-        .intro-box .icon span {
-            color: var(--msm-white) !important;
-        }
-
-        .intro-box h4 {
-            color: var(--msm-dark-green) !important;
-        }
-
-
-        /* SECTION HEADINGS */
-
-        .heading-section h1,
-        .heading-section h2,
-        .heading-section h3,
-        .heading-section h4,
-        .heading-section h5,
-        .heading-section h6 {
-            color: var(--msm-dark-green) !important;
-        }
-
-        .heading-section .subheading {
-            color: var(--msm-light-green) !important;
-        }
-
-        .heading-section-white h1,
-        .heading-section-white h2,
-        .heading-section-white h3,
-        .heading-section-white h4,
-        .heading-section-white h5,
-        .heading-section-white h6 {
-            color: var(--msm-white) !important;
-        }
-
-        .heading-section-white .subheading {
-            color: var(--msm-soft-green) !important;
-        }
-
-
-     /* =====================================================
-   SERVICES
-===================================================== */
-
-/* SERVICE ICON CIRCLE */
-
-.services .icon-circle {
-    width: 75px !important;
-    height: 75px !important;
-    min-width: 75px !important;
-    min-height: 75px !important;
-
-    border-radius: 50% !important;
-
-    background-color: #0B3D2E !important;
-
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-
-    margin: 0 auto 20px auto !important;
-
-    position: relative !important;
-
-    z-index: 10 !important;
-
-    opacity: 1 !important;
-    visibility: visible !important;
-
-    box-shadow: 0 5px 15px rgba(11, 61, 46, 0.15);
-}
-
-
-/* SERVICE ICON */
-
-.services .icon-circle i {
-    display: inline-block !important;
-
-    font-family: FontAwesome !important;
-
-    font-style: normal !important;
-    font-weight: normal !important;
-
-    font-size: 30px !important;
-
-    line-height: 1 !important;
-
-    color: #FFFFFF !important;
-
-    opacity: 1 !important;
-    visibility: visible !important;
-
-    position: relative !important;
-
-    z-index: 20 !important;
-}
-
-
-/* HOVER */
-
-.services:hover .icon-circle {
-    background-color: #7CB342 !important;
-}
-
-.services:hover .icon-circle i {
-    color: #FFFFFF !important;
-}
-
-
-/* SERVICE HEADING */
-
-.services .heading {
-    color: var(--msm-dark-green) !important;
-}
-
-
-/* =====================================================
-   WHY MSM
-===================================================== */
-
-.services-2 .icon {
-    background: var(--msm-dark-green) !important;
-    color: var(--msm-white) !important;
-}
-
-.services-2 .icon span,
-.services-2 .icon i {
-    color: var(--msm-white) !important;
-}
-
-.services-2:hover .icon {
-    background: var(--msm-light-green) !important;
-}
-
-.services-2 h4 {
-    color: var(--msm-dark-green) !important;
-}
-
-
-        /* TESTIMONIALS */
-
-        .testimony-section.bg-secondary {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .testimony-wrap {
-            background: var(--msm-white) !important;
-            border-top: 4px solid var(--msm-light-green);
-        }
-
-        .testimony-wrap .icon {
-            background: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .testimony-wrap .name {
-            color: var(--msm-dark-green) !important;
-        }
-
-
-        /* BLOG */
-
-        .blog-entry {
-            border-top: 4px solid var(--msm-light-green);
-        }
-
-        .blog-entry h3 a {
-            color: var(--msm-dark-green) !important;
-        }
-
-        .blog-entry h3 a:hover {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* SUBSCRIBE */
-
-        .bg-secondary {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .subscribe-form .submit {
-            background: var(--msm-light-green) !important;
-            border-color: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .subscribe-form .submit:hover {
-            background: var(--msm-white) !important;
-            color: var(--msm-dark-green) !important;
-        }
-
-
-        /* EVENTS / PRICING CARDS */
-
-        .block-7 {
-            background: var(--msm-white) !important;
-            border-top: 4px solid var(--msm-dark-green);
-            border-radius: 8px;
-            overflow: hidden;
-            height: 100%;
-        }
-
-        .block-7:hover {
-            border-top-color: var(--msm-light-green);
-        }
-
-        .block-7 .excerpt {
-            color: var(--msm-dark-green) !important;
-            font-weight: 600;
-        }
-
-        .pricing-text li {
-            color: var(--msm-text);
-        }
-
-        .pricing-text li .fa-check,
-        .pricing-text li .fa-calendar,
-        .pricing-text li .fa-clock,
-        .pricing-text li .fa-location-dot,
-        .pricing-text li .fa-star,
-        .pricing-text li .fa-user-plus,
-        .pricing-text li .fa-tag {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* EVENT IMAGES */
-
-        .event-image {
-            width: 100%;
-            height: 280px;
-            overflow: hidden;
-            margin-bottom: 20px;
-        }
-
-        .event-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-
-        /* FOOTER */
-
-        .footer {
-            background: var(--msm-dark-green) !important;
-        }
-
-        .footer .footer-heading {
-            color: var(--msm-white) !important;
-        }
-
-        .footer p,
-        .footer li,
-        .footer a {
-            color: var(--msm-white) !important;
-        }
-
-        .footer a:hover {
-            color: var(--msm-light-green) !important;
-        }
-
-
-        /* FOOTER SOCIAL ICONS */
-
-        .ftco-footer-social {
-            display: flex !important;
-            align-items: center !important;
-            padding: 0 !important;
-        }
-
-        .ftco-footer-social li {
-            margin-right: 15px !important;
-        }
-
-        .ftco-footer-social li a {
-            width: auto !important;
-            height: auto !important;
-            min-width: 0 !important;
-            min-height: 0 !important;
-            padding: 0 !important;
-            margin: 0 !important;
-            display: inline-flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            background: transparent !important;
-            border: none !important;
-            border-radius: 0 !important;
-            box-shadow: none !important;
-            color: #FFFFFF !important;
-        }
-
-        .ftco-footer-social li a i {
-            font-size: 20px !important;
-            line-height: 1 !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            background: transparent !important;
-            color: #FFFFFF !important;
-        }
-
-        .ftco-footer-social li a:hover,
-        .ftco-footer-social li a:hover i {
-            background: transparent !important;
-            color: #7CB342 !important;
-        }
-
-
-        /* CONSULTATION FORM */
-
-        .form-consultation .form-control {
-            border: 1px solid var(--msm-border);
-        }
-
-        .form-consultation .form-control:focus {
-            border-color: var(--msm-light-green) !important;
-            box-shadow: 0 0 0 0.15rem rgba(124, 179, 66, 0.20);
-        }
-
-        .form-consultation .submit {
-            background: var(--msm-light-green) !important;
-            border-color: var(--msm-light-green) !important;
-            color: var(--msm-white) !important;
-        }
-
-        .form-consultation .submit:hover {
-            background: var(--msm-white) !important;
-            color: var(--msm-dark-green) !important;
-        }
-
-
-        /* COPYRIGHT */
-
-        .copyright {
-            color: var(--msm-soft-green) !important;
-        }
-
-
-        /* MOBILE */
-
-        @media (max-width: 991px) {
-
-            .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-                color: var(--msm-dark-green) !important;
-            }
-
-            .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-                color: var(--msm-light-green) !important;
-            }
-
-            .social-media a {
-                padding: 0 6px !important;
-            }
-
-            .social-media a i {
-                font-size: 17px !important;
-            }
-
-        }
-
-
-        /* REMOVE SOCIAL ICON CIRCLES */
-
-        .wrap .social-media p {
-            display: flex !important;
-            align-items: center !important;
-            margin: 0 !important;
-        }
-
-        .wrap .social-media a {
-            display: inline-flex !important;
-            align-items: center !important;
-            justify-content: center !important;
-            width: auto !important;
-            height: auto !important;
-            min-width: 0 !important;
-            min-height: 0 !important;
-            padding: 0 8px !important;
-            margin: 0 !important;
-            background: transparent !important;
-            border: 0 !important;
-            border-radius: 0 !important;
-            box-shadow: none !important;
-            color: #FFFFFF !important;
-            text-decoration: none !important;
-        }
-
-        .wrap .social-media a::before,
-        .wrap .social-media a::after {
-            display: none !important;
-            content: none !important;
-        }
-
-        .wrap .social-media a i {
-            display: inline-block !important;
-            width: auto !important;
-            height: auto !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            background: transparent !important;
-            border: 0 !important;
-            border-radius: 0 !important;
-            font-size: 18px !important;
-            line-height: 1 !important;
-            color: #FFFFFF !important;
-        }
-
-        .wrap .social-media a:hover,
-        .wrap .social-media a:hover i {
-            background: transparent !important;
-            color: #7CB342 !important;
-        }
-
-
-        /* MOBILE MENU FALLBACK */
-
-        @media (max-width: 991px) {
-
-            #ftco-nav {
-                display: none;
-            }
-
-            #ftco-nav.show {
-                display: block;
-            }
-
-            #ftco-nav .navbar-nav {
-                padding-top: 15px;
-                padding-bottom: 15px;
-            }
-
-        }
-       .icon-circle {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    background: #0B3D2E;
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 20px auto;
-    font-size: 30px;
-}
-
-.icon-circle i {
-    color: #ffffff;
-} 
-/* =====================================================
-   HERO VISIBILITY FIX
-===================================================== */
-
-.hero-wrap {
-    width: 100%;
-    position: relative;
-}
-
-.home-slider {
-    width: 100%;
-    position: relative;
-}
-
-.home-slider .slider-item {
-    position: relative;
-    width: 100%;
-    min-height: 650px;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-}
-
-.home-slider .slider-item .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.home-slider .slider-text {
-    position: relative;
-    z-index: 2;
-}
-
-.home-slider .slider-text .text {
-    position: relative;
-    z-index: 3;
-}
-
-.home-slider .slider-text h1,
-.home-slider .slider-text h2,
-.home-slider .slider-text p {
-    position: relative;
-    z-index: 3;
-}
-
-@media (max-width: 767px) {
-
-    .home-slider .slider-item {
-        min-height: 600px;
-    }
-
-}
-        /* SEARCH ICON FIX */
-
-.searchform .search {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 50px !important;
-    height: 50px !important;
-    background: #0B3D2E !important;
-    color: #FFFFFF !important;
-    border: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-
-.searchform .search i {
-    display: inline-block !important;
-    font-family: FontAwesome !important;
-    font-size: 18px !important;
-    color: #FFFFFF !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-        /* SOCIAL ICONS FIX */
-
-.ftco-top-social a,
-.footer-social a,
-.social-media a {
-    opacity: 1 !important;
-    visibility: visible !important;
-    color: #FFFFFF !important;
-}
-
-.ftco-top-social a i,
-.footer-social a i,
-.social-media a i {
-    display: inline-block !important;
-    font-family: FontAwesome !important;
-    color: #FFFFFF !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-    </style>
-
-</head>
-
-
-<body>
-
-
-<!-- =====================================================
-     TOP BAR
-====================================================== -->
-
-<div class="wrap">
-
-    <div class="container">
-
-        <div class="row justify-content-between">
-
-            <div class="col">
-
-                <p class="mb-0 phone">
-
-                    <i class="fa fa-phone"></i>
-
-                    <a href="tel:+26656506092">
-                        +266 5650 6092
-                    </a>
-
+                <p class="mt-3">
+                    Join MSM Training Company for life-changing
+                    experiences, personal development, business
+                    growth and success.
                 </p>
 
             </div>
-
-
-            <div class="col d-flex justify-content-end">
-
-                <div class="social-media">
-
-                    <p class="mb-0 d-flex">
-
-                        <!-- FACEBOOK -->
-                        <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="Facebook">
-
-                            <i class="fa fa-facebook"></i>
-
-                        </a>
-
-
-                        <!-- TIKTOK -->
-                        <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="TikTok">
-
-                            <i class="fa fa-music"></i>
-
-                        </a>
-
-
-                        <!-- INSTAGRAM -->
-                        <a href="https://www.instagram.com/mohaumosoeunyane?utm_source=qr&igsi=Ynh4enVvYmVqaHQ4"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="Instagram">
-
-                            <i class="fa fa-instagram"></i>
-
-                        </a>
-
-
-                        <!-- WHATSAPP -->
-                        <a href="https://wa.me/26656506092"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           aria-label="WhatsApp">
-
-                            <i class="fa fa-whatsapp"></i>
-
-                        </a>
-
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- =====================================================
-     NAVIGATION
-====================================================== -->
-
-<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light"
-     id="ftco-navbar">
-
-    <div class="container">
-
-
-        <!-- LOGO -->
-
-        <a class="navbar-brand"
-           href="index.html">
-
-            <img src="images/LOGO.jpeg"
-                 alt="MSM Training Company"
-                 style="height:50px; width:auto;">
-
-        </a>
-
-
-        <!-- SEARCH -->
-
-        <form action="#"
-              class="searchform order-sm-start order-lg-last">
-
-            <div class="form-group d-flex">
-
-                <input type="text"
-                       class="form-control pl-3"
-                       placeholder="Search">
-
-                <button type="submit"
-                        class="form-control search"
-                        aria-label="Search">
-
-                   <i class="fa fa-search"></i>
-
-                </button>
-
-            </div>
-
-        </form>
-
-
-        <!-- MOBILE MENU -->
-
-        <button class="navbar-toggler"
-                type="button"
-                aria-controls="ftco-nav"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-
-            <i class="fa-solid fa-bars"></i>
-            Menu
-
-        </button>
-
-
-        <!-- MENU -->
-
-        <div class="collapse navbar-collapse"
-             id="ftco-nav">
-
-            <ul class="navbar-nav m-auto">
-
-
-                <li class="nav-item active">
-
-                    <a href="index.html"
-                       class="nav-link">
-
-                        Home
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="about.html"
-                       class="nav-link">
-
-                        About Us
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="services.html"
-                       class="nav-link">
-
-                        Services
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="course.html"
-                       class="nav-link">
-
-                        Courses
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="digital-products.html"
-                       class="nav-link">
-
-                        Digital Products
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="media.html"
-                       class="nav-link">
-
-                        Media
-
-                    </a>
-
-                </li>
-
-
-                <li class="nav-item">
-
-                    <a href="contact.html"
-                       class="nav-link">
-
-                        Contact Us
-
-                    </a>
-
-                </li>
-
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</nav>
-
-
-
-<!-- =====================================================
-     HERO
-====================================================== -->
-
-<div class="hero-wrap">
-
-    <div class="home-slider owl-carousel">
-
-
-        <!-- SLIDE 1 -->
-
-        <div class="slider-item"
-             style="background-image:url(images/ureng.jpg);">
-
-            <div class="overlay"></div>
-
-            <div class="container">
-
-                <div class="row no-gutters slider-text align-items-center justify-content-center">
-
-                    <div class="col-md-10 ftco-animate">
-
-                        <div class="text w-100 text-center">
-
-                            <h2>
-                                SUCCESS IS A CHOICE.
-                            </h2>
-
-                            <h1 class="mb-4">
-                                Transform your mindset.
-                                Unlock your potential.
-                            </h1>
-
-                            <p>
-
-                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="btn btn-white">
-
-                                    Connect with us
-
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- SLIDE 2 -->
-
-        <div class="slider-item"
-             style="background-image:url(images/smiles.jpg);">
-
-            <div class="overlay"></div>
-
-            <div class="container">
-
-                <div class="row no-gutters slider-text align-items-center justify-content-center">
-
-                    <div class="col-md-10 ftco-animate">
-
-                        <div class="text w-100 text-center">
-
-                            <h2>
-                                EMPOWER. TRANSFORM. SUCCEED.
-                            </h2>
-
-                            <h1 class="mb-4">
-                                Your transformation starts here.
-                            </h1>
-
-                            <p>
-
-                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="btn btn-white">
-
-                                    Connect with us
-
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- SLIDE 3 -->
-
-        <div class="slider-item"
-             style="background-image:url(images/services.jpg);">
-
-            <div class="overlay"></div>
-
-            <div class="container">
-
-                <div class="row no-gutters slider-text align-items-center justify-content-center">
-
-                    <div class="col-md-10 ftco-animate">
-
-                        <div class="text w-100 text-center">
-
-                            <h2>
-                                WELCOME TO MSM TRAINING COMPANY
-                                &amp; COUNSELLING SERVICES
-                            </h2>
-
-                            <h1 class="mb-4">
-                                BECOME THE MASTER OF YOUR SUCCESS.
-                            </h1>
-
-                            <p>
-
-                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   class="btn btn-white">
-
-                                    Connect with us
-
-                                </a>
-
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     INTRO
-====================================================== -->
-
-<section class="intro py-5 bg-light">
-
-    <div class="container">
-
-        <div class="row">
-
-
-            <!-- PHONE -->
-
-            <div class="col-md-4">
-
-                <div class="intro-box w-100 d-flex">
-
-                    <div class="icon d-flex align-items-center justify-content-center">
-
-                        <i class="fa-solid fa-phone"></i>
-
-                    </div>
-
-                    <div class="text pl-3">
-
-                        <h4 class="mb-0">
-                            Call us: +266 5650 6092
-                        </h4>
-
-                        <span>
-                            HA NNELESE MASERU LESOTHO
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- HOURS -->
-
-            <div class="col-md-4">
-
-                <div class="intro-box w-100 d-flex">
-
-                    <div class="icon d-flex align-items-center justify-content-center">
-
-                        <i class="fa-regular fa-clock"></i>
-
-                    </div>
-
-                    <div class="text pl-3">
-
-                        <h4 class="mb-0">
-                            Opening Hours
-                        </h4>
-
-                        <span>
-                            ALWAYS AVAILABLE
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- APPOINTMENT -->
-
-            <div class="col-md-4">
-
-                <div class="intro-box w-100">
-
-                    <p class="mb-0">
-
-                        <a href="https://wa.me/26656506092"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn btn-primary">
-
-                            <i class="fa-brands fa-whatsapp mr-2"></i>
-
-                            Make an Appointment
-
-                        </a>
-
-                    </p>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =====================================================
-     SERVICES
-====================================================== -->
-
-<section class="ftco-section">
-
-    <div class="container">
-
-        <div class="row justify-content-center pb-5 mb-3">
-
-            <div class="col-md-7 heading-section text-center">
-
-                <h2>
-                    We can help you in different situations
-                </h2>
-
-                <span class="subheading">
-                    We offer Services
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="row">
-
-
-            <!-- TRAIN -->
-
-            <div class="col-md-3 d-flex services align-self-stretch px-4">
-
-                <div class="d-block text-center w-100">
-
-                    <div class="icon-circle">
-                        <i class="fa fa-bullseye"></i>
-                    </div>
-
-                    <div class="media-body p-2 mt-3">
-
-                        <h3 class="heading">
-                            Train
-                        </h3>
-
-                        <p>
-                            Knowledge that moves people into action.
-
-                            With 61+ workshops and seminars delivered
-                            across Lesotho and South Africa, MSM has
-                            directly trained and inspired 7,000+ people
-                            through practical, impactful learning experiences.
-
-                            Learn. Apply. Grow.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- MOTIVATE -->
-
-            <div class="col-md-3 d-flex services align-self-stretch px-4">
-
-                <div class="d-block text-center w-100">
-
-                    <div class="icon-circle">
-                        <i class="fa fa-lightbulb-o"></i>
-                    </div>
-
-                    <div class="media-body p-2 mt-3">
-
-                        <h3 class="heading">
-                            Motivate
-                        </h3>
-
-                        <p>
-                            We help teams and organizations unlock
-                            potential, build confidence and turn
-                            motivation into meaningful action.
-
-                            Trusted by leading organizations across
-                            Lesotho &amp; South Africa.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- PEOPLE & RELATIONSHIPS -->
-
-            <div class="col-md-3 d-flex services align-self-stretch px-4">
-
-                <div class="d-block text-center w-100">
-
-                    <div class="icon-circle">
-                        <i class="fa fa-users"></i>
-                    </div>
-
-                    <div class="media-body p-2 mt-3">
-
-                        <h3 class="heading">
-                            People &amp; Relationships
-                        </h3>
-
-                        <p>
-                            Connect. Grow. Thrive.
-
-                            Empowering young people, strengthening
-                            relationships and creating spaces where
-                            individuals and couples can grow together.
-
-                            11,000+ students reached |
-                            Couples empowered
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- EMPOWER -->
-
-            <div class="col-md-3 d-flex services align-self-stretch px-4">
-
-                <div class="d-block text-center w-100">
-
-                    <div class="icon-circle">
-                        <i class="fa fa-star"></i>
-                    </div>
-
-                    <div class="media-body p-2 mt-3">
-
-                        <h3 class="heading">
-                            Empower
-                        </h3>
-
-                        <p>
-                            Empower people. Strengthen teams.
-                            Transform organizations.
-
-                            Over 3,000 civil servants empowered
-                            through team building, personal development
-                            and financial intelligence training.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     WHY MSM
-====================================================== -->
-
-<section class="ftco-section bg-light">
-
-    <div class="container">
-
-        <div class="row justify-content-center pb-5 mb-3">
-
-            <div class="col-md-8 heading-section text-center">
-
-                <h2>
-                    Why MSM TRAINING COMPANY &amp;
-                    COUNSELLING SERVICES?
-                </h2>
-
-                <span class="subheading">
-                    Our Values
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="row align-items-center">
-
-
-            <!-- CEO -->
-
-            <div class="col-md-6 mb-4 mb-md-0">
-
-                <div class="text-center">
-
-                    <img src="images/tshoeut.jpeg"
-                         alt="Mohau Mosoeunyane - CEO"
-                         class="img-fluid rounded">
-
-                    <h4 class="mt-3">
-                        MOHAU MOSOEUYNE (CEO)
-                    </h4>
-
-                </div>
-
-            </div>
-
-
-            <!-- VALUES -->
-
-            <div class="col-md-6">
-
-
-                <!-- EMPOWERMENT -->
-
-                <div class="services-2 w-100 d-flex mb-4">
-
-                    <div class="icon d-flex align-items-center justify-content-center">
-
-                        <span>
-                            <i class="fa fa-bullseye"></i>
-                        </span>
-
-                    </div>
-
-                    <div class="text pl-4">
-
-                        <h4>
-                            Empowerment
-                        </h4>
-
-                        <p>
-                            We believe everyone has the power to grow.
-
-                            We equip people with the knowledge,
-                            confidence and tools to unlock their
-                            potential and create meaningful change.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- PROFESSIONALISM -->
-
-                <div class="services-2 w-100 d-flex mb-4">
-
-                    <div class="icon d-flex align-items-center justify-content-center">
-
-                        <span>
-                            <i class="fa fa-briefcase"></i>
-                        </span>
-
-                    </div>
-
-                    <div class="text pl-4">
-
-                        <h4>
-                            Professionalism
-                        </h4>
-
-                        <p>
-                            We take our work seriously because
-                            your growth matters.
-
-                            We deliver with excellence, integrity
-                            and commitment — every time.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <!-- COLLABORATION -->
-
-                <div class="services-2 w-100 d-flex mb-4">
-
-                    <div class="icon d-flex align-items-center justify-content-center">
-
-                        <span>
-                            <i class="fa fa-users"></i>
-                        </span>
-
-                    </div>
-
-                    <div class="text pl-4">
-
-                        <h4>
-                            Collaboration
-                        </h4>
-
-                        <p>
-                            We believe we achieve more together.
-
-                            We work with people, experts and
-                            organizations to share ideas, build
-                            stronger solutions and create lasting impact.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     COUNTERS
-====================================================== -->
-
-<section class="ftco-counter"
-         id="section-counter">
-
-    <div class="container">
-
-        <div class="row">
-
-
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-
-                <div class="block-18 text-center">
-
-                    <div class="text">
-
-                        <strong class="number"
-                                data-number="73">
-                            0
-                        </strong>
-
-                    </div>
-
-                    <div class="text">
-
-                        <span>
-                            LIFE SKILLS YOUTH CAMP
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-
-                <div class="block-18 text-center">
-
-                    <div class="text">
-
-                        <strong class="number"
-                                data-number="11000">
-                            0
-                        </strong>
-
-                    </div>
-
-                    <div class="text">
-
-                        <span>
-                            ACADEMY SUCCESS PSYCHOLOGY
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-
-                <div class="block-18 text-center">
-
-                    <div class="text">
-
-                        <strong class="number"
-                                data-number="61">
-                            0
-                        </strong>
-
-                    </div>
-
-                    <div class="text">
-
-                        <span>
-                            PUBLIC WORKSHOPS
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
-
-                <div class="block-18 text-center">
-
-                    <div class="text">
-
-                        <strong class="number"
-                                data-number="7000">
-                            0
-                        </strong>
-
-                    </div>
-
-                    <div class="text">
-
-                        <span>
-                            PUBLIC EVENTS
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     TESTIMONIALS
-====================================================== -->
-
-<section class="ftco-section testimony-section bg-secondary">
-
-    <div class="container">
-
-        <div class="row justify-content-center pb-5 mb-3">
-
-            <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-
-                <h2>
-                    Happy Clients &amp; Feedbacks
-                </h2>
-
-                <span class="subheading">
-                    Testimonies
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="row ftco-animate">
-
-            <div class="col-md-12">
-
-                <div class="carousel-testimony owl-carousel ftco-owl">
-
-
-                    <!-- TESTIMONY 1 -->
-
-                    <div class="item">
-
-                        <div class="testimony-wrap py-4">
-
-                            <div class="icon d-flex align-items-center justify-content-center">
-
-                                <i class="fa-solid fa-quote-left"></i>
-
-                            </div>
-
-                            <div class="text">
-
-                                <p class="mb-4">
-
-                                    Good afternoon ntate, ke kopa ho nka
-                                    monyetla ona ho fana ka lehlakore laka
-                                    litabeng tsa Success Psychology seminar
-                                    eo ke bileng karolo ea eona.
-
-                                    Ruri ke khutlile ke khotsofetse haholo
-                                    kaha ebile letsatsi le letle la ho fetola
-                                    tsela eo ke shebang litaba tsaka tsa
-                                    khoebo ka eona.
-
-                                </p>
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="pl-3">
-
-                                        <p class="name">
-                                            ANONYMOUS
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- TESTIMONY 2 -->
-
-                    <div class="item">
-
-                        <div class="testimony-wrap py-4">
-
-                            <div class="icon d-flex align-items-center justify-content-center">
-
-                                <i class="fa-solid fa-quote-left"></i>
-
-                            </div>
-
-                            <div class="text">
-
-                                <p class="mb-4">
-
-                                    Hello ntate kannete ke I thabetse haholo
-                                    hoba karalo ea Success Psychology Seminar.
-
-                                    Ke ithutile hore ke bohlokoa bophelong
-                                    baka, kelello eaka ke eona e mpehang
-                                    moo ke batlang.
-
-                                    Ke lebohile haholo ntate.
-
-                                </p>
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="pl-3">
-
-                                        <p class="name">
-                                            ANONYMOUS
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- TESTIMONY 3 -->
-
-                    <div class="item">
-
-                        <div class="testimony-wrap py-4">
-
-                            <div class="icon d-flex align-items-center justify-content-center">
-
-                                <i class="fa-solid fa-quote-left"></i>
-
-                            </div>
-
-                            <div class="text">
-
-                                <p class="mb-4">
-
-                                    Hello ntate.
-
-                                    Ke ithutile hore ka energy e lekanang
-                                    le eaka ho na le motho a etsang chelete
-                                    e ngata, me sena se nruta hore ke etsa
-                                    chelete eke etsang hobane ke lumela joalo.
-
-                                    Tshebeliso eaka ea chelete e fetohile
-                                    haholo kamora ho attend seminar ntate
-                                    me ke thabile haholo.
-
-                                </p>
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="pl-3">
-
-                                        <p class="name">
-                                            ANONYMOUS
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- TESTIMONY 4 -->
-
-                    <div class="item">
-
-                        <div class="testimony-wrap py-4">
-
-                            <div class="icon d-flex align-items-center justify-content-center">
-
-                                <i class="fa-solid fa-quote-left"></i>
-
-                            </div>
-
-                            <div class="text">
-
-                                <p class="mb-4">
-
-                                    Khotso ntate Mohau.....ke ithutile taba
-                                    tse ngata hoo ebile sentse ke li etsa.
-
-                                    Ke ithutile hore they don't buy a
-                                    product ba reka motho and hojoalo.
-
-                                    I am a content creator ntate so hang
-                                    hake hlaha baa reka because ba rata
-                                    nna on social media.
-
-                                    Ke tloheletse mosebetsi hobane ke bona
-                                    hore I am all over.
-
-                                    Kea leboha haholo ka litaba tsa hau.
-
-                                </p>
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="pl-3">
-
-                                        <p class="name">
-                                            ANONYMOUS
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- TESTIMONY 5 -->
-
-                    <div class="item">
-
-                        <div class="testimony-wrap py-4">
-
-                            <div class="icon d-flex align-items-center justify-content-center">
-
-                                <i class="fa-solid fa-quote-left"></i>
-
-                            </div>
-
-                            <div class="text">
-
-                                <p class="mb-4">
-
-                                    Ke litsamaile li seminar ihlile
-                                    o fana ka content ea boemo bo holimo haholo.
-
-                                </p>
-
-                                <div class="d-flex align-items-center">
-
-                                    <div class="pl-3">
-
-                                        <p class="name">
-                                            ANONYMOUS
-                                        </p>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     BLOG / MEDIA
-====================================================== -->
-
-<section class="ftco-section">
-
-    <div class="container">
-
-        <div class="row justify-content-center pb-5 mb-3">
-
-            <div class="col-md-7 heading-section text-center ftco-animate">
-
-                <h2>
-                    Latest news from our blog
-                </h2>
-
-                <span class="subheading">
-                    News &amp; Blog
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <div class="row d-flex">
-
-            <div class="col-md-4 d-flex ftco-animate">
-
-                <div class="blog-entry align-self-stretch">
-
-                    <a href="media.html"
-                       class="block-20 rounded"
-                       style="background-image:url('images/image_1.jpg');">
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SUBSCRIBE
-====================================================== -->
-
-<section class="ftco-section ftco-no-pb ftco-no-pt">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-12">
-
-                <div class="bg-secondary w-100 rounded p-4">
-
-                    <div class="row">
-
-                        <div class="col-md-7 d-flex align-items-center">
-
-                            <h2 class="mb-3 mb-sm-0"
-                                style="color:#FFFFFF; font-size:18px;">
-
-                                Subscribe for our weekly tips
-
-                            </h2>
-
-                        </div>
-
-
-                        <div class="col-md-5 d-flex align-items-center">
-
-                            <form action="#"
-                                  class="subscribe-form w-100">
-
-                                <div class="form-group d-flex">
-
-                                    <input type="email"
-                                           class="form-control"
-                                           placeholder="Enter email address"
-                                           required>
-
-                                    <input type="submit"
-                                           value="Subscribe"
-                                           class="submit px-3">
-
-                                </div>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     EVENTS
-====================================================== -->
-
-<section class="ftco-section bg-light">
-
-    <div class="container">
-
-
-        <div class="row justify-content-center pb-5 mb-3">
-
-            <div class="col-md-7 heading-section text-center ftco-animate">
-
-                <h2>
-                    OUR EVENTS
-                </h2>
-
-                <span class="subheading">
-                    Upcoming Events &amp; Special Offers
-                </span>
-
-            </div>
-
         </div>
 
 
@@ -4455,56 +2354,55 @@
 
 
             <!-- =================================================
-                 MASTER CLASS
+                 MASTER CLASS KIT
             ================================================== -->
 
-            <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="col-md-6 col-lg-4 ftco-animate mb-4">
 
-                <div class="block-7"
-                     id="master-class">
+                <div class="msm-event-card" id="master-class">
 
-                    <div class="event-image">
+                    <div class="msm-event-image">
 
                         <img src="images/master class kit.jpeg"
-                             alt="Master Class Kit"
-                             class="img-fluid">
+                             alt="MSM Master Class Kit">
 
                     </div>
 
+                    <div class="msm-event-content">
 
-                    <div class="text-center">
-
-                        <span class="excerpt d-block">
-                            Master Class Kit
+                        <span class="msm-event-label">
+                            DIGITAL PRODUCT
                         </span>
 
-                        <span class="excerpt d-block">
-                            Wealth Creation
-                        </span>
+                        <h4>Master Class Kit</h4>
 
+                        <p>
+                            Equip yourself with useful learning
+                            materials to support your wealth creation
+                            journey.
+                        </p>
 
-                        <ul class="pricing-text mb-5">
+                        <ul class="msm-event-details">
 
                             <li>
-                                <i class="fa-solid fa-check mr-2"></i>
+                                <i class="fa-solid fa-check"></i>
                                 Pen
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-check mr-2"></i>
+                                <i class="fa-solid fa-check"></i>
                                 Flash drive
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-check mr-2"></i>
+                                <i class="fa-solid fa-check"></i>
                                 Booklet
                             </li>
 
                         </ul>
 
-
                         <a href="digital-products.html"
-                           class="btn btn-primary d-block px-2 py-3">
+                           class="msm-event-button">
 
                             BUY NOW
 
@@ -4518,1906 +2416,74 @@
 
 
 
-           <!-- =================================================
+            <!-- =================================================
                  COUPLES RETREAT
-================================================== -->
+            ================================================== -->
 
-<div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="col-md-6 col-lg-4 ftco-animate mb-4">
 
-    <div class="block-7" id="couples-retreat">
+                <div class="msm-event-card" id="couples-retreat">
 
-        <div class="event-image">
-            <img src="images/couple.jpeg"
-                 alt="Couples Retreat"
-                 class="img-fluid">
-        </div>
+                    <div class="msm-event-image">
 
-        <div class="text-center p-3">
+                        <img src="images/couple.jpeg"
+                             alt="MSM Couples Retreat">
 
-            <span class="excerpt d-block">
-                COUPLES RETREAT
-            </span>
-
-            <span class="excerpt d-block">
-                PER COUPLE
-            </span>
-
-            <!-- COUNTDOWN -->
-            <div class="retreat-countdown">
-
-                <h6>COUNTDOWN TO THE RETREAT</h6>
-
-                <div class="countdown-grid">
-
-                    <div class="countdown-box">
-                        <strong id="retreat-days">00</strong>
-                        <small>DAYS</small>
                     </div>
 
-                    <div class="countdown-box">
-                        <strong id="retreat-hours">00</strong>
-                        <small>HOURS</small>
-                    </div>
+                    <div class="msm-event-content">
 
-                    <div class="countdown-box">
-                        <strong id="retreat-minutes">00</strong>
-                        <small>MINS</small>
-                    </div>
+                        <span class="msm-event-label">
+                            SPECIAL EXPERIENCE
+                        </span>
 
-                    <div class="countdown-box">
-                        <strong id="retreat-seconds">00</strong>
-                        <small>SECS</small>
-                    </div>
-
-                </div>
-            </div>
-
-            <ul class="pricing-text mb-5">
-
-                <li>
-                    <i class="fa-solid fa-check mr-2"></i>
-                    DURBAN BALLITO
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check mr-2"></i>
-                    3 NIGHTS ACCOMMODATION
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check mr-2"></i>
-                    MEALS
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check mr-2"></i>
-                    TRANSPORT
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-check mr-2"></i>
-                    ACTIVITIES AND MANY MORE
-                </li>
-
-            </ul>
-
-            <a href="https://wa.me/26656506092"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-primary d-block px-2 py-3">
-
-                <i class="fa-brands fa-whatsapp mr-2"></i>
-                BOOK NOW
-
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- COUNTDOWN STYLING -->
-<style>
-
-.retreat-countdown {
-    background: #0B3D2E;
-    color: white;
-    padding: 18px 8px;
-    border-radius: 10px;
-    margin: 20px 0;
-}
-
-.retreat-countdown h6 {
-    color: #A8D08D;
-    font-weight: 800;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
-}
-
-.countdown-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 6px;
-}
-
-.countdown-box {
-    background: rgba(255,255,255,0.12);
-    padding: 10px 3px;
-    border-radius: 6px;
-}
-
-.countdown-box strong {
-    display: block;
-    font-size: 24px;
-    color: #D9AD50;
-    font-weight: 900;
-    line-height: 1.3;
-}
-
-.countdown-box small {
-    font-size: 9px;
-    color: white;
-    font-weight: 700;
-}
-
-</style>
-
-
-<!-- COUNTDOWN SCRIPT -->
-<script>
-
-(function() {
-
-    // REPLACE WITH THE CONFIRMED RETREAT DATE AND START TIME
-    const retreatDate = new Date(
-        'RETREAT_DATE_HERE T08:00:00+02:00'
-    ).getTime();
-
-    function updateRetreatCountdown() {
-
-        const now = new Date().getTime();
-        const distance = retreatDate - now;
-
-        if (isNaN(retreatDate)) return;
-
-        if (distance <= 0) {
-            document.getElementById('couples-retreat')
-                .querySelector('.retreat-countdown')
-                .innerHTML = '<h6>THE RETREAT HAS BEGUN!</h6>';
-            clearInterval(timer);
-            return;
-        }
-
-        document.getElementById('retreat-days').textContent =
-            Math.floor(distance / (1000 * 60 * 60 * 24));
-
-        document.getElementById('retreat-hours').textContent =
-            Math.floor((distance / (1000 * 60 * 60)) % 24);
-
-        document.getElementById('retreat-minutes').textContent =
-            Math.floor((distance / (1000 * 60)) % 60);
-
-        document.getElementById('retreat-seconds').textContent =
-            Math.floor((distance / 1000) % 60);
-    }
-
-    updateRetreatCountdown();
-
-    const timer = setInterval(updateRetreatCountdown, 1000);
-
-})();
-
-</script>
-           <!-- =================================================
-             MOKHOTLONG SEMINAR
-================================================== -->
-
-<div class="col-md-6 col-lg-3 ftco-animate">
-
-    <div class="block-7" id="mokhotlong-event">
-
-        <div class="event-image">
-            <img src="images/mokhotlong.jpeg"
-                 alt="Mokhotlong Seminar"
-                 class="img-fluid">
-        </div>
-
-        <div class="text-center p-3">
-
-            <span class="excerpt d-block">
-                MOKHOTLONG SEMINAR
-            </span>
-
-            <span class="excerpt d-block">
-                7 NOVEMBER 2026
-            </span>
-
-            <!-- LIVE COUNTDOWN -->
-            <div class="event-status-countdown">
-
-                <h6>COUNTDOWN TO MOKHOTLONG!</h6>
-
-                <div class="event-countdown">
-
-                    <div>
-                        <strong id="mok-days">00</strong>
-                        <small>DAYS</small>
-                    </div>
-
-                    <div>
-                        <strong id="mok-hours">00</strong>
-                        <small>HOURS</small>
-                    </div>
-
-                    <div>
-                        <strong id="mok-minutes">00</strong>
-                        <small>MINS</small>
-                    </div>
-
-                    <div>
-                        <strong id="mok-seconds">00</strong>
-                        <small>SECS</small>
-                    </div>
-
-                </div>
-            </div>
-
-            <ul class="pricing-text mb-4">
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    MOKHOTLONG, LESOTHO
-                </li>
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    09:00 - 16:00 HRS
-                </li>
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    PERSONAL DEVELOPMENT
-                </li>
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    MOTIVATION AND EMPOWERMENT
-                </li>
-
-            </ul>
-
-            <a href="https://wa.me/26656506092"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn btn-primary d-block px-2 py-3">
-
-                <i class="fa-brands fa-whatsapp mr-2"></i>
-                BOOK NOW
-
-            </a>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- =================================================
-                 LERIBE SEMINAR
-================================================== -->
-
-<div class="col-md-6 col-lg-3 ftco-animate">
-
-    <div class="block-7" id="leribe-event">
-
-        <div class="event-image">
-            <img src="images/leribe.jpeg"
-                 alt="Leribe Seminar"
-                 class="img-fluid">
-        </div>
-
-        <div class="text-center p-3">
-
-            <span class="excerpt d-block">
-                LERIBE SEMINAR
-            </span>
-
-            <!-- SOLD OUT LABEL -->
-            <div class="sold-out-banner">
-                <i class="fa-solid fa-circle-check"></i>
-                SOLD OUT
-            </div>
-
-            <ul class="pricing-text mb-4">
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    LERIBE, LESOTHO
-                </li>
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    PERSONAL DEVELOPMENT
-                </li>
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    MOTIVATION AND EMPOWERMENT
-                </li>
-
-            </ul>
-
-            <button type="button"
-                    class="btn btn-secondary d-block px-2 py-3 w-100"
-                    disabled>
-
-                <i class="fa-solid fa-lock mr-2"></i>
-                REGISTRATION CLOSED
-
-            </button>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- =================================================
-                 MAFETENG SEMINAR
-================================================== -->
-
-<div class="col-md-6 col-lg-3 ftco-animate">
-
-    <div class="block-7" id="mafeteng-event">
-
-        <div class="event-image">
-            <img src="images/mafeteng.jpeg"
-                 alt="Mafeteng Seminar"
-                 class="img-fluid">
-        </div>
-
-        <div class="text-center p-3">
-
-            <span class="excerpt d-block">
-                MAFETENG SEMINAR
-            </span>
-
-            <!-- SOLD OUT LABEL -->
-            <div class="sold-out-banner">
-                <i class="fa-solid fa-circle-check"></i>
-                SOLD OUT
-            </div>
-
-            <ul class="pricing-text mb-4">
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    MAFETENG, LESOTHO
-                </li>
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    PERSONAL DEVELOPMENT
-                </li>
-
-                <li><i class="fa-solid fa-check mr-2"></i>
-                    MOTIVATION AND EMPOWERMENT
-                </li>
-
-            </ul>
-
-            <button type="button"
-                    class="btn btn-secondary d-block px-2 py-3 w-100"
-                    disabled>
-
-                <i class="fa-solid fa-lock mr-2"></i>
-                REGISTRATION CLOSED
-
-            </button>
-
-        </div>
-    </div>
-</div>
-
-
-<!-- =================================================
-             EVENT COUNTDOWN & SOLD OUT STYLING
-================================================== -->
-
-<style>
-
-.event-status-countdown {
-    background: #0B3D2E;
-    color: #fff;
-    padding: 16px 8px;
-    margin: 18px 0;
-    border-radius: 8px;
-    text-align: center;
-}
-
-.event-status-countdown h6 {
-    color: #A8D08D;
-    font-weight: 800;
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-bottom: 14px;
-}
-
-.event-countdown {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-}
-
-.event-countdown div {
-    background: rgba(255,255,255,0.12);
-    padding: 9px 2px;
-    border-radius: 5px;
-}
-
-.event-countdown strong {
-    display: block;
-    font-size: 22px;
-    color: #D9AD50;
-    font-weight: 900;
-}
-
-.event-countdown small {
-    display: block;
-    font-size: 9px;
-    color: #fff;
-    font-weight: 700;
-}
-
-.sold-out-banner {
-    background: #B42318;
-    color: #fff;
-    padding: 13px 8px;
-    margin: 18px 0;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 900;
-    letter-spacing: 2px;
-}
-
-.sold-out-banner i {
-    margin-right: 7px;
-}
-
-#leribe-event .btn:disabled,
-#mafeteng-event .btn:disabled {
-    opacity: 0.8;
-    cursor: not-allowed;
-}
-
-</style>
-
-
-<!-- =================================================
-             MOKHOTLONG COUNTDOWN SCRIPT
-================================================== -->
-
-<script>
-
-(function () {
-
-    // 7 November 2026, 09:00 Lesotho time
-    const eventDate = new Date(
-        '2026-11-07T09:00:00+02:00'
-    ).getTime();
-
-    const days = document.getElementById('mok-days');
-    const hours = document.getElementById('mok-hours');
-    const minutes = document.getElementById('mok-minutes');
-    const seconds = document.getElementById('mok-seconds');
-
-    if (!days || !hours || !minutes || !seconds) return;
-
-    function updateCountdown() {
-
-        const now = Date.now();
-        const distance = eventDate - now;
-
-        if (distance <= 0) {
-
-            document.querySelector(
-                '#mokhotlong-event .event-status-countdown'
-            ).innerHTML =
-                '<h6>THE MOKHOTLONG EVENT DAY IS HERE!</h6>';
-
-            clearInterval(timer);
-            return;
-        }
-
-        days.textContent =
-            Math.floor(distance / (1000 * 60 * 60 * 24));
-
-        hours.textContent =
-            Math.floor((distance / (1000 * 60 * 60)) % 24);
-
-        minutes.textContent =
-            Math.floor((distance / (1000 * 60)) % 60);
-
-        seconds.textContent =
-            Math.floor((distance / 1000) % 60);
-    }
-
-    updateCountdown();
-
-    const timer = setInterval(updateCountdown, 1000);
-
-})();
-
-</script>
-           <!-- =================================================
-       1 DAY SALES & MARKETING WORKSHOP
-================================================== -->
-
-<div class="col-md-6 col-lg-3 ftco-animate">
-
-    <div class="block-7"
-         id="sales-marketing-workshop">
-
-        <div class="event-image">
-
-            <img src="images/1 day workshop.jpeg"
-                 alt="1 Day Sales and Marketing Workshop"
-                 class="img-fluid">
-
-        </div>
-
-        <div class="text-center p-3">
-
-            <span class="excerpt d-block">
-                1 DAY SALES &amp; MARKETING WORKSHOP
-            </span>
-
-            <span class="excerpt d-block">
-                14 NOVEMBER 2026
-            </span>
-
-
-            <!-- LIVE COUNTDOWN -->
-            <div class="workshop-countdown">
-
-                <h6>
-                    <i class="fa-solid fa-hourglass-half mr-2"></i>
-                    COUNTDOWN TO THE WORKSHOP
-                </h6>
-
-                <div class="workshop-timer">
-
-                    <div class="timer-box">
-                        <strong id="sales-days">00</strong>
-                        <small>DAYS</small>
-                    </div>
-
-                    <div class="timer-box">
-                        <strong id="sales-hours">00</strong>
-                        <small>HOURS</small>
-                    </div>
-
-                    <div class="timer-box">
-                        <strong id="sales-minutes">00</strong>
-                        <small>MINS</small>
-                    </div>
-
-                    <div class="timer-box">
-                        <strong id="sales-seconds">00</strong>
-                        <small>SECS</small>
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- WORKSHOP DETAILS -->
-            <ul class="pricing-text mb-4">
-
-                <li>
-                    <i class="fa-solid fa-calendar mr-2"></i>
-                    14 NOVEMBER 2026
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-clock mr-2"></i>
-                    08:00 AM – 6:00 PM
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-location-dot mr-2"></i>
-                    STATE LIBRARY, MASERU
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-tag mr-2"></i>
-                    REGULAR PRICE R750
-                </li>
-
-                <li>
-                    <i class="fa-solid fa-star mr-2"></i>
-                    EARLY BIRD R550
-                </li>
-
-            </ul>
-
-
-            <p class="small mb-3">
-                Sales, Marketing, Customer Acquisition
-                &amp; Social Media Ads Mastery
-            </p>
-
-
-            <a href="sales-marketing-workshop.html"
-               class="btn btn-primary d-block px-2 py-3">
-
-                <i class="fa-solid fa-ticket mr-2"></i>
-                REGISTER NOW
-
-            </a>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- =================================================
-       WORKSHOP COUNTDOWN STYLING
-================================================== -->
-
-<style>
-
-.workshop-countdown {
-    background: #0B3D2E;
-    padding: 17px 8px;
-    margin: 18px 0;
-    border-radius: 9px;
-    color: white;
-}
-
-.workshop-countdown h6 {
-    color: #A8D08D;
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 1px;
-    margin-bottom: 14px;
-}
-
-.workshop-timer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
-}
-
-.timer-box {
-    background: rgba(255,255,255,0.12);
-    padding: 10px 2px;
-    border-radius: 5px;
-}
-
-.timer-box strong {
-    display: block;
-    color: #D9AD50;
-    font-size: 23px;
-    font-weight: 900;
-    line-height: 1.3;
-}
-
-.timer-box small {
-    color: #ffffff;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-</style>
-
-
-<!-- =================================================
-       WORKSHOP COUNTDOWN JAVASCRIPT
-================================================== -->
-
-<script>
-
-(function() {
-
-    // 14 November 2026, 08:00 Lesotho time
-    const workshopDate = new Date(
-        '2026-11-14T08:00:00+02:00'
-    ).getTime();
-
-    const countdown = document.getElementById(
-        'sales-marketing-workshop'
-    );
-
-    if (!countdown) return;
-
-    const days = countdown.querySelector('#sales-days');
-    const hours = countdown.querySelector('#sales-hours');
-    const minutes = countdown.querySelector('#sales-minutes');
-    const seconds = countdown.querySelector('#sales-seconds');
-
-    function updateWorkshopCountdown() {
-
-        const now = Date.now();
-        const distance = workshopDate - now;
-
-        if (distance <= 0) {
-
-            countdown.querySelector(
-                '.workshop-countdown'
-            ).innerHTML = `
-                <h6>
-                    <i class="fa-solid fa-star mr-2"></i>
-                    THE WORKSHOP DAY IS HERE!
-                </h6>
-            `;
-
-            clearInterval(timer);
-            return;
-        }
-
-        days.textContent =
-            Math.floor(distance / (1000 * 60 * 60 * 24));
-
-        hours.textContent =
-            Math.floor((distance / (1000 * 60 * 60)) % 24);
-
-        minutes.textContent =
-            Math.floor((distance / (1000 * 60)) % 60);
-
-        seconds.textContent =
-            Math.floor((distance / 1000) % 60);
-
-    }
-
-    updateWorkshopCountdown();
-
-    const timer = setInterval(
-        updateWorkshopCountdown, 1000
-    );
-
-})();
-
-</script>
-
-    <!-- Youth Mentorship Camp -->
-<div class="col-lg-4 col-md-6 mb-4">
-    <div class="event-item">
-        <div class="event-img">
-            <img src="images/youth-camp.jpg" alt="Youth Mentorship Camp" class="img-fluid">
-        </div>
-
-        <div class="event-content p-4">
-            <h4>7-Day Youth Mentorship Camp</h4>
-
-            <p>
-                <strong>07 – 13 December 2026</strong>
-            </p>
-
-            <p>
-                📍 China-Sehlabeng, Maseru, Lesotho
-            </p>
-
-            <p>
-                👥 Ages 14 – 25 Years
-            </p>
-
-            <p>
-                Only <strong>30 youths</strong> will be accepted.
-            </p>
-
-            <p>
-                A powerful 7-day experience focused on
-                <strong>success, leadership, purpose and life skills.</strong>
-            </p>
-
-            <p>
-                🔥 Early Bird: <strong>R2,500</strong>
-                <br>
-                Regular: <strong>R3,200</strong>
-            </p>
-
-            <p>
-                Early Bird is available to the <strong>first 5 people</strong> only.
-            </p>
-
-            <p>
-                Fee includes meals, accommodation, activities,
-                events and mentorship sessions.
-            </p>
-
-            <a href="youth-camp.html" class="btn btn-primary">
-                VIEW CAMP & REGISTER
-            </a>
-        </div>
-    </div>
-</div>
-<!-- End Youth Mentorship Camp -->
-
-</section>
-
-
-
-<!-- =====================================================
-     FOOTER
-====================================================== -->
-
-<footer class="footer">
-
-    <div class="container-fluid px-lg-5">
-
-        <div class="row">
-
-
-            <!-- FOOTER LEFT -->
-
-            <div class="col-md-9 py-5">
-
-                <div class="row">
-
-
-                    <!-- ABOUT -->
-
-                    <div class="col-md-4 mb-md-0 mb-4">
-
-                        <h2 class="footer-heading">
-                            About us
-                        </h2>
+                        <h4>Couples Retreat</h4>
 
                         <p>
-                            MSM: We train, motivate, empower and
-                            connect individuals, government ministries,
-                            groups, organizations and companies!
+                            Take time to reconnect, grow together
+                            and strengthen your relationship.
                         </p>
 
-
-                        <ul class="ftco-footer-social p-0">
-
-
-                            <!-- TIKTOK -->
-
-                            <li class="ftco-animate">
-                                <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   title="TikTok"
-                                   aria-label="TikTok">
-
-                                    <i class="fa-brands fa-tiktok"></i>
-
-                                </a>
-
-                            </li>
-
-
-                            <!-- FACEBOOK -->
-
-                            <li class="ftco-animate">
-
-                                <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   title="Facebook"
-                                   aria-label="Facebook">
-
-                                  <i class="fa fa-facebook"></i>
-
-                                </a>
-
-                            </li>
-
-
-                            <!-- INSTAGRAM -->
-
-                            <li class="ftco-animate">
-
-                                <a href="https://www.instagram.com/mohaumosoeunyane?utm_source=qr&igsi=Ynh4enVvYmVqaHQ4"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   title="Instagram"
-                                   aria-label="Instagram">
-
-                                 <i class="fa fa-instagram"></i>
-
-                                </a>
-
-                            </li>
-
-
-                            <!-- WHATSAPP -->
-
-                            <li class="ftco-animate">
-
-                                <a href="https://wa.me/26656506092"
-                                   target="_blank"
-                                   rel="noopener noreferrer"
-                                   title="WhatsApp"
-                                   aria-label="WhatsApp">
-
-                                    <i class="fa fa-whatsapp"></i>
-
-                                </a>
-
-                            </li>
-
-
-                        </ul>
-
-                    </div>
-
-
-
-                    <!-- FOOTER LINKS -->
-
-                    <div class="col-md-8">
-
-                        <div class="row justify-content-center">
-
-                            <div class="col-md-12 col-lg-10">
-
-                                <div class="row">
-
-
-                                    <!-- MEDIA -->
-
-                                    <div class="col-md-4 mb-md-0 mb-4">
-
-                                        <h2 class="footer-heading">
-                                            Media
-                                        </h2>
-
-                                        <ul class="list-unstyled">
-
-
-                                            <li>
-
-                                                <a href="digital-products.html"
-                                                   class="py-1 d-block">
-
-                                                    Six Block Action Course
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="#couples-retreat"
-                                                   class="py-1 d-block">
-
-                                                    Couples Retreat
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="#master-class"
-                                                   class="py-1 d-block">
-
-                                                    Master Classes
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="#leribe-seminar"
-                                                   class="py-1 d-block">
-
-                                                    Leribe Seminar Tour
-
-                                                </a>
-
-                                            </li>
-
-
-                                        </ul>
-
-                                    </div>
-
-
-
-                                    <!-- SERVICES -->
-
-                                    <div class="col-md-4 mb-md-0 mb-4">
-
-                                        <h2 class="footer-heading">
-                                            Services
-                                        </h2>
-
-                                        <ul class="list-unstyled">
-
-
-                                            <li>
-
-                                                <a href="services.html"
-                                                   class="py-1 d-block">
-
-                                                    Life Coaching
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="services.html"
-                                                   class="py-1 d-block">
-
-                                                    Counselling
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="services.html"
-                                                   class="py-1 d-block">
-
-                                                    Training
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="services.html"
-                                                   class="py-1 d-block">
-
-                                                    Motivation
-
-                                                </a>
-
-                                            </li>
-
-
-                                        </ul>
-
-                                    </div>
-
-
-
-                                    <!-- QUICK LINKS -->
-
-                                    <div class="col-md-4 mb-md-0 mb-4">
-
-                                        <h2 class="footer-heading">
-                                            Quick Links
-                                        </h2>
-
-                                        <ul class="list-unstyled">
-
-
-                                            <li>
-
-                                                <a href="index.html"
-                                                   class="py-1 d-block">
-
-                                                    Home
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="about.html"
-                                                   class="py-1 d-block">
-
-                                                    About Us
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="services.html"
-                                                   class="py-1 d-block">
-
-                                                    Services
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="course.html"
-                                                   class="py-1 d-block">
-
-                                                    Courses
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="digital-products.html"
-                                                   class="py-1 d-block">
-
-                                                    Digital Products
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="media.html"
-                                                   class="py-1 d-block">
-
-                                                    Media
-
-                                                </a>
-
-                                            </li>
-
-
-                                            <li>
-
-                                                <a href="contact.html"
-                                                   class="py-1 d-block">
-
-                                                    Contact
-
-                                                </a>
-
-                                            </li>
-
-
-                                        </ul>
-
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- COPYRIGHT -->
-
-                <div class="row mt-md-5">
-
-                    <div class="col-md-12">
-
-                        <p class="copyright">
-
-                            Copyright &copy; 2015–
-
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-
-                            MSM Training Company and Counselling Services.
-                            All rights reserved.
-
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-
-
-
-            <!-- FREE CONSULTATION -->
-
-            <div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
-
-                <h2 class="footer-heading">
-                    Free consultation
-                </h2>
-
-
-                <form action="https://wa.me/26656506092"
-                      method="get"
-                      class="form-consultation">
-
-
-                    <div class="form-group">
-
-                        <input type="text"
-                               name="name"
-                               class="form-control"
-                               placeholder="Your Name"
-                               required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <input type="email"
-                               name="email"
-                               class="form-control"
-                               placeholder="Your Email"
-                               required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <input type="text"
-                               name="subject"
-                               class="form-control"
-                               placeholder="Subject"
-                               required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <textarea name="message"
-                                  cols="30"
-                                  rows="3"
-                                  class="form-control"
-                                  placeholder="Message"
-                                  required></textarea>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <button type="submit"
-                                class="form-control submit px-3">
-
-                            Send A Message
-
-                        </button>
-
-                    </div>
-
-
-                </form>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</footer>
-
-
-
-<!-- =====================================================
-     LOADER
-====================================================== -->
-
-<div id="ftco-loader"
-     class="show fullscreen">
-
-    <svg class="circular"
-         width="48px"
-         height="48px">
-
-        <circle class="path-bg"
-                cx="24"
-                cy="24"
-                r="22"
-                fill="none"
-                stroke-width="4"
-                stroke="#eeeeee"/>
-
-        <circle class="path"
-                cx="24"
-                cy="24"
-                r="22"
-                fill="none"
-                stroke-width="4"
-                stroke-miterlimit="10"
-                stroke="#7CB342"/>
-
-    </svg>
-
-</div>
-
-
-
-<!-- =====================================================
-     JAVASCRIPT
-====================================================== -->
-
-<script src="Js/jquery.min.js"></script>
-<script src="Js/jquery-migrate-3.0.1.min.js"></script>
-<script src="Js/popper.min.js"></script>
-<script src="Js/bootstrap.min.js"></script>
-<script src="Js/jquery.easing.1.3.js"></script>
-<script src="Js/jquery.waypoints.min.js"></script>
-<script src="Js/jquery.stellar.min.js"></script>
-<script src="Js/jquery.animatenumber.min.js"></script>
-<script src="Js/owl.carousel.min.js"></script>
-<script src="Js/scrollax.min.js"></script>
-<script src="Js/main.js"></script>
-
-
-<!-- =====================================================
-     HERO / OWL CAROUSEL
-====================================================== -->
-
-<script>
-
-$(document).ready(function () {
-
-    if ($('.home-slider').length && $.fn.owlCarousel) {
-
-        $('.home-slider').owlCarousel({
-
-            items: 1,
-
-            loop: true,
-
-            autoplay: true,
-
-            autoplayTimeout: 5000,
-
-            autoplayHoverPause: false,
-
-            smartSpeed: 1000,
-
-            animateOut: 'fadeOut',
-
-            animateIn: 'fadeIn',
-
-            dots: true,
-
-            nav: false,
-
-            mouseDrag: true,
-
-            touchDrag: true
-
-        });
-
-    }
-
-});
-
-</script>
-
-
-<!-- =====================================================
-     MOBILE MENU + SEARCH
-====================================================== -->
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    /* MOBILE MENU */
-
-    const menuButton =
-        document.querySelector(".navbar-toggler");
-
-    const menu =
-        document.getElementById("ftco-nav");
-
-
-    if (menuButton && menu) {
-
-        menuButton.addEventListener("click", function () {
-
-            menu.classList.toggle("show");
-
-            const expanded =
-                menu.classList.contains("show");
-
-            menuButton.setAttribute(
-                "aria-expanded",
-                expanded ? "true" : "false"
-            );
-
-        });
-
-    }
-
-
-    /* CLOSE MOBILE MENU AFTER CLICKING A LINK */
-
-    if (menu) {
-
-        const menuLinks =
-            menu.querySelectorAll("a");
-
-        menuLinks.forEach(function (link) {
-
-            link.addEventListener("click", function () {
-
-                if (window.innerWidth <= 991) {
-
-                    menu.classList.remove("show");
-
-                    if (menuButton) {
-
-                        menuButton.setAttribute(
-                            "aria-expanded",
-                            "false"
-                        );
-
-                    }
-
-                }
-
-            });
-
-        });
-
-    }
-
-
-    /* SEARCH */
-
-const searchForm =
-    document.querySelector(".searchform");
-
-if (searchForm) {
-
-    searchForm.addEventListener("submit", function (event) {
-
-        event.preventDefault();
-
-        const searchInput =
-            searchForm.querySelector(
-                "input[type='text']"
-            );
-
-        if (
-            searchInput &&
-            searchInput.value.trim() !== ""
-        ) {
-
-            const search =
-                searchInput.value.trim().toLowerCase();
-
-
-            /* WEBSITE PAGES */
-
-            const pages = {
-
-                "home": "index.html",
-
-                "about": "about.html",
-                "about us": "about.html",
-
-                "services": "services.html",
-                "service": "services.html",
-
-                "courses": "course.html",
-                "course": "course.html",
-
-                "digital products": "digital-products.html",
-                "digital product": "digital-products.html",
-
-                "media": "media.html",
-
-                "contact": "contact.html",
-                "contact us": "contact.html",
-
-                "leribe": "leribe-seminar.html",
-                "leribe seminar": "leribe-seminar.html",
-
-                "mafeteng": "mafeteng.html",
-                "mafeteng seminar": "mafeteng.html",
-
-                "mokhotlong": "mokhotlong.html",
-                "mokhotlong seminar": "mokhotlong.html",
-
-                "sales": "sales-marketing-workshop.html",
-                "sales marketing": "sales-marketing-workshop.html",
-                "sales marketing workshop": "sales-marketing-workshop.html"
-
-            };
-
-
-            /* EXACT MATCH */
-
-            if (pages[search]) {
-
-                window.location.href =
-                    pages[search];
-
-                return;
-            }
-
-
-            /* PARTIAL MATCH */
-
-            for (const page in pages) {
-
-                if (page.includes(search)) {
-
-                    window.location.href =
-                        pages[page];
-
-                    return;
-                }
-
-            }
-
-
-            /* NOTHING FOUND */
-
-            alert(
-                "Sorry, we could not find \"" +
-                searchInput.value +
-                "\" on the MSM Training website."
-            );
-
-        }
-
-    });
-
-}
-
-    }
-
-});
-
-</script>
-
-
-<!-- =====================================================
-     COUNTERS
-====================================================== -->
-
-<script>
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const counters =
-        document.querySelectorAll(
-            ".number[data-number]"
-        );
-
-
-    const startCounter = function (counter) {
-
-        const target =
-            parseInt(
-                counter.getAttribute("data-number"),
-                10
-            );
-
-        let current = 0;
-
-        const duration = 2000;
-
-        const startTime =
-            performance.now();
-
-
-        function updateCounter(currentTime) {
-
-            const elapsed =
-                currentTime - startTime;
-
-            const progress =
-                Math.min(
-                    elapsed / duration,
-                    1
-                );
-
-
-            current =
-                Math.floor(
-                    progress * target
-                );
-
-
-            counter.textContent =
-                current.toLocaleString();
-
-
-            if (progress < 1) {
-
-                requestAnimationFrame(
-                    updateCounter
-                );
-
-            } else {
-
-                counter.textContent =
-                    target.toLocaleString();
-
-            }
-
-        }
-
-
-        requestAnimationFrame(
-            updateCounter
-        );
-
-    };
-
-
-    if ("IntersectionObserver" in window) {
-
-        const observer =
-            new IntersectionObserver(
-
-                function (entries, observer) {
-
-                    entries.forEach(
-                        function (entry) {
-
-                            if (
-                                entry.isIntersecting
-                            ) {
-
-                                startCounter(
-                                    entry.target
-                                );
-
-                                observer.unobserve(
-                                    entry.target
-                                );
-
-                            }
-
-                        }
-                    );
-
-                },
-
-                {
-                    threshold: 0.3
-                }
-
-            );
-
-
-        counters.forEach(
-            function (counter) {
-
-                observer.observe(
-                    counter
-                );
-
-            }
-        );
-
-
-    } else {
-
-        counters.forEach(
-            function (counter) {
-
-                startCounter(
-                    counter
-                );
-
-            }
-        );
-
-    }
-
-});
-
-</script>
-
-
-<!-- =====================================================
-     LOADER
-====================================================== -->
-
-<script>
-
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
-
-        setTimeout(
-            function () {
-
-                var loader =
-                    document.getElementById(
-                        "ftco-loader"
-                    );
-
-
-                if (loader) {
-
-                    loader.classList.remove(
-                        "show"
-                    );
-
-                    loader.style.display =
-                        "none";
-
-                }
-
-            },
-            1500
-        );
-
-    }
-);
-
-</script>
-
-</body>
-</html>
-
-
-            <!-- =================================================
-                 LERIBE SEMINAR
-            ================================================== -->
-
-            <div class="col-md-6 col-lg-3 ftco-animate">
-
-                <div class="block-7"
-                     id="leribe-seminar">
-
-                    <div class="event-image">
-
-                        <img src="images/leribe.jpeg"
-                             alt="Leribe Seminar Tour"
-                             class="img-fluid">
-
-                    </div>
-
-
-                    <div class="text-center">
-
-                        <span class="excerpt d-block">
-                            LERIBE SEMINAR TOUR
-                        </span>
-
-                        <span class="excerpt d-block">
-                            10 OCTOBER 2026
-                        </span>
-
-
-                        <ul class="pricing-text mb-4">
+                        <ul class="msm-event-details">
 
                             <li>
-                                <i class="fa-solid fa-calendar mr-2"></i>
-                                10 OCTOBER 2026
+                                <i class="fa-solid fa-location-dot"></i>
+                                Durban, Ballito
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-clock mr-2"></i>
-                                09:00 AM – 4:00 PM
+                                <i class="fa-solid fa-bed"></i>
+                                3 nights accommodation
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-location-dot mr-2"></i>
-                                LERIBE
+                                <i class="fa-solid fa-utensils"></i>
+                                Meals included
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-star mr-2"></i>
-                                EARLY BIRD R299  1 spot left!
+                                <i class="fa-solid fa-bus"></i>
+                                Transport included
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-user-plus mr-2"></i>
-                                Bring another person FREE*
+                                <i class="fa-solid fa-heart"></i>
+                                Activities and more
                             </li>
 
                         </ul>
 
-
-                        <p class="small mb-3">
-                            How to Master Your Mind, Money,
-                            Business and Self
+                        <p class="msm-event-note">
+                            Retreat date and booking details
+                            will be announced.
                         </p>
 
+                        <a href="https://wa.me/26656506092?text=Hello%20MSM%2C%20I%20would%20like%20information%20about%20the%20Couples%20Retreat."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="msm-event-button">
 
-                        <a href="leribe-seminar.html"
-                           class="btn btn-primary d-block px-2 py-3">
-
-                            REGISTER NOW
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 MAFETENG SEMINAR
-            ================================================== -->
-
-            <div class="col-md-6 col-lg-3 ftco-animate">
-
-                <div class="block-7"
-                     id="mafeteng-seminar">
-
-                    <div class="event-image">
-
-                        <img src="images/mafeteng.jpeg"
-                             alt="Mafeteng Seminar Tour"
-                             class="img-fluid">
-
-                    </div>
-
-
-                    <div class="text-center">
-
-                        <span class="excerpt d-block">
-                            MAFETENG SEMINAR TOUR
-                        </span>
-
-                        <span class="excerpt d-block">
-                            18 OCTOBER 2026
-                        </span>
-
-
-                        <ul class="pricing-text mb-4">
-
-                            <li>
-                                <i class="fa-solid fa-calendar mr-2"></i>
-                                18
-                                 OCTOBER 2026
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-clock mr-2"></i>
-                                09:00 AM – 4:00 PM
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-location-dot mr-2"></i>
-                                MAFETENG
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-star mr-2"></i>
-                                EARLY BIRD R299
-                            </li>
-
-                            <li>
-                                <i class="fa-solid fa-user-plus mr-2"></i>
-                                Bring another person FREE*
-                            </li>
-
-                        </ul>
-
-
-                        <p class="small mb-3">
-                            How to Master Your Mind, Money,
-                            Business and Self
-                        </p>
-
-
-                        <a href="mafeteng.html"
-                           class="btn btn-primary d-block px-2 py-3">
-
-                            REGISTER NOW
+                            ENQUIRE ON WHATSAPP
 
                         </a>
 
@@ -6433,69 +2499,70 @@ document.addEventListener(
                  MOKHOTLONG SEMINAR
             ================================================== -->
 
-            <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="col-md-6 col-lg-4 ftco-animate mb-4">
 
-                <div class="block-7"
-                     id="mokhotlong-seminar">
+                <div class="msm-event-card" id="mokhotlong-seminar">
 
-                    <div class="event-image">
+                    <div class="msm-event-image">
 
                         <img src="images/07 mokhotlong.jpeg"
-                             alt="Mokhotlong Seminar Tour"
-                             class="img-fluid">
+                             alt="Mokhotlong Seminar Tour">
 
                     </div>
 
+                    <div class="msm-event-content">
 
-                    <div class="text-center">
-
-                        <span class="excerpt d-block">
-                            MOKHOTLONG SEMINAR TOUR
+                        <span class="msm-event-label">
+                            UPCOMING EVENT
                         </span>
 
-                        <span class="excerpt d-block">
-                            07 NOVEMBER 2026
-                        </span>
+                        <h4>Mokhotlong Seminar Tour</h4>
 
-
-                        <ul class="pricing-text mb-4">
+                        <ul class="msm-event-details">
 
                             <li>
-                                <i class="fa-solid fa-calendar mr-2"></i>
-                                07 NOVEMBER 2026
+                                <i class="fa-solid fa-calendar"></i>
+                                07 November 2026
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-clock mr-2"></i>
+                                <i class="fa-solid fa-clock"></i>
                                 09:00 AM – 4:00 PM
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-location-dot mr-2"></i>
-                                MOKHOTLONG
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mokhotlong
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-star mr-2"></i>
-                                EARLY BIRD R299
+                                <i class="fa-solid fa-tag"></i>
+                                Early Bird: <strong>R299</strong>
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-user-plus mr-2"></i>
+                                <i class="fa-solid fa-user-plus"></i>
                                 Bring another person FREE*
                             </li>
 
                         </ul>
 
-
-                        <p class="small mb-3">
+                        <p>
                             How to Master Your Mind, Money,
-                            Business and Self
+                            Business and Self.
                         </p>
 
+                        <div class="msm-countdown"
+                             data-countdown="2026-11-07T09:00:00+02:00">
+
+                            <div class="countdown-output">
+                                Calculating countdown...
+                            </div>
+
+                        </div>
 
                         <a href="mokhotlong.html"
-                           class="btn btn-primary d-block px-2 py-3">
+                           class="msm-event-button">
 
                             REGISTER NOW
 
@@ -6510,74 +2577,413 @@ document.addEventListener(
 
 
             <!-- =================================================
-                 1 DAY SALES & MARKETING WORKSHOP
+                 LERIBE SEMINAR - SOLD OUT
             ================================================== -->
 
-            <div class="col-md-6 col-lg-3 ftco-animate">
+            <div class="col-md-6 col-lg-4 ftco-animate mb-4">
 
-                <div class="block-7"
-                     id="sales-marketing-workshop">
+                <div class="msm-event-card" id="leribe-seminar">
 
-                    <div class="event-image">
+                    <div class="msm-event-image">
 
-                        <img src="images/1 day workshop.jpeg"
-                             alt="1 Day Sales and Marketing Workshop"
-                             class="img-fluid">
+                        <span class="msm-sold-out">SOLD OUT</span>
+
+                        <img src="images/leribe.jpeg"
+                             alt="Leribe Seminar Tour">
 
                     </div>
 
+                    <div class="msm-event-content">
 
-                    <div class="text-center">
+                        <h4>Leribe Seminar Tour</h4>
 
-                        <span class="excerpt d-block">
-                            1 DAY SALES &amp; MARKETING WORKSHOP
-                        </span>
-
-                        <span class="excerpt d-block">
-                            14 NOVEMBER 2026
-                        </span>
-
-
-                        <ul class="pricing-text mb-4">
+                        <ul class="msm-event-details">
 
                             <li>
-                                <i class="fa-solid fa-calendar mr-2"></i>
-                                14 NOVEMBER 2026
+                                <i class="fa-solid fa-calendar"></i>
+                                10 October 2026
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-clock mr-2"></i>
-                                08:00 AM – 6:00 PM
+                                <i class="fa-solid fa-clock"></i>
+                                09:00 AM – 4:00 PM
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-location-dot mr-2"></i>
-                                STATE LIBRARY, MASERU
+                                <i class="fa-solid fa-location-dot"></i>
+                                Leribe
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-tag mr-2"></i>
-                                REGULAR PRICE R750
+                                <i class="fa-solid fa-tag"></i>
+                                Early Bird: R299
                             </li>
 
                             <li>
-                                <i class="fa-solid fa-star mr-2"></i>
-                                EARLY BIRD R550
+                                <i class="fa-solid fa-user-plus"></i>
+                                Bring another person FREE*
                             </li>
 
                         </ul>
 
-
-                        <p class="small mb-3">
-                            Sales, Marketing, Customer Acquisition
-                            &amp; Social Media Ads Mastery
+                        <p>
+                            How to Master Your Mind, Money,
+                            Business and Self.
                         </p>
 
+                        <button type="button"
+                                class="msm-event-button msm-sold-out-button"
+                                disabled>
+
+                            REGISTRATION CLOSED
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MAFETENG SEMINAR - SOLD OUT
+            ================================================== -->
+
+            <div class="col-md-6 col-lg-4 ftco-animate mb-4">
+
+                <div class="msm-event-card" id="mafeteng-seminar">
+
+                    <div class="msm-event-image">
+
+                        <span class="msm-sold-out">SOLD OUT</span>
+
+                        <img src="images/mafeteng.jpeg"
+                             alt="Mafeteng Seminar Tour">
+
+                    </div>
+
+                    <div class="msm-event-content">
+
+                        <h4>Mafeteng Seminar Tour</h4>
+
+                        <ul class="msm-event-details">
+
+                            <li>
+                                <i class="fa-solid fa-calendar"></i>
+                                18 October 2026
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-clock"></i>
+                                09:00 AM – 4:00 PM
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mafeteng
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-tag"></i>
+                                Early Bird: R299
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-user-plus"></i>
+                                Bring another person FREE*
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            How to Master Your Mind, Money,
+                            Business and Self.
+                        </p>
+
+                        <button type="button"
+                                class="msm-event-button msm-sold-out-button"
+                                disabled>
+
+                            REGISTRATION CLOSED
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SALES AND MARKETING WORKSHOP
+            ================================================== -->
+
+            <div class="col-md-6 col-lg-4 ftco-animate mb-4">
+
+                <div class="msm-event-card"
+                     id="sales-marketing-workshop">
+
+                    <div class="msm-event-image">
+
+                        <img src="images/1 day workshop.jpeg"
+                             alt="Sales and Marketing Workshop">
+
+                    </div>
+
+                    <div class="msm-event-content">
+
+                        <span class="msm-event-label">
+                            UPCOMING WORKSHOP
+                        </span>
+
+                        <h4>1 Day Sales &amp; Marketing Workshop</h4>
+
+                        <ul class="msm-event-details">
+
+                            <li>
+                                <i class="fa-solid fa-calendar"></i>
+                                14 November 2026
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-clock"></i>
+                                08:00 AM – 6:00 PM
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                State Library, Maseru
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-tag"></i>
+                                Regular Price: <strong>R750</strong>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-ticket"></i>
+                                Early Bird R550:
+                                <strong style="color:#c62828;">
+                                    SOLD OUT
+                                </strong>
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            Sales, Marketing, Customer Acquisition
+                            &amp; Social Media Ads Mastery.
+                        </p>
+
+                        <div class="msm-countdown"
+                             data-countdown="2026-11-14T08:00:00+02:00">
+
+                            <div class="countdown-output">
+                                Calculating countdown...
+                            </div>
+
+                        </div>
 
                         <a href="sales-marketing-workshop.html"
-                           class="btn btn-primary d-block px-2 py-3">
+                           class="msm-event-button">
 
                             REGISTER NOW
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 YOUTH MENTORSHIP CAMP
+            ================================================== -->
+
+            <div class="col-md-6 col-lg-4 ftco-animate mb-4">
+
+                <div class="msm-event-card" id="youth-camp">
+
+                    <div class="msm-event-image">
+
+                        <img src="images/youth-camp.jpg"
+                             alt="7-Day Youth Mentorship Camp">
+
+                    </div>
+
+                    <div class="msm-event-content">
+
+                        <span class="msm-event-label">
+                            YOUTH DEVELOPMENT
+                        </span>
+
+                        <h4>7-Day Youth Mentorship Camp</h4>
+
+                        <ul class="msm-event-details">
+
+                            <li>
+                                <i class="fa-solid fa-calendar"></i>
+                                07 – 13 December 2026
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                China-Sehlabeng, Maseru
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-users"></i>
+                                Ages 14 – 25 years
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-user-group"></i>
+                                Only 30 youths accepted
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-tag"></i>
+                                Early Bird: <strong>R2,500</strong>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-tag"></i>
+                                Regular: <strong>R3,200</strong>
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            A powerful 7-day experience focused on
+                            <strong>success, leadership, purpose
+                            and life skills.</strong>
+                        </p>
+
+                        <p class="small">
+                            Early Bird available to the first
+                            5 people only.
+                        </p>
+
+                        <p class="msm-event-note">
+                            Fee includes meals, accommodation,
+                            activities, events and mentorship sessions.
+                        </p>
+
+                        <div class="msm-countdown"
+                             data-countdown="2026-12-07T09:00:00+02:00">
+
+                            <div class="countdown-output">
+                                Calculating countdown...
+                            </div>
+
+                        </div>
+
+                        <a href="youth-camp.html"
+                           class="msm-event-button">
+
+                            VIEW CAMP &amp; REGISTER
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SUCCESS EXTRAVAGANZA
+            ================================================== -->
+
+            <div class="col-md-6 col-lg-4 ftco-animate mb-4">
+
+                <div class="msm-event-card"
+                     id="success-extravaganza">
+
+                    <div class="msm-event-image">
+
+                        <img src="images/success-extravaganza.jpg"
+                             alt="2027 MSM Success Extravaganza">
+
+                    </div>
+
+                    <div class="msm-event-content">
+
+                        <span class="msm-event-label">
+                            BIG EVENT – 2027
+                        </span>
+
+                        <h4>2027 MSM SUCCESS EXTRAVAGANZA</h4>
+
+                        <p>
+                            <strong>
+                                The Biggest Success Seminar in Lesotho!
+                            </strong>
+                        </p>
+
+                        <ul class="msm-event-details">
+
+                            <li>
+                                <i class="fa-solid fa-calendar"></i>
+                                16 January 2027
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-clock"></i>
+                                08:00 AM – 6:00 PM
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Manthabiseng, Maseru
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-microphone"></i>
+                                Percy Singo
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-microphone"></i>
+                                Mohau Mosoeunyane
+                            </li>
+
+                        </ul>
+
+                        <p>
+                            More speakers loading soon!
+                        </p>
+
+                        <p class="msm-event-note">
+                            Early Bird Special tickets available.
+                            Check the event poster for registration
+                            and ticket information.
+                        </p>
+
+                        <div class="msm-countdown"
+                             data-countdown="2027-01-16T08:00:00+02:00">
+
+                            <div class="countdown-output">
+                                Calculating countdown...
+                            </div>
+
+                        </div>
+
+                        <a href="https://wa.me/26656506092?text=Hello%20MSM%2C%20I%20would%20like%20information%20about%20the%202027%20Success%20Extravaganza."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="msm-event-button">
+
+                            ENQUIRE &amp; BOOK
 
                         </a>
 
@@ -6591,60 +2997,6 @@ document.addEventListener(
         </div>
 
     </div>
-
-    <!-- Youth Mentorship Camp -->
-<div class="col-lg-4 col-md-6 mb-4">
-    <div class="event-item">
-        <div class="event-img">
-            <img src="images/youth-camp.jpg" alt="Youth Mentorship Camp" class="img-fluid">
-        </div>
-
-        <div class="event-content p-4">
-            <h4>7-Day Youth Mentorship Camp</h4>
-
-            <p>
-                <strong>07 – 13 December 2026</strong>
-            </p>
-
-            <p>
-                📍 China-Sehlabeng, Maseru, Lesotho
-            </p>
-
-            <p>
-                👥 Ages 14 – 25 Years
-            </p>
-
-            <p>
-                Only <strong>30 youths</strong> will be accepted.
-            </p>
-
-            <p>
-                A powerful 7-day experience focused on
-                <strong>success, leadership, purpose and life skills.</strong>
-            </p>
-
-            <p>
-                🔥 Early Bird: <strong>R2,500</strong>
-                <br>
-                Regular: <strong>R3,200</strong>
-            </p>
-
-            <p>
-                Early Bird is available to the <strong>first 5 people</strong> only.
-            </p>
-
-            <p>
-                Fee includes meals, accommodation, activities,
-                events and mentorship sessions.
-            </p>
-
-            <a href="youth-camp.html" class="btn btn-primary">
-                VIEW CAMP & REGISTER
-            </a>
-        </div>
-    </div>
-</div>
-<!-- End Youth Mentorship Camp -->
 
 </section>
 
@@ -6682,11 +3034,7 @@ document.addEventListener(
                             groups, organizations and companies!
                         </p>
 
-
                         <ul class="ftco-footer-social p-0">
-
-
-                            <!-- TIKTOK -->
 
                             <li class="ftco-animate">
                                 <a href="https://vm.tiktok.com/ZS9BnMnpGaap9-kEFqb/"
@@ -6698,48 +3046,33 @@ document.addEventListener(
                                     <i class="fa-brands fa-tiktok"></i>
 
                                 </a>
-
                             </li>
 
-
-                            <!-- FACEBOOK -->
-
                             <li class="ftco-animate">
-
                                 <a href="https://web.facebook.com/Mohauandthesuccessmasters?_rdc=1&_rdr"
                                    target="_blank"
                                    rel="noopener noreferrer"
                                    title="Facebook"
                                    aria-label="Facebook">
 
-                                  <i class="fa fa-facebook"></i>
+                                    <i class="fa fa-facebook"></i>
 
                                 </a>
-
                             </li>
 
-
-                            <!-- INSTAGRAM -->
-
                             <li class="ftco-animate">
-
                                 <a href="https://www.instagram.com/mohaumosoeunyane?utm_source=qr&igsi=Ynh4enVvYmVqaHQ4"
                                    target="_blank"
                                    rel="noopener noreferrer"
                                    title="Instagram"
                                    aria-label="Instagram">
 
-                                 <i class="fa fa-instagram"></i>
+                                    <i class="fa fa-instagram"></i>
 
                                 </a>
-
                             </li>
 
-
-                            <!-- WHATSAPP -->
-
                             <li class="ftco-animate">
-
                                 <a href="https://wa.me/26656506092"
                                    target="_blank"
                                    rel="noopener noreferrer"
@@ -6749,9 +3082,7 @@ document.addEventListener(
                                     <i class="fa fa-whatsapp"></i>
 
                                 </a>
-
                             </li>
-
 
                         </ul>
 
@@ -6780,54 +3111,47 @@ document.addEventListener(
 
                                         <ul class="list-unstyled">
 
-
                                             <li>
-
                                                 <a href="digital-products.html"
                                                    class="py-1 d-block">
-
                                                     Six Block Action Course
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="#couples-retreat"
                                                    class="py-1 d-block">
-
                                                     Couples Retreat
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="#master-class"
                                                    class="py-1 d-block">
-
                                                     Master Classes
-
                                                 </a>
-
                                             </li>
-
 
                                             <li>
-
                                                 <a href="#leribe-seminar"
                                                    class="py-1 d-block">
-
                                                     Leribe Seminar Tour
-
                                                 </a>
-
                                             </li>
 
+                                            <li>
+                                                <a href="#mokhotlong-seminar"
+                                                   class="py-1 d-block">
+                                                    Mokhotlong Seminar
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#success-extravaganza"
+                                                   class="py-1 d-block">
+                                                    Success Extravaganza
+                                                </a>
+                                            </li>
 
                                         </ul>
 
@@ -6845,54 +3169,33 @@ document.addEventListener(
 
                                         <ul class="list-unstyled">
 
-
                                             <li>
-
                                                 <a href="services.html"
                                                    class="py-1 d-block">
-
                                                     Life Coaching
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="services.html"
                                                    class="py-1 d-block">
-
                                                     Counselling
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="services.html"
                                                    class="py-1 d-block">
-
                                                     Training
-
                                                 </a>
-
                                             </li>
-
 
                                             <li>
-
                                                 <a href="services.html"
                                                    class="py-1 d-block">
-
                                                     Motivation
-
                                                 </a>
-
                                             </li>
-
 
                                         </ul>
 
@@ -6910,90 +3213,54 @@ document.addEventListener(
 
                                         <ul class="list-unstyled">
 
-
                                             <li>
-
                                                 <a href="index.html"
                                                    class="py-1 d-block">
-
                                                     Home
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="about.html"
                                                    class="py-1 d-block">
-
                                                     About Us
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="services.html"
                                                    class="py-1 d-block">
-
                                                     Services
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="course.html"
                                                    class="py-1 d-block">
-
                                                     Courses
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="digital-products.html"
                                                    class="py-1 d-block">
-
                                                     Digital Products
-
                                                 </a>
-
                                             </li>
 
-
                                             <li>
-
                                                 <a href="media.html"
                                                    class="py-1 d-block">
-
                                                     Media
-
                                                 </a>
-
                                             </li>
-
 
                                             <li>
-
                                                 <a href="contact.html"
                                                    class="py-1 d-block">
-
                                                     Contact
-
                                                 </a>
-
                                             </li>
-
 
                                         </ul>
 
@@ -7048,48 +3315,42 @@ document.addEventListener(
                     Free consultation
                 </h2>
 
-
-                <form action="https://wa.me/26656506092"
-                      method="get"
+                <form id="consultationForm"
                       class="form-consultation">
-
 
                     <div class="form-group">
 
                         <input type="text"
-                               name="name"
+                               id="consultName"
                                class="form-control"
                                placeholder="Your Name"
                                required>
 
                     </div>
 
-
                     <div class="form-group">
 
                         <input type="email"
-                               name="email"
+                               id="consultEmail"
                                class="form-control"
                                placeholder="Your Email"
                                required>
 
                     </div>
 
-
                     <div class="form-group">
 
                         <input type="text"
-                               name="subject"
+                               id="consultSubject"
                                class="form-control"
                                placeholder="Subject"
                                required>
 
                     </div>
 
-
                     <div class="form-group">
 
-                        <textarea name="message"
+                        <textarea id="consultMessage"
                                   cols="30"
                                   rows="3"
                                   class="form-control"
@@ -7097,7 +3358,6 @@ document.addEventListener(
                                   required></textarea>
 
                     </div>
-
 
                     <div class="form-group">
 
@@ -7109,7 +3369,6 @@ document.addEventListener(
                         </button>
 
                     </div>
-
 
                 </form>
 
@@ -7128,8 +3387,7 @@ document.addEventListener(
      LOADER
 ====================================================== -->
 
-<div id="ftco-loader"
-     class="show fullscreen">
+<div id="ftco-loader" class="show fullscreen">
 
     <svg class="circular"
          width="48px"
@@ -7159,7 +3417,7 @@ document.addEventListener(
 
 
 <!-- =====================================================
-     JAVASCRIPT
+     JAVASCRIPT LIBRARIES
 ====================================================== -->
 
 <script src="Js/jquery.min.js"></script>
@@ -7175,6 +3433,7 @@ document.addEventListener(
 <script src="Js/main.js"></script>
 
 
+
 <!-- =====================================================
      HERO / OWL CAROUSEL
 ====================================================== -->
@@ -7188,27 +3447,16 @@ $(document).ready(function () {
         $('.home-slider').owlCarousel({
 
             items: 1,
-
             loop: true,
-
             autoplay: true,
-
             autoplayTimeout: 5000,
-
             autoplayHoverPause: false,
-
             smartSpeed: 1000,
-
             animateOut: 'fadeOut',
-
             animateIn: 'fadeIn',
-
             dots: true,
-
             nav: false,
-
             mouseDrag: true,
-
             touchDrag: true
 
         });
@@ -7218,6 +3466,7 @@ $(document).ready(function () {
 });
 
 </script>
+
 
 
 <!-- =====================================================
@@ -7235,7 +3484,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menu =
         document.getElementById("ftco-nav");
-
 
     if (menuButton && menu) {
 
@@ -7260,8 +3508,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (menu) {
 
-        const menuLinks =
-            menu.querySelectorAll("a");
+        const menuLinks = menu.querySelectorAll("a");
 
         menuLinks.forEach(function (link) {
 
@@ -7289,32 +3536,27 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    /* SEARCH */
+    /* WEBSITE SEARCH */
 
-const searchForm =
-    document.querySelector(".searchform");
+    const searchForm =
+        document.querySelector(".searchform");
 
-if (searchForm) {
+    if (searchForm) {
 
-    searchForm.addEventListener("submit", function (event) {
+        searchForm.addEventListener("submit", function (event) {
 
-        event.preventDefault();
+            event.preventDefault();
 
-        const searchInput =
-            searchForm.querySelector(
-                "input[type='text']"
-            );
+            const searchInput =
+                searchForm.querySelector("input[type='text']");
 
-        if (
-            searchInput &&
-            searchInput.value.trim() !== ""
-        ) {
+            if (!searchInput || searchInput.value.trim() === "") {
+                return;
+            }
 
             const search =
                 searchInput.value.trim().toLowerCase();
 
-
-            /* WEBSITE PAGES */
 
             const pages = {
 
@@ -7337,67 +3579,205 @@ if (searchForm) {
                 "contact": "contact.html",
                 "contact us": "contact.html",
 
-                "leribe": "leribe-seminar.html",
-                "leribe seminar": "leribe-seminar.html",
+                "leribe": "index.html#leribe-seminar",
+                "leribe seminar": "index.html#leribe-seminar",
 
-                "mafeteng": "mafeteng.html",
-                "mafeteng seminar": "mafeteng.html",
+                "mafeteng": "index.html#mafeteng-seminar",
+                "mafeteng seminar": "index.html#mafeteng-seminar",
 
                 "mokhotlong": "mokhotlong.html",
                 "mokhotlong seminar": "mokhotlong.html",
 
                 "sales": "sales-marketing-workshop.html",
                 "sales marketing": "sales-marketing-workshop.html",
-                "sales marketing workshop": "sales-marketing-workshop.html"
+                "sales marketing workshop": "sales-marketing-workshop.html",
+
+                "youth camp": "youth-camp.html",
+                "youth mentorship camp": "youth-camp.html",
+
+                "couples retreat": "index.html#couples-retreat",
+
+                "success extravaganza": "index.html#success-extravaganza"
 
             };
 
 
-            /* EXACT MATCH */
-
             if (pages[search]) {
 
-                window.location.href =
-                    pages[search];
-
+                window.location.href = pages[search];
                 return;
+
             }
 
-
-            /* PARTIAL MATCH */
 
             for (const page in pages) {
 
                 if (page.includes(search)) {
 
-                    window.location.href =
-                        pages[page];
-
+                    window.location.href = pages[page];
                     return;
+
                 }
 
             }
 
 
-            /* NOTHING FOUND */
-
             alert(
-                "Sorry, we could not find \"" +
+                'Sorry, we could not find "' +
                 searchInput.value +
-                "\" on the MSM Training website."
+                '" on the MSM Training website.'
             );
 
-        }
+        });
 
-    });
+    }
 
-}
+
+    /* FREE CONSULTATION TO WHATSAPP */
+
+    const consultationForm =
+        document.getElementById("consultationForm");
+
+    if (consultationForm) {
+
+        consultationForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const name =
+                document.getElementById("consultName").value.trim();
+
+            const email =
+                document.getElementById("consultEmail").value.trim();
+
+            const subject =
+                document.getElementById("consultSubject").value.trim();
+
+            const message =
+                document.getElementById("consultMessage").value.trim();
+
+
+            const whatsappMessage =
+                "Hello MSM Training Company.%0A%0A" +
+                "Name: " + encodeURIComponent(name) + "%0A" +
+                "Email: " + encodeURIComponent(email) + "%0A" +
+                "Subject: " + encodeURIComponent(subject) + "%0A" +
+                "Message: " + encodeURIComponent(message);
+
+
+            window.open(
+                "https://wa.me/26656506092?text=" + whatsappMessage,
+                "_blank"
+            );
+
+        });
 
     }
 
 });
 
 </script>
+
+
+
+<!-- =====================================================
+     EVENT COUNTDOWNS
+====================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const countdowns =
+        document.querySelectorAll("[data-countdown]");
+
+
+    function updateCountdowns() {
+
+        const now = new Date().getTime();
+
+
+        countdowns.forEach(function (countdown) {
+
+            const targetDate =
+                new Date(
+                    countdown.getAttribute("data-countdown")
+                ).getTime();
+
+            const output =
+                countdown.querySelector(".countdown-output");
+
+
+            if (!output || isNaN(targetDate)) {
+                return;
+            }
+
+
+            const difference =
+                targetDate - now;
+
+
+            if (difference <= 0) {
+
+                output.innerHTML =
+                    "EVENT STARTED";
+
+                return;
+
+            }
+
+
+            const days =
+                Math.floor(
+                    difference / (1000 * 60 * 60 * 24)
+                );
+
+            const hours =
+                Math.floor(
+                    (difference % (1000 * 60 * 60 * 24)) /
+                    (1000 * 60 * 60)
+                );
+
+            const minutes =
+                Math.floor(
+                    (difference % (1000 * 60 * 60)) /
+                    (1000 * 60)
+                );
+
+            const seconds =
+                Math.floor(
+                    (difference % (1000 * 60)) /
+                    1000
+                );
+
+
+            output.innerHTML =
+
+                '<span>' + days +
+                '<small>Days</small></span>' +
+
+                '<span>' + hours +
+                '<small>Hours</small></span>' +
+
+                '<span>' + minutes +
+                '<small>Minutes</small></span>' +
+
+                '<span>' + seconds +
+                '<small>Seconds</small></span>';
+
+        });
+
+    }
+
+
+    updateCountdowns();
+
+    setInterval(updateCountdowns, 1000);
+
+});
+
+</script>
+
 
 
 <!-- =====================================================
@@ -7409,44 +3789,31 @@ if (searchForm) {
 document.addEventListener("DOMContentLoaded", function () {
 
     const counters =
-        document.querySelectorAll(
-            ".number[data-number]"
-        );
+        document.querySelectorAll(".number[data-number]");
 
 
     const startCounter = function (counter) {
 
         const target =
-            parseInt(
-                counter.getAttribute("data-number"),
-                10
-            );
+            parseInt(counter.getAttribute("data-number"), 10);
 
-        let current = 0;
+        if (isNaN(target)) {
+            return;
+        }
 
         const duration = 2000;
-
-        const startTime =
-            performance.now();
+        const startTime = performance.now();
 
 
         function updateCounter(currentTime) {
 
-            const elapsed =
-                currentTime - startTime;
+            const elapsed = currentTime - startTime;
 
             const progress =
-                Math.min(
-                    elapsed / duration,
-                    1
-                );
+                Math.min(elapsed / duration, 1);
 
-
-            current =
-                Math.floor(
-                    progress * target
-                );
-
+            const current =
+                Math.floor(progress * target);
 
             counter.textContent =
                 current.toLocaleString();
@@ -7454,9 +3821,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (progress < 1) {
 
-                requestAnimationFrame(
-                    updateCounter
-                );
+                requestAnimationFrame(updateCounter);
 
             } else {
 
@@ -7468,9 +3833,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
 
-        requestAnimationFrame(
-            updateCounter
-        );
+        requestAnimationFrame(updateCounter);
 
     };
 
@@ -7482,25 +3845,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 function (entries, observer) {
 
-                    entries.forEach(
-                        function (entry) {
+                    entries.forEach(function (entry) {
 
-                            if (
-                                entry.isIntersecting
-                            ) {
+                        if (entry.isIntersecting) {
 
-                                startCounter(
-                                    entry.target
-                                );
+                            startCounter(entry.target);
 
-                                observer.unobserve(
-                                    entry.target
-                                );
-
-                            }
+                            observer.unobserve(entry.target);
 
                         }
-                    );
+
+                    });
 
                 },
 
@@ -7511,28 +3866,19 @@ document.addEventListener("DOMContentLoaded", function () {
             );
 
 
-        counters.forEach(
-            function (counter) {
+        counters.forEach(function (counter) {
 
-                observer.observe(
-                    counter
-                );
+            observer.observe(counter);
 
-            }
-        );
-
+        });
 
     } else {
 
-        counters.forEach(
-            function (counter) {
+        counters.forEach(function (counter) {
 
-                startCounter(
-                    counter
-                );
+            startCounter(counter);
 
-            }
-        );
+        });
 
     }
 
@@ -7541,42 +3887,30 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
+
 <!-- =====================================================
      LOADER
 ====================================================== -->
 
 <script>
 
-document.addEventListener(
-    "DOMContentLoaded",
-    function () {
+document.addEventListener("DOMContentLoaded", function () {
 
-        setTimeout(
-            function () {
+    setTimeout(function () {
 
-                var loader =
-                    document.getElementById(
-                        "ftco-loader"
-                    );
+        const loader =
+            document.getElementById("ftco-loader");
 
+        if (loader) {
 
-                if (loader) {
+            loader.classList.remove("show");
+            loader.style.display = "none";
 
-                    loader.classList.remove(
-                        "show"
-                    );
+        }
 
-                    loader.style.display =
-                        "none";
+    }, 1500);
 
-                }
-
-            },
-            1500
-        );
-
-    }
-);
+});
 
 </script>
 
