@@ -6,9 +6,12 @@
 
 <title>2027 MSM Success Extravaganza | Lesotho</title>
 
-<meta name="description" content="Join the 2027 MSM Success Extravaganza Seminar on 16 January 2027 in Maseru, Lesotho. Featuring Percy Singo, Mohau Mosoeunyane and more inspiring speakers.">
+<meta name="description" content="Join the 2027 MSM Success Extravaganza on 16 January 2027 in Maseru, Lesotho. Featuring Percy Singo, Mohau Mosoeunyane and more inspiring speakers.">
+
+<meta name="theme-color" content="#0B3D2E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
@@ -19,6 +22,7 @@
   --gold: #D9AD50;
   --dark: #10251D;
   --white: #ffffff;
+  --grey: #68766e;
 }
 
 * {
@@ -27,7 +31,10 @@
   box-sizing: border-box;
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -35,8 +42,11 @@ body {
   line-height: 1.7;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
+/* NAVIGATION */
 nav {
   background: var(--green);
   padding: 15px 7%;
@@ -45,6 +55,10 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 12px rgba(0,0,0,.15);
 }
 
 .logo {
@@ -53,20 +67,28 @@ nav {
   font-size: 22px;
 }
 
-.logo span { color: var(--gold); }
+.logo span {
+  color: var(--gold);
+}
 
 .nav-links {
   display: flex;
-  gap: 22px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .nav-links a {
   color: white;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 700;
+  transition: .3s;
 }
 
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+/* HERO */
 .hero {
   min-height: 650px;
   padding: 100px 7%;
@@ -80,7 +102,9 @@ nav {
   color: white;
 }
 
-.hero-content { max-width: 900px; }
+.hero-content {
+  max-width: 900px;
+}
 
 .event-label {
   display: inline-block;
@@ -101,7 +125,9 @@ nav {
   margin-bottom: 20px;
 }
 
-.hero h1 span { color: var(--gold); }
+.hero h1 span {
+  color: var(--gold);
+}
 
 .hero h2 {
   font-size: clamp(15px, 2vw, 22px);
@@ -149,6 +175,7 @@ nav {
   font-weight: 800;
   transition: .3s;
   margin: 5px;
+  cursor: pointer;
 }
 
 .btn-gold {
@@ -161,9 +188,14 @@ nav {
   color: white;
 }
 
-.btn:hover { transform: translateY(-3px); }
+.btn:hover {
+  transform: translateY(-3px);
+}
 
-section { padding: 80px 7%; }
+/* GENERAL SECTIONS */
+section {
+  padding: 80px 7%;
+}
 
 .section-title {
   text-align: center;
@@ -186,12 +218,59 @@ section { padding: 80px 7%; }
 .section-title p {
   max-width: 650px;
   margin: auto;
-  color: #68766e;
+  color: var(--grey);
 }
 
+/* OFFICIAL POSTER */
+.poster-section {
+  background: #f5f8f5;
+  text-align: center;
+}
+
+.poster-container {
+  max-width: 650px;
+  margin: auto;
+  background: white;
+  padding: 12px;
+  border-radius: 14px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.12);
+}
+
+.poster-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 950px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.poster-caption {
+  margin-top: 20px;
+  color: var(--green);
+  font-weight: 900;
+  font-size: 15px;
+}
+
+.poster-button {
+  display: inline-block;
+  margin: 15px 5px 5px;
+  background: var(--green);
+  color: white;
+  padding: 13px 25px;
+  border-radius: 5px;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.poster-button:hover {
+  background: var(--light-green);
+}
+
+/* ABOUT */
 .about {
   text-align: center;
-  background: #f5f8f5;
+  background: white;
 }
 
 .about-content {
@@ -199,9 +278,14 @@ section { padding: 80px 7%; }
   margin: auto;
 }
 
-.about-content p { margin-bottom: 20px; }
+.about-content p {
+  margin-bottom: 20px;
+}
 
-.speakers { background: white; }
+/* SPEAKERS */
+.speakers {
+  background: #f5f8f5;
+}
 
 .speaker-grid {
   display: grid;
@@ -237,9 +321,16 @@ section { padding: 80px 7%; }
   color: white;
   font-size: 65px;
   font-weight: 900;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.speaker-info { padding: 22px; }
+.speaker-info {
+  padding: 22px;
+}
 
 .speaker-info h3 {
   color: var(--green);
@@ -249,6 +340,7 @@ section { padding: 80px 7%; }
 .speaker-info p {
   color: #87938a;
   font-size: 13px;
+  font-weight: 700;
 }
 
 .more-speakers {
@@ -267,13 +359,16 @@ section { padding: 80px 7%; }
   margin-bottom: 10px;
 }
 
+/* COUNTDOWN */
 .countdown-section {
   text-align: center;
   color: white;
   background: var(--green);
 }
 
-.countdown-section h2 { color: var(--gold); }
+.countdown-section h2 {
+  color: var(--gold);
+}
 
 .countdown {
   display: flex;
@@ -338,7 +433,7 @@ section { padding: 80px 7%; }
   border-radius: 6px;
   font-family: inherit;
   font-size: 14px;
-  background: #fff;
+  background: white;
 }
 
 .form-group input:focus,
@@ -347,12 +442,6 @@ section { padding: 80px 7%; }
   outline: none;
   border-color: var(--light-green);
   box-shadow: 0 0 0 2px rgba(124,179,66,.15);
-}
-
-.form-note {
-  font-size: 12px;
-  color: #758078;
-  margin-top: 20px;
 }
 
 .submit-btn {
@@ -394,6 +483,17 @@ section { padding: 80px 7%; }
   font-size: 13px;
 }
 
+.whatsapp-btn:hover {
+  background: var(--light-green);
+}
+
+.form-note {
+  font-size: 12px;
+  color: #758078;
+  margin-top: 20px;
+}
+
+/* VENUE */
 .venue {
   text-align: center;
   background: white;
@@ -413,6 +513,7 @@ section { padding: 80px 7%; }
   font-size: 27px;
 }
 
+/* FOOTER */
 footer {
   background: #071f17;
   color: white;
@@ -420,44 +521,95 @@ footer {
   padding: 40px 7%;
 }
 
-footer strong { color: var(--gold); }
+footer strong {
+  color: var(--gold);
+}
 
 footer p {
   font-size: 12px;
   margin: 8px;
 }
 
+/* MOBILE */
 @media(max-width:600px) {
-  nav { justify-content: center; }
-  .nav-links { justify-content: center; gap: 12px; }
-  .hero { padding: 75px 5%; min-height: 600px; }
-  section { padding: 60px 5%; }
-  .speaker-grid { grid-template-columns: 1fr; }
+
+  nav {
+    justify-content: center;
+    padding: 13px 4%;
+  }
+
+  .nav-links {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 10px;
+  }
+
+  .hero {
+    padding: 75px 5%;
+    min-height: 600px;
+  }
+
+  section {
+    padding: 60px 5%;
+  }
+
+  .speaker-grid {
+    grid-template-columns: 1fr;
+  }
+
   .speaker-card {
     max-width: 340px;
     margin: auto;
     width: 100%;
   }
-  .detail { min-width: 140px; }
-  .registration-card { padding: 30px 18px; }
+
+  .detail {
+    min-width: 140px;
+  }
+
+  .registration-card {
+    padding: 30px 18px;
+  }
+
+  .time-box {
+    min-width: 75px;
+    padding: 14px;
+  }
+
+  .time-box strong {
+    font-size: 28px;
+  }
+
+  .poster-container {
+    padding: 8px;
+  }
+
+  .venue-card {
+    padding: 30px 18px;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
 <nav>
   <a href="index.html" class="logo">MSM <span>TRAINING</span></a>
 
   <div class="nav-links">
     <a href="index.html">HOME</a>
+    <a href="#event-poster">POSTER</a>
     <a href="#about">ABOUT</a>
     <a href="#speakers">SPEAKERS</a>
     <a href="#registration">REGISTER</a>
   </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <header class="hero">
   <div class="hero-content">
 
@@ -473,6 +625,7 @@ footer p {
     </p>
 
     <div class="event-details">
+
       <div class="detail">
         <strong>DATE</strong>
         <span>16 January 2027</span>
@@ -487,6 +640,7 @@ footer p {
         <strong>VENUE</strong>
         <span>Maseru, Lesotho</span>
       </div>
+
     </div>
 
     <a href="#registration" class="btn btn-gold">
@@ -500,6 +654,39 @@ footer p {
   </div>
 </header>
 
+<!-- OFFICIAL EVENT POSTER -->
+<section class="poster-section" id="event-poster">
+
+  <div class="section-title">
+    <small>SAVE THE DATE</small>
+    <h2>THE OFFICIAL EVENT POSTER</h2>
+
+    <p>
+      Get ready for an unforgettable experience.
+      Share the official poster with friends and family!
+    </p>
+  </div>
+
+  <div class="poster-container">
+
+    <img
+      src="images/EXTRAVA.jpeg"
+      alt="Official 2027 MSM Success Extravaganza event poster"
+      loading="lazy"
+    >
+
+    <div class="poster-caption">
+      16 JANUARY 2027 | MASERU, LESOTHO
+    </div>
+
+    <a href="#registration" class="poster-button">
+      REGISTER NOW
+    </a>
+
+  </div>
+
+</section>
+
 <!-- ABOUT -->
 <section class="about" id="about">
 
@@ -509,6 +696,7 @@ footer p {
   </div>
 
   <div class="about-content">
+
     <p>
       The 2027 MSM Success Extravaganza is a powerful gathering
       designed to inspire individuals, entrepreneurs, professionals,
@@ -525,6 +713,7 @@ footer p {
     <h3 style="color:#0B3D2E;margin-top:25px;">
       SUCCESS IS A CHOICE!
     </h3>
+
   </div>
 
 </section>
@@ -535,48 +724,72 @@ footer p {
   <div class="section-title">
     <small>LEARN FROM THE BEST</small>
     <h2>MEET OUR SPEAKERS</h2>
-    <p>Get ready to learn, grow and be inspired by powerful voices.</p>
+
+    <p>
+      Get ready to learn, grow and be inspired by powerful voices.
+    </p>
   </div>
 
   <div class="speaker-grid">
 
+    <!-- PERCY SINGO -->
     <div class="speaker-card">
+
       <div class="speaker-photo">
-        <img src="images/percy-singo.jpg"
-             alt="Percy Singo"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="speaker-placeholder" style="display:none;">PS</div>
+
+        <img
+          src="images/percy-singo.jpg"
+          alt="Percy Singo"
+          loading="lazy"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        >
+
+        <div class="speaker-placeholder">PS</div>
+
       </div>
 
       <div class="speaker-info">
         <h3>Percy Singo</h3>
         <p>FEATURED SPEAKER</p>
       </div>
+
     </div>
 
+    <!-- MOHAU MOSOEUNYANE -->
     <div class="speaker-card">
+
       <div class="speaker-photo">
-        <img src="images/mohau.png"
-             alt="Mohau Mosoeunyane"
-             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
-        <div class="speaker-placeholder" style="display:none;">MM</div>
+
+        <img
+          src="images/mohau.png"
+          alt="Mohau Mosoeunyane"
+          loading="lazy"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+        >
+
+        <div class="speaker-placeholder">MM</div>
+
       </div>
 
       <div class="speaker-info">
         <h3>Mohau Mosoeunyane</h3>
         <p>SPEAKER & HOST</p>
       </div>
+
     </div>
 
   </div>
 
   <div class="more-speakers">
+
     <h2>MORE SPEAKERS LOADING...</h2>
+
     <p>
       This is just the beginning!
       More inspiring speakers will be announced soon.
       Stay connected and watch this space.
     </p>
+
   </div>
 
 </section>
@@ -585,9 +798,11 @@ footer p {
 <section class="countdown-section">
 
   <h2>THE COUNTDOWN TO SUCCESS IS ON!</h2>
+
   <p>16 January 2027 | Maseru, Lesotho</p>
 
-  <div class="countdown">
+  <div class="countdown" id="countdown">
+
     <div class="time-box">
       <strong id="days">00</strong>
       <span>DAYS</span>
@@ -607,6 +822,7 @@ footer p {
       <strong id="seconds">00</strong>
       <span>SECONDS</span>
     </div>
+
   </div>
 
 </section>
@@ -615,12 +831,16 @@ footer p {
 <section class="registration" id="registration">
 
   <div class="section-title">
+
     <small>SECURE YOUR PLACE</small>
+
     <h2>REGISTER FOR SUCCESS EXTRAVAGANZA 2027</h2>
+
     <p>
       Complete the form below to register your interest.
       Our team will contact you about payment and ticket confirmation.
     </p>
+
   </div>
 
   <div class="registration-card">
@@ -637,27 +857,45 @@ footer p {
 
       <div class="form-group">
         <label for="fullName">Full Name and Surname *</label>
-        <input type="text" id="fullName" name="fullName"
-          autocomplete="name" required
-          placeholder="Enter your full name">
+
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          autocomplete="name"
+          required
+          placeholder="Enter your full name"
+        >
       </div>
 
       <div class="form-group">
         <label for="phone">Phone / WhatsApp Number *</label>
-        <input type="tel" id="phone" name="phone"
-          autocomplete="tel" required
-          placeholder="+266...">
+
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          autocomplete="tel"
+          required
+          placeholder="+266..."
+        >
       </div>
 
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" id="email" name="email"
+
+        <input
+          type="email"
+          id="email"
+          name="email"
           autocomplete="email"
-          placeholder="Enter your email address">
+          placeholder="Enter your email address"
+        >
       </div>
 
       <div class="form-group">
         <label for="tickets">Number of Tickets *</label>
+
         <select id="tickets" name="tickets" required>
           <option value="">Select number of tickets</option>
           <option value="1">1 Ticket</option>
@@ -671,6 +909,7 @@ footer p {
 
       <div class="form-group">
         <label for="ticketType">Ticket Type *</label>
+
         <select id="ticketType" name="ticketType" required>
           <option value="">Select ticket type</option>
           <option value="Early Bird">Early Bird</option>
@@ -681,6 +920,7 @@ footer p {
 
       <div class="form-group">
         <label for="payment">Payment Status *</label>
+
         <select id="payment" name="payment" required>
           <option value="">Select payment status</option>
           <option value="Not yet paid">Not yet paid</option>
@@ -691,8 +931,13 @@ footer p {
 
       <div class="form-group">
         <label for="message">Additional Message (Optional)</label>
-        <textarea id="message" name="message" rows="4"
-          placeholder="Any questions or special requests?"></textarea>
+
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          placeholder="Any questions or special requests?"
+        ></textarea>
       </div>
 
       <button type="submit" class="submit-btn">
@@ -701,9 +946,12 @@ footer p {
 
     </form>
 
-    <div id="registrationMessage" class="registration-message"
-         role="status" aria-live="polite">
-    </div>
+    <div
+      id="registrationMessage"
+      class="registration-message"
+      role="status"
+      aria-live="polite"
+    ></div>
 
     <p class="form-note">
       Please note: Submitting your details does not automatically
@@ -719,18 +967,26 @@ footer p {
 <section class="venue">
 
   <div class="section-title">
+
     <small>MARK YOUR CALENDAR</small>
+
     <h2>WHERE SUCCESS MEETS OPPORTUNITY</h2>
+
   </div>
 
   <div class="venue-card">
+
     <h3>MASERU, LESOTHO</h3>
+
     <p>16 January 2027</p>
+
     <p>08:00 – 18:00 HRS</p>
+
     <p style="margin-top:15px;">
       Venue details and further event announcements
       will be shared soon.
     </p>
+
   </div>
 
 </section>
@@ -742,33 +998,43 @@ footer p {
 
   <p><strong>SUCCESS IS A CHOICE!</strong></p>
 
-  <p>Motivation | Personal Development | Training | Empowerment</p>
+  <p>
+    Motivation | Personal Development | Training | Empowerment
+  </p>
 
   <p>Follow us on Facebook and Instagram</p>
 
   <p>WhatsApp: +266 5650 6092</p>
 
-  <p>© 2027 MSM Training Company & Counselling Services.</p>
+  <p>
+    © 2027 MSM Training Company & Counselling Services.
+  </p>
 
   <p>All Rights Reserved.</p>
 
-  <a href="index.html" class="btn btn-outline">BACK TO MSM WEBSITE</a>
+  <a href="index.html" class="btn btn-outline">
+    BACK TO MSM WEBSITE
+  </a>
 
 </footer>
 
 <script>
 
 // EVENT COUNTDOWN
-const eventDate = new Date('2027-01-16T08:00:00+02:00').getTime();
+const eventDate = new Date(
+  '2027-01-16T08:00:00+02:00'
+).getTime();
 
 function updateCountdown() {
 
-  const now = new Date().getTime();
+  const now = Date.now();
   const difference = eventDate - now;
 
   if (difference <= 0) {
-    document.querySelector('.countdown').innerHTML =
+
+    document.getElementById('countdown').innerHTML =
       '<h3>THE EVENT DAY IS HERE!</h3>';
+
     return;
   }
 
@@ -776,15 +1042,21 @@ function updateCountdown() {
     Math.floor(difference / (1000 * 60 * 60 * 24));
 
   document.getElementById('hours').textContent =
-    Math.floor((difference % (1000 * 60 * 60 * 24)) /
-    (1000 * 60 * 60));
+    Math.floor(
+      (difference % (1000 * 60 * 60 * 24)) /
+      (1000 * 60 * 60)
+    );
 
   document.getElementById('minutes').textContent =
-    Math.floor((difference % (1000 * 60 * 60)) /
-    (1000 * 60));
+    Math.floor(
+      (difference % (1000 * 60 * 60)) /
+      (1000 * 60)
+    );
 
   document.getElementById('seconds').textContent =
-    Math.floor((difference % (1000 * 60)) / 1000);
+    Math.floor(
+      (difference % (1000 * 60)) / 1000
+    );
 }
 
 updateCountdown();
@@ -797,13 +1069,26 @@ document.getElementById('registrationForm')
 
   e.preventDefault();
 
-  const name = document.getElementById('fullName').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const tickets = document.getElementById('tickets').value;
-  const ticketType = document.getElementById('ticketType').value;
-  const payment = document.getElementById('payment').value;
-  const message = document.getElementById('message').value.trim();
+  const name =
+    document.getElementById('fullName').value.trim();
+
+  const phone =
+    document.getElementById('phone').value.trim();
+
+  const email =
+    document.getElementById('email').value.trim();
+
+  const tickets =
+    document.getElementById('tickets').value;
+
+  const ticketType =
+    document.getElementById('ticketType').value;
+
+  const payment =
+    document.getElementById('payment').value;
+
+  const message =
+    document.getElementById('message').value.trim();
 
   const registrationText =
     "SUCCESS EXTRAVAGANZA 2027 REGISTRATION\n\n" +
@@ -819,17 +1104,30 @@ document.getElementById('registrationForm')
     "https://wa.me/26656506092?text=" +
     encodeURIComponent(registrationText);
 
-  const result = document.getElementById('registrationMessage');
+  const result =
+    document.getElementById('registrationMessage');
 
   result.style.display = "block";
 
-  result.innerHTML =
-    "<strong>Your registration details are ready!</strong>" +
-    "<p>Please click the button below to send your registration " +
-    "to the MSM team.</p>" +
-    '<a href="' + whatsappURL +
-    '" target="_blank" rel="noopener noreferrer" ' +
-    'class="whatsapp-btn">SEND REGISTRATION TO MSM ON WHATSAPP</a>';
+  result.replaceChildren();
+
+  const heading = document.createElement('strong');
+  heading.textContent = "Your registration details are ready!";
+
+  const paragraph = document.createElement('p');
+  paragraph.textContent =
+    "Click below to send your registration to the MSM team on WhatsApp.";
+
+  const link = document.createElement('a');
+  link.href = whatsappURL;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.className = "whatsapp-btn";
+  link.textContent = "SEND REGISTRATION TO MSM ON WHATSAPP";
+
+  result.appendChild(heading);
+  result.appendChild(paragraph);
+  result.appendChild(link);
 
   result.scrollIntoView({
     behavior: "smooth",
