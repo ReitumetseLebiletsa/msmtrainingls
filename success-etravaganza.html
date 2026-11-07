@@ -493,6 +493,38 @@ section {
   margin-top: 20px;
 }
 
+.attendee-box {
+  display: none;
+  background: #f5f8f5;
+  padding: 22px;
+  border-radius: 10px;
+  margin: 25px 0;
+  text-align: left;
+  border: 1px solid #dce8dd;
+}
+
+.attendee-box h3 {
+  color: var(--green);
+  margin-bottom: 15px;
+}
+
+.attendee-box .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.payment-box {
+  background: #f5f8f5;
+  padding: 22px;
+  border-radius: 10px;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.payment-box h3 {
+  color: var(--green);
+  margin-bottom: 15px;
+}
+
 /* VENUE */
 .venue {
   text-align: center;
@@ -532,7 +564,6 @@ footer p {
 
 /* MOBILE */
 @media(max-width:600px) {
-
   nav {
     justify-content: center;
     padding: 13px 4%;
@@ -590,6 +621,11 @@ footer p {
   .venue-card {
     padding: 30px 18px;
   }
+
+  .attendee-box,
+  .payment-box {
+    padding: 16px;
+  }
 }
 </style>
 </head>
@@ -625,7 +661,6 @@ footer p {
     </p>
 
     <div class="event-details">
-
       <div class="detail">
         <strong>DATE</strong>
         <span>16 January 2027</span>
@@ -640,16 +675,10 @@ footer p {
         <strong>VENUE</strong>
         <span>Maseru, Lesotho</span>
       </div>
-
     </div>
 
-    <a href="#registration" class="btn btn-gold">
-      REGISTER NOW
-    </a>
-
-    <a href="#speakers" class="btn btn-outline">
-      MEET THE SPEAKERS
-    </a>
+    <a href="#registration" class="btn btn-gold">REGISTER NOW</a>
+    <a href="#speakers" class="btn btn-outline">MEET THE SPEAKERS</a>
 
   </div>
 </header>
@@ -660,7 +689,6 @@ footer p {
   <div class="section-title">
     <small>SAVE THE DATE</small>
     <h2>THE OFFICIAL EVENT POSTER</h2>
-
     <p>
       Get ready for an unforgettable experience.
       Share the official poster with friends and family!
@@ -668,7 +696,6 @@ footer p {
   </div>
 
   <div class="poster-container">
-
     <img
       src="images/EXTRAVA.jpeg"
       alt="Official 2027 MSM Success Extravaganza event poster"
@@ -679,10 +706,7 @@ footer p {
       16 JANUARY 2027 | MASERU, LESOTHO
     </div>
 
-    <a href="#registration" class="poster-button">
-      REGISTER NOW
-    </a>
-
+    <a href="#registration" class="poster-button">REGISTER NOW</a>
   </div>
 
 </section>
@@ -724,7 +748,6 @@ footer p {
   <div class="section-title">
     <small>LEARN FROM THE BEST</small>
     <h2>MEET OUR SPEAKERS</h2>
-
     <p>
       Get ready to learn, grow and be inspired by powerful voices.
     </p>
@@ -732,9 +755,7 @@ footer p {
 
   <div class="speaker-grid">
 
-    <!-- PERCY SINGO -->
     <div class="speaker-card">
-
       <div class="speaker-photo">
 
         <img
@@ -745,19 +766,15 @@ footer p {
         >
 
         <div class="speaker-placeholder">PS</div>
-
       </div>
 
       <div class="speaker-info">
         <h3>Percy Singo</h3>
         <p>FEATURED SPEAKER</p>
       </div>
-
     </div>
 
-    <!-- MOHAU MOSOEUNYANE -->
     <div class="speaker-card">
-
       <div class="speaker-photo">
 
         <img
@@ -768,20 +785,17 @@ footer p {
         >
 
         <div class="speaker-placeholder">MM</div>
-
       </div>
 
       <div class="speaker-info">
         <h3>Mohau Mosoeunyane</h3>
         <p>SPEAKER & HOST</p>
       </div>
-
     </div>
 
   </div>
 
   <div class="more-speakers">
-
     <h2>MORE SPEAKERS LOADING...</h2>
 
     <p>
@@ -789,7 +803,6 @@ footer p {
       More inspiring speakers will be announced soon.
       Stay connected and watch this space.
     </p>
-
   </div>
 
 </section>
@@ -837,7 +850,7 @@ footer p {
     <h2>REGISTER FOR SUCCESS EXTRAVAGANZA 2027</h2>
 
     <p>
-      Complete the form below to register your interest.
+      Complete the form below to register.
       Our team will contact you about payment and ticket confirmation.
     </p>
 
@@ -855,45 +868,98 @@ footer p {
 
     <form id="registrationForm">
 
-      <div class="form-group">
-        <label for="fullName">Full Name and Surname *</label>
+      <!-- FIRST ATTENDEE -->
+      <div class="attendee-box" style="display:block;">
 
-        <input
-          type="text"
-          id="fullName"
-          name="fullName"
-          autocomplete="name"
-          required
-          placeholder="Enter your full name"
-        >
+        <h3>FIRST ATTENDEE DETAILS</h3>
+
+        <div class="form-group">
+          <label for="fullName">Full Name and Surname *</label>
+
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            autocomplete="name"
+            required
+            placeholder="Enter your full name"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone / WhatsApp Number *</label>
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            autocomplete="tel"
+            required
+            placeholder="+266..."
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            placeholder="Enter your email address"
+          >
+        </div>
+
       </div>
 
-      <div class="form-group">
-        <label for="phone">Phone / WhatsApp Number *</label>
+      <!-- SECOND ATTENDEE: EARLY BIRD ONLY -->
+      <div class="attendee-box" id="earlyBirdSecondAttendee">
 
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          autocomplete="tel"
-          required
-          placeholder="+266..."
-        >
+        <h3>SECOND ATTENDEE DETAILS</h3>
+
+        <p style="font-size:12px;color:#68766e;margin-bottom:15px;">
+          Please enter the details of the second person attending with you.
+        </p>
+
+        <div class="form-group">
+          <label for="secondName">Second Person's Full Name *</label>
+
+          <input
+            type="text"
+            id="secondName"
+            name="secondName"
+            placeholder="Enter second person's full name"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="secondPhone">Second Person's Phone Number *</label>
+
+          <input
+            type="tel"
+            id="secondPhone"
+            name="secondPhone"
+            placeholder="+266..."
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="secondEmail">Second Person's Email (Optional)</label>
+
+          <input
+            type="email"
+            id="secondEmail"
+            name="secondEmail"
+            placeholder="Enter email address"
+          >
+        </div>
+
       </div>
 
+      <!-- TICKET DETAILS -->
       <div class="form-group">
-        <label for="email">Email Address</label>
 
-        <input
-          type="email"
-          id="email"
-          name="email"
-          autocomplete="email"
-          placeholder="Enter your email address"
-        >
-      </div>
-
-      <div class="form-group">
         <label for="tickets">Number of Tickets *</label>
 
         <select id="tickets" name="tickets" required>
@@ -905,32 +971,141 @@ footer p {
           <option value="5">5 Tickets</option>
           <option value="6 or more">6 or more Tickets</option>
         </select>
+
       </div>
 
       <div class="form-group">
+
         <label for="ticketType">Ticket Type *</label>
 
         <select id="ticketType" name="ticketType" required>
+
           <option value="">Select ticket type</option>
-          <option value="Early Bird">Early Bird</option>
-          <option value="Regular">Regular</option>
-          <option value="Group Booking">Group Booking</option>
+
+          <option value="Early Bird (2 People)">
+            Early Bird - 2 People
+          </option>
+
+          <option value="Regular">
+            Regular
+          </option>
+
+          <option value="Group Booking">
+            Group Booking
+          </option>
+
         </select>
+
       </div>
 
-      <div class="form-group">
-        <label for="payment">Payment Status *</label>
+      <!-- PAYMENT DETAILS -->
+      <div class="payment-box">
 
-        <select id="payment" name="payment" required>
-          <option value="">Select payment status</option>
-          <option value="Not yet paid">Not yet paid</option>
-          <option value="Already paid">Already paid</option>
-          <option value="Need payment details">Need payment details</option>
-        </select>
+        <h3>PAYMENT INFORMATION</h3>
+
+        <div class="form-group">
+
+          <label for="payment">Payment Status *</label>
+
+          <select id="payment" name="payment" required>
+
+            <option value="">Select payment status</option>
+
+            <option value="Not yet paid">Not yet paid</option>
+
+            <option value="Already paid">Already paid</option>
+
+            <option value="Partially paid">Partially paid</option>
+
+            <option value="Need payment details">
+              Need payment details
+            </option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="paymentMethod">How Did You Make Payment? *</label>
+
+          <select id="paymentMethod" name="paymentMethod" required>
+
+            <option value="">Select payment method</option>
+
+            <option value="Bank Deposit">Bank Deposit</option>
+
+            <option value="EFT / Bank Transfer">
+              EFT / Bank Transfer
+            </option>
+
+            <option value="Cash">Cash</option>
+
+            <option value="M-Pesa">M-Pesa</option>
+
+            <option value="Mobile Money">Other Mobile Money</option>
+
+            <option value="Other">Other</option>
+
+            <option value="Not yet paid">Not yet paid</option>
+
+          </select>
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="amountPaid">Amount Paid (R / LSL)</label>
+
+          <input
+            type="number"
+            id="amountPaid"
+            name="amountPaid"
+            min="0"
+            step="0.01"
+            placeholder="Enter amount paid"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="paymentReference">
+            Payment Reference / Transaction ID
+          </label>
+
+          <input
+            type="text"
+            id="paymentReference"
+            name="paymentReference"
+            placeholder="Enter bank reference or transaction ID"
+          >
+
+        </div>
+
+        <div class="form-group">
+
+          <label for="paymentProof">
+            Payment Proof Details
+          </label>
+
+          <textarea
+            id="paymentProof"
+            name="paymentProof"
+            rows="3"
+            placeholder="Provide additional payment information"
+          ></textarea>
+
+        </div>
+
       </div>
 
-      <div class="form-group">
-        <label for="message">Additional Message (Optional)</label>
+      <!-- ADDITIONAL MESSAGE -->
+      <div class="form-group" style="margin-top:20px;">
+
+        <label for="message">
+          Additional Message (Optional)
+        </label>
 
         <textarea
           id="message"
@@ -938,6 +1113,7 @@ footer p {
           rows="4"
           placeholder="Any questions or special requests?"
         ></textarea>
+
       </div>
 
       <button type="submit" class="submit-btn">
@@ -955,8 +1131,8 @@ footer p {
 
     <p class="form-note">
       Please note: Submitting your details does not automatically
-      confirm your ticket. Your registration will be sent to MSM
-      through WhatsApp for follow-up and payment arrangements.
+      confirm your ticket. Your registration must be sent to MSM
+      through WhatsApp for follow-up and payment verification.
     </p>
 
   </div>
@@ -1020,7 +1196,10 @@ footer p {
 
 <script>
 
+// =====================================
 // EVENT COUNTDOWN
+// =====================================
+
 const eventDate = new Date(
   '2027-01-16T08:00:00+02:00'
 ).getTime();
@@ -1063,7 +1242,97 @@ updateCountdown();
 setInterval(updateCountdown, 1000);
 
 
+// =====================================
+// EARLY BIRD SECOND ATTENDEE DISPLAY
+// =====================================
+
+const ticketTypeField =
+  document.getElementById('ticketType');
+
+const secondAttendee =
+  document.getElementById('earlyBirdSecondAttendee');
+
+const ticketsField =
+  document.getElementById('tickets');
+
+function updateAttendeeFields() {
+
+  const isEarlyBird =
+    ticketTypeField.value === 'Early Bird (2 People)';
+
+  secondAttendee.style.display =
+    isEarlyBird ? 'block' : 'none';
+
+  document.getElementById('secondName').required =
+    isEarlyBird;
+
+  document.getElementById('secondPhone').required =
+    isEarlyBird;
+
+  if (isEarlyBird) {
+    ticketsField.value = '2';
+    ticketsField.disabled = true;
+  } else {
+    ticketsField.disabled = false;
+
+    document.getElementById('secondName').value = '';
+    document.getElementById('secondPhone').value = '';
+    document.getElementById('secondEmail').value = '';
+  }
+}
+
+ticketTypeField.addEventListener(
+  'change',
+  updateAttendeeFields
+);
+
+
+// =====================================
+// PAYMENT METHOD DISPLAY
+// =====================================
+
+const paymentStatus =
+  document.getElementById('payment');
+
+const paymentMethod =
+  document.getElementById('paymentMethod');
+
+const amountPaid =
+  document.getElementById('amountPaid');
+
+function updatePaymentFields() {
+
+  const unpaid =
+    paymentStatus.value === 'Not yet paid' ||
+    paymentStatus.value === 'Need payment details';
+
+  if (unpaid) {
+    paymentMethod.value = 'Not yet paid';
+    paymentMethod.disabled = true;
+    amountPaid.value = '';
+    amountPaid.disabled = true;
+  } else {
+    paymentMethod.disabled = false;
+    amountPaid.disabled = false;
+
+    if (paymentMethod.value === 'Not yet paid') {
+      paymentMethod.value = '';
+    }
+  }
+}
+
+paymentStatus.addEventListener(
+  'change',
+  updatePaymentFields
+);
+
+updatePaymentFields();
+
+
+// =====================================
 // REGISTRATION THROUGH WHATSAPP
+// =====================================
+
 document.getElementById('registrationForm')
 .addEventListener('submit', function(e) {
 
@@ -1079,59 +1348,151 @@ document.getElementById('registrationForm')
     document.getElementById('email').value.trim();
 
   const tickets =
-    document.getElementById('tickets').value;
+    ticketsField.value;
 
   const ticketType =
-    document.getElementById('ticketType').value;
+    ticketTypeField.value;
 
   const payment =
-    document.getElementById('payment').value;
+    paymentStatus.value;
+
+  const method =
+    paymentMethod.disabled
+      ? 'Not yet paid'
+      : paymentMethod.value;
+
+  const amount =
+    amountPaid.disabled
+      ? '0'
+      : amountPaid.value;
+
+  const reference =
+    document.getElementById('paymentReference').value.trim();
+
+  const proof =
+    document.getElementById('paymentProof').value.trim();
 
   const message =
     document.getElementById('message').value.trim();
 
+  let secondPersonDetails = '';
+
+  if (ticketType === 'Early Bird (2 People)') {
+
+    const secondName =
+      document.getElementById('secondName').value.trim();
+
+    const secondPhone =
+      document.getElementById('secondPhone').value.trim();
+
+    const secondEmail =
+      document.getElementById('secondEmail').value.trim();
+
+    secondPersonDetails =
+
+      '\n\nSECOND ATTENDEE DETAILS\n' +
+
+      'Name: ' + secondName + '\n' +
+
+      'Phone: ' + secondPhone + '\n' +
+
+      'Email: ' +
+      (secondEmail || 'Not provided');
+
+  }
+
   const registrationText =
-    "SUCCESS EXTRAVAGANZA 2027 REGISTRATION\n\n" +
-    "Full Name: " + name + "\n" +
-    "Phone: " + phone + "\n" +
-    "Email: " + (email || "Not provided") + "\n" +
-    "Number of Tickets: " + tickets + "\n" +
-    "Ticket Type: " + ticketType + "\n" +
-    "Payment Status: " + payment + "\n" +
-    "Additional Message: " + (message || "None");
+
+    '2027 SUCCESS EXTRAVAGANZA REGISTRATION\n' +
+
+    '================================\n\n' +
+
+    'FIRST ATTENDEE\n' +
+
+    'Name: ' + name + '\n' +
+
+    'Phone: ' + phone + '\n' +
+
+    'Email: ' + (email || 'Not provided') +
+
+    secondPersonDetails +
+
+    '\n\nTICKET INFORMATION\n' +
+
+    'Number of Tickets: ' + tickets + '\n' +
+
+    'Ticket Type: ' + ticketType +
+
+    '\n\nPAYMENT INFORMATION\n' +
+
+    'Payment Status: ' + payment + '\n' +
+
+    'Payment Method: ' + method + '\n' +
+
+    'Amount Paid: ' + (amount || 'Not provided') + '\n' +
+
+    'Payment Reference: ' +
+    (reference || 'Not provided') + '\n' +
+
+    'Payment Proof Details: ' +
+    (proof || 'Not provided') +
+
+    '\n\nADDITIONAL MESSAGE\n' +
+
+    (message || 'None') +
+
+    '\n\nEVENT DATE: 16 JANUARY 2027' +
+
+    '\nVENUE: MASERU, LESOTHO';
 
   const whatsappURL =
-    "https://wa.me/26656506092?text=" +
+
+    'https://wa.me/26656506092?text=' +
+
     encodeURIComponent(registrationText);
 
   const result =
     document.getElementById('registrationMessage');
 
-  result.style.display = "block";
+  result.style.display = 'block';
 
   result.replaceChildren();
 
-  const heading = document.createElement('strong');
-  heading.textContent = "Your registration details are ready!";
+  const heading =
+    document.createElement('strong');
 
-  const paragraph = document.createElement('p');
+  heading.textContent =
+    'Your registration details are ready!';
+
+  const paragraph =
+    document.createElement('p');
+
   paragraph.textContent =
-    "Click below to send your registration to the MSM team on WhatsApp.";
+    'Click below to send your attendee and payment details to the MSM team on WhatsApp.';
 
-  const link = document.createElement('a');
+  const link =
+    document.createElement('a');
+
   link.href = whatsappURL;
-  link.target = "_blank";
-  link.rel = "noopener noreferrer";
-  link.className = "whatsapp-btn";
-  link.textContent = "SEND REGISTRATION TO MSM ON WHATSAPP";
+
+  link.target = '_blank';
+
+  link.rel = 'noopener noreferrer';
+
+  link.className = 'whatsapp-btn';
+
+  link.textContent =
+    'SEND REGISTRATION TO MSM ON WHATSAPP';
 
   result.appendChild(heading);
+
   result.appendChild(paragraph);
+
   result.appendChild(link);
 
   result.scrollIntoView({
-    behavior: "smooth",
-    block: "center"
+    behavior: 'smooth',
+    block: 'center'
   });
 
 });
