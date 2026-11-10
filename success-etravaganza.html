@@ -6,7 +6,7 @@
 
 <title>2027 MSM Success Extravaganza | Lesotho</title>
 
-<meta name="description" content="Join the 2027 MSM Success Extravaganza on 16 January 2027 in Maseru, Lesotho. Featuring Percy Singo, Mohau Mosoeunyane, Phakiso Moleko, Maitumeleng Fokothi and more.">
+<meta name="description" content="Join the 2027 MSM Success Extravaganza on 16 January 2027 in Maseru, Lesotho. Featuring Mohau P Mosoeunyane, Percy Singo, Phakiso Moleko, Maitumeleng Fokothi and more.">
 
 <meta name="theme-color" content="#0B3D2E">
 
@@ -15,6 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
+
 :root {
   --green:#0B3D2E;
   --light-green:#7CB342;
@@ -224,7 +225,7 @@ section {
 }
 
 .section-title p {
-  max-width:650px;
+  max-width:700px;
   margin:auto;
   color:var(--grey);
 }
@@ -387,6 +388,10 @@ section {
   font-size:12px;
   line-height:1.9;
   text-align:left;
+}
+
+.speaker-bio strong {
+  color:var(--green);
 }
 
 .speaker-divider {
@@ -615,19 +620,62 @@ section {
   margin-top:15px;
 }
 
+/* SPONSORSHIP */
+
 .sponsorship-banner {
   background:var(--green);
   color:white;
-  max-width:750px;
-  margin:0 auto 30px;
-  padding:30px 20px;
+  max-width:850px;
+  margin:0 auto 45px;
+  padding:40px 25px;
   border-radius:12px;
   text-align:center;
 }
 
 .sponsorship-banner h2 {
   color:var(--gold);
-  font-size:32px;
+  font-size:48px;
+}
+
+.sponsorship-banner h3 {
+  color:white;
+}
+
+.sponsorship-benefits {
+  max-width:1000px;
+  margin:35px auto 45px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:20px;
+}
+
+.sponsor-benefit {
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  text-align:left;
+  box-shadow:0 5px 20px rgba(0,0,0,.06);
+  border-left:4px solid var(--gold);
+}
+
+.sponsor-benefit h3 {
+  color:var(--green);
+  font-size:15px;
+  margin-bottom:10px;
+}
+
+.sponsor-benefit p {
+  color:var(--grey);
+  font-size:12px;
+  line-height:1.8;
+}
+
+.sponsorship-note {
+  max-width:850px;
+  margin:25px auto;
+  color:var(--grey);
+  font-size:12px;
+  text-align:center;
 }
 
 /* VENUE */
@@ -669,12 +717,18 @@ footer p {
   margin:8px;
 }
 
+footer a:not(.btn) {
+  color:var(--gold);
+}
+
 /* RESPONSIVE */
 
 @media(max-width:900px) {
+
   .speaker-grid {
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
+
 }
 
 @media(max-width:600px) {
@@ -746,7 +800,12 @@ footer p {
     padding:16px;
   }
 
+  .sponsorship-benefits {
+    grid-template-columns:1fr;
+  }
+
 }
+
 </style>
 </head>
 
@@ -755,7 +814,10 @@ footer p {
 <!-- NAVIGATION -->
 
 <nav>
-  <a href="index.html" class="logo">MSM <span>TRAINING</span></a>
+
+  <a href="index.html" class="logo">
+    MSM <span>TRAINING</span>
+  </a>
 
   <div class="nav-links">
     <a href="index.html">HOME</a>
@@ -765,16 +827,22 @@ footer p {
     <a href="#registration">REGISTER</a>
     <a href="#sponsorship">SPONSORS</a>
   </div>
+
 </nav>
 
 <!-- HERO -->
 
 <header class="hero">
+
   <div class="hero-content">
 
-    <div class="event-label">MSM TRAINING PRESENTS</div>
+    <div class="event-label">
+      MSM TRAINING PRESENTS
+    </div>
 
-    <h1>2027 SUCCESS <span>EXTRAVAGANZA</span></h1>
+    <h1>
+      2027 SUCCESS <span>EXTRAVAGANZA</span>
+    </h1>
 
     <h2>THE BIGGEST SUCCESS SEMINAR IN LESOTHO</h2>
 
@@ -802,10 +870,16 @@ footer p {
 
     </div>
 
-    <a href="#registration" class="btn btn-gold">REGISTER NOW</a>
-    <a href="#speakers" class="btn btn-outline">MEET THE SPEAKERS</a>
+    <a href="#registration" class="btn btn-gold">
+      REGISTER NOW
+    </a>
+
+    <a href="#speakers" class="btn btn-outline">
+      MEET THE SPEAKERS
+    </a>
 
   </div>
+
 </header>
 
 <!-- OFFICIAL POSTER -->
@@ -813,12 +887,16 @@ footer p {
 <section class="poster-section" id="event-poster">
 
   <div class="section-title">
+
     <small>SAVE THE DATE</small>
+
     <h2>THE OFFICIAL EVENT POSTER</h2>
+
     <p>
       Get ready for an unforgettable experience.
       Share the official poster with friends and family!
     </p>
+
   </div>
 
   <div class="poster-container">
@@ -833,19 +911,24 @@ footer p {
       16 JANUARY 2027 | MASERU, LESOTHO
     </div>
 
-    <a href="#registration" class="poster-button">REGISTER NOW</a>
+    <a href="#registration" class="poster-button">
+      REGISTER NOW
+    </a>
 
   </div>
 
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT THE EVENT -->
 
 <section class="about" id="about">
 
   <div class="section-title">
+
     <small>YOUR NEXT LEVEL STARTS HERE</small>
+
     <h2>EXPERIENCE SUCCESS DIFFERENTLY</h2>
+
   </div>
 
   <div class="about-content">
@@ -863,6 +946,13 @@ footer p {
       and meaningful connections.
     </p>
 
+    <p>
+      Whether you are an aspiring entrepreneur, an established
+      businessperson, a professional or someone seeking a fresh
+      direction in life, this experience is designed to challenge
+      your thinking and encourage purposeful action.
+    </p>
+
     <h3 style="color:#0B3D2E;margin-top:25px;">
       SUCCESS IS A CHOICE!
     </h3>
@@ -876,12 +966,16 @@ footer p {
 <section class="speakers" id="speakers">
 
   <div class="section-title">
+
     <small>LEARN FROM THE BEST</small>
+
     <h2>MEET OUR SPEAKERS</h2>
+
     <p>
       Get ready to learn, grow and be inspired by powerful voices
       bringing knowledge, experience and practical insights.
     </p>
+
   </div>
 
   <div class="speaker-grid">
@@ -899,7 +993,9 @@ footer p {
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
 
-        <div class="speaker-placeholder" style="display:none;">PS</div>
+        <div class="speaker-placeholder" style="display:none;">
+          PS
+        </div>
 
       </div>
 
@@ -917,7 +1013,8 @@ footer p {
 
           Percy Singo is a finance speaker, property investor,
           co-founder of Be Wise Financial Seminar, and author
-          of the book <strong>How to Make Your Salary Work for You.</strong>
+          of the book
+          <strong>How to Make Your Salary Work for You.</strong>
 
           <br><br>
 
@@ -956,28 +1053,190 @@ footer p {
 
         <img
           src="images/mosoeunyane.jpeg"
-          alt="Mohau Mosoeunyane"
+          alt="Mohau P Mosoeunyane"
           loading="lazy"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
 
-        <div class="speaker-placeholder" style="display:none;">MM</div>
+        <div class="speaker-placeholder" style="display:none;">
+          MM
+        </div>
 
       </div>
 
       <div class="speaker-info">
 
-        <h3>Mohau Mosoeunyane</h3>
+        <h3>Mohau P. Mosoeunyane</h3>
 
-        <p class="speaker-title">SPEAKER & HOST</p>
+        <p class="speaker-title">
+          FOUNDING MANAGING DIRECTOR | AUTHOR |
+          PHILOSOPHICAL MOTIVATIONAL SPEAKER
+        </p>
 
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
 
-          Speaker profile coming soon. More information about
-          Mohau Mosoeunyane and his contribution to the
-          2027 Success Extravaganza will be announced shortly.
+          Mohau P. Mosoeunyane is a philosophical motivational
+          speaker, professional and natural teacher, trainer,
+          businessman and author of the success book
+          <strong>THE_MOTIVE: The Secret of Money and Success Revealed.</strong>
+
+          <br><br>
+
+          He is the Founding Managing Director of Mohau and the
+          Success Masters Motivation & Training Company and
+          Counselling Services (MSM), a Lesotho-registered company
+          dedicated to empowering individuals, businesses,
+          organisations and institutions throughout Southern Africa.
+
+          <br><br>
+
+          <strong>EDUCATION AND PROFESSIONAL JOURNEY</strong>
+
+          <br><br>
+
+          Mohau served in the Lesotho Defence Force (LDF)
+          from 2004 to 2007. He subsequently pursued a
+          Bachelor of Education (BEd) at the National University
+          of Lesotho (NUL) between 2007 and 2011.
+
+          <br><br>
+
+          From 2011 to 2013, he worked as a classroom teacher
+          at African Union International School (AUIS), followed
+          by two years as Principal at Khayalami Independent
+          School (KIS), from 2013 to 2015.
+
+          Both institutions are based in Midrand, South Africa.
+
+          <br><br>
+
+          Today, he is a full-time businessman with business
+          interests in Lesotho and South Africa.
+
+          <br><br>
+
+          <strong>LEADERSHIP AND ACHIEVEMENTS</strong>
+
+          <br><br>
+
+          Since founding MSM Training Company in 2015,
+          Mohau has successfully organised and facilitated
+          more than <strong>100 public workshops and seminars</strong>
+          across Lesotho and South Africa, directly reaching
+          over <strong>12,000 people.</strong>
+
+          <br><br>
+
+          He has facilitated team-building programmes,
+          empowerment sessions and financial intelligence
+          training for more than <strong>4,500 civil servants</strong>
+          across various government ministries, including
+          Finance, Police, Agriculture, Justice, Tourism,
+          Home Affairs, Small Business, Natural Resources
+          and Foreign Affairs.
+
+          <br><br>
+
+          He has also facilitated empowerment sessions for
+          the 120 members of the 10th Parliament of Lesotho.
+
+          <br><br>
+
+          His corporate engagements include organisations such as
+          Metropolitan Lesotho, Lesotho Highlands Development
+          Authority (LHDA), Lesotho Funeral Services, Naledi
+          Filling Station, Machabeng College, Letshego and
+          Green World, among others.
+
+          <br><br>
+
+          <strong>YOUTH DEVELOPMENT AND COMMUNITY IMPACT</strong>
+
+          <br><br>
+
+          Passionate about empowering the next generation,
+          Mohau has presented Academic Success Psychology to
+          more than <strong>50 high schools</strong>, reaching
+          approximately <strong>13,000 students.</strong>
+
+          <br><br>
+
+          He has also successfully organised and facilitated
+          four-day life-skills youth camps, providing intensive
+          mentorship and leadership development to 93 young people.
+
+          <br><br>
+
+          <strong>MEDIA RECOGNITION AND COLLABORATIONS</strong>
+
+          <br><br>
+
+          His contribution to personal and organisational
+          development has earned him recognition across
+          Lesotho's media landscape.
+
+          He has been invited to share weekly motivational
+          and educational messages on various radio stations
+          and television programmes.
+
+          <br><br>
+
+          He has also contributed to local newspapers and
+          been featured in Finite and Faith Magazines.
+
+          <br><br>
+
+          Mohau believes strongly in collaboration and regularly
+          works alongside local and international experts in
+          personal development, business and organisational
+          empowerment.
+
+          <br><br>
+
+          His collaborative network includes Robert Likhang,
+          Adv. Mary Bosiu, Tshepiso Sesioana, Rooi Rabotapi,
+          Adv. Makhetha Motsoari, Dr. Dumisane Magalela,
+          Rev. Phakiso Moleko and Seatla Ratshosa-Masheleng,
+          among others.
+
+          <br><br>
+
+          His strength lies in bringing together the right
+          professionals, facilitators, coaches and mentors
+          to deliver meaningful results.
+
+          <br><br>
+
+          <strong>HIS VISION</strong>
+
+          <br><br>
+
+          To become a recognised authority in empowerment
+          through motivation and training in Southern Africa.
+
+          <br><br>
+
+          <strong>HIS MISSION</strong>
+
+          <br><br>
+
+          To empower individuals, businesses, NGOs and
+          governments with up-to-date information to function
+          at their highest level.
+
+          <br><br>
+
+          <strong>CORE VALUES</strong>
+
+          <br><br>
+
+          Empowerment | Professionalism | Collaboration
+
+          <br><br>
+
+          <strong>SUCCESS IS A CHOICE!</strong>
 
         </p>
 
@@ -998,7 +1257,9 @@ footer p {
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
 
-        <div class="speaker-placeholder" style="display:none;">PM</div>
+        <div class="speaker-placeholder" style="display:none;">
+          PM
+        </div>
 
       </div>
 
@@ -1022,10 +1283,14 @@ footer p {
 
           Through his counselling sessions, he has supported
           individuals in navigating personal challenges and
-          finding direction. His motivational speaking engagements
-          have included organisations such as MSM, Metropolitan
-          Lesotho, World Vision, Harvest FM and the Lesotho
-          Mounted Police Service.
+          finding direction.
+
+          <br><br>
+
+          His motivational speaking engagements have included
+          organisations such as MSM, Metropolitan Lesotho,
+          World Vision, Harvest FM and the Lesotho Mounted
+          Police Service.
 
           <br><br>
 
@@ -1052,7 +1317,9 @@ footer p {
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
 
-        <div class="speaker-placeholder" style="display:none;">MF</div>
+        <div class="speaker-placeholder" style="display:none;">
+          MF
+        </div>
 
       </div>
 
@@ -1060,7 +1327,9 @@ footer p {
 
         <h3>Maitumeleng Fokothi</h3>
 
-        <p class="speaker-title">FEATURED SPEAKER</p>
+        <p class="speaker-title">
+          FEATURED SPEAKER
+        </p>
 
         <div class="speaker-divider"></div>
 
@@ -1098,7 +1367,9 @@ footer p {
 
         <h3>More Speakers Loading...</h3>
 
-        <p class="speaker-title">ADDITIONAL SPEAKER</p>
+        <p class="speaker-title">
+          ADDITIONAL SPEAKER
+        </p>
 
         <div class="speaker-divider"></div>
 
@@ -1200,13 +1471,17 @@ footer p {
 
       <div class="form-group">
 
-        <label for="ticketType">Select Your Ticket Package *</label>
+        <label for="ticketType">
+          Select Your Ticket Package *
+        </label>
 
         <select id="ticketType" required>
 
-          <option value="">Choose a ticket package</option>
+          <option value="">
+            Choose a ticket package
+          </option>
 
-          <optgroup label="EARLY BIRD - 50 ATTENDEES ONLY">
+          <optgroup label="EARLY BIRD - 50 INDIVIDUAL ATTENDEES ONLY">
 
             <option value="early_individual">
               Early Bird Individual - R200
@@ -1218,7 +1493,7 @@ footer p {
 
           </optgroup>
 
-          <optgroup label="NORMAL REGISTRATION - 80 ATTENDEES ONLY">
+          <optgroup label="NORMAL REGISTRATION - 80 INDIVIDUAL ATTENDEES ONLY">
 
             <option value="normal_individual">
               Normal Individual - R400
@@ -1234,7 +1509,7 @@ footer p {
 
           </optgroup>
 
-          <optgroup label="VIP REGISTRATION - 20 ATTENDEES ONLY">
+          <optgroup label="VIP REGISTRATION - 20 INDIVIDUAL ATTENDEES ONLY">
 
             <option value="vip_individual">
               VIP Individual - R1,000
@@ -1256,7 +1531,8 @@ footer p {
 
       <!-- TICKET SUMMARY -->
 
-      <div class="ticket-summary" id="ticketSummary"
+      <div class="ticket-summary"
+           id="ticketSummary"
            style="display:none;">
 
         <h3>YOUR REGISTRATION SUMMARY</h3>
@@ -1272,7 +1548,7 @@ footer p {
         </p>
 
         <p>
-          <strong>Number of Attendees:</strong>
+          <strong>Individual Attendees / Tickets:</strong>
           <span id="summaryAttendees"></span>
         </p>
 
@@ -1286,9 +1562,19 @@ footer p {
         </div>
 
         <p class="allocation">
-          Category allocation: 50 Early Bird / 80 Normal / 20 VIP
-          individual attendees respectively. Final availability
-          must be confirmed by MSM.
+          Category allocations are based on individual attendees,
+          not the number of bookings. A pair uses 2 tickets and
+          a group of 5 uses 5 tickets.
+
+          <br><br>
+
+          Early Bird: 50 individual tickets.
+          Normal: 80 individual tickets.
+          VIP: 20 individual tickets.
+
+          <br><br>
+
+          Final availability is subject to confirmation by MSM.
         </p>
 
       </div>
@@ -1301,7 +1587,9 @@ footer p {
 
         <div class="form-group">
 
-          <label for="fullName">Full Name and Surname *</label>
+          <label for="fullName">
+            Full Name and Surname *
+          </label>
 
           <input
             type="text"
@@ -1315,7 +1603,9 @@ footer p {
 
         <div class="form-group">
 
-          <label for="phone">Phone / WhatsApp Number *</label>
+          <label for="phone">
+            Phone / WhatsApp Number *
+          </label>
 
           <input
             type="tel"
@@ -1329,7 +1619,9 @@ footer p {
 
         <div class="form-group">
 
-          <label for="email">Email Address</label>
+          <label for="email">
+            Email Address
+          </label>
 
           <input
             type="email"
@@ -1344,7 +1636,8 @@ footer p {
 
       <!-- ADDITIONAL ATTENDEES -->
 
-      <div class="attendee-box" id="otherAttendees"
+      <div class="attendee-box"
+           id="otherAttendees"
            style="display:none;">
 
         <h3>ADDITIONAL ATTENDEE DETAILS</h3>
@@ -1366,17 +1659,27 @@ footer p {
 
         <div class="form-group">
 
-          <label for="payment">Payment Status *</label>
+          <label for="payment">
+            Payment Status *
+          </label>
 
           <select id="payment" required>
 
-            <option value="">Select payment status</option>
+            <option value="">
+              Select payment status
+            </option>
 
-            <option value="Not yet paid">Not yet paid</option>
+            <option value="Not yet paid">
+              Not yet paid
+            </option>
 
-            <option value="Already paid">Already paid</option>
+            <option value="Already paid">
+              Already paid
+            </option>
 
-            <option value="Partially paid">Partially paid</option>
+            <option value="Partially paid">
+              Partially paid
+            </option>
 
             <option value="Need payment details">
               Need payment details
@@ -1388,27 +1691,39 @@ footer p {
 
         <div class="form-group">
 
-          <label for="paymentMethod">Payment Method</label>
+          <label for="paymentMethod">
+            Payment Method
+          </label>
 
           <select id="paymentMethod">
 
-            <option value="">Select payment method</option>
+            <option value="">
+              Select payment method
+            </option>
 
-            <option value="Bank Deposit">Bank Deposit</option>
+            <option value="Bank Deposit">
+              Bank Deposit
+            </option>
 
             <option value="EFT / Bank Transfer">
               EFT / Bank Transfer
             </option>
 
-            <option value="Cash">Cash</option>
+            <option value="Cash">
+              Cash
+            </option>
 
-            <option value="M-Pesa">M-Pesa</option>
+            <option value="M-Pesa">
+              M-Pesa
+            </option>
 
             <option value="Other Mobile Money">
               Other Mobile Money
             </option>
 
-            <option value="Other">Other</option>
+            <option value="Other">
+              Other
+            </option>
 
           </select>
 
@@ -1416,7 +1731,9 @@ footer p {
 
         <div class="form-group">
 
-          <label for="amountPaid">Amount Paid (R)</label>
+          <label for="amountPaid">
+            Amount Paid (R)
+          </label>
 
           <input
             type="number"
@@ -1458,11 +1775,13 @@ footer p {
 
       </div>
 
-      <!-- MESSAGE -->
+      <!-- ADDITIONAL MESSAGE -->
 
       <div class="form-group" style="margin-top:20px;">
 
-        <label for="message">Additional Message (Optional)</label>
+        <label for="message">
+          Additional Message (Optional)
+        </label>
 
         <textarea
           id="message"
@@ -1487,9 +1806,10 @@ footer p {
 
     <p class="form-note">
 
-      Please note: Submitting your registration does not
-      automatically confirm your ticket. The MSM team will
-      verify your payment and confirm your registration.
+      Submitting your registration does not automatically
+      confirm your ticket. The MSM team will verify availability,
+      payment and attendee information before confirming
+      your registration.
 
     </p>
 
@@ -1514,21 +1834,149 @@ footer p {
 
   </div>
 
+  <!-- SPONSORSHIP BANNER -->
+
   <div class="sponsorship-banner">
 
-    <h2>R8,000</h2>
+    <small style="color:#A8D08D;font-weight:800;letter-spacing:2px;">
+      BECOME AN OFFICIAL EVENT PARTNER
+    </small>
+
+    <h2 style="font-size:48px;margin:12px 0;">
+      R8,000
+    </h2>
 
     <h3>PER SPONSORSHIP TABLE</h3>
 
-    <p style="margin-top:10px;">
-      ONLY 5 TABLES AVAILABLE
+    <p style="margin-top:15px;">
+      Invest in visibility. Build connections.
+      Position your brand among people who are serious
+      about growth, business and success.
     </p>
 
-    <p style="margin-top:10px;color:#e0eee5;">
-      Total potential table sponsorship: R40,000
+    <div style="
+      background:rgba(255,255,255,.1);
+      padding:18px;
+      border-radius:8px;
+      margin-top:20px;
+    ">
+
+      <h3 style="color:#D9AD50;">
+        ONLY 5 SPONSORSHIP TABLES AVAILABLE
+      </h3>
+
+      <p style="margin-top:8px;">
+        R8,000 per table
+      </p>
+
+      <p style="font-size:13px;">
+        Total potential table sponsorship: R40,000
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- SPONSORSHIP BENEFITS -->
+
+  <div class="section-title">
+
+    <small>MORE THAN A SPONSORSHIP</small>
+
+    <h2>WHY BECOME A TABLE SPONSOR?</h2>
+
+    <p>
+      Your sponsorship is an opportunity to connect your
+      organisation with an influential gathering of
+      entrepreneurs, professionals, business leaders
+      and individuals committed to personal growth.
     </p>
 
   </div>
+
+  <div class="sponsorship-benefits">
+
+    <div class="sponsor-benefit">
+
+      <h3>01. BRAND VISIBILITY</h3>
+
+      <p>
+        Increase awareness of your company by associating
+        your brand with the 2027 MSM Success Extravaganza,
+        subject to the agreed event branding arrangements.
+      </p>
+
+    </div>
+
+    <div class="sponsor-benefit">
+
+      <h3>02. BUSINESS NETWORKING</h3>
+
+      <p>
+        Create opportunities to connect with entrepreneurs,
+        professionals, government representatives, business
+        owners and other influential participants.
+      </p>
+
+    </div>
+
+    <div class="sponsor-benefit">
+
+      <h3>03. PRODUCT AND SERVICE EXPOSURE</h3>
+
+      <p>
+        Gain an opportunity to introduce your organisation,
+        products and services to event participants,
+        subject to arrangements with the organisers.
+      </p>
+
+    </div>
+
+    <div class="sponsor-benefit">
+
+      <h3>04. CORPORATE BRAND POSITIONING</h3>
+
+      <p>
+        Position your organisation as a supporter of
+        personal development, financial intelligence,
+        entrepreneurship and community empowerment.
+      </p>
+
+    </div>
+
+    <div class="sponsor-benefit">
+
+      <h3>05. STRATEGIC PARTNERSHIP OPPORTUNITIES</h3>
+
+      <p>
+        Build relationships with potential clients,
+        collaborators and organisations that share
+        your interest in growth and development.
+      </p>
+
+    </div>
+
+    <div class="sponsor-benefit">
+
+      <h3>06. CONTRIBUTION TO COMMUNITY DEVELOPMENT</h3>
+
+      <p>
+        Become part of an initiative that promotes
+        knowledge, financial awareness, leadership,
+        entrepreneurship and positive social change.
+      </p>
+
+    </div>
+
+  </div>
+
+  <p class="sponsorship-note">
+    Sponsorship benefits and specific branding, exhibition
+    and recognition arrangements will be agreed with MSM
+    Training Company upon confirmation of the partnership.
+  </p>
+
+  <!-- SPONSORSHIP REGISTRATION FORM -->
 
   <div class="registration-card">
 
@@ -1544,47 +1992,74 @@ footer p {
 
       <div class="form-group">
 
-        <label for="companyName">Company / Sponsor Name *</label>
+        <label for="companyName">
+          Company / Sponsor Name *
+        </label>
 
-        <input type="text" id="companyName" required
-               placeholder="Enter company or sponsor name">
-
-      </div>
-
-      <div class="form-group">
-
-        <label for="contactPerson">Contact Person *</label>
-
-        <input type="text" id="contactPerson" required
-               placeholder="Enter contact person's name">
+        <input
+          type="text"
+          id="companyName"
+          required
+          placeholder="Enter company or sponsor name"
+        >
 
       </div>
 
       <div class="form-group">
 
-        <label for="sponsorPhone">Phone Number *</label>
+        <label for="contactPerson">
+          Contact Person *
+        </label>
 
-        <input type="tel" id="sponsorPhone" required
-               placeholder="+266...">
-
-      </div>
-
-      <div class="form-group">
-
-        <label for="sponsorEmail">Email Address</label>
-
-        <input type="email" id="sponsorEmail"
-               placeholder="Enter email address">
+        <input
+          type="text"
+          id="contactPerson"
+          required
+          placeholder="Enter contact person's name"
+        >
 
       </div>
 
       <div class="form-group">
 
-        <label for="tableQuantity">Number of Tables *</label>
+        <label for="sponsorPhone">
+          Phone Number *
+        </label>
+
+        <input
+          type="tel"
+          id="sponsorPhone"
+          required
+          placeholder="+266..."
+        >
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="sponsorEmail">
+          Email Address
+        </label>
+
+        <input
+          type="email"
+          id="sponsorEmail"
+          placeholder="Enter email address"
+        >
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="tableQuantity">
+          Number of Tables *
+        </label>
 
         <select id="tableQuantity" required>
 
-          <option value="">Select number of tables</option>
+          <option value="">
+            Select number of tables
+          </option>
 
           <option value="1">1 Table - R8,000</option>
 
@@ -1621,17 +2096,27 @@ footer p {
 
       <div class="form-group">
 
-        <label for="sponsorPayment">Payment Status *</label>
+        <label for="sponsorPayment">
+          Payment Status *
+        </label>
 
         <select id="sponsorPayment" required>
 
-          <option value="">Select payment status</option>
+          <option value="">
+            Select payment status
+          </option>
 
-          <option value="Not yet paid">Not yet paid</option>
+          <option value="Not yet paid">
+            Not yet paid
+          </option>
 
-          <option value="Already paid">Already paid</option>
+          <option value="Already paid">
+            Already paid
+          </option>
 
-          <option value="Partially paid">Partially paid</option>
+          <option value="Partially paid">
+            Partially paid
+          </option>
 
         </select>
 
@@ -1689,15 +2174,44 @@ footer p {
 
   <h2>MSM TRAINING COMPANY</h2>
 
-  <p><strong>SUCCESS IS A CHOICE!</strong></p>
+  <p>
+    <strong>SUCCESS IS A CHOICE!</strong>
+  </p>
 
   <p>
     Motivation | Personal Development | Training | Empowerment
   </p>
 
-  <p>Follow us on Facebook and Instagram</p>
+  <p>Physical Address: Maseru, Lesotho</p>
 
-  <p>WhatsApp: +266 5650 6092</p>
+  <p>
+    WhatsApp / Phone:
+    +266 5650 6092 | +266 6206 2250
+  </p>
+
+  <p>
+    Email:
+    <a href="mailto:msmtrainings@gmail.com">
+      msmtrainings@gmail.com
+    </a>
+  </p>
+
+  <p>
+    <a href="mailto:Mohau11459@gmail.com">
+      Mohau11459@gmail.com
+    </a>
+  </p>
+
+  <p>
+    Website:
+    <a href="https://msmtrainingls.com"
+       target="_blank"
+       rel="noopener noreferrer">
+      www.msmtrainingls.com
+    </a>
+  </p>
+
+  <p>Follow us on Facebook and Instagram</p>
 
   <p>
     © 2027 MSM Training Company & Counselling Services.
@@ -1764,70 +2278,81 @@ setInterval(updateCountdown, 1000);
 // TICKET PACKAGE CONFIGURATION
 // =====================================
 
+// IMPORTANT:
+// Limits are individual attendee allocations,
+// not package booking counts.
+//
+// Pair = 2 individual tickets.
+// Group of 5 = 5 individual tickets.
+//
+// The website currently submits registrations
+// through WhatsApp. Cumulative availability
+// must therefore be verified by MSM.
+
 const ticketPackages = {
 
   early_individual: {
-    category: "Early Bird",
-    package: "Individual",
-    price: 200,
-    people: 1,
-    limit: 50
+    category:"Early Bird",
+    package:"Individual",
+    price:200,
+    people:1,
+    limit:50
   },
 
   early_pair: {
-    category: "Early Bird",
-    package: "Pair",
-    price: 300,
-    people: 2,
-    limit: 50
+    category:"Early Bird",
+    package:"Pair",
+    price:300,
+    people:2,
+    limit:50
   },
 
   normal_individual: {
-    category: "Normal",
-    package: "Individual",
-    price: 400,
-    people: 1,
-    limit: 80
+    category:"Normal",
+    package:"Individual",
+    price:400,
+    people:1,
+    limit:80
   },
 
   normal_pair: {
-    category: "Normal",
-    package: "Pair",
-    price: 600,
-    people: 2,
-    limit: 80
+    category:"Normal",
+    package:"Pair",
+    price:600,
+    people:2,
+    limit:80
   },
 
   normal_group: {
-    category: "Normal",
-    package: "Group of 5",
-    price: 1250,
-    people: 5,
-    limit: 80
+    category:"Normal",
+    package:"Group of 5",
+    price:1250,
+    people:5,
+    limit:80
   },
 
   vip_individual: {
-    category: "VIP",
-    package: "Individual",
-    price: 1000,
-    people: 1,
-    limit: 20
+    category:"VIP",
+    package:"Individual",
+    price:1000,
+    people:1,
+    limit:20
   },
 
   vip_pair: {
-    category: "VIP",
-    package: "Pair",
-    price: 1800,
-    people: 2,
-    limit: 20
+    category:"VIP",
+    package:"Pair",
+    price:1800,
+    people:2,
+    limit:20
   },
 
   vip_group: {
-    category: "VIP",
-    package: "Group of 5",
-    price: 4500,
-    people: 5,
-    limit: 20
+    category:"VIP",
+    package:"Group of 5",
+    price:4500,
+    people:5,
+    limit:20
   }
 
 };
@@ -1888,7 +2413,7 @@ ticketType.addEventListener("change", function() {
 
   ticketSummary.style.display = "block";
 
-  // ADDITIONAL ATTENDEE DETAILS
+  // GENERATE ADDITIONAL ATTENDEE FIELDS
 
   if (pkg.people > 1) {
 
@@ -2043,11 +2568,21 @@ document.getElementById("registrationForm")
   const message =
     document.getElementById("message").value.trim();
 
-  // CHECK AMOUNT PAID
+  // VALIDATE AMOUNT PAID
 
   if (Number(amount) > pkg.price) {
 
-    alert("The amount paid cannot exceed the ticket package price.");
+    alert(
+      "The amount paid cannot exceed the ticket package price."
+    );
+
+    return;
+
+  }
+
+  if (Number(amount) < 0) {
+
+    alert("The amount paid cannot be negative.");
 
     return;
 
@@ -2070,7 +2605,12 @@ document.getElementById("registrationForm")
     const phoneField =
       this.querySelector(`[name="attendeePhone${i}"]`);
 
-    if (!nameField || !phoneField) {
+    if (
+      !nameField ||
+      !phoneField ||
+      !nameField.value.trim() ||
+      !phoneField.value.trim()
+    ) {
 
       alert("Please complete all attendee details.");
 
@@ -2099,6 +2639,10 @@ document.getElementById("registrationForm")
 
   });
 
+  // CALCULATE INDIVIDUAL TICKET ALLOCATION
+
+  const allocatedTickets = pkg.people;
+
   // BUILD WHATSAPP MESSAGE
 
   const registrationText =
@@ -2121,7 +2665,8 @@ document.getElementById("registrationForm")
 
     "Package: " + pkg.package + "\n" +
 
-    "Number of attendees: " + pkg.people + "\n" +
+    "Individual tickets allocated: " +
+    allocatedTickets + "\n" +
 
     "Package price: " + money(pkg.price) +
 
@@ -2133,10 +2678,10 @@ document.getElementById("registrationForm")
 
     "Payment method: " + method + "\n" +
 
-    "Amount paid: R" + amount + "\n" +
+    "Amount paid: " + money(amount) + "\n" +
 
-    "Outstanding amount: R" +
-    Math.max(0,pkg.price - Number(amount)).toLocaleString("en-ZA") + "\n" +
+    "Outstanding amount: " +
+    money(Math.max(0,pkg.price - Number(amount))) + "\n" +
 
     "Payment reference: " +
     (reference || "Not provided") + "\n" +
@@ -2169,13 +2714,15 @@ document.getElementById("registrationForm")
 
   const heading = document.createElement("strong");
 
-  heading.textContent = "Your registration details are ready!";
+  heading.textContent =
+    "Your registration details are ready!";
 
   const paragraph = document.createElement("p");
 
   paragraph.textContent =
     "Your " + pkg.category + " " + pkg.package +
-    " package totals " + money(pkg.price) +
+    " package includes " + allocatedTickets +
+    " individual ticket(s) and totals " + money(pkg.price) +
     ". Please send your registration to MSM for confirmation.";
 
   const link = document.createElement("a");
@@ -2185,7 +2732,8 @@ document.getElementById("registrationForm")
   link.rel = "noopener noreferrer";
   link.className = "whatsapp-btn";
 
-  link.textContent = "SEND REGISTRATION TO MSM ON WHATSAPP";
+  link.textContent =
+    "SEND REGISTRATION TO MSM ON WHATSAPP";
 
   result.appendChild(heading);
   result.appendChild(paragraph);
@@ -2290,6 +2838,8 @@ document.getElementById("sponsorForm")
 
     "\nDATE: 16 JANUARY 2027" +
 
+    "\nTIME: 08:00 - 18:00" +
+
     "\nVENUE: MASERU, LESOTHO";
 
   const whatsappURL =
@@ -2322,7 +2872,8 @@ document.getElementById("sponsorForm")
   link.rel = "noopener noreferrer";
   link.className = "whatsapp-btn";
 
-  link.textContent = "SEND SPONSORSHIP ENQUIRY TO MSM";
+  link.textContent =
+    "SEND SPONSORSHIP ENQUIRY TO MSM";
 
   result.appendChild(heading);
   result.appendChild(paragraph);
