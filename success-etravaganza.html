@@ -15,7 +15,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
-
 :root {
   --green:#0B3D2E;
   --light-green:#7CB342;
@@ -44,15 +43,11 @@ body {
   line-height:1.7;
 }
 
-a {
-  text-decoration:none;
-}
+a { text-decoration:none; }
 
 button,input,select,textarea {
   font-family:inherit;
 }
-
-/* NAVIGATION */
 
 nav {
   background:var(--green);
@@ -74,9 +69,7 @@ nav {
   font-size:22px;
 }
 
-.logo span {
-  color:var(--gold);
-}
+.logo span { color:var(--gold); }
 
 .nav-links {
   display:flex;
@@ -91,11 +84,7 @@ nav {
   transition:.3s;
 }
 
-.nav-links a:hover {
-  color:var(--gold);
-}
-
-/* HERO */
+.nav-links a:hover { color:var(--gold); }
 
 .hero {
   min-height:650px;
@@ -110,9 +99,7 @@ nav {
   color:white;
 }
 
-.hero-content {
-  max-width:900px;
-}
+.hero-content { max-width:900px; }
 
 .event-label {
   display:inline-block;
@@ -133,9 +120,7 @@ nav {
   margin-bottom:20px;
 }
 
-.hero h1 span {
-  color:var(--gold);
-}
+.hero h1 span { color:var(--gold); }
 
 .hero h2 {
   font-size:clamp(15px,2vw,22px);
@@ -196,15 +181,9 @@ nav {
   color:white;
 }
 
-.btn:hover {
-  transform:translateY(-3px);
-}
+.btn:hover { transform:translateY(-3px); }
 
-/* GENERAL SECTIONS */
-
-section {
-  padding:80px 7%;
-}
+section { padding:80px 7%; }
 
 .section-title {
   text-align:center;
@@ -229,8 +208,6 @@ section {
   margin:auto;
   color:var(--grey);
 }
-
-/* POSTER */
 
 .poster-section {
   background:var(--background);
@@ -273,11 +250,7 @@ section {
   font-size:13px;
 }
 
-.poster-button:hover {
-  background:var(--light-green);
-}
-
-/* ABOUT */
+.poster-button:hover { background:var(--light-green); }
 
 .about {
   text-align:center;
@@ -289,15 +262,9 @@ section {
   margin:auto;
 }
 
-.about-content p {
-  margin-bottom:20px;
-}
+.about-content p { margin-bottom:20px; }
 
-/* SPEAKERS */
-
-.speakers {
-  background:var(--background);
-}
+.speakers { background:var(--background); }
 
 .speaker-grid {
   display:grid;
@@ -390,9 +357,7 @@ section {
   text-align:left;
 }
 
-.speaker-bio strong {
-  color:var(--green);
-}
+.speaker-bio strong { color:var(--green); }
 
 .speaker-divider {
   width:45px;
@@ -418,17 +383,13 @@ section {
   margin-bottom:10px;
 }
 
-/* COUNTDOWN */
-
 .countdown-section {
   text-align:center;
   color:white;
   background:var(--green);
 }
 
-.countdown-section h2 {
-  color:var(--gold);
-}
+.countdown-section h2 { color:var(--gold); }
 
 .countdown {
   display:flex;
@@ -456,8 +417,6 @@ section {
   letter-spacing:1px;
 }
 
-/* REGISTRATION */
-
 .registration {
   background:var(--background);
   text-align:center;
@@ -474,9 +433,7 @@ section {
 }
 
 .registration-card h2,
-.registration-card > p {
-  text-align:center;
-}
+.registration-card > p { text-align:center; }
 
 .form-group {
   text-align:left;
@@ -511,9 +468,7 @@ section {
   box-shadow:0 0 0 2px rgba(124,179,66,.15);
 }
 
-.form-group textarea {
-  resize:vertical;
-}
+.form-group textarea { resize:vertical; }
 
 .submit-btn {
   display:block;
@@ -529,9 +484,7 @@ section {
   margin-top:20px;
 }
 
-.submit-btn:hover {
-  background:var(--light-green);
-}
+.submit-btn:hover { background:var(--light-green); }
 
 .registration-message {
   display:none;
@@ -554,9 +507,7 @@ section {
   font-size:13px;
 }
 
-.whatsapp-btn:hover {
-  background:var(--light-green);
-}
+.whatsapp-btn:hover { background:var(--light-green); }
 
 .form-note {
   font-size:12px;
@@ -637,9 +588,7 @@ section {
   font-size:48px;
 }
 
-.sponsorship-banner h3 {
-  color:white;
-}
+.sponsorship-banner h3 { color:white; }
 
 .sponsorship-benefits {
   max-width:1000px;
@@ -678,7 +627,36 @@ section {
   text-align:center;
 }
 
-/* VENUE */
+.sponsor-inclusion-list {
+  list-style:none;
+  text-align:left;
+  max-width:600px;
+  margin:25px auto 0;
+}
+
+.sponsor-inclusion-list li {
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.18);
+  font-size:14px;
+  font-weight:700;
+}
+
+.sponsor-inclusion-list li::before {
+  content:"✓";
+  color:var(--gold);
+  font-weight:900;
+  margin-right:12px;
+}
+
+.sponsor-vip-highlight {
+  background:rgba(217,173,80,.14);
+  border:1px solid var(--gold);
+  padding:15px;
+  border-radius:8px;
+  margin-top:20px;
+  font-weight:800;
+  color:var(--gold);
+}
 
 .venue {
   text-align:center;
@@ -699,8 +677,6 @@ section {
   font-size:27px;
 }
 
-/* FOOTER */
-
 footer {
   background:#071f17;
   color:white;
@@ -708,31 +684,22 @@ footer {
   padding:40px 7%;
 }
 
-footer strong {
-  color:var(--gold);
-}
+footer strong { color:var(--gold); }
 
 footer p {
   font-size:12px;
   margin:8px;
 }
 
-footer a:not(.btn) {
-  color:var(--gold);
-}
-
-/* RESPONSIVE */
+footer a:not(.btn) { color:var(--gold); }
 
 @media(max-width:900px) {
-
   .speaker-grid {
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
-
 }
 
 @media(max-width:600px) {
-
   nav {
     justify-content:center;
     padding:13px 4%;
@@ -743,22 +710,16 @@ footer a:not(.btn) {
     gap:12px;
   }
 
-  .nav-links a {
-    font-size:10px;
-  }
+  .nav-links a { font-size:10px; }
 
   .hero {
     padding:75px 5%;
     min-height:600px;
   }
 
-  section {
-    padding:60px 5%;
-  }
+  section { padding:60px 5%; }
 
-  .speaker-grid {
-    grid-template-columns:1fr;
-  }
+  .speaker-grid { grid-template-columns:1fr; }
 
   .speaker-card {
     max-width:360px;
@@ -766,55 +727,37 @@ footer a:not(.btn) {
     width:100%;
   }
 
-  .speaker-photo {
-    height:340px;
-  }
+  .speaker-photo { height:340px; }
 
-  .detail {
-    min-width:140px;
-  }
+  .detail { min-width:140px; }
 
-  .registration-card {
-    padding:30px 18px;
-  }
+  .registration-card { padding:30px 18px; }
 
   .time-box {
     min-width:75px;
     padding:14px;
   }
 
-  .time-box strong {
-    font-size:28px;
-  }
+  .time-box strong { font-size:28px; }
 
-  .poster-container {
-    padding:8px;
-  }
+  .poster-container { padding:8px; }
 
-  .venue-card {
-    padding:30px 18px;
-  }
+  .venue-card { padding:30px 18px; }
 
   .attendee-box,
-  .payment-box {
-    padding:16px;
-  }
+  .payment-box { padding:16px; }
 
-  .sponsorship-benefits {
-    grid-template-columns:1fr;
-  }
+  .sponsorship-benefits { grid-template-columns:1fr; }
 
+  .sponsorship-banner h2 { font-size:40px; }
 }
-
 </style>
 </head>
 
 <body>
 
 <!-- NAVIGATION -->
-
 <nav>
-
   <a href="index.html" class="logo">
     MSM <span>TRAINING</span>
   </a>
@@ -827,22 +770,14 @@ footer a:not(.btn) {
     <a href="#registration">REGISTER</a>
     <a href="#sponsorship">SPONSORS</a>
   </div>
-
 </nav>
 
 <!-- HERO -->
-
 <header class="hero">
-
   <div class="hero-content">
+    <div class="event-label">MSM TRAINING PRESENTS</div>
 
-    <div class="event-label">
-      MSM TRAINING PRESENTS
-    </div>
-
-    <h1>
-      2027 SUCCESS <span>EXTRAVAGANZA</span>
-    </h1>
+    <h1>2027 SUCCESS <span>EXTRAVAGANZA</span></h1>
 
     <h2>THE BIGGEST SUCCESS SEMINAR IN LESOTHO</h2>
 
@@ -852,7 +787,6 @@ footer a:not(.btn) {
     </p>
 
     <div class="event-details">
-
       <div class="detail">
         <strong>DATE</strong>
         <span>16 January 2027</span>
@@ -867,40 +801,25 @@ footer a:not(.btn) {
         <strong>VENUE</strong>
         <span>Maseru, Lesotho</span>
       </div>
-
     </div>
 
-    <a href="#registration" class="btn btn-gold">
-      REGISTER NOW
-    </a>
-
-    <a href="#speakers" class="btn btn-outline">
-      MEET THE SPEAKERS
-    </a>
-
+    <a href="#registration" class="btn btn-gold">REGISTER NOW</a>
+    <a href="#speakers" class="btn btn-outline">MEET THE SPEAKERS</a>
   </div>
-
 </header>
 
 <!-- OFFICIAL POSTER -->
-
 <section class="poster-section" id="event-poster">
-
   <div class="section-title">
-
     <small>SAVE THE DATE</small>
-
     <h2>THE OFFICIAL EVENT POSTER</h2>
-
     <p>
       Get ready for an unforgettable experience.
       Share the official poster with friends and family!
     </p>
-
   </div>
 
   <div class="poster-container">
-
     <img
       src="images/EXTRAVA.jpeg"
       alt="Official 2027 MSM Success Extravaganza event poster"
@@ -911,28 +830,18 @@ footer a:not(.btn) {
       16 JANUARY 2027 | MASERU, LESOTHO
     </div>
 
-    <a href="#registration" class="poster-button">
-      REGISTER NOW
-    </a>
-
+    <a href="#registration" class="poster-button">REGISTER NOW</a>
   </div>
-
 </section>
 
 <!-- ABOUT THE EVENT -->
-
 <section class="about" id="about">
-
   <div class="section-title">
-
     <small>YOUR NEXT LEVEL STARTS HERE</small>
-
     <h2>EXPERIENCE SUCCESS DIFFERENTLY</h2>
-
   </div>
 
   <div class="about-content">
-
     <p>
       The 2027 MSM Success Extravaganza is a powerful gathering
       designed to inspire individuals, entrepreneurs, professionals,
@@ -956,61 +865,40 @@ footer a:not(.btn) {
     <h3 style="color:#0B3D2E;margin-top:25px;">
       SUCCESS IS A CHOICE!
     </h3>
-
   </div>
-
 </section>
 
 <!-- SPEAKERS -->
-
 <section class="speakers" id="speakers">
-
   <div class="section-title">
-
     <small>LEARN FROM THE BEST</small>
-
     <h2>MEET OUR SPEAKERS</h2>
-
     <p>
       Get ready to learn, grow and be inspired by powerful voices
       bringing knowledge, experience and practical insights.
     </p>
-
   </div>
 
   <div class="speaker-grid">
 
     <!-- PERCY SINGO -->
-
     <div class="speaker-card">
-
       <div class="speaker-photo">
-
         <img
           src="images/singo.jpeg"
           alt="Percy Singo"
           loading="lazy"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
-
-        <div class="speaker-placeholder" style="display:none;">
-          PS
-        </div>
-
+        <div class="speaker-placeholder" style="display:none;">PS</div>
       </div>
 
       <div class="speaker-info">
-
         <h3>Percy Singo</h3>
-
-        <p class="speaker-title">
-          FINANCE SPEAKER & PROPERTY INVESTOR
-        </p>
-
+        <p class="speaker-title">FINANCE SPEAKER & PROPERTY INVESTOR</p>
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
-
           Percy Singo is a finance speaker, property investor,
           co-founder of Be Wise Financial Seminar, and author
           of the book
@@ -1038,45 +926,31 @@ footer a:not(.btn) {
           He continues to work for one of the metropolitan
           municipalities while pursuing his passion for financial
           education and property investment.
-
         </p>
-
       </div>
-
     </div>
 
     <!-- MOHAU MOSOEUNYANE -->
-
     <div class="speaker-card">
-
       <div class="speaker-photo">
-
         <img
           src="images/mosoeunyane.jpg"
           alt="Mohau P Mosoeunyane"
           loading="lazy"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
-
-        <div class="speaker-placeholder" style="display:none;">
-          MM
-        </div>
-
+        <div class="speaker-placeholder" style="display:none;">MM</div>
       </div>
 
       <div class="speaker-info">
-
         <h3>Mohau P. Mosoeunyane</h3>
-
         <p class="speaker-title">
           FOUNDING MANAGING DIRECTOR | AUTHOR |
           PHILOSOPHICAL MOTIVATIONAL SPEAKER
         </p>
-
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
-
           Mohau P. Mosoeunyane is a philosophical motivational
           speaker, professional and natural teacher, trainer,
           businessman and author of the success book
@@ -1237,44 +1111,30 @@ footer a:not(.btn) {
           <br><br>
 
           <strong>SUCCESS IS A CHOICE!</strong>
-
         </p>
-
       </div>
-
     </div>
 
     <!-- PHAKISO MOLEKO -->
-
     <div class="speaker-card">
-
       <div class="speaker-photo">
-
         <img
           src="images/moleko.jpeg"
           alt="Phakiso Moleko"
           loading="lazy"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
-
-        <div class="speaker-placeholder" style="display:none;">
-          PM
-        </div>
-
+        <div class="speaker-placeholder" style="display:none;">PM</div>
       </div>
 
       <div class="speaker-info">
-
         <h3>Phakiso Moleko</h3>
-
         <p class="speaker-title">
           MOTIVATIONAL SPEAKER | COUNSELLING THERAPIST | MC
         </p>
-
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
-
           Phakiso Moleko is a motivational speaker, counselling
           therapist and Master of Ceremonies with experience
           across various platforms and audiences.
@@ -1297,44 +1157,28 @@ footer a:not(.btn) {
           He also brings extensive experience in conducting
           ceremonies, including funerals, weddings and
           graduation ceremonies.
-
         </p>
-
       </div>
-
     </div>
 
     <!-- MAITUMELENG FOKOTHI -->
-
     <div class="speaker-card">
-
       <div class="speaker-photo">
-
         <img
           src="images/FOKOTHI.jpeg"
           alt="Maitumeleng Fokothi"
           loading="lazy"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
-
-        <div class="speaker-placeholder" style="display:none;">
-          MF
-        </div>
-
+        <div class="speaker-placeholder" style="display:none;">MF</div>
       </div>
 
       <div class="speaker-info">
-
         <h3>Maitumeleng Fokothi</h3>
-
-        <p class="speaker-title">
-          FEATURED SPEAKER
-        </p>
-
+        <p class="speaker-title">FEATURED SPEAKER</p>
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
-
           Professional profile coming soon.
 
           <br><br>
@@ -1342,78 +1186,51 @@ footer a:not(.btn) {
           More information about Maitumeleng Fokothi,
           including professional background and areas of
           expertise, will be shared as we approach the event.
-
         </p>
-
       </div>
-
     </div>
 
     <!-- ADDITIONAL SPEAKER -->
-
     <div class="speaker-card">
-
       <div class="speaker-photo">
-
         <div class="speaker-placeholder">+</div>
-
-        <div class="placeholder-label">
-          ANNOUNCEMENT COMING SOON
-        </div>
-
+        <div class="placeholder-label">ANNOUNCEMENT COMING SOON</div>
       </div>
 
       <div class="speaker-info">
-
         <h3>More Speakers Loading...</h3>
-
-        <p class="speaker-title">
-          ADDITIONAL SPEAKER
-        </p>
-
+        <p class="speaker-title">ADDITIONAL SPEAKER</p>
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
-
           We are preparing to introduce another inspiring
           voice to the 2027 Success Extravaganza.
 
           <br><br>
 
           Stay connected for the next speaker announcement!
-
         </p>
-
       </div>
-
     </div>
 
   </div>
 
   <div class="more-speakers">
-
     <h2>MORE SPEAKERS LOADING...</h2>
-
     <p>
       Our speaker announcements are not over!
       Keep following MSM Training for more exciting updates.
       Your next source of inspiration could be announced soon.
     </p>
-
   </div>
-
 </section>
 
 <!-- COUNTDOWN -->
-
 <section class="countdown-section">
-
   <h2>THE COUNTDOWN TO SUCCESS IS ON!</h2>
-
   <p>16 January 2027 | Maseru, Lesotho</p>
 
   <div class="countdown" id="countdown">
-
     <div class="time-box">
       <strong id="days">00</strong>
       <span>DAYS</span>
@@ -1433,30 +1250,21 @@ footer a:not(.btn) {
       <strong id="seconds">00</strong>
       <span>SECONDS</span>
     </div>
-
   </div>
-
 </section>
 
 <!-- REGISTRATION -->
-
 <section class="registration" id="registration">
-
   <div class="section-title">
-
     <small>SECURE YOUR PLACE</small>
-
     <h2>REGISTER FOR SUCCESS EXTRAVAGANZA 2027</h2>
-
     <p>
       Choose your preferred ticket category and secure
       your place at the biggest success seminar in Lesotho.
     </p>
-
   </div>
 
   <div class="registration-card">
-
     <h2 style="color:#0B3D2E;margin-bottom:10px;">
       ATTENDEE REGISTRATION FORM
     </h2>
@@ -1467,95 +1275,38 @@ footer a:not(.btn) {
 
     <form id="registrationForm">
 
-      <!-- TICKET CATEGORY -->
-
       <div class="form-group">
-
-        <label for="ticketType">
-          Select Your Ticket Package *
-        </label>
+        <label for="ticketType">Select Your Ticket Package *</label>
 
         <select id="ticketType" required>
-
-          <option value="">
-            Choose a ticket package
-          </option>
+          <option value="">Choose a ticket package</option>
 
           <optgroup label="EARLY BIRD - 50 INDIVIDUAL ATTENDEES ONLY">
-
-            <option value="early_individual">
-              Early Bird Individual - R200
-            </option>
-
-            <option value="early_pair">
-              Early Bird Pair (2 People) - R300
-            </option>
-
+            <option value="early_individual">Early Bird Individual - R200</option>
+            <option value="early_pair">Early Bird Pair (2 People) - R300</option>
           </optgroup>
 
           <optgroup label="NORMAL REGISTRATION - 80 INDIVIDUAL ATTENDEES ONLY">
-
-            <option value="normal_individual">
-              Normal Individual - R400
-            </option>
-
-            <option value="normal_pair">
-              Normal Pair (2 People) - R600
-            </option>
-
-            <option value="normal_group">
-              Normal Group of 5 - R1,250
-            </option>
-
+            <option value="normal_individual">Normal Individual - R400</option>
+            <option value="normal_pair">Normal Pair (2 People) - R600</option>
+            <option value="normal_group">Normal Group of 5 - R1,250</option>
           </optgroup>
 
           <optgroup label="VIP REGISTRATION - 20 INDIVIDUAL ATTENDEES ONLY">
-
-            <option value="vip_individual">
-              VIP Individual - R1,000
-            </option>
-
-            <option value="vip_pair">
-              VIP Pair (2 People) - R1,800
-            </option>
-
-            <option value="vip_group">
-              VIP Group of 5 - R4,500
-            </option>
-
+            <option value="vip_individual">VIP Individual - R1,000</option>
+            <option value="vip_pair">VIP Pair (2 People) - R1,800</option>
+            <option value="vip_group">VIP Group of 5 - R4,500</option>
           </optgroup>
-
         </select>
-
       </div>
 
-      <!-- TICKET SUMMARY -->
-
-      <div class="ticket-summary"
-           id="ticketSummary"
-           style="display:none;">
-
+      <div class="ticket-summary" id="ticketSummary" style="display:none;">
         <h3>YOUR REGISTRATION SUMMARY</h3>
 
-        <p>
-          <strong>Ticket Category:</strong>
-          <span id="summaryCategory"></span>
-        </p>
-
-        <p>
-          <strong>Package:</strong>
-          <span id="summaryPackage"></span>
-        </p>
-
-        <p>
-          <strong>Individual Attendees / Tickets:</strong>
-          <span id="summaryAttendees"></span>
-        </p>
-
-        <p>
-          <strong>Package Price:</strong>
-          <span id="summaryPrice"></span>
-        </p>
+        <p><strong>Ticket Category:</strong> <span id="summaryCategory"></span></p>
+        <p><strong>Package:</strong> <span id="summaryPackage"></span></p>
+        <p><strong>Individual Attendees / Tickets:</strong> <span id="summaryAttendees"></span></p>
+        <p><strong>Package Price:</strong> <span id="summaryPrice"></span></p>
 
         <div class="total">
           TOTAL: <span id="summaryTotal">R0</span>
@@ -1576,70 +1327,28 @@ footer a:not(.btn) {
 
           Final availability is subject to confirmation by MSM.
         </p>
-
       </div>
 
-      <!-- FIRST ATTENDEE -->
-
       <div class="attendee-box">
-
         <h3>CONTACT PERSON / FIRST ATTENDEE</h3>
 
         <div class="form-group">
-
-          <label for="fullName">
-            Full Name and Surname *
-          </label>
-
-          <input
-            type="text"
-            id="fullName"
-            required
-            autocomplete="name"
-            placeholder="Enter your full name"
-          >
-
+          <label for="fullName">Full Name and Surname *</label>
+          <input type="text" id="fullName" required autocomplete="name" placeholder="Enter your full name">
         </div>
 
         <div class="form-group">
-
-          <label for="phone">
-            Phone / WhatsApp Number *
-          </label>
-
-          <input
-            type="tel"
-            id="phone"
-            required
-            autocomplete="tel"
-            placeholder="+266..."
-          >
-
+          <label for="phone">Phone / WhatsApp Number *</label>
+          <input type="tel" id="phone" required autocomplete="tel" placeholder="+266...">
         </div>
 
         <div class="form-group">
-
-          <label for="email">
-            Email Address
-          </label>
-
-          <input
-            type="email"
-            id="email"
-            autocomplete="email"
-            placeholder="Enter your email address"
-          >
-
+          <label for="email">Email Address</label>
+          <input type="email" id="email" autocomplete="email" placeholder="Enter your email address">
         </div>
-
       </div>
 
-      <!-- ADDITIONAL ATTENDEES -->
-
-      <div class="attendee-box"
-           id="otherAttendees"
-           style="display:none;">
-
+      <div class="attendee-box" id="otherAttendees" style="display:none;">
         <h3>ADDITIONAL ATTENDEE DETAILS</h3>
 
         <p style="font-size:12px;color:#68766e;margin-bottom:15px;">
@@ -1648,338 +1357,184 @@ footer a:not(.btn) {
         </p>
 
         <div id="additionalAttendeeFields"></div>
-
       </div>
 
-      <!-- PAYMENT INFORMATION -->
-
       <div class="payment-box">
-
         <h3>PAYMENT INFORMATION</h3>
 
         <div class="form-group">
-
-          <label for="payment">
-            Payment Status *
-          </label>
-
+          <label for="payment">Payment Status *</label>
           <select id="payment" required>
-
-            <option value="">
-              Select payment status
-            </option>
-
-            <option value="Not yet paid">
-              Not yet paid
-            </option>
-
-            <option value="Already paid">
-              Already paid
-            </option>
-
-            <option value="Partially paid">
-              Partially paid
-            </option>
-
-            <option value="Need payment details">
-              Need payment details
-            </option>
-
+            <option value="">Select payment status</option>
+            <option value="Not yet paid">Not yet paid</option>
+            <option value="Already paid">Already paid</option>
+            <option value="Partially paid">Partially paid</option>
+            <option value="Need payment details">Need payment details</option>
           </select>
-
         </div>
 
         <div class="form-group">
-
-          <label for="paymentMethod">
-            Payment Method
-          </label>
-
+          <label for="paymentMethod">Payment Method</label>
           <select id="paymentMethod">
-
-            <option value="">
-              Select payment method
-            </option>
-
-            <option value="Bank Deposit">
-              Bank Deposit
-            </option>
-
-            <option value="EFT / Bank Transfer">
-              EFT / Bank Transfer
-            </option>
-
-            <option value="Cash">
-              Cash
-            </option>
-
-            <option value="M-Pesa">
-              M-Pesa
-            </option>
-
-            <option value="Other Mobile Money">
-              Other Mobile Money
-            </option>
-
-            <option value="Other">
-              Other
-            </option>
-
+            <option value="">Select payment method</option>
+            <option value="Bank Deposit">Bank Deposit</option>
+            <option value="EFT / Bank Transfer">EFT / Bank Transfer</option>
+            <option value="Cash">Cash</option>
+            <option value="M-Pesa">M-Pesa</option>
+            <option value="Other Mobile Money">Other Mobile Money</option>
+            <option value="Other">Other</option>
           </select>
-
         </div>
 
         <div class="form-group">
-
-          <label for="amountPaid">
-            Amount Paid (R)
-          </label>
-
-          <input
-            type="number"
-            id="amountPaid"
-            min="0"
-            step="0.01"
-            placeholder="Enter amount paid"
-          >
-
+          <label for="amountPaid">Amount Paid (R)</label>
+          <input type="number" id="amountPaid" min="0" step="0.01" placeholder="Enter amount paid">
         </div>
 
         <div class="form-group">
-
-          <label for="paymentReference">
-            Payment Reference / Transaction ID
-          </label>
-
-          <input
-            type="text"
-            id="paymentReference"
-            placeholder="Enter bank reference or transaction ID"
-          >
-
+          <label for="paymentReference">Payment Reference / Transaction ID</label>
+          <input type="text" id="paymentReference" placeholder="Enter bank reference or transaction ID">
         </div>
 
         <div class="form-group">
-
-          <label for="paymentProof">
-            Additional Payment Details
-          </label>
-
-          <textarea
-            id="paymentProof"
-            rows="3"
-            placeholder="Provide additional payment information"
-          ></textarea>
-
+          <label for="paymentProof">Additional Payment Details</label>
+          <textarea id="paymentProof" rows="3" placeholder="Provide additional payment information"></textarea>
         </div>
-
       </div>
-
-      <!-- ADDITIONAL MESSAGE -->
 
       <div class="form-group" style="margin-top:20px;">
-
-        <label for="message">
-          Additional Message (Optional)
-        </label>
-
-        <textarea
-          id="message"
-          rows="4"
-          placeholder="Any questions or special requests?"
-        ></textarea>
-
+        <label for="message">Additional Message (Optional)</label>
+        <textarea id="message" rows="4" placeholder="Any questions or special requests?"></textarea>
       </div>
 
-      <button type="submit" class="submit-btn">
-        SUBMIT REGISTRATION
-      </button>
-
+      <button type="submit" class="submit-btn">SUBMIT REGISTRATION</button>
     </form>
 
-    <div
-      id="registrationMessage"
-      class="registration-message"
-      role="status"
-      aria-live="polite"
-    ></div>
+    <div id="registrationMessage" class="registration-message" role="status" aria-live="polite"></div>
 
     <p class="form-note">
-
       Submitting your registration does not automatically
       confirm your ticket. The MSM team will verify availability,
       payment and attendee information before confirming
       your registration.
-
     </p>
-
   </div>
-
 </section>
 
 <!-- TABLE SPONSORSHIP -->
-
 <section class="registration" id="sponsorship">
-
   <div class="section-title">
-
     <small>PARTNER WITH MSM</small>
-
     <h2>TABLE SPONSORSHIP OPPORTUNITY</h2>
-
     <p>
       Support the 2027 Success Extravaganza and position
       your organisation as a partner in growth and empowerment.
     </p>
-
   </div>
 
-  <!-- SPONSORSHIP BANNER -->
-
+  <!-- SPONSORSHIP PACKAGE -->
   <div class="sponsorship-banner">
-
     <small style="color:#A8D08D;font-weight:800;letter-spacing:2px;">
       BECOME AN OFFICIAL EVENT PARTNER
     </small>
 
-    <h2 style="font-size:48px;margin:12px 0;">
-      R8,000
-    </h2>
+    <h2 style="font-size:48px;margin:12px 0;">R8,000</h2>
 
     <h3>PER SPONSORSHIP TABLE</h3>
 
     <p style="margin-top:15px;">
-      Invest in visibility. Build connections.
-      Position your brand among people who are serious
-      about growth, business and success.
+      Your organisation receives VIP access, event branding
+      and a dedicated space to showcase your brand in the hall.
     </p>
+
+    <div class="sponsor-vip-highlight">
+      10 VIP TICKETS INCLUDED WITH EVERY SPONSORSHIP TABLE
+    </div>
+
+    <ul class="sponsor-inclusion-list">
+      <li>10 VIP tickets for your representatives or invited guests</li>
+      <li>Company branding at the event</li>
+      <li>A display table in the event hall</li>
+    </ul>
 
     <div style="
       background:rgba(255,255,255,.1);
       padding:18px;
       border-radius:8px;
-      margin-top:20px;
+      margin-top:25px;
     ">
-
       <h3 style="color:#D9AD50;">
         ONLY 5 SPONSORSHIP TABLES AVAILABLE
       </h3>
 
-      <p style="margin-top:8px;">
-        R8,000 per table
-      </p>
+      <p style="margin-top:8px;">R8,000 per table</p>
 
       <p style="font-size:13px;">
         Total potential table sponsorship: R40,000
       </p>
-
     </div>
-
   </div>
 
-  <!-- SPONSORSHIP BENEFITS -->
-
+  <!-- CONFIRMED SPONSORSHIP BENEFITS -->
   <div class="section-title">
-
-    <small>MORE THAN A SPONSORSHIP</small>
-
-    <h2>WHY BECOME A TABLE SPONSOR?</h2>
-
+    <small>YOUR SPONSORSHIP PACKAGE</small>
+    <h2>WHAT YOUR R8,000 INCLUDES</h2>
     <p>
-      Your sponsorship is an opportunity to connect your
-      organisation with an influential gathering of
-      entrepreneurs, professionals, business leaders
-      and individuals committed to personal growth.
+      Every confirmed sponsorship table comes with the
+      following three benefits.
     </p>
-
   </div>
 
   <div class="sponsorship-benefits">
 
     <div class="sponsor-benefit">
-
-      <h3>01. BRAND VISIBILITY</h3>
-
+      <h3>01. TEN VIP TICKETS</h3>
       <p>
-        Increase awareness of your company by associating
-        your brand with the 2027 MSM Success Extravaganza,
-        subject to the agreed event branding arrangements.
+        Receive 10 VIP tickets per sponsorship table.
+        Bring your company representatives, colleagues,
+        clients or invited guests to experience the event
+        as VIP attendees.
       </p>
-
     </div>
 
     <div class="sponsor-benefit">
-
-      <h3>02. BUSINESS NETWORKING</h3>
-
+      <h3>02. COMPANY BRANDING AT THE EVENT</h3>
       <p>
-        Create opportunities to connect with entrepreneurs,
-        professionals, government representatives, business
-        owners and other influential participants.
+        Your company's branding will be included at the
+        event as part of the sponsorship package.
+        MSM will coordinate the branding arrangements
+        with the sponsor.
       </p>
-
     </div>
 
     <div class="sponsor-benefit">
-
-      <h3>03. PRODUCT AND SERVICE EXPOSURE</h3>
-
+      <h3>03. DISPLAY TABLE IN THE EVENT HALL</h3>
       <p>
-        Gain an opportunity to introduce your organisation,
-        products and services to event participants,
-        subject to arrangements with the organisers.
+        Receive a display table inside the event hall
+        where your organisation can showcase its brand,
+        products, services and promotional materials
+        to event participants.
       </p>
-
     </div>
 
     <div class="sponsor-benefit">
-
-      <h3>04. CORPORATE BRAND POSITIONING</h3>
-
+      <h3>04. NETWORKING OPPORTUNITIES</h3>
       <p>
-        Position your organisation as a supporter of
-        personal development, financial intelligence,
-        entrepreneurship and community empowerment.
+        Use your VIP attendance and event presence to
+        connect with entrepreneurs, professionals,
+        business owners and other participants.
       </p>
-
     </div>
-
-    <div class="sponsor-benefit">
-
-      <h3>05. STRATEGIC PARTNERSHIP OPPORTUNITIES</h3>
-
-      <p>
-        Build relationships with potential clients,
-        collaborators and organisations that share
-        your interest in growth and development.
-      </p>
-
-    </div>
-
-    <div class="sponsor-benefit">
-
-      <h3>06. CONTRIBUTION TO COMMUNITY DEVELOPMENT</h3>
-
-      <p>
-        Become part of an initiative that promotes
-        knowledge, financial awareness, leadership,
-        entrepreneurship and positive social change.
-      </p>
-
-    </div>
-
   </div>
 
   <p class="sponsorship-note">
-    Sponsorship benefits and specific branding, exhibition
-    and recognition arrangements will be agreed with MSM
-    Training Company upon confirmation of the partnership.
+    The three package inclusions are provided with each
+    sponsorship table. Sponsors should contact MSM to
+    coordinate company branding and display-table arrangements.
   </p>
 
   <!-- SPONSORSHIP REGISTRATION FORM -->
-
   <div class="registration-card">
-
     <h2 style="color:#0B3D2E;margin-bottom:10px;">
       TABLE SPONSORSHIP ENQUIRY
     </h2>
@@ -1991,260 +1546,154 @@ footer a:not(.btn) {
     <form id="sponsorForm">
 
       <div class="form-group">
-
-        <label for="companyName">
-          Company / Sponsor Name *
-        </label>
-
-        <input
-          type="text"
-          id="companyName"
-          required
-          placeholder="Enter company or sponsor name"
-        >
-
+        <label for="companyName">Company / Sponsor Name *</label>
+        <input type="text" id="companyName" required placeholder="Enter company or sponsor name">
       </div>
 
       <div class="form-group">
-
-        <label for="contactPerson">
-          Contact Person *
-        </label>
-
-        <input
-          type="text"
-          id="contactPerson"
-          required
-          placeholder="Enter contact person's name"
-        >
-
+        <label for="contactPerson">Contact Person *</label>
+        <input type="text" id="contactPerson" required placeholder="Enter contact person's name">
       </div>
 
       <div class="form-group">
-
-        <label for="sponsorPhone">
-          Phone Number *
-        </label>
-
-        <input
-          type="tel"
-          id="sponsorPhone"
-          required
-          placeholder="+266..."
-        >
-
+        <label for="sponsorPhone">Phone Number *</label>
+        <input type="tel" id="sponsorPhone" required placeholder="+266...">
       </div>
 
       <div class="form-group">
-
-        <label for="sponsorEmail">
-          Email Address
-        </label>
-
-        <input
-          type="email"
-          id="sponsorEmail"
-          placeholder="Enter email address"
-        >
-
+        <label for="sponsorEmail">Email Address</label>
+        <input type="email" id="sponsorEmail" placeholder="Enter email address">
       </div>
 
       <div class="form-group">
-
-        <label for="tableQuantity">
-          Number of Tables *
-        </label>
-
+        <label for="tableQuantity">Number of Tables *</label>
         <select id="tableQuantity" required>
-
-          <option value="">
-            Select number of tables
-          </option>
-
+          <option value="">Select number of tables</option>
           <option value="1">1 Table - R8,000</option>
-
           <option value="2">2 Tables - R16,000</option>
-
           <option value="3">3 Tables - R24,000</option>
-
           <option value="4">4 Tables - R32,000</option>
-
           <option value="5">5 Tables - R40,000</option>
-
         </select>
-
       </div>
 
       <div class="ticket-summary" style="display:block;">
-
         <h3>SPONSORSHIP SUMMARY</h3>
 
-        <p>
-          <strong>Price per table:</strong> R8,000
-        </p>
-
-        <p>
-          <strong>Tables requested:</strong>
-          <span id="sponsorQuantity">0</span>
-        </p>
+        <p><strong>Price per table:</strong> R8,000</p>
+        <p><strong>Tables requested:</strong> <span id="sponsorQuantity">0</span></p>
+        <p><strong>VIP tickets included:</strong> <span id="sponsorVipTickets">0</span></p>
+        <p><strong>Display tables:</strong> <span id="sponsorDisplayTables">0</span></p>
 
         <div class="total">
           TOTAL: <span id="sponsorTotal">R0</span>
         </div>
 
+        <p class="allocation">
+          Each sponsorship table includes 10 VIP tickets,
+          company branding at the event and one display
+          table in the event hall.
+        </p>
       </div>
 
       <div class="form-group">
-
-        <label for="sponsorPayment">
-          Payment Status *
-        </label>
-
+        <label for="sponsorPayment">Payment Status *</label>
         <select id="sponsorPayment" required>
-
-          <option value="">
-            Select payment status
-          </option>
-
-          <option value="Not yet paid">
-            Not yet paid
-          </option>
-
-          <option value="Already paid">
-            Already paid
-          </option>
-
-          <option value="Partially paid">
-            Partially paid
-          </option>
-
+          <option value="">Select payment status</option>
+          <option value="Not yet paid">Not yet paid</option>
+          <option value="Already paid">Already paid</option>
+          <option value="Partially paid">Partially paid</option>
         </select>
-
       </div>
 
       <button type="submit" class="submit-btn">
         SUBMIT SPONSORSHIP ENQUIRY
       </button>
-
     </form>
 
-    <div
-      id="sponsorMessage"
-      class="registration-message"
-      role="status"
-      aria-live="polite"
-    ></div>
+    <div id="sponsorMessage" class="registration-message" role="status" aria-live="polite"></div>
 
+    <p class="form-note">
+      Submitting this enquiry does not automatically reserve
+      a sponsorship table. MSM will confirm availability
+      and payment arrangements with you.
+    </p>
   </div>
-
 </section>
 
 <!-- VENUE -->
-
 <section class="venue">
-
   <div class="section-title">
-
     <small>MARK YOUR CALENDAR</small>
-
     <h2>WHERE SUCCESS MEETS OPPORTUNITY</h2>
-
   </div>
 
   <div class="venue-card">
-
     <h3>MASERU, LESOTHO</h3>
-
     <p>16 January 2027</p>
-
     <p>08:00 – 18:00 HRS</p>
 
     <p style="margin-top:15px;">
       Venue details and further event announcements
       will be shared soon.
     </p>
-
   </div>
-
 </section>
 
 <!-- FOOTER -->
-
 <footer>
-
   <h2>MSM TRAINING COMPANY</h2>
 
-  <p>
-    <strong>SUCCESS IS A CHOICE!</strong>
-  </p>
+  <p><strong>SUCCESS IS A CHOICE!</strong></p>
 
-  <p>
-    Motivation | Personal Development | Training | Empowerment
-  </p>
+  <p>Motivation | Personal Development | Training | Empowerment</p>
 
   <p>Physical Address: Maseru, Lesotho</p>
 
   <p>
     WhatsApp / Phone:
-    +266 5650 6092 | +266 6206 2250
+    <a href="tel:+26656506092">+266 5650 6092</a> |
+    <a href="tel:+26662062250">+266 6206 2250</a>
   </p>
 
   <p>
     Email:
-    <a href="mailto:msmtrainings@gmail.com">
-      msmtrainings@gmail.com
-    </a>
+    <a href="mailto:msmtrainings@gmail.com">msmtrainings@gmail.com</a>
   </p>
 
   <p>
-    <a href="mailto:Mohau11459@gmail.com">
-      Mohau11459@gmail.com
-    </a>
+    <a href="mailto:Mohau11459@gmail.com">Mohau11459@gmail.com</a>
   </p>
 
   <p>
     Website:
-    <a href="https://msmtrainingls.com"
-       target="_blank"
-       rel="noopener noreferrer">
+    <a href="https://msmtrainingls.com" target="_blank" rel="noopener noreferrer">
       www.msmtrainingls.com
     </a>
   </p>
 
   <p>Follow us on Facebook and Instagram</p>
 
-  <p>
-    © 2027 MSM Training Company & Counselling Services.
-  </p>
-
+  <p>© 2027 MSM Training Company & Counselling Services.</p>
   <p>All Rights Reserved.</p>
 
-  <a href="index.html" class="btn btn-outline">
-    BACK TO MSM WEBSITE
-  </a>
-
+  <a href="index.html" class="btn btn-outline">BACK TO MSM WEBSITE</a>
 </footer>
 
 <script>
-
 // =====================================
 // EVENT COUNTDOWN
 // =====================================
 
-const eventDate = new Date(
-  '2027-01-16T08:00:00+02:00'
-).getTime();
+const eventDate = new Date('2027-01-16T08:00:00+02:00').getTime();
 
 function updateCountdown() {
-
   const now = Date.now();
   const difference = eventDate - now;
 
   if (difference <= 0) {
-
     document.getElementById('countdown').innerHTML =
       '<h3>THE EVENT DAY IS HERE!</h3>';
-
     return;
   }
 
@@ -2252,22 +1701,13 @@ function updateCountdown() {
     Math.floor(difference / (1000 * 60 * 60 * 24));
 
   document.getElementById('hours').textContent =
-    Math.floor(
-      (difference % (1000 * 60 * 60 * 24)) /
-      (1000 * 60 * 60)
-    );
+    Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 
   document.getElementById('minutes').textContent =
-    Math.floor(
-      (difference % (1000 * 60 * 60)) /
-      (1000 * 60)
-    );
+    Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
 
   document.getElementById('seconds').textContent =
-    Math.floor(
-      (difference % (1000 * 60)) / 1000
-    );
-
+    Math.floor((difference % (1000 * 60)) / 1000);
 }
 
 updateCountdown();
@@ -2278,19 +1718,16 @@ setInterval(updateCountdown, 1000);
 // TICKET PACKAGE CONFIGURATION
 // =====================================
 
-// IMPORTANT:
 // Limits are individual attendee allocations,
 // not package booking counts.
-//
 // Pair = 2 individual tickets.
 // Group of 5 = 5 individual tickets.
 //
-// The website currently submits registrations
-// through WhatsApp. Cumulative availability
-// must therefore be verified by MSM.
+// WhatsApp submissions do not automatically
+// update the remaining ticket allocation.
+// MSM must verify availability before confirmation.
 
 const ticketPackages = {
-
   early_individual: {
     category:"Early Bird",
     package:"Individual",
@@ -2354,23 +1791,15 @@ const ticketPackages = {
     people:5,
     limit:20
   }
-
 };
 
 const money = amount =>
   "R" + Number(amount).toLocaleString("en-ZA");
 
-const ticketType =
-  document.getElementById("ticketType");
-
-const ticketSummary =
-  document.getElementById("ticketSummary");
-
-const otherAttendees =
-  document.getElementById("otherAttendees");
-
-const additionalFields =
-  document.getElementById("additionalAttendeeFields");
+const ticketType = document.getElementById("ticketType");
+const ticketSummary = document.getElementById("ticketSummary");
+const otherAttendees = document.getElementById("otherAttendees");
+const additionalFields = document.getElementById("additionalAttendeeFields");
 
 let selectedPackage = null;
 
@@ -2380,76 +1809,51 @@ let selectedPackage = null;
 // =====================================
 
 ticketType.addEventListener("change", function() {
-
   selectedPackage = ticketPackages[this.value];
-
   additionalFields.innerHTML = "";
 
   if (!selectedPackage) {
-
     ticketSummary.style.display = "none";
     otherAttendees.style.display = "none";
-
     return;
-
   }
 
   const pkg = selectedPackage;
 
-  document.getElementById("summaryCategory").textContent =
-    pkg.category;
-
-  document.getElementById("summaryPackage").textContent =
-    pkg.package;
-
-  document.getElementById("summaryAttendees").textContent =
-    pkg.people;
-
-  document.getElementById("summaryPrice").textContent =
-    money(pkg.price);
-
-  document.getElementById("summaryTotal").textContent =
-    money(pkg.price);
+  document.getElementById("summaryCategory").textContent = pkg.category;
+  document.getElementById("summaryPackage").textContent = pkg.package;
+  document.getElementById("summaryAttendees").textContent = pkg.people;
+  document.getElementById("summaryPrice").textContent = money(pkg.price);
+  document.getElementById("summaryTotal").textContent = money(pkg.price);
 
   ticketSummary.style.display = "block";
 
-  // GENERATE ADDITIONAL ATTENDEE FIELDS
-
   if (pkg.people > 1) {
-
     otherAttendees.style.display = "block";
 
     for (let i = 2; i <= pkg.people; i++) {
-
       const group = document.createElement("div");
-
       group.className = "form-group";
 
       const heading = document.createElement("h4");
-
       heading.textContent = "ATTENDEE " + i;
-
       heading.style.color = "#0B3D2E";
       heading.style.marginBottom = "12px";
 
       const nameLabel = document.createElement("label");
-
       nameLabel.textContent = "Full Name *";
 
       const nameInput = document.createElement("input");
-
       nameInput.type = "text";
       nameInput.name = "attendeeName" + i;
       nameInput.required = true;
       nameInput.placeholder = "Enter full name";
 
       const phoneLabel = document.createElement("label");
-
       phoneLabel.textContent = "Phone Number *";
       phoneLabel.style.marginTop = "12px";
 
       const phoneInput = document.createElement("input");
-
       phoneInput.type = "tel";
       phoneInput.name = "attendeePhone" + i;
       phoneInput.required = true;
@@ -2462,15 +1866,10 @@ ticketType.addEventListener("change", function() {
       group.appendChild(phoneInput);
 
       additionalFields.appendChild(group);
-
     }
-
   } else {
-
     otherAttendees.style.display = "none";
-
   }
-
 });
 
 
@@ -2478,43 +1877,28 @@ ticketType.addEventListener("change", function() {
 // PAYMENT FIELD MANAGEMENT
 // =====================================
 
-const paymentStatus =
-  document.getElementById("payment");
-
-const paymentMethod =
-  document.getElementById("paymentMethod");
-
-const amountPaid =
-  document.getElementById("amountPaid");
+const paymentStatus = document.getElementById("payment");
+const paymentMethod = document.getElementById("paymentMethod");
+const amountPaid = document.getElementById("amountPaid");
 
 function updatePaymentFields() {
-
   const unpaid =
     paymentStatus.value === "Not yet paid" ||
     paymentStatus.value === "Need payment details";
 
   if (unpaid) {
-
     paymentMethod.value = "";
     paymentMethod.disabled = true;
 
     amountPaid.value = "";
     amountPaid.disabled = true;
-
   } else {
-
     paymentMethod.disabled = false;
     amountPaid.disabled = false;
-
   }
-
 }
 
-paymentStatus.addEventListener(
-  "change",
-  updatePaymentFields
-);
-
+paymentStatus.addEventListener("change", updatePaymentFields);
 updatePaymentFields();
 
 
@@ -2524,86 +1908,47 @@ updatePaymentFields();
 
 document.getElementById("registrationForm")
 .addEventListener("submit", function(e) {
-
   e.preventDefault();
 
   if (!selectedPackage) {
-
     alert("Please select a ticket package.");
-
     return;
-
   }
 
   const pkg = selectedPackage;
 
-  const name =
-    document.getElementById("fullName").value.trim();
+  const name = document.getElementById("fullName").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const payment = paymentStatus.value;
 
-  const phone =
-    document.getElementById("phone").value.trim();
+  const method = paymentMethod.disabled
+    ? "Not yet paid"
+    : paymentMethod.value;
 
-  const email =
-    document.getElementById("email").value.trim();
+  const amount = amountPaid.disabled
+    ? "0"
+    : amountPaid.value || "0";
 
-  const payment =
-    paymentStatus.value;
-
-  const method =
-    paymentMethod.disabled
-      ? "Not yet paid"
-      : paymentMethod.value;
-
-  const amount =
-    amountPaid.disabled
-      ? "0"
-      : amountPaid.value || "0";
-
-  const reference =
-    document.getElementById("paymentReference").value.trim();
-
-  const proof =
-    document.getElementById("paymentProof").value.trim();
-
-  const message =
-    document.getElementById("message").value.trim();
-
-  // VALIDATE AMOUNT PAID
+  const reference = document.getElementById("paymentReference").value.trim();
+  const proof = document.getElementById("paymentProof").value.trim();
+  const message = document.getElementById("message").value.trim();
 
   if (Number(amount) > pkg.price) {
-
-    alert(
-      "The amount paid cannot exceed the ticket package price."
-    );
-
+    alert("The amount paid cannot exceed the ticket package price.");
     return;
-
   }
 
   if (Number(amount) < 0) {
-
     alert("The amount paid cannot be negative.");
-
     return;
-
   }
 
-  const attendees = [];
-
-  attendees.push({
-    name:name,
-    phone:phone
-  });
-
-  // COLLECT ADDITIONAL ATTENDEES
+  const attendees = [{name:name, phone:phone}];
 
   for (let i = 2; i <= pkg.people; i++) {
-
-    const nameField =
-      this.querySelector(`[name="attendeeName${i}"]`);
-
-    const phoneField =
-      this.querySelector(`[name="attendeePhone${i}"]`);
+    const nameField = this.querySelector(`[name="attendeeName${i}"]`);
+    const phoneField = this.querySelector(`[name="attendeePhone${i}"]`);
 
     if (
       !nameField ||
@@ -2611,114 +1956,66 @@ document.getElementById("registrationForm")
       !nameField.value.trim() ||
       !phoneField.value.trim()
     ) {
-
       alert("Please complete all attendee details.");
-
       return;
-
     }
 
     attendees.push({
       name:nameField.value.trim(),
       phone:phoneField.value.trim()
     });
-
   }
-
-  // BUILD ATTENDEE DETAILS
 
   let attendeeDetails = "";
 
   attendees.forEach((person,index) => {
-
     attendeeDetails +=
-
       "\n\nATTENDEE " + (index + 1) +
       "\nName: " + person.name +
       "\nPhone: " + person.phone;
-
   });
-
-  // CALCULATE INDIVIDUAL TICKET ALLOCATION
 
   const allocatedTickets = pkg.people;
 
-  // BUILD WHATSAPP MESSAGE
-
   const registrationText =
-
     "2027 MSM SUCCESS EXTRAVAGANZA REGISTRATION\n" +
-
     "====================================\n\n" +
-
     "CONTACT PERSON\n" +
-
     "Name: " + name + "\n" +
-
     "Phone: " + phone + "\n" +
-
     "Email: " + (email || "Not provided") +
-
     "\n\nTICKET INFORMATION\n" +
-
     "Category: " + pkg.category + "\n" +
-
     "Package: " + pkg.package + "\n" +
-
-    "Individual tickets allocated: " +
-    allocatedTickets + "\n" +
-
+    "Individual tickets allocated: " + allocatedTickets + "\n" +
     "Package price: " + money(pkg.price) +
-
     attendeeDetails +
-
     "\n\nPAYMENT INFORMATION\n" +
-
     "Payment status: " + payment + "\n" +
-
     "Payment method: " + method + "\n" +
-
     "Amount paid: " + money(amount) + "\n" +
-
     "Outstanding amount: " +
     money(Math.max(0,pkg.price - Number(amount))) + "\n" +
-
-    "Payment reference: " +
-    (reference || "Not provided") + "\n" +
-
-    "Payment details: " +
-    (proof || "Not provided") +
-
-    "\n\nADDITIONAL MESSAGE\n" +
-
-    (message || "None") +
-
+    "Payment reference: " + (reference || "Not provided") + "\n" +
+    "Payment details: " + (proof || "Not provided") +
+    "\n\nADDITIONAL MESSAGE\n" + (message || "None") +
     "\n\nEVENT DATE: 16 JANUARY 2027" +
-
     "\nTIME: 08:00 - 18:00" +
-
     "\nVENUE: MASERU, LESOTHO";
 
   const whatsappURL =
-
     "https://wa.me/26656506092?text=" +
-
     encodeURIComponent(registrationText);
 
-  const result =
-    document.getElementById("registrationMessage");
+  const result = document.getElementById("registrationMessage");
 
   result.style.display = "block";
-
   result.replaceChildren();
 
   const heading = document.createElement("strong");
-
-  heading.textContent =
-    "Your registration details are ready!";
+  heading.textContent = "Your registration details are ready!";
 
   const paragraph = document.createElement("p");
-
   paragraph.textContent =
     "Your " + pkg.category + " " + pkg.package +
     " package includes " + allocatedTickets +
@@ -2726,14 +2023,11 @@ document.getElementById("registrationForm")
     ". Please send your registration to MSM for confirmation.";
 
   const link = document.createElement("a");
-
   link.href = whatsappURL;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   link.className = "whatsapp-btn";
-
-  link.textContent =
-    "SEND REGISTRATION TO MSM ON WHATSAPP";
+  link.textContent = "SEND REGISTRATION TO MSM ON WHATSAPP";
 
   result.appendChild(heading);
   result.appendChild(paragraph);
@@ -2743,7 +2037,6 @@ document.getElementById("registrationForm")
     behavior:"smooth",
     block:"center"
   });
-
 });
 
 
@@ -2751,26 +2044,25 @@ document.getElementById("registrationForm")
 // TABLE SPONSORSHIP CALCULATOR
 // =====================================
 
-const tableQuantity =
-  document.getElementById("tableQuantity");
+const tableQuantity = document.getElementById("tableQuantity");
+const sponsorTotal = document.getElementById("sponsorTotal");
+const sponsorQuantity = document.getElementById("sponsorQuantity");
+const sponsorVipTickets = document.getElementById("sponsorVipTickets");
+const sponsorDisplayTables = document.getElementById("sponsorDisplayTables");
 
-const sponsorTotal =
-  document.getElementById("sponsorTotal");
-
-const sponsorQuantity =
-  document.getElementById("sponsorQuantity");
-
-tableQuantity.addEventListener("change", function() {
-
-  const quantity = Number(this.value);
-
+function updateSponsorSummary() {
+  const quantity = Number(tableQuantity.value) || 0;
   const total = quantity * 8000;
+  const vipTickets = quantity * 10;
 
   sponsorQuantity.textContent = quantity;
-
+  sponsorVipTickets.textContent = vipTickets;
+  sponsorDisplayTables.textContent = quantity;
   sponsorTotal.textContent = money(total);
+}
 
-});
+tableQuantity.addEventListener("change", updateSponsorSummary);
+updateSponsorSummary();
 
 
 // =====================================
@@ -2779,101 +2071,68 @@ tableQuantity.addEventListener("change", function() {
 
 document.getElementById("sponsorForm")
 .addEventListener("submit", function(e) {
-
   e.preventDefault();
 
-  const company =
-    document.getElementById("companyName").value.trim();
-
-  const contact =
-    document.getElementById("contactPerson").value.trim();
-
-  const phone =
-    document.getElementById("sponsorPhone").value.trim();
-
-  const email =
-    document.getElementById("sponsorEmail").value.trim();
-
-  const quantity =
-    Number(tableQuantity.value);
-
-  const payment =
-    document.getElementById("sponsorPayment").value;
+  const company = document.getElementById("companyName").value.trim();
+  const contact = document.getElementById("contactPerson").value.trim();
+  const phone = document.getElementById("sponsorPhone").value.trim();
+  const email = document.getElementById("sponsorEmail").value.trim();
+  const quantity = Number(tableQuantity.value);
+  const payment = document.getElementById("sponsorPayment").value;
 
   if (!quantity || quantity < 1 || quantity > 5) {
-
     alert("Please select between 1 and 5 tables.");
-
     return;
-
   }
 
   const total = quantity * 8000;
+  const vipTickets = quantity * 10;
 
   const sponsorshipText =
-
-    "2027 MSM SUCCESS EXTRAVAGANZA TABLE SPONSORSHIP\n" +
-
+    "2027 MSM SUCCESS EXTRAVAGANZA TABLE SPONSORSHIP ENQUIRY\n" +
     "====================================\n\n" +
-
     "Company / Sponsor: " + company + "\n" +
-
     "Contact Person: " + contact + "\n" +
-
     "Phone: " + phone + "\n" +
-
-    "Email: " + (email || "Not provided") + "\n\n" +
-
-    "SPONSORSHIP DETAILS\n" +
-
+    "Email: " + (email || "Not provided") +
+    "\n\nSPONSORSHIP DETAILS\n" +
     "Tables requested: " + quantity + "\n" +
-
     "Price per table: R8,000\n" +
-
     "Total sponsorship: " + money(total) + "\n\n" +
-
+    "CONFIRMED BENEFITS INCLUDED\n" +
+    "VIP tickets: " + vipTickets + " (" + quantity + " tables x 10 VIP tickets)\n" +
+    "Company branding at the event: " + quantity + " sponsorship package(s)\n" +
+    "Display tables in the event hall: " + quantity + "\n\n" +
     "Payment status: " + payment +
-
     "\n\nEVENT: 2027 SUCCESS EXTRAVAGANZA" +
-
     "\nDATE: 16 JANUARY 2027" +
-
     "\nTIME: 08:00 - 18:00" +
-
     "\nVENUE: MASERU, LESOTHO";
 
   const whatsappURL =
-
     "https://wa.me/26656506092?text=" +
-
     encodeURIComponent(sponsorshipText);
 
-  const result =
-    document.getElementById("sponsorMessage");
+  const result = document.getElementById("sponsorMessage");
 
   result.style.display = "block";
-
   result.replaceChildren();
 
   const heading = document.createElement("strong");
-
-  heading.textContent =
-    "Your sponsorship enquiry is ready!";
+  heading.textContent = "Your sponsorship enquiry is ready!";
 
   const paragraph = document.createElement("p");
-
   paragraph.textContent =
-    quantity + " table(s) requested. Total: " + money(total);
+    quantity + " table(s) requested, " +
+    vipTickets + " VIP tickets included, and " +
+    quantity + " display table(s). Total: " + money(total);
 
   const link = document.createElement("a");
-
   link.href = whatsappURL;
   link.target = "_blank";
   link.rel = "noopener noreferrer";
   link.className = "whatsapp-btn";
-
-  link.textContent =
-    "SEND SPONSORSHIP ENQUIRY TO MSM";
+  link.textContent = "SEND SPONSORSHIP ENQUIRY TO MSM";
 
   result.appendChild(heading);
   result.appendChild(paragraph);
@@ -2883,9 +2142,7 @@ document.getElementById("sponsorForm")
     behavior:"smooth",
     block:"center"
   });
-
 });
-
 </script>
 
 </body>
