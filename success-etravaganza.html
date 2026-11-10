@@ -16,669 +16,736 @@
 
 <style>
 :root {
-  --green: #0B3D2E;
-  --light-green: #7CB342;
-  --pale-green: #A8D08D;
-  --gold: #D9AD50;
-  --dark: #10251D;
-  --white: #ffffff;
-  --grey: #68766e;
+  --green:#0B3D2E;
+  --light-green:#7CB342;
+  --pale-green:#A8D08D;
+  --gold:#D9AD50;
+  --dark:#10251D;
+  --white:#fff;
+  --grey:#68766e;
+  --background:#f5f8f5;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 85px;
+  scroll-behavior:smooth;
+  scroll-padding-top:85px;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #25352d;
-  line-height: 1.7;
+  font-family:'Montserrat',sans-serif;
+  color:#25352d;
+  line-height:1.7;
 }
 
 a {
-  text-decoration: none;
+  text-decoration:none;
+}
+
+button,input,select,textarea {
+  font-family:inherit;
 }
 
 /* NAVIGATION */
+
 nav {
-  background: var(--green);
-  padding: 15px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 3px 12px rgba(0,0,0,.15);
+  background:var(--green);
+  padding:15px 7%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:15px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+  box-shadow:0 3px 12px rgba(0,0,0,.15);
 }
 
 .logo {
-  color: white;
-  font-weight: 900;
-  font-size: 22px;
+  color:white;
+  font-weight:900;
+  font-size:22px;
 }
 
 .logo span {
-  color: var(--gold);
+  color:var(--gold);
 }
 
 .nav-links {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
 }
 
 .nav-links a {
-  color: white;
-  font-size: 11px;
-  font-weight: 700;
-  transition: .3s;
+  color:white;
+  font-size:11px;
+  font-weight:700;
+  transition:.3s;
 }
 
 .nav-links a:hover {
-  color: var(--gold);
+  color:var(--gold);
 }
 
 /* HERO */
+
 .hero {
-  min-height: 650px;
-  padding: 100px 7%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+  min-height:650px;
+  padding:100px 7%;
+  display:flex;
+  align-items:center;
+  text-align:center;
+  justify-content:center;
   background:
-    linear-gradient(135deg, rgba(5,35,25,.96), rgba(11,61,46,.84)),
+    linear-gradient(135deg,rgba(5,35,25,.96),rgba(11,61,46,.84)),
     url('images/EXTRAVA.jpeg') center/cover;
-  color: white;
+  color:white;
 }
 
 .hero-content {
-  max-width: 900px;
+  max-width:900px;
 }
 
 .event-label {
-  display: inline-block;
-  border: 1px solid var(--gold);
-  color: var(--gold);
-  padding: 9px 20px;
-  border-radius: 30px;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  margin-bottom: 25px;
+  display:inline-block;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  padding:9px 20px;
+  border-radius:30px;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:2px;
+  margin-bottom:25px;
 }
 
 .hero h1 {
-  font-size: clamp(38px, 7vw, 75px);
-  line-height: 1.1;
-  font-weight: 900;
-  margin-bottom: 20px;
+  font-size:clamp(38px,7vw,75px);
+  line-height:1.1;
+  font-weight:900;
+  margin-bottom:20px;
 }
 
 .hero h1 span {
-  color: var(--gold);
+  color:var(--gold);
 }
 
 .hero h2 {
-  font-size: clamp(15px, 2vw, 22px);
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+  font-size:clamp(15px,2vw,22px);
+  letter-spacing:2px;
+  margin-bottom:20px;
 }
 
 .hero p {
-  color: #e0eee5;
-  margin-bottom: 30px;
+  color:#e0eee5;
+  margin-bottom:30px;
 }
 
 .event-details {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 30px 0;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+  margin:30px 0;
 }
 
 .detail {
-  background: rgba(255,255,255,.10);
-  border: 1px solid rgba(255,255,255,.2);
-  padding: 14px 20px;
-  border-radius: 10px;
-  min-width: 170px;
+  background:rgba(255,255,255,.10);
+  border:1px solid rgba(255,255,255,.2);
+  padding:14px 20px;
+  border-radius:10px;
+  min-width:170px;
 }
 
 .detail strong {
-  display: block;
-  color: var(--gold);
-  font-size: 12px;
+  display:block;
+  color:var(--gold);
+  font-size:12px;
 }
 
 .detail span {
-  font-weight: 700;
-  font-size: 14px;
+  font-weight:700;
+  font-size:14px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 15px 28px;
-  border-radius: 5px;
-  font-size: 13px;
-  font-weight: 800;
-  transition: .3s;
-  margin: 5px;
-  cursor: pointer;
+  display:inline-block;
+  padding:15px 28px;
+  border-radius:5px;
+  font-size:13px;
+  font-weight:800;
+  transition:.3s;
+  margin:5px;
+  cursor:pointer;
 }
 
 .btn-gold {
-  background: var(--gold);
-  color: var(--dark);
+  background:var(--gold);
+  color:var(--dark);
 }
 
 .btn-outline {
-  border: 2px solid white;
-  color: white;
+  border:2px solid white;
+  color:white;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform:translateY(-3px);
 }
 
 /* GENERAL SECTIONS */
+
 section {
-  padding: 80px 7%;
+  padding:80px 7%;
 }
 
 .section-title {
-  text-align: center;
-  margin-bottom: 45px;
+  text-align:center;
+  margin-bottom:45px;
 }
 
 .section-title small {
-  color: var(--light-green);
-  font-weight: 800;
-  letter-spacing: 2px;
+  color:var(--light-green);
+  font-weight:800;
+  letter-spacing:2px;
 }
 
 .section-title h2 {
-  font-size: clamp(27px, 4vw, 40px);
-  color: var(--green);
-  font-weight: 900;
-  margin: 10px 0;
+  font-size:clamp(27px,4vw,40px);
+  color:var(--green);
+  font-weight:900;
+  margin:10px 0;
 }
 
 .section-title p {
-  max-width: 650px;
-  margin: auto;
-  color: var(--grey);
+  max-width:650px;
+  margin:auto;
+  color:var(--grey);
 }
 
-/* OFFICIAL POSTER */
+/* POSTER */
+
 .poster-section {
-  background: #f5f8f5;
-  text-align: center;
+  background:var(--background);
+  text-align:center;
 }
 
 .poster-container {
-  max-width: 650px;
-  margin: auto;
-  background: white;
-  padding: 12px;
-  border-radius: 14px;
-  box-shadow: 0 10px 35px rgba(0,0,0,.12);
+  max-width:650px;
+  margin:auto;
+  background:white;
+  padding:12px;
+  border-radius:14px;
+  box-shadow:0 10px 35px rgba(0,0,0,.12);
 }
 
 .poster-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 950px;
-  object-fit: contain;
-  border-radius: 8px;
+  display:block;
+  width:100%;
+  height:auto;
+  max-height:950px;
+  object-fit:contain;
+  border-radius:8px;
 }
 
 .poster-caption {
-  margin-top: 20px;
-  color: var(--green);
-  font-weight: 900;
-  font-size: 15px;
+  margin-top:20px;
+  color:var(--green);
+  font-weight:900;
+  font-size:15px;
 }
 
 .poster-button {
-  display: inline-block;
-  margin: 15px 5px 5px;
-  background: var(--green);
-  color: white;
-  padding: 13px 25px;
-  border-radius: 5px;
-  font-weight: 800;
-  font-size: 13px;
+  display:inline-block;
+  margin:15px 5px 5px;
+  background:var(--green);
+  color:white;
+  padding:13px 25px;
+  border-radius:5px;
+  font-weight:800;
+  font-size:13px;
 }
 
 .poster-button:hover {
-  background: var(--light-green);
+  background:var(--light-green);
 }
 
 /* ABOUT */
+
 .about {
-  text-align: center;
-  background: white;
+  text-align:center;
+  background:white;
 }
 
 .about-content {
-  max-width: 850px;
-  margin: auto;
+  max-width:850px;
+  margin:auto;
 }
 
 .about-content p {
-  margin-bottom: 20px;
+  margin-bottom:20px;
 }
 
 /* SPEAKERS */
+
 .speakers {
-  background: #f5f8f5;
+  background:var(--background);
 }
 
 .speaker-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  max-width: 1100px;
-  margin: auto;
-  gap: 28px;
-  align-items: stretch;
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  max-width:1100px;
+  margin:auto;
+  gap:28px;
+  align-items:stretch;
 }
 
 .speaker-card {
-  text-align: center;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 30px rgba(0,0,0,.09);
-  background: white;
-  display: flex;
-  flex-direction: column;
+  text-align:center;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 8px 30px rgba(0,0,0,.09);
+  background:white;
+  display:flex;
+  flex-direction:column;
 }
 
 .speaker-photo {
-  height: 330px;
-  background: linear-gradient(135deg, var(--green), var(--light-green));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  position: relative;
+  height:330px;
+  background:linear-gradient(135deg,var(--green),var(--light-green));
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  position:relative;
 }
 
 .speaker-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
 .speaker-placeholder {
-  color: white;
-  font-size: 65px;
-  font-weight: 900;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  color:white;
+  font-size:65px;
+  font-weight:900;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:100%;
   background:
-    radial-gradient(circle at top right, rgba(217,173,80,.35), transparent 45%),
-    linear-gradient(135deg, var(--green), #174e39);
+    radial-gradient(circle at top right,rgba(217,173,80,.35),transparent 45%),
+    linear-gradient(135deg,var(--green),#174e39);
 }
 
 .placeholder-label {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0,0,0,.45);
-  color: white;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  white-space: nowrap;
+  position:absolute;
+  bottom:15px;
+  left:50%;
+  transform:translateX(-50%);
+  background:rgba(0,0,0,.45);
+  color:white;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:1px;
+  white-space:nowrap;
 }
 
 .speaker-info {
-  padding: 23px 20px;
-  flex: 1;
+  padding:23px 20px;
+  flex:1;
 }
 
 .speaker-info h3 {
-  color: var(--green);
-  font-size: 19px;
-  line-height: 1.4;
-  margin-bottom: 8px;
+  color:var(--green);
+  font-size:19px;
+  line-height:1.4;
+  margin-bottom:8px;
 }
 
 .speaker-info .speaker-title {
-  color: #a17a30;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 1px;
-  margin-bottom: 15px;
+  color:#a17a30;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:1px;
+  margin-bottom:15px;
 }
 
 .speaker-bio {
-  color: #68766e;
-  font-size: 12px;
-  line-height: 1.9;
-  text-align: left;
+  color:var(--grey);
+  font-size:12px;
+  line-height:1.9;
+  text-align:left;
 }
 
 .speaker-divider {
-  width: 45px;
-  height: 3px;
-  background: var(--gold);
-  margin: 0 auto 15px;
-  border-radius: 5px;
+  width:45px;
+  height:3px;
+  background:var(--gold);
+  margin:0 auto 15px;
+  border-radius:5px;
 }
 
 .more-speakers {
-  margin: 50px auto 0;
-  max-width: 750px;
-  text-align: center;
-  background: var(--green);
-  color: white;
-  padding: 40px 25px;
-  border-radius: 12px;
+  margin:50px auto 0;
+  max-width:750px;
+  text-align:center;
+  background:var(--green);
+  color:white;
+  padding:40px 25px;
+  border-radius:12px;
 }
 
 .more-speakers h2 {
-  color: var(--gold);
-  font-size: 25px;
-  margin-bottom: 10px;
+  color:var(--gold);
+  font-size:25px;
+  margin-bottom:10px;
 }
 
 /* COUNTDOWN */
+
 .countdown-section {
-  text-align: center;
-  color: white;
-  background: var(--green);
+  text-align:center;
+  color:white;
+  background:var(--green);
 }
 
 .countdown-section h2 {
-  color: var(--gold);
+  color:var(--gold);
 }
 
 .countdown {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 30px;
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:30px;
 }
 
 .time-box {
-  background: rgba(255,255,255,.10);
-  padding: 20px;
-  border-radius: 10px;
-  min-width: 90px;
+  background:rgba(255,255,255,.10);
+  padding:20px;
+  border-radius:10px;
+  min-width:90px;
 }
 
 .time-box strong {
-  display: block;
-  font-size: 35px;
-  color: var(--gold);
+  display:block;
+  font-size:35px;
+  color:var(--gold);
 }
 
 .time-box span {
-  font-size: 11px;
-  letter-spacing: 1px;
+  font-size:11px;
+  letter-spacing:1px;
 }
 
 /* REGISTRATION */
+
 .registration {
-  background: #f5f8f5;
-  text-align: center;
+  background:var(--background);
+  text-align:center;
 }
 
 .registration-card {
-  max-width: 750px;
-  margin: auto;
-  background: white;
-  border-radius: 15px;
-  padding: 45px 25px;
-  box-shadow: 0 8px 30px rgba(0,0,0,.07);
+  max-width:750px;
+  margin:auto;
+  background:white;
+  border-radius:15px;
+  padding:45px 25px;
+  box-shadow:0 8px 30px rgba(0,0,0,.07);
+  text-align:left;
+}
+
+.registration-card h2,
+.registration-card > p {
+  text-align:center;
 }
 
 .form-group {
-  text-align: left;
-  margin-bottom: 18px;
+  text-align:left;
+  margin-bottom:18px;
 }
 
 .form-group label {
-  display: block;
-  color: var(--green);
-  font-size: 13px;
-  font-weight: 700;
-  margin-bottom: 7px;
+  display:block;
+  color:var(--green);
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:7px;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
-  width: 100%;
-  padding: 13px;
-  border: 1px solid #d5ded7;
-  border-radius: 6px;
-  font-family: inherit;
-  font-size: 14px;
-  background: white;
+  width:100%;
+  padding:13px;
+  border:1px solid #d5ded7;
+  border-radius:6px;
+  font-size:14px;
+  background:white;
+  color:#25352d;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  outline: none;
-  border-color: var(--light-green);
-  box-shadow: 0 0 0 2px rgba(124,179,66,.15);
+  outline:none;
+  border-color:var(--light-green);
+  box-shadow:0 0 0 2px rgba(124,179,66,.15);
+}
+
+.form-group textarea {
+  resize:vertical;
 }
 
 .submit-btn {
-  display: block;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  background: var(--gold);
-  color: var(--dark);
-  padding: 16px;
-  border-radius: 5px;
-  font-weight: 900;
-  font-size: 13px;
-  margin-top: 20px;
+  display:block;
+  width:100%;
+  border:none;
+  cursor:pointer;
+  background:var(--gold);
+  color:var(--dark);
+  padding:16px;
+  border-radius:5px;
+  font-weight:900;
+  font-size:13px;
+  margin-top:20px;
 }
 
 .submit-btn:hover {
-  background: var(--light-green);
+  background:var(--light-green);
 }
 
 .registration-message {
-  display: none;
-  margin-top: 20px;
-  padding: 20px;
-  background: #e8f5e9;
-  border-radius: 8px;
-  color: var(--green);
+  display:none;
+  margin-top:20px;
+  padding:20px;
+  background:#e8f5e9;
+  border-radius:8px;
+  color:var(--green);
+  overflow-wrap:anywhere;
 }
 
 .whatsapp-btn {
-  display: inline-block;
-  margin-top: 15px;
-  background: var(--green);
-  color: white;
-  padding: 13px 22px;
-  border-radius: 5px;
-  font-weight: 800;
-  font-size: 13px;
+  display:inline-block;
+  margin-top:15px;
+  background:var(--green);
+  color:white;
+  padding:13px 22px;
+  border-radius:5px;
+  font-weight:800;
+  font-size:13px;
 }
 
 .whatsapp-btn:hover {
-  background: var(--light-green);
+  background:var(--light-green);
 }
 
 .form-note {
-  font-size: 12px;
-  color: #758078;
-  margin-top: 20px;
+  font-size:12px;
+  color:#758078;
+  margin-top:20px;
+  text-align:center;
 }
 
 .attendee-box {
-  display: none;
-  background: #f5f8f5;
-  padding: 22px;
-  border-radius: 10px;
-  margin: 25px 0;
-  text-align: left;
-  border: 1px solid #dce8dd;
+  background:var(--background);
+  padding:22px;
+  border-radius:10px;
+  margin:25px 0;
+  text-align:left;
+  border:1px solid #dce8dd;
 }
 
-.attendee-box h3 {
-  color: var(--green);
-  margin-bottom: 15px;
-}
-
-.attendee-box .form-group:last-child {
-  margin-bottom: 0;
+.attendee-box h3,
+.payment-box h3 {
+  color:var(--green);
+  margin-bottom:15px;
 }
 
 .payment-box {
-  background: #f5f8f5;
-  padding: 22px;
-  border-radius: 10px;
-  margin-top: 25px;
-  text-align: left;
+  background:var(--background);
+  padding:22px;
+  border-radius:10px;
+  margin-top:25px;
+  text-align:left;
 }
 
-.payment-box h3 {
-  color: var(--green);
-  margin-bottom: 15px;
+.ticket-summary {
+  background:var(--green);
+  color:white;
+  padding:25px;
+  border-radius:10px;
+  margin:25px 0;
+  text-align:left;
+}
+
+.ticket-summary h3 {
+  color:var(--gold);
+  margin-bottom:15px;
+}
+
+.ticket-summary p {
+  margin:7px 0;
+  font-size:13px;
+}
+
+.ticket-summary .total {
+  color:var(--gold);
+  font-size:28px;
+  font-weight:900;
+  margin-top:15px;
+}
+
+.ticket-summary .allocation {
+  font-size:11px;
+  color:#dce8dd;
+  margin-top:15px;
+}
+
+.sponsorship-banner {
+  background:var(--green);
+  color:white;
+  max-width:750px;
+  margin:0 auto 30px;
+  padding:30px 20px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.sponsorship-banner h2 {
+  color:var(--gold);
+  font-size:32px;
 }
 
 /* VENUE */
+
 .venue {
-  text-align: center;
-  background: white;
+  text-align:center;
+  background:white;
 }
 
 .venue-card {
-  background: var(--green);
-  color: white;
-  max-width: 650px;
-  margin: auto;
-  padding: 40px;
-  border-radius: 12px;
+  background:var(--green);
+  color:white;
+  max-width:650px;
+  margin:auto;
+  padding:40px;
+  border-radius:12px;
 }
 
 .venue-card h3 {
-  color: var(--gold);
-  font-size: 27px;
+  color:var(--gold);
+  font-size:27px;
 }
 
 /* FOOTER */
+
 footer {
-  background: #071f17;
-  color: white;
-  text-align: center;
-  padding: 40px 7%;
+  background:#071f17;
+  color:white;
+  text-align:center;
+  padding:40px 7%;
 }
 
 footer strong {
-  color: var(--gold);
+  color:var(--gold);
 }
 
 footer p {
-  font-size: 12px;
-  margin: 8px;
+  font-size:12px;
+  margin:8px;
 }
 
-/* MOBILE AND TABLET */
+/* RESPONSIVE */
+
 @media(max-width:900px) {
   .speaker-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:repeat(2,minmax(0,1fr));
   }
 }
 
 @media(max-width:600px) {
+
   nav {
-    justify-content: center;
-    padding: 13px 4%;
+    justify-content:center;
+    padding:13px 4%;
   }
 
   .nav-links {
-    justify-content: center;
-    gap: 12px;
+    justify-content:center;
+    gap:12px;
   }
 
   .nav-links a {
-    font-size: 10px;
+    font-size:10px;
   }
 
   .hero {
-    padding: 75px 5%;
-    min-height: 600px;
+    padding:75px 5%;
+    min-height:600px;
   }
 
   section {
-    padding: 60px 5%;
+    padding:60px 5%;
   }
 
   .speaker-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
   }
 
   .speaker-card {
-    max-width: 360px;
-    margin: auto;
-    width: 100%;
+    max-width:360px;
+    margin:auto;
+    width:100%;
   }
 
   .speaker-photo {
-    height: 340px;
+    height:340px;
   }
 
   .detail {
-    min-width: 140px;
+    min-width:140px;
   }
 
   .registration-card {
-    padding: 30px 18px;
+    padding:30px 18px;
   }
 
   .time-box {
-    min-width: 75px;
-    padding: 14px;
+    min-width:75px;
+    padding:14px;
   }
 
   .time-box strong {
-    font-size: 28px;
+    font-size:28px;
   }
 
   .poster-container {
-    padding: 8px;
+    padding:8px;
   }
 
   .venue-card {
-    padding: 30px 18px;
+    padding:30px 18px;
   }
 
   .attendee-box,
   .payment-box {
-    padding: 16px;
+    padding:16px;
   }
+
 }
 </style>
 </head>
@@ -686,6 +753,7 @@ footer p {
 <body>
 
 <!-- NAVIGATION -->
+
 <nav>
   <a href="index.html" class="logo">MSM <span>TRAINING</span></a>
 
@@ -695,10 +763,12 @@ footer p {
     <a href="#about">ABOUT</a>
     <a href="#speakers">SPEAKERS</a>
     <a href="#registration">REGISTER</a>
+    <a href="#sponsorship">SPONSORS</a>
   </div>
 </nav>
 
 <!-- HERO -->
+
 <header class="hero">
   <div class="hero-content">
 
@@ -714,6 +784,7 @@ footer p {
     </p>
 
     <div class="event-details">
+
       <div class="detail">
         <strong>DATE</strong>
         <span>16 January 2027</span>
@@ -728,6 +799,7 @@ footer p {
         <strong>VENUE</strong>
         <span>Maseru, Lesotho</span>
       </div>
+
     </div>
 
     <a href="#registration" class="btn btn-gold">REGISTER NOW</a>
@@ -736,7 +808,8 @@ footer p {
   </div>
 </header>
 
-<!-- OFFICIAL EVENT POSTER -->
+<!-- OFFICIAL POSTER -->
+
 <section class="poster-section" id="event-poster">
 
   <div class="section-title">
@@ -749,6 +822,7 @@ footer p {
   </div>
 
   <div class="poster-container">
+
     <img
       src="images/EXTRAVA.jpeg"
       alt="Official 2027 MSM Success Extravaganza event poster"
@@ -760,11 +834,13 @@ footer p {
     </div>
 
     <a href="#registration" class="poster-button">REGISTER NOW</a>
+
   </div>
 
 </section>
 
 <!-- ABOUT -->
+
 <section class="about" id="about">
 
   <div class="section-title">
@@ -796,6 +872,7 @@ footer p {
 </section>
 
 <!-- SPEAKERS -->
+
 <section class="speakers" id="speakers">
 
   <div class="section-title">
@@ -810,9 +887,11 @@ footer p {
   <div class="speaker-grid">
 
     <!-- PERCY SINGO -->
+
     <div class="speaker-card">
 
       <div class="speaker-photo">
+
         <img
           src="images/singo.jpeg"
           alt="Percy Singo"
@@ -821,16 +900,21 @@ footer p {
         >
 
         <div class="speaker-placeholder" style="display:none;">PS</div>
+
       </div>
 
       <div class="speaker-info">
+
         <h3>Percy Singo</h3>
 
-        <p class="speaker-title">FINANCE SPEAKER & PROPERTY INVESTOR</p>
+        <p class="speaker-title">
+          FINANCE SPEAKER & PROPERTY INVESTOR
+        </p>
 
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
+
           Percy Singo is a finance speaker, property investor,
           co-founder of Be Wise Financial Seminar, and author
           of the book <strong>How to Make Your Salary Work for You.</strong>
@@ -857,14 +941,19 @@ footer p {
           He continues to work for one of the metropolitan
           municipalities while pursuing his passion for financial
           education and property investment.
+
         </p>
+
       </div>
+
     </div>
 
     <!-- MOHAU MOSOEUNYANE -->
+
     <div class="speaker-card">
 
       <div class="speaker-photo">
+
         <img
           src="images/mohau.png"
           alt="Mohau Mosoeunyane"
@@ -873,9 +962,11 @@ footer p {
         >
 
         <div class="speaker-placeholder" style="display:none;">MM</div>
+
       </div>
 
       <div class="speaker-info">
+
         <h3>Mohau Mosoeunyane</h3>
 
         <p class="speaker-title">SPEAKER & HOST</p>
@@ -883,17 +974,23 @@ footer p {
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
+
           Speaker profile coming soon. More information about
           Mohau Mosoeunyane and his contribution to the
           2027 Success Extravaganza will be announced shortly.
+
         </p>
+
       </div>
+
     </div>
 
     <!-- PHAKISO MOLEKO -->
+
     <div class="speaker-card">
 
       <div class="speaker-photo">
+
         <img
           src="images/moleko.jpeg"
           alt="Phakiso Moleko"
@@ -902,9 +999,11 @@ footer p {
         >
 
         <div class="speaker-placeholder" style="display:none;">PM</div>
+
       </div>
 
       <div class="speaker-info">
+
         <h3>Phakiso Moleko</h3>
 
         <p class="speaker-title">
@@ -914,6 +1013,7 @@ footer p {
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
+
           Phakiso Moleko is a motivational speaker, counselling
           therapist and Master of Ceremonies with experience
           across various platforms and audiences.
@@ -932,14 +1032,19 @@ footer p {
           He also brings extensive experience in conducting
           ceremonies, including funerals, weddings and
           graduation ceremonies.
+
         </p>
+
       </div>
+
     </div>
 
     <!-- MAITUMELENG FOKOTHI -->
+
     <div class="speaker-card">
 
       <div class="speaker-photo">
+
         <img
           src="images/FOKOTHI.jpeg"
           alt="Maitumeleng Fokothi"
@@ -948,9 +1053,11 @@ footer p {
         >
 
         <div class="speaker-placeholder" style="display:none;">MF</div>
+
       </div>
 
       <div class="speaker-info">
+
         <h3>Maitumeleng Fokothi</h3>
 
         <p class="speaker-title">FEATURED SPEAKER</p>
@@ -958,6 +1065,7 @@ footer p {
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
+
           Professional profile coming soon.
 
           <br><br>
@@ -965,19 +1073,29 @@ footer p {
           More information about Maitumeleng Fokothi,
           including professional background and areas of
           expertise, will be shared as we approach the event.
+
         </p>
+
       </div>
+
     </div>
 
     <!-- ADDITIONAL SPEAKER -->
+
     <div class="speaker-card">
 
       <div class="speaker-photo">
+
         <div class="speaker-placeholder">+</div>
-        <div class="placeholder-label">ANNOUNCEMENT COMING SOON</div>
+
+        <div class="placeholder-label">
+          ANNOUNCEMENT COMING SOON
+        </div>
+
       </div>
 
       <div class="speaker-info">
+
         <h3>More Speakers Loading...</h3>
 
         <p class="speaker-title">ADDITIONAL SPEAKER</p>
@@ -985,19 +1103,24 @@ footer p {
         <div class="speaker-divider"></div>
 
         <p class="speaker-bio">
+
           We are preparing to introduce another inspiring
           voice to the 2027 Success Extravaganza.
 
           <br><br>
 
           Stay connected for the next speaker announcement!
+
         </p>
+
       </div>
+
     </div>
 
   </div>
 
   <div class="more-speakers">
+
     <h2>MORE SPEAKERS LOADING...</h2>
 
     <p>
@@ -1005,11 +1128,13 @@ footer p {
       Keep following MSM Training for more exciting updates.
       Your next source of inspiration could be announced soon.
     </p>
+
   </div>
 
 </section>
 
 <!-- COUNTDOWN -->
+
 <section class="countdown-section">
 
   <h2>THE COUNTDOWN TO SUCCESS IS ON!</h2>
@@ -1043,6 +1168,7 @@ footer p {
 </section>
 
 <!-- REGISTRATION -->
+
 <section class="registration" id="registration">
 
   <div class="section-title">
@@ -1052,8 +1178,8 @@ footer p {
     <h2>REGISTER FOR SUCCESS EXTRAVAGANZA 2027</h2>
 
     <p>
-      Complete the form below to register.
-      Our team will contact you about payment and ticket confirmation.
+      Choose your preferred ticket category and secure
+      your place at the biggest success seminar in Lesotho.
     </p>
 
   </div>
@@ -1070,137 +1196,170 @@ footer p {
 
     <form id="registrationForm">
 
-      <!-- FIRST ATTENDEE -->
-      <div class="attendee-box" style="display:block;">
+      <!-- TICKET CATEGORY -->
 
-        <h3>FIRST ATTENDEE DETAILS</h3>
+      <div class="form-group">
+
+        <label for="ticketType">Select Your Ticket Package *</label>
+
+        <select id="ticketType" required>
+
+          <option value="">Choose a ticket package</option>
+
+          <optgroup label="EARLY BIRD - 50 ATTENDEES ONLY">
+
+            <option value="early_individual">
+              Early Bird Individual - R200
+            </option>
+
+            <option value="early_pair">
+              Early Bird Pair (2 People) - R300
+            </option>
+
+          </optgroup>
+
+          <optgroup label="NORMAL REGISTRATION - 80 ATTENDEES ONLY">
+
+            <option value="normal_individual">
+              Normal Individual - R400
+            </option>
+
+            <option value="normal_pair">
+              Normal Pair (2 People) - R600
+            </option>
+
+            <option value="normal_group">
+              Normal Group of 5 - R1,250
+            </option>
+
+          </optgroup>
+
+          <optgroup label="VIP REGISTRATION - 20 ATTENDEES ONLY">
+
+            <option value="vip_individual">
+              VIP Individual - R1,000
+            </option>
+
+            <option value="vip_pair">
+              VIP Pair (2 People) - R1,800
+            </option>
+
+            <option value="vip_group">
+              VIP Group of 5 - R4,500
+            </option>
+
+          </optgroup>
+
+        </select>
+
+      </div>
+
+      <!-- TICKET SUMMARY -->
+
+      <div class="ticket-summary" id="ticketSummary"
+           style="display:none;">
+
+        <h3>YOUR REGISTRATION SUMMARY</h3>
+
+        <p>
+          <strong>Ticket Category:</strong>
+          <span id="summaryCategory"></span>
+        </p>
+
+        <p>
+          <strong>Package:</strong>
+          <span id="summaryPackage"></span>
+        </p>
+
+        <p>
+          <strong>Number of Attendees:</strong>
+          <span id="summaryAttendees"></span>
+        </p>
+
+        <p>
+          <strong>Package Price:</strong>
+          <span id="summaryPrice"></span>
+        </p>
+
+        <div class="total">
+          TOTAL: <span id="summaryTotal">R0</span>
+        </div>
+
+        <p class="allocation">
+          Category allocation: 50 Early Bird / 80 Normal / 20 VIP
+          individual attendees respectively. Final availability
+          must be confirmed by MSM.
+        </p>
+
+      </div>
+
+      <!-- FIRST ATTENDEE -->
+
+      <div class="attendee-box">
+
+        <h3>CONTACT PERSON / FIRST ATTENDEE</h3>
 
         <div class="form-group">
+
           <label for="fullName">Full Name and Surname *</label>
 
           <input
             type="text"
             id="fullName"
-            name="fullName"
-            autocomplete="name"
             required
+            autocomplete="name"
             placeholder="Enter your full name"
           >
+
         </div>
 
         <div class="form-group">
+
           <label for="phone">Phone / WhatsApp Number *</label>
 
           <input
             type="tel"
             id="phone"
-            name="phone"
-            autocomplete="tel"
             required
+            autocomplete="tel"
             placeholder="+266..."
           >
+
         </div>
 
         <div class="form-group">
+
           <label for="email">Email Address</label>
 
           <input
             type="email"
             id="email"
-            name="email"
             autocomplete="email"
             placeholder="Enter your email address"
           >
+
         </div>
 
       </div>
 
-      <!-- SECOND ATTENDEE: EARLY BIRD ONLY -->
-      <div class="attendee-box" id="earlyBirdSecondAttendee">
+      <!-- ADDITIONAL ATTENDEES -->
 
-        <h3>SECOND ATTENDEE DETAILS</h3>
+      <div class="attendee-box" id="otherAttendees"
+           style="display:none;">
+
+        <h3>ADDITIONAL ATTENDEE DETAILS</h3>
 
         <p style="font-size:12px;color:#68766e;margin-bottom:15px;">
-          Please enter the details of the second person attending with you.
+          Please provide details for every additional person
+          included in your package.
         </p>
 
-        <div class="form-group">
-          <label for="secondName">Second Person's Full Name *</label>
-
-          <input
-            type="text"
-            id="secondName"
-            name="secondName"
-            placeholder="Enter second person's full name"
-          >
-        </div>
-
-        <div class="form-group">
-          <label for="secondPhone">Second Person's Phone Number *</label>
-
-          <input
-            type="tel"
-            id="secondPhone"
-            name="secondPhone"
-            placeholder="+266..."
-          >
-        </div>
-
-        <div class="form-group">
-          <label for="secondEmail">Second Person's Email (Optional)</label>
-
-          <input
-            type="email"
-            id="secondEmail"
-            name="secondEmail"
-            placeholder="Enter email address"
-          >
-        </div>
+        <div id="additionalAttendeeFields"></div>
 
       </div>
 
-      <!-- TICKET DETAILS -->
-      <div class="form-group">
+      <!-- PAYMENT INFORMATION -->
 
-        <label for="tickets">Number of Tickets *</label>
-
-        <select id="tickets" name="tickets" required>
-          <option value="">Select number of tickets</option>
-          <option value="1">1 Ticket</option>
-          <option value="2">2 Tickets</option>
-          <option value="3">3 Tickets</option>
-          <option value="4">4 Tickets</option>
-          <option value="5">5 Tickets</option>
-          <option value="6 or more">6 or more Tickets</option>
-        </select>
-
-      </div>
-
-      <div class="form-group">
-
-        <label for="ticketType">Ticket Type *</label>
-
-        <select id="ticketType" name="ticketType" required>
-
-          <option value="">Select ticket type</option>
-
-          <option value="Early Bird (2 People)">
-            Early Bird - 2 People
-          </option>
-
-          <option value="Regular">
-            Regular
-          </option>
-
-          <option value="Group Booking">
-            Group Booking
-          </option>
-
-        </select>
-
-      </div>
-
-      <!-- PAYMENT DETAILS -->
       <div class="payment-box">
 
         <h3>PAYMENT INFORMATION</h3>
@@ -1209,7 +1368,7 @@ footer p {
 
           <label for="payment">Payment Status *</label>
 
-          <select id="payment" name="payment" required>
+          <select id="payment" required>
 
             <option value="">Select payment status</option>
 
@@ -1229,9 +1388,9 @@ footer p {
 
         <div class="form-group">
 
-          <label for="paymentMethod">How Did You Make Payment? *</label>
+          <label for="paymentMethod">Payment Method</label>
 
-          <select id="paymentMethod" name="paymentMethod" required>
+          <select id="paymentMethod">
 
             <option value="">Select payment method</option>
 
@@ -1245,11 +1404,11 @@ footer p {
 
             <option value="M-Pesa">M-Pesa</option>
 
-            <option value="Mobile Money">Other Mobile Money</option>
+            <option value="Other Mobile Money">
+              Other Mobile Money
+            </option>
 
             <option value="Other">Other</option>
-
-            <option value="Not yet paid">Not yet paid</option>
 
           </select>
 
@@ -1257,12 +1416,11 @@ footer p {
 
         <div class="form-group">
 
-          <label for="amountPaid">Amount Paid (R / LSL)</label>
+          <label for="amountPaid">Amount Paid (R)</label>
 
           <input
             type="number"
             id="amountPaid"
-            name="amountPaid"
             min="0"
             step="0.01"
             placeholder="Enter amount paid"
@@ -1279,7 +1437,6 @@ footer p {
           <input
             type="text"
             id="paymentReference"
-            name="paymentReference"
             placeholder="Enter bank reference or transaction ID"
           >
 
@@ -1288,12 +1445,11 @@ footer p {
         <div class="form-group">
 
           <label for="paymentProof">
-            Payment Proof Details
+            Additional Payment Details
           </label>
 
           <textarea
             id="paymentProof"
-            name="paymentProof"
             rows="3"
             placeholder="Provide additional payment information"
           ></textarea>
@@ -1302,16 +1458,14 @@ footer p {
 
       </div>
 
-      <!-- ADDITIONAL MESSAGE -->
+      <!-- MESSAGE -->
+
       <div class="form-group" style="margin-top:20px;">
 
-        <label for="message">
-          Additional Message (Optional)
-        </label>
+        <label for="message">Additional Message (Optional)</label>
 
         <textarea
           id="message"
-          name="message"
           rows="4"
           placeholder="Any questions or special requests?"
         ></textarea>
@@ -1332,16 +1486,176 @@ footer p {
     ></div>
 
     <p class="form-note">
-      Please note: Submitting your details does not automatically
-      confirm your ticket. Your registration must be sent to MSM
-      through WhatsApp for follow-up and payment verification.
+
+      Please note: Submitting your registration does not
+      automatically confirm your ticket. The MSM team will
+      verify your payment and confirm your registration.
+
     </p>
 
   </div>
 
 </section>
 
+<!-- TABLE SPONSORSHIP -->
+
+<section class="registration" id="sponsorship">
+
+  <div class="section-title">
+
+    <small>PARTNER WITH MSM</small>
+
+    <h2>TABLE SPONSORSHIP OPPORTUNITY</h2>
+
+    <p>
+      Support the 2027 Success Extravaganza and position
+      your organisation as a partner in growth and empowerment.
+    </p>
+
+  </div>
+
+  <div class="sponsorship-banner">
+
+    <h2>R8,000</h2>
+
+    <h3>PER SPONSORSHIP TABLE</h3>
+
+    <p style="margin-top:10px;">
+      ONLY 5 TABLES AVAILABLE
+    </p>
+
+    <p style="margin-top:10px;color:#e0eee5;">
+      Total potential table sponsorship: R40,000
+    </p>
+
+  </div>
+
+  <div class="registration-card">
+
+    <h2 style="color:#0B3D2E;margin-bottom:10px;">
+      TABLE SPONSORSHIP ENQUIRY
+    </h2>
+
+    <p style="margin-bottom:25px;">
+      Partner with MSM Training Company.
+    </p>
+
+    <form id="sponsorForm">
+
+      <div class="form-group">
+
+        <label for="companyName">Company / Sponsor Name *</label>
+
+        <input type="text" id="companyName" required
+               placeholder="Enter company or sponsor name">
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="contactPerson">Contact Person *</label>
+
+        <input type="text" id="contactPerson" required
+               placeholder="Enter contact person's name">
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="sponsorPhone">Phone Number *</label>
+
+        <input type="tel" id="sponsorPhone" required
+               placeholder="+266...">
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="sponsorEmail">Email Address</label>
+
+        <input type="email" id="sponsorEmail"
+               placeholder="Enter email address">
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="tableQuantity">Number of Tables *</label>
+
+        <select id="tableQuantity" required>
+
+          <option value="">Select number of tables</option>
+
+          <option value="1">1 Table - R8,000</option>
+
+          <option value="2">2 Tables - R16,000</option>
+
+          <option value="3">3 Tables - R24,000</option>
+
+          <option value="4">4 Tables - R32,000</option>
+
+          <option value="5">5 Tables - R40,000</option>
+
+        </select>
+
+      </div>
+
+      <div class="ticket-summary" style="display:block;">
+
+        <h3>SPONSORSHIP SUMMARY</h3>
+
+        <p>
+          <strong>Price per table:</strong> R8,000
+        </p>
+
+        <p>
+          <strong>Tables requested:</strong>
+          <span id="sponsorQuantity">0</span>
+        </p>
+
+        <div class="total">
+          TOTAL: <span id="sponsorTotal">R0</span>
+        </div>
+
+      </div>
+
+      <div class="form-group">
+
+        <label for="sponsorPayment">Payment Status *</label>
+
+        <select id="sponsorPayment" required>
+
+          <option value="">Select payment status</option>
+
+          <option value="Not yet paid">Not yet paid</option>
+
+          <option value="Already paid">Already paid</option>
+
+          <option value="Partially paid">Partially paid</option>
+
+        </select>
+
+      </div>
+
+      <button type="submit" class="submit-btn">
+        SUBMIT SPONSORSHIP ENQUIRY
+      </button>
+
+    </form>
+
+    <div
+      id="sponsorMessage"
+      class="registration-message"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+  </div>
+
+</section>
+
 <!-- VENUE -->
+
 <section class="venue">
 
   <div class="section-title">
@@ -1370,6 +1684,7 @@ footer p {
 </section>
 
 <!-- FOOTER -->
+
 <footer>
 
   <h2>MSM TRAINING COMPANY</h2>
@@ -1438,6 +1753,7 @@ function updateCountdown() {
     Math.floor(
       (difference % (1000 * 60)) / 1000
     );
+
 }
 
 updateCountdown();
@@ -1445,86 +1761,232 @@ setInterval(updateCountdown, 1000);
 
 
 // =====================================
-// EARLY BIRD SECOND ATTENDEE DISPLAY
+// TICKET PACKAGE CONFIGURATION
 // =====================================
 
-const ticketTypeField =
-  document.getElementById('ticketType');
+const ticketPackages = {
 
-const secondAttendee =
-  document.getElementById('earlyBirdSecondAttendee');
+  early_individual: {
+    category: "Early Bird",
+    package: "Individual",
+    price: 200,
+    people: 1,
+    limit: 50
+  },
 
-const ticketsField =
-  document.getElementById('tickets');
+  early_pair: {
+    category: "Early Bird",
+    package: "Pair",
+    price: 300,
+    people: 2,
+    limit: 50
+  },
 
-function updateAttendeeFields() {
+  normal_individual: {
+    category: "Normal",
+    package: "Individual",
+    price: 400,
+    people: 1,
+    limit: 80
+  },
 
-  const isEarlyBird =
-    ticketTypeField.value === 'Early Bird (2 People)';
+  normal_pair: {
+    category: "Normal",
+    package: "Pair",
+    price: 600,
+    people: 2,
+    limit: 80
+  },
 
-  secondAttendee.style.display =
-    isEarlyBird ? 'block' : 'none';
+  normal_group: {
+    category: "Normal",
+    package: "Group of 5",
+    price: 1250,
+    people: 5,
+    limit: 80
+  },
 
-  document.getElementById('secondName').required =
-    isEarlyBird;
+  vip_individual: {
+    category: "VIP",
+    package: "Individual",
+    price: 1000,
+    people: 1,
+    limit: 20
+  },
 
-  document.getElementById('secondPhone').required =
-    isEarlyBird;
+  vip_pair: {
+    category: "VIP",
+    package: "Pair",
+    price: 1800,
+    people: 2,
+    limit: 20
+  },
 
-  if (isEarlyBird) {
-    ticketsField.value = '2';
-    ticketsField.disabled = true;
-  } else {
-    ticketsField.disabled = false;
-
-    document.getElementById('secondName').value = '';
-    document.getElementById('secondPhone').value = '';
-    document.getElementById('secondEmail').value = '';
+  vip_group: {
+    category: "VIP",
+    package: "Group of 5",
+    price: 4500,
+    people: 5,
+    limit: 20
   }
-}
 
-ticketTypeField.addEventListener(
-  'change',
-  updateAttendeeFields
-);
+};
+
+const money = amount =>
+  "R" + Number(amount).toLocaleString("en-ZA");
+
+const ticketType =
+  document.getElementById("ticketType");
+
+const ticketSummary =
+  document.getElementById("ticketSummary");
+
+const otherAttendees =
+  document.getElementById("otherAttendees");
+
+const additionalFields =
+  document.getElementById("additionalAttendeeFields");
+
+let selectedPackage = null;
 
 
 // =====================================
-// PAYMENT METHOD DISPLAY
+// SELECT TICKET AND CALCULATE PRICE
+// =====================================
+
+ticketType.addEventListener("change", function() {
+
+  selectedPackage = ticketPackages[this.value];
+
+  additionalFields.innerHTML = "";
+
+  if (!selectedPackage) {
+
+    ticketSummary.style.display = "none";
+    otherAttendees.style.display = "none";
+
+    return;
+
+  }
+
+  const pkg = selectedPackage;
+
+  document.getElementById("summaryCategory").textContent =
+    pkg.category;
+
+  document.getElementById("summaryPackage").textContent =
+    pkg.package;
+
+  document.getElementById("summaryAttendees").textContent =
+    pkg.people;
+
+  document.getElementById("summaryPrice").textContent =
+    money(pkg.price);
+
+  document.getElementById("summaryTotal").textContent =
+    money(pkg.price);
+
+  ticketSummary.style.display = "block";
+
+  // ADDITIONAL ATTENDEE DETAILS
+
+  if (pkg.people > 1) {
+
+    otherAttendees.style.display = "block";
+
+    for (let i = 2; i <= pkg.people; i++) {
+
+      const group = document.createElement("div");
+
+      group.className = "form-group";
+
+      const heading = document.createElement("h4");
+
+      heading.textContent = "ATTENDEE " + i;
+
+      heading.style.color = "#0B3D2E";
+      heading.style.marginBottom = "12px";
+
+      const nameLabel = document.createElement("label");
+
+      nameLabel.textContent = "Full Name *";
+
+      const nameInput = document.createElement("input");
+
+      nameInput.type = "text";
+      nameInput.name = "attendeeName" + i;
+      nameInput.required = true;
+      nameInput.placeholder = "Enter full name";
+
+      const phoneLabel = document.createElement("label");
+
+      phoneLabel.textContent = "Phone Number *";
+      phoneLabel.style.marginTop = "12px";
+
+      const phoneInput = document.createElement("input");
+
+      phoneInput.type = "tel";
+      phoneInput.name = "attendeePhone" + i;
+      phoneInput.required = true;
+      phoneInput.placeholder = "+266...";
+
+      group.appendChild(heading);
+      group.appendChild(nameLabel);
+      group.appendChild(nameInput);
+      group.appendChild(phoneLabel);
+      group.appendChild(phoneInput);
+
+      additionalFields.appendChild(group);
+
+    }
+
+  } else {
+
+    otherAttendees.style.display = "none";
+
+  }
+
+});
+
+
+// =====================================
+// PAYMENT FIELD MANAGEMENT
 // =====================================
 
 const paymentStatus =
-  document.getElementById('payment');
+  document.getElementById("payment");
 
 const paymentMethod =
-  document.getElementById('paymentMethod');
+  document.getElementById("paymentMethod");
 
 const amountPaid =
-  document.getElementById('amountPaid');
+  document.getElementById("amountPaid");
 
 function updatePaymentFields() {
 
   const unpaid =
-    paymentStatus.value === 'Not yet paid' ||
-    paymentStatus.value === 'Need payment details';
+    paymentStatus.value === "Not yet paid" ||
+    paymentStatus.value === "Need payment details";
 
   if (unpaid) {
-    paymentMethod.value = 'Not yet paid';
+
+    paymentMethod.value = "";
     paymentMethod.disabled = true;
-    amountPaid.value = '';
+
+    amountPaid.value = "";
     amountPaid.disabled = true;
+
   } else {
+
     paymentMethod.disabled = false;
     amountPaid.disabled = false;
 
-    if (paymentMethod.value === 'Not yet paid') {
-      paymentMethod.value = '';
-    }
   }
+
 }
 
 paymentStatus.addEventListener(
-  'change',
+  "change",
   updatePaymentFields
 );
 
@@ -1535,166 +1997,340 @@ updatePaymentFields();
 // REGISTRATION THROUGH WHATSAPP
 // =====================================
 
-document.getElementById('registrationForm')
-.addEventListener('submit', function(e) {
+document.getElementById("registrationForm")
+.addEventListener("submit", function(e) {
 
   e.preventDefault();
 
+  if (!selectedPackage) {
+
+    alert("Please select a ticket package.");
+
+    return;
+
+  }
+
+  const pkg = selectedPackage;
+
   const name =
-    document.getElementById('fullName').value.trim();
+    document.getElementById("fullName").value.trim();
 
   const phone =
-    document.getElementById('phone').value.trim();
+    document.getElementById("phone").value.trim();
 
   const email =
-    document.getElementById('email').value.trim();
-
-  const tickets =
-    ticketsField.value;
-
-  const ticketType =
-    ticketTypeField.value;
+    document.getElementById("email").value.trim();
 
   const payment =
     paymentStatus.value;
 
   const method =
     paymentMethod.disabled
-      ? 'Not yet paid'
+      ? "Not yet paid"
       : paymentMethod.value;
 
   const amount =
     amountPaid.disabled
-      ? '0'
-      : amountPaid.value;
+      ? "0"
+      : amountPaid.value || "0";
 
   const reference =
-    document.getElementById('paymentReference').value.trim();
+    document.getElementById("paymentReference").value.trim();
 
   const proof =
-    document.getElementById('paymentProof').value.trim();
+    document.getElementById("paymentProof").value.trim();
 
   const message =
-    document.getElementById('message').value.trim();
+    document.getElementById("message").value.trim();
 
-  let secondPersonDetails = '';
+  // CHECK AMOUNT PAID
 
-  if (ticketType === 'Early Bird (2 People)') {
+  if (Number(amount) > pkg.price) {
 
-    const secondName =
-      document.getElementById('secondName').value.trim();
+    alert("The amount paid cannot exceed the ticket package price.");
 
-    const secondPhone =
-      document.getElementById('secondPhone').value.trim();
-
-    const secondEmail =
-      document.getElementById('secondEmail').value.trim();
-
-    secondPersonDetails =
-
-      '\n\nSECOND ATTENDEE DETAILS\n' +
-
-      'Name: ' + secondName + '\n' +
-
-      'Phone: ' + secondPhone + '\n' +
-
-      'Email: ' +
-      (secondEmail || 'Not provided');
+    return;
 
   }
 
+  const attendees = [];
+
+  attendees.push({
+    name:name,
+    phone:phone
+  });
+
+  // COLLECT ADDITIONAL ATTENDEES
+
+  for (let i = 2; i <= pkg.people; i++) {
+
+    const nameField =
+      this.querySelector(`[name="attendeeName${i}"]`);
+
+    const phoneField =
+      this.querySelector(`[name="attendeePhone${i}"]`);
+
+    if (!nameField || !phoneField) {
+
+      alert("Please complete all attendee details.");
+
+      return;
+
+    }
+
+    attendees.push({
+      name:nameField.value.trim(),
+      phone:phoneField.value.trim()
+    });
+
+  }
+
+  // BUILD ATTENDEE DETAILS
+
+  let attendeeDetails = "";
+
+  attendees.forEach((person,index) => {
+
+    attendeeDetails +=
+
+      "\n\nATTENDEE " + (index + 1) +
+      "\nName: " + person.name +
+      "\nPhone: " + person.phone;
+
+  });
+
+  // BUILD WHATSAPP MESSAGE
+
   const registrationText =
 
-    '2027 SUCCESS EXTRAVAGANZA REGISTRATION\n' +
+    "2027 MSM SUCCESS EXTRAVAGANZA REGISTRATION\n" +
 
-    '================================\n\n' +
+    "====================================\n\n" +
 
-    'FIRST ATTENDEE\n' +
+    "CONTACT PERSON\n" +
 
-    'Name: ' + name + '\n' +
+    "Name: " + name + "\n" +
 
-    'Phone: ' + phone + '\n' +
+    "Phone: " + phone + "\n" +
 
-    'Email: ' + (email || 'Not provided') +
+    "Email: " + (email || "Not provided") +
 
-    secondPersonDetails +
+    "\n\nTICKET INFORMATION\n" +
 
-    '\n\nTICKET INFORMATION\n' +
+    "Category: " + pkg.category + "\n" +
 
-    'Number of Tickets: ' + tickets + '\n' +
+    "Package: " + pkg.package + "\n" +
 
-    'Ticket Type: ' + ticketType +
+    "Number of attendees: " + pkg.people + "\n" +
 
-    '\n\nPAYMENT INFORMATION\n' +
+    "Package price: " + money(pkg.price) +
 
-    'Payment Status: ' + payment + '\n' +
+    attendeeDetails +
 
-    'Payment Method: ' + method + '\n' +
+    "\n\nPAYMENT INFORMATION\n" +
 
-    'Amount Paid: ' + (amount || 'Not provided') + '\n' +
+    "Payment status: " + payment + "\n" +
 
-    'Payment Reference: ' +
-    (reference || 'Not provided') + '\n' +
+    "Payment method: " + method + "\n" +
 
-    'Payment Proof Details: ' +
-    (proof || 'Not provided') +
+    "Amount paid: R" + amount + "\n" +
 
-    '\n\nADDITIONAL MESSAGE\n' +
+    "Outstanding amount: R" +
+    Math.max(0,pkg.price - Number(amount)).toLocaleString("en-ZA") + "\n" +
 
-    (message || 'None') +
+    "Payment reference: " +
+    (reference || "Not provided") + "\n" +
 
-    '\n\nEVENT DATE: 16 JANUARY 2027' +
+    "Payment details: " +
+    (proof || "Not provided") +
 
-    '\nVENUE: MASERU, LESOTHO';
+    "\n\nADDITIONAL MESSAGE\n" +
+
+    (message || "None") +
+
+    "\n\nEVENT DATE: 16 JANUARY 2027" +
+
+    "\nTIME: 08:00 - 18:00" +
+
+    "\nVENUE: MASERU, LESOTHO";
 
   const whatsappURL =
 
-    'https://wa.me/26656506092?text=' +
+    "https://wa.me/26656506092?text=" +
 
     encodeURIComponent(registrationText);
 
   const result =
-    document.getElementById('registrationMessage');
+    document.getElementById("registrationMessage");
 
-  result.style.display = 'block';
+  result.style.display = "block";
 
   result.replaceChildren();
 
-  const heading =
-    document.createElement('strong');
+  const heading = document.createElement("strong");
 
-  heading.textContent =
-    'Your registration details are ready!';
+  heading.textContent = "Your registration details are ready!";
 
-  const paragraph =
-    document.createElement('p');
+  const paragraph = document.createElement("p");
 
   paragraph.textContent =
-    'Click below to send your attendee and payment details to the MSM team on WhatsApp.';
+    "Your " + pkg.category + " " + pkg.package +
+    " package totals " + money(pkg.price) +
+    ". Please send your registration to MSM for confirmation.";
 
-  const link =
-    document.createElement('a');
+  const link = document.createElement("a");
 
   link.href = whatsappURL;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.className = "whatsapp-btn";
 
-  link.target = '_blank';
-
-  link.rel = 'noopener noreferrer';
-
-  link.className = 'whatsapp-btn';
-
-  link.textContent =
-    'SEND REGISTRATION TO MSM ON WHATSAPP';
+  link.textContent = "SEND REGISTRATION TO MSM ON WHATSAPP";
 
   result.appendChild(heading);
-
   result.appendChild(paragraph);
-
   result.appendChild(link);
 
   result.scrollIntoView({
-    behavior: 'smooth',
-    block: 'center'
+    behavior:"smooth",
+    block:"center"
+  });
+
+});
+
+
+// =====================================
+// TABLE SPONSORSHIP CALCULATOR
+// =====================================
+
+const tableQuantity =
+  document.getElementById("tableQuantity");
+
+const sponsorTotal =
+  document.getElementById("sponsorTotal");
+
+const sponsorQuantity =
+  document.getElementById("sponsorQuantity");
+
+tableQuantity.addEventListener("change", function() {
+
+  const quantity = Number(this.value);
+
+  const total = quantity * 8000;
+
+  sponsorQuantity.textContent = quantity;
+
+  sponsorTotal.textContent = money(total);
+
+});
+
+
+// =====================================
+// TABLE SPONSORSHIP WHATSAPP
+// =====================================
+
+document.getElementById("sponsorForm")
+.addEventListener("submit", function(e) {
+
+  e.preventDefault();
+
+  const company =
+    document.getElementById("companyName").value.trim();
+
+  const contact =
+    document.getElementById("contactPerson").value.trim();
+
+  const phone =
+    document.getElementById("sponsorPhone").value.trim();
+
+  const email =
+    document.getElementById("sponsorEmail").value.trim();
+
+  const quantity =
+    Number(tableQuantity.value);
+
+  const payment =
+    document.getElementById("sponsorPayment").value;
+
+  if (!quantity || quantity < 1 || quantity > 5) {
+
+    alert("Please select between 1 and 5 tables.");
+
+    return;
+
+  }
+
+  const total = quantity * 8000;
+
+  const sponsorshipText =
+
+    "2027 MSM SUCCESS EXTRAVAGANZA TABLE SPONSORSHIP\n" +
+
+    "====================================\n\n" +
+
+    "Company / Sponsor: " + company + "\n" +
+
+    "Contact Person: " + contact + "\n" +
+
+    "Phone: " + phone + "\n" +
+
+    "Email: " + (email || "Not provided") + "\n\n" +
+
+    "SPONSORSHIP DETAILS\n" +
+
+    "Tables requested: " + quantity + "\n" +
+
+    "Price per table: R8,000\n" +
+
+    "Total sponsorship: " + money(total) + "\n\n" +
+
+    "Payment status: " + payment +
+
+    "\n\nEVENT: 2027 SUCCESS EXTRAVAGANZA" +
+
+    "\nDATE: 16 JANUARY 2027" +
+
+    "\nVENUE: MASERU, LESOTHO";
+
+  const whatsappURL =
+
+    "https://wa.me/26656506092?text=" +
+
+    encodeURIComponent(sponsorshipText);
+
+  const result =
+    document.getElementById("sponsorMessage");
+
+  result.style.display = "block";
+
+  result.replaceChildren();
+
+  const heading = document.createElement("strong");
+
+  heading.textContent =
+    "Your sponsorship enquiry is ready!";
+
+  const paragraph = document.createElement("p");
+
+  paragraph.textContent =
+    quantity + " table(s) requested. Total: " + money(total);
+
+  const link = document.createElement("a");
+
+  link.href = whatsappURL;
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+  link.className = "whatsapp-btn";
+
+  link.textContent = "SEND SPONSORSHIP ENQUIRY TO MSM";
+
+  result.appendChild(heading);
+  result.appendChild(paragraph);
+  result.appendChild(link);
+
+  result.scrollIntoView({
+    behavior:"smooth",
+    block:"center"
   });
 
 });
