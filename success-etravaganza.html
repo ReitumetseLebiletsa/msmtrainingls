@@ -6,7 +6,7 @@
 
 <title>2027 MSM Success Extravaganza | Lesotho</title>
 
-<meta name="description" content="Join the 2027 MSM Success Extravaganza on 16 January 2027 in Maseru, Lesotho. Featuring Percy Singo, Mohau Mosoeunyane and more inspiring speakers.">
+<meta name="description" content="Join the 2027 MSM Success Extravaganza on 16 January 2027 in Maseru, Lesotho. Featuring Percy Singo, Mohau Mosoeunyane, Phakiso Moleko, Maitumeleng Fokothi and more.">
 
 <meta name="theme-color" content="#0B3D2E">
 
@@ -289,9 +289,11 @@ section {
 
 .speaker-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 300px));
-  justify-content: center;
-  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1100px;
+  margin: auto;
+  gap: 28px;
+  align-items: stretch;
 }
 
 .speaker-card {
@@ -300,15 +302,18 @@ section {
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0,0,0,.09);
   background: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .speaker-photo {
-  height: 340px;
+  height: 330px;
   background: linear-gradient(135deg, var(--green), var(--light-green));
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 
 .speaker-photo img {
@@ -321,31 +326,69 @@ section {
   color: white;
   font-size: 65px;
   font-weight: 900;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
+  background:
+    radial-gradient(circle at top right, rgba(217,173,80,.35), transparent 45%),
+    linear-gradient(135deg, var(--green), #174e39);
+}
+
+.placeholder-label {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,.45);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  white-space: nowrap;
 }
 
 .speaker-info {
-  padding: 22px;
+  padding: 23px 20px;
+  flex: 1;
 }
 
 .speaker-info h3 {
   color: var(--green);
-  font-size: 20px;
+  font-size: 19px;
+  line-height: 1.4;
+  margin-bottom: 8px;
 }
 
-.speaker-info p {
-  color: #87938a;
-  font-size: 13px;
-  font-weight: 700;
+.speaker-info .speaker-title {
+  color: #a17a30;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.speaker-bio {
+  color: #68766e;
+  font-size: 12px;
+  line-height: 1.9;
+  text-align: left;
+}
+
+.speaker-divider {
+  width: 45px;
+  height: 3px;
+  background: var(--gold);
+  margin: 0 auto 15px;
+  border-radius: 5px;
 }
 
 .more-speakers {
   margin: 50px auto 0;
-  max-width: 700px;
+  max-width: 750px;
   text-align: center;
   background: var(--green);
   color: white;
@@ -562,7 +605,13 @@ footer p {
   margin: 8px;
 }
 
-/* MOBILE */
+/* MOBILE AND TABLET */
+@media(max-width:900px) {
+  .speaker-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media(max-width:600px) {
   nav {
     justify-content: center;
@@ -592,9 +641,13 @@ footer p {
   }
 
   .speaker-card {
-    max-width: 340px;
+    max-width: 360px;
     margin: auto;
     width: 100%;
+  }
+
+  .speaker-photo {
+    height: 340px;
   }
 
   .detail {
@@ -749,15 +802,17 @@ footer p {
     <small>LEARN FROM THE BEST</small>
     <h2>MEET OUR SPEAKERS</h2>
     <p>
-      Get ready to learn, grow and be inspired by powerful voices.
+      Get ready to learn, grow and be inspired by powerful voices
+      bringing knowledge, experience and practical insights.
     </p>
   </div>
 
   <div class="speaker-grid">
 
+    <!-- PERCY SINGO -->
     <div class="speaker-card">
-      <div class="speaker-photo">
 
+      <div class="speaker-photo">
         <img
           src="images/singo.jpeg"
           alt="Percy Singo"
@@ -765,18 +820,51 @@ footer p {
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
 
-        <div class="speaker-placeholder">PS</div>
+        <div class="speaker-placeholder" style="display:none;">PS</div>
       </div>
 
       <div class="speaker-info">
         <h3>Percy Singo</h3>
-        <p>FEATURED SPEAKER</p>
+
+        <p class="speaker-title">FINANCE SPEAKER & PROPERTY INVESTOR</p>
+
+        <div class="speaker-divider"></div>
+
+        <p class="speaker-bio">
+          Percy Singo is a finance speaker, property investor,
+          co-founder of Be Wise Financial Seminar, and author
+          of the book <strong>How to Make Your Salary Work for You.</strong>
+
+          <br><br>
+
+          His journey into financial education began in church,
+          where he was first introduced to teachings about
+          managing personal finances. Inspired by these lessons,
+          he developed a habit of consistent saving and eventually
+          used his savings to invest in property.
+
+          <br><br>
+
+          Today, Percy advocates for viewing your salary as a seed
+          rather than something to resent. He encourages people
+          to use their income as a funding mechanism for building
+          long-term wealth through disciplined saving and investing.
+
+          <br><br>
+
+          Academically, Percy holds a Master's degree in Civil
+          Engineering from the University of the Witwatersrand.
+          He continues to work for one of the metropolitan
+          municipalities while pursuing his passion for financial
+          education and property investment.
+        </p>
       </div>
     </div>
 
+    <!-- MOHAU MOSOEUNYANE -->
     <div class="speaker-card">
-      <div class="speaker-photo">
 
+      <div class="speaker-photo">
         <img
           src="images/mohau.png"
           alt="Mohau Mosoeunyane"
@@ -784,12 +872,123 @@ footer p {
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
         >
 
-        <div class="speaker-placeholder">MM</div>
+        <div class="speaker-placeholder" style="display:none;">MM</div>
       </div>
 
       <div class="speaker-info">
         <h3>Mohau Mosoeunyane</h3>
-        <p>SPEAKER & HOST</p>
+
+        <p class="speaker-title">SPEAKER & HOST</p>
+
+        <div class="speaker-divider"></div>
+
+        <p class="speaker-bio">
+          Speaker profile coming soon. More information about
+          Mohau Mosoeunyane and his contribution to the
+          2027 Success Extravaganza will be announced shortly.
+        </p>
+      </div>
+    </div>
+
+    <!-- PHAKISO MOLEKO -->
+    <div class="speaker-card">
+
+      <div class="speaker-photo">
+
+        <div class="speaker-placeholder">PM</div>
+
+        <div class="placeholder-label">PHOTO COMING SOON</div>
+
+      </div>
+
+      <div class="speaker-info">
+        <h3>Phakiso Moleko</h3>
+
+        <p class="speaker-title">
+          MOTIVATIONAL SPEAKER | COUNSELLING THERAPIST | MC
+        </p>
+
+        <div class="speaker-divider"></div>
+
+        <p class="speaker-bio">
+          Phakiso Moleko is a motivational speaker, counselling
+          therapist and Master of Ceremonies with experience
+          across various platforms and audiences.
+
+          <br><br>
+
+          Through his counselling sessions, he has supported
+          individuals in navigating personal challenges and
+          finding direction. His motivational speaking engagements
+          have included organisations such as MSM, Metropolitan
+          Lesotho, World Vision, Harvest FM and the Lesotho
+          Mounted Police Service.
+
+          <br><br>
+
+          He also brings extensive experience in conducting
+          ceremonies, including funerals, weddings and
+          graduation ceremonies.
+        </p>
+      </div>
+    </div>
+
+    <!-- MAITUMELENG FOKOTHI -->
+    <div class="speaker-card">
+
+      <div class="speaker-photo">
+
+        <div class="speaker-placeholder">MF</div>
+
+        <div class="placeholder-label">PHOTO COMING SOON</div>
+
+      </div>
+
+      <div class="speaker-info">
+        <h3>Maitumeleng Fokothi</h3>
+
+        <p class="speaker-title">FEATURED SPEAKER</p>
+
+        <div class="speaker-divider"></div>
+
+        <p class="speaker-bio">
+          Professional profile coming soon.
+
+          <br><br>
+
+          More information about Maitumeleng Fokothi,
+          including professional background and areas of
+          expertise, will be shared as we approach the event.
+        </p>
+      </div>
+    </div>
+
+    <!-- ADDITIONAL SPEAKER -->
+    <div class="speaker-card">
+
+      <div class="speaker-photo">
+
+        <div class="speaker-placeholder">+</div>
+
+        <div class="placeholder-label">ANNOUNCEMENT COMING SOON</div>
+
+      </div>
+
+      <div class="speaker-info">
+        <h3>More Speakers Loading...</h3>
+
+        <p class="speaker-title">ADDITIONAL SPEAKER</p>
+
+        <div class="speaker-divider"></div>
+
+        <p class="speaker-bio">
+          We are preparing to introduce another inspiring
+          voice to the 2027 Success Extravaganza.
+
+          <br><br>
+
+          Stay connected for the next speaker announcement!
+        </p>
       </div>
     </div>
 
@@ -799,9 +998,9 @@ footer p {
     <h2>MORE SPEAKERS LOADING...</h2>
 
     <p>
-      This is just the beginning!
-      More inspiring speakers will be announced soon.
-      Stay connected and watch this space.
+      Our speaker announcements are not over!
+      Keep following MSM Training for more exciting updates.
+      Your next source of inspiration could be announced soon.
     </p>
   </div>
 
